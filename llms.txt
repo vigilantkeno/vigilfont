@@ -30,4 +30,4 @@ Classification: humanist geometric sans serif, in the lineage of Frutiger's Aven
 - [Notes index](https://www.vigilfont.com/notes): All articles.
 - [RSS feed](https://www.vigilfont.com/feed.xml)
 - [Designer](https://thinkkeno.com): Keno Vigil.
-- Contact: hi@thinkkeno.com
+- Contact: https://thinkkeno.com/#contact (contact form)
