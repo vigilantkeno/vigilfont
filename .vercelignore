@@ -1,0 +1,5 @@
+# Vercel uploads the whole directory, not just git-tracked files.
+# Keep working files off the public site.
+*.csv
+*.md
+.git
