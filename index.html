@@ -54,7 +54,7 @@ section,footer{padding:clamp(48px,8vw,112px) clamp(16px,4vw,56px)}
 .btn{display:inline-flex;align-items:center;min-height:56px;padding:0 32px;background:#fff;color:#1D3BFF;font-weight:600;font-size:18px;text-decoration:none;border-radius:999px}
 .btn:hover{background:#000;color:#fff}
 .link{font-weight:500;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
-.pill{min-height:48px;padding:0 22px;border:2px solid currentColor;border-radius:999px;background:transparent;color:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.pill{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:2px solid currentColor;border-radius:999px;background:transparent;color:inherit;font-size:15px;font-weight:600;text-decoration:none;cursor:pointer}
 .pill[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
 .pill:hover{background:var(--fg);color:var(--bg)}
 input[type=range]{height:44px;width:100%;margin:0;background:transparent;cursor:pointer;accent-color:currentColor}
@@ -134,6 +134,20 @@ pre{padding:20px;border:1px solid #fff;font-family:inherit;font-size:15px;line-h
 .idx a>span:last-child{display:flex;flex-direction:column;gap:6px}
 .idx .t{font-size:clamp(24px,3vw,40px);line-height:1.1;letter-spacing:-0.02em;font-weight:500;text-wrap:balance}
 .idx .d{font-size:18px;max-width:60ch;text-wrap:pretty}
+/* share */
+#share{--bg:#1D3BFF;--fg:#fff;background:var(--bg);color:var(--fg);display:flex;flex-direction:column;gap:clamp(24px,4vw,40px)}
+#share h2{max-width:14ch}
+#share .body{max-width:52ch}
+.share-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px}
+.share-row .btn{min-height:56px;padding:0 36px;background:#fff;color:#1D3BFF}
+.share-row .btn:hover{background:#000;color:#fff}
+.share-row .pill{border-color:#fff;color:#fff}
+.share-row .pill:hover{background:#fff;color:#1D3BFF}
+#share-status{min-height:22px;font-weight:500}
+@media (max-width:560px){
+  .share-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .share-row .btn{grid-column:1/-1;justify-content:center;padding:0 24px}
+}
 /* faq */
 #faq{background:#fff;color:#000;display:flex;flex-direction:column;gap:clamp(32px,5vw,64px)}
 #faq h2{max-width:16ch}
@@ -480,6 +494,21 @@ footer a{text-underline-offset:3px}
   <p class="body" style="max-width:66ch"><a href="https://openfontlicense.org/open-font-license-official-text/" style="text-underline-offset:4px">SIL Open Font License 1.1</a> — use it anywhere, in anything, commercial or not. No attribution required. No account. No newsletter.</p>
 </section>
 
+<section id="share">
+  <h2 class="h2">Pass it on.</h2>
+  <p class="body">Free typefaces travel by word of mouth. If Vigil is useful to you, send it to someone who sets type.</p>
+  <div class="share-row">
+    <button type="button" class="btn" id="share-native" hidden>Share</button>
+    <button type="button" class="pill" id="share-copy">Copy link</button>
+    <a class="pill" href="https://twitter.com/intent/tweet?text=Vigil%20%E2%80%94%20a%20softened%20geometric%20grotesk.%20Eight%20weights%2C%20italics%2C%20free%20forever.&url=https%3A%2F%2Fwww.vigilfont.com%2F" target="_blank" rel="noopener noreferrer">X</a>
+    <a class="pill" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.vigilfont.com%2F" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a class="pill" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.vigilfont.com%2F" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="pill" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.vigilfont.com%2F&title=Vigil%20%E2%80%94%20a%20softened%20geometric%20grotesk.%20Eight%20weights%2C%20italics%2C%20free%20forever." target="_blank" rel="noopener noreferrer">Reddit</a>
+    <a class="pill" href="mailto:?subject=Vigil%20%E2%80%94%20a%20free%20typeface&body=Vigil%20%E2%80%94%20a%20softened%20geometric%20grotesk.%20Eight%20weights%2C%20italics%2C%20free%20forever.%0A%0Ahttps%3A%2F%2Fwww.vigilfont.com%2F">Email</a>
+  </div>
+  <p class="small" id="share-status" role="status" aria-live="polite"></p>
+</section>
+
 <footer>
   <div>
     <p>Vigil is designed by Keno Vigil (<a href="https://thinkkeno.com">thinkkeno.com</a>) in Cary, North Carolina. Derived from <a href="https://github.com/erikdkennedy/figtree">Figtree</a> by Erik Kennedy under the SIL Open Font License.</p>
@@ -512,6 +541,40 @@ footer a{text-underline-offset:3px}
   w.addEventListener('input',paint);z.addEventListener('input',paint);
   ['italic','outline','ss01','tnum'].forEach(function(k){$('t-'+k).addEventListener('click',function(){s[k]=!s[k];paint()})});
   $('t-color').addEventListener('click',function(){s.bg=(s.bg+1)%pal.length;paint()});
+  var SHARE_URL='https://www.vigilfont.com/';
+  var SHARE_TEXT='Vigil \u2014 a softened geometric grotesk. Eight weights, italics, free forever.';
+  var st=$('share-status');
+  function say(m){st.textContent=m;setTimeout(function(){if(st.textContent===m)st.textContent=''},2600)}
+  function legacyCopy(){
+    try{
+      var el=document.createElement('textarea');
+      el.value=SHARE_URL;el.setAttribute('readonly','');el.contentEditable='true';
+      el.style.position='absolute';el.style.left='-9999px';el.style.fontSize='16px';
+      document.body.appendChild(el);
+      var rng=document.createRange();rng.selectNodeContents(el);
+      var sel=window.getSelection();sel.removeAllRanges();sel.addRange(rng);
+      el.setSelectionRange(0,999999);
+      var ok=document.execCommand('copy');
+      sel.removeAllRanges();document.body.removeChild(el);
+      return ok;
+    }catch(e){return false}
+  }
+  function copyLink(cb){
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(SHARE_URL).then(function(){cb(true)},function(){cb(legacyCopy())});
+    }else{cb(legacyCopy())}
+  }
+  var nat=$('share-native');
+  if(navigator.share){
+    nat.hidden=false;
+    nat.addEventListener('click',function(){
+      navigator.share({title:'Vigil',text:SHARE_TEXT,url:SHARE_URL})
+        .catch(function(e){if(e&&e.name!=='AbortError')say('Sharing was not available.')});
+    });
+  }
+  $('share-copy').addEventListener('click',function(){
+    copyLink(function(ok){say(ok?'Link copied.':'Copy the address bar instead.')});
+  });
   var cp=$('copy');cp.addEventListener('click',function(){
     if(navigator.clipboard)navigator.clipboard.writeText($('css').textContent);
     cp.textContent='Copied';setTimeout(function(){cp.textContent='Copy CSS'},1600);
