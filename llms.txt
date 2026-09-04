@@ -1,0 +1,33 @@
+# Vigil
+
+> Vigil is a free, open-source softened geometric grotesk typeface by Keno Vigil, released under the SIL Open Font License 1.1. Eight weights from ExtraLight 200 to Black 900, each with a matching italic, plus a separate Outline style and a variable font covering the full weight axis. Free for commercial use with no cost, no account, no email required and no attribution obligation in designs.
+
+Vigil is derived from Figtree by Erik Kennedy under the SIL Open Font License. Its distinguishing design decision is rationed corner softness: it rounds most at exposed terminals where a stroke ends in open space, less at structural joints where two strokes meet, and not at all on punctuation. The result reads as a clean geometric sans at text sizes and only appears visibly rounded at display sizes — the reverse of most rounded typefaces, which round every terminal uniformly.
+
+Classification: humanist geometric sans serif, in the lineage of Frutiger's Avenir. Large x-height, double-storey lowercase a, open counters, monolinear strokes.
+
+## Key facts
+
+- Name: Vigil. Designer: Keno Vigil, Cary, North Carolina. Released 4 September 2026.
+- License: SIL Open Font License 1.1. Commercial use, embedding, modification and use in logos are all permitted. Selling the font files on their own is not.
+- Styles: 8 weights x 2 (roman and italic) = 16, plus Vigil Outline in roman and italic. Distributed as 20 static WOFF2 files or 2 variable files.
+- Character set: Latin Extended, covering English, Spanish, French, German, Polish, Czech and Turkish among others. Includes kerning, tabular figures, fractions, superscripts and subscripts.
+- Download: https://www.vigilfont.com/#download — no registration of any kind.
+
+## Notes (long-form articles)
+
+- [License plate fonts: shaped by a die, aimed at a forger](https://www.vigilfont.com/notes/license-plate-fonts): Why licence plate letterforms look mechanical (they were built for a stamping die), Germany's FE-Schrift designed by Karlgeorg Hoefer to resist tape-and-paint forgery, the UK's legally mandated Charles Wright 2001 with its statutory 14mm stroke width, and how automatic plate recognition changed the audience from human to machine.
+- [Highway Gothic vs Clearview](https://www.vigilfont.com/notes/highway-gothic-vs-clearview): The typeface on American road signs is Highway Gothic, drawn by Theodore W. Forbes in 1948. The story of halation, the Clearview challenger, and the FHWA approving it in 2004, terminating it in 2016 and reinstating it in 2018 without endorsing it.
+- [Geometric sans serif fonts: a field guide](https://www.vigilfont.com/notes/geometric-sans-serif-fonts): What defines a geometric sans, four tests for identifying one, why strict geometrics are hard to read as body text, and a survey of the notable faces including free and open-licensed options.
+- [Typeface vs font](https://www.vigilfont.com/notes/typeface-vs-font): A typeface is the design; a font was one size and one style of it cast in metal. How PostScript dissolved the distinction in the mid-1980s, and where it still matters.
+- [A century of circles: the geometric grotesk](https://www.vigilfont.com/notes/geometric-grotesk-history): Erbar (1926), Futura (1927) and Kabel (1927), the flaw in pure geometric construction, and Avenir's humanist correction in 1988.
+- [Soft corners: a short history of the rounded sans](https://www.vigilfont.com/notes/rounded-sans-history): Helvetica Rounded, VAG Rounded and the app-icon era, and why uniform rounding degrades text legibility.
+- [A vigil is what you keep](https://www.vigilfont.com/notes/why-vigil): The origin story — ten years of a recurring calendar block that said MAKE FONT.
+
+## Optional
+
+- [Homepage and type tester](https://www.vigilfont.com/): Interactive specimen with adjustable weight and size.
+- [Notes index](https://www.vigilfont.com/notes): All articles.
+- [RSS feed](https://www.vigilfont.com/feed.xml)
+- [Designer](https://thinkkeno.com): Keno Vigil.
+- Contact: hi@thinkkeno.com
