@@ -1,0 +1,13 @@
+{
+  "name": "Vigil",
+  "short_name": "Vigil",
+  "description": "A softened geometric grotesk. Eight weights, italics, free forever.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0A0A0A",
+  "theme_color": "#1D3BFF",
+  "icons": [
+    { "src": "/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

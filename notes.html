@@ -5,18 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Notes — Vigil</title>
 <meta name="description" content="Notes from the making of Vigil: the origin story, and two short histories of the geometric and rounded sans.">
+<link rel="canonical" href="https://www.vigilfont.com/notes">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#19D69B">
+<meta name="author" content="Keno Vigil">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Vigil">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.vigilfont.com/notes">
+<meta property="og:title" content="Notes — Vigil">
+<meta property="og:description" content="Notes from the making of Vigil: the origin story, and two short histories of the geometric and rounded sans.">
+<meta property="og:image" content="https://www.vigilfont.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Notes — Vigil">
+<meta name="twitter:description" content="Notes from the making of Vigil: the origin story, and two short histories of the geometric and rounded sans.">
+<meta name="twitter:image" content="https://www.vigilfont.com/og.png">
 <style>
 @font-face{font-family:"Vigil";src:url("fonts/Vigil-wght-.woff2") format("woff2");font-weight:200 900;font-display:block}
 @font-face{font-family:"Vigil";src:url("fonts/Vigil-Italic-wght-.woff2") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#0A0A0A;scroll-behavior:smooth}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{font-family:"Vigil",sans-serif;font-size:18px;line-height:1.5;color:#000;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
 a{color:inherit}a:hover{text-decoration-thickness:2px}
 :focus-visible{outline:3px solid currentColor;outline-offset:4px}
 h1,h2,h3,p,ol,figure,blockquote{margin:0}
 ol{list-style:none;padding:0}
-#top{background:#19D69B;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;gap:48px;padding:clamp(20px,4vw,48px) clamp(16px,4vw,56px)}
+#top{background:#19D69B;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;gap:48px;padding:clamp(20px,4vw,48px) clamp(16px,4vw,56px)}
 .nav{display:flex;justify-content:space-between;align-items:baseline;font-size:15px;font-weight:500}
 .nav nav{display:flex;gap:24px}
 .nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
@@ -35,7 +57,149 @@ footer>div{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 40
 footer p{margin:0;max-width:60ch;text-wrap:pretty}
 footer .meta{display:flex;gap:24px;flex-wrap:wrap}
 footer a{text-underline-offset:3px}
+@media (max-width:560px){
+  .idx a{grid-template-columns:1fr;gap:6px;padding:18px 0}
+  article header{position:static!important}
+}
 </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "CollectionPage",
+   "@id": "https://www.vigilfont.com/notes#webpage",
+   "url": "https://www.vigilfont.com/notes",
+   "name": "Notes — Vigil",
+   "description": "Notes from the making of Vigil: the origin story, and two short histories of the geometric and rounded sans.",
+   "inLanguage": "en",
+   "isPartOf": {
+    "@id": "https://www.vigilfont.com/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.vigilfont.com/notes#breadcrumb"
+   },
+   "hasPart": [
+    {
+     "@id": "https://www.vigilfont.com/notes#origin"
+    },
+    {
+     "@id": "https://www.vigilfont.com/notes#geometric"
+    },
+    {
+     "@id": "https://www.vigilfont.com/notes#rounded"
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://www.vigilfont.com/notes#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Vigil",
+     "item": "https://www.vigilfont.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Notes",
+     "item": "https://www.vigilfont.com/notes"
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://www.vigilfont.com/#keno",
+   "name": "Keno Vigil",
+   "url": "https://thinkkeno.com",
+   "sameAs": [
+    "https://thinkkeno.com",
+    "https://github.com/vigilantkeno"
+   ]
+  },
+  {
+   "@type": "Article",
+   "@id": "https://www.vigilfont.com/notes#origin",
+   "headline": "A vigil is what you keep when you refuse to go to sleep on something.",
+   "description": "Ten years of a calendar block that said MAKE FONT, and why it finally shipped.",
+   "url": "https://www.vigilfont.com/notes#origin",
+   "datePublished": "2026-09-04",
+   "dateModified": "2026-09-04",
+   "inLanguage": "en",
+   "author": {
+    "@id": "https://www.vigilfont.com/#keno"
+   },
+   "publisher": {
+    "@id": "https://www.vigilfont.com/#keno"
+   },
+   "image": "https://www.vigilfont.com/og.png",
+   "isPartOf": {
+    "@id": "https://www.vigilfont.com/notes#webpage"
+   },
+   "mainEntityOfPage": {
+    "@id": "https://www.vigilfont.com/notes#webpage"
+   },
+   "about": {
+    "@id": "https://www.vigilfont.com/#vigil"
+   }
+  },
+  {
+   "@type": "Article",
+   "@id": "https://www.vigilfont.com/notes#geometric",
+   "headline": "A century of circles: the geometric grotesk",
+   "description": "Erbar, Futura and Kabel arrived within a year of each other. The idea never left.",
+   "url": "https://www.vigilfont.com/notes#geometric",
+   "datePublished": "2026-08-28",
+   "dateModified": "2026-08-28",
+   "inLanguage": "en",
+   "author": {
+    "@id": "https://www.vigilfont.com/#keno"
+   },
+   "publisher": {
+    "@id": "https://www.vigilfont.com/#keno"
+   },
+   "image": "https://www.vigilfont.com/og.png",
+   "isPartOf": {
+    "@id": "https://www.vigilfont.com/notes#webpage"
+   },
+   "mainEntityOfPage": {
+    "@id": "https://www.vigilfont.com/notes#webpage"
+   },
+   "about": {
+    "@id": "https://www.vigilfont.com/#vigil"
+   }
+  },
+  {
+   "@type": "Article",
+   "@id": "https://www.vigilfont.com/notes#rounded",
+   "headline": "Soft corners: a short history of the rounded sans",
+   "description": "From a car company's letterhead to every app icon, and what most rounded fonts get wrong.",
+   "url": "https://www.vigilfont.com/notes#rounded",
+   "datePublished": "2026-08-21",
+   "dateModified": "2026-08-21",
+   "inLanguage": "en",
+   "author": {
+    "@id": "https://www.vigilfont.com/#keno"
+   },
+   "publisher": {
+    "@id": "https://www.vigilfont.com/#keno"
+   },
+   "image": "https://www.vigilfont.com/og.png",
+   "isPartOf": {
+    "@id": "https://www.vigilfont.com/notes#webpage"
+   },
+   "mainEntityOfPage": {
+    "@id": "https://www.vigilfont.com/notes#webpage"
+   },
+   "about": {
+    "@id": "https://www.vigilfont.com/#vigil"
+   }
+  }
+ ]
+}
+</script>
 </head>
 <body>
 <main>
@@ -47,15 +211,15 @@ footer a{text-underline-offset:3px}
   </header>
   <h1>Notes</h1>
   <ol class="idx">
-    <li><a href="#origin"><span class="small tnum">2026-09-04</span><span><span class="t">A vigil is what you keep when you refuse to go to sleep on something.</span><span class="d">Ten years of a calendar block that said MAKE FONT, and why it finally shipped.</span></span></a></li>
-    <li><a href="#geometric"><span class="small tnum">2026-08-28</span><span><span class="t">A century of circles: the geometric grotesk</span><span class="d">Erbar, Futura and Kabel arrived within a year of each other. The idea never left.</span></span></a></li>
-    <li><a href="#rounded"><span class="small tnum">2026-08-21</span><span><span class="t">Soft corners: a short history of the rounded sans</span><span class="d">From a car company's letterhead to every app icon, and what most rounded fonts get wrong.</span></span></a></li>
+    <li><a href="#origin"><time class="small tnum" datetime="2026-09-04">2026-09-04</time><span><span class="t">A vigil is what you keep when you refuse to go to sleep on something.</span><span class="d">Ten years of a calendar block that said MAKE FONT, and why it finally shipped.</span></span></a></li>
+    <li><a href="#geometric"><time class="small tnum" datetime="2026-08-28">2026-08-28</time><span><span class="t">A century of circles: the geometric grotesk</span><span class="d">Erbar, Futura and Kabel arrived within a year of each other. The idea never left.</span></span></a></li>
+    <li><a href="#rounded"><time class="small tnum" datetime="2026-08-21">2026-08-21</time><span><span class="t">Soft corners: a short history of the rounded sans</span><span class="d">From a car company's letterhead to every app icon, and what most rounded fonts get wrong.</span></span></a></li>
   </ol>
 </section>
 
 <article id="origin" style="background:#FFFFFF;color:#000;padding:clamp(56px,9vw,128px) clamp(16px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px 64px">
   <header style="display:flex;flex-direction:column;gap:20px;align-self:start;position:sticky;top:32px">
-    <span style="font-size:15px;font-weight:500;font-variant-numeric:tabular-nums">2026-09-04 — Keno Vigil</span>
+    <span style="font-size:15px;font-weight:500;font-variant-numeric:tabular-nums"><time datetime="2026-09-04">2026-09-04</time> — Keno Vigil</span>
     <h2 style="margin:0;font-size:clamp(40px,6vw,88px);line-height:0.98;letter-spacing:-0.025em;font-weight:600;text-wrap:balance">A vigil is what you keep when you refuse to go to sleep on something.</h2>
     <div aria-hidden="true" style="font-size:clamp(120px,14vw,220px);line-height:0.9;letter-spacing:-0.03em;font-weight:900">K.</div>
   </header>
@@ -86,7 +250,7 @@ footer a{text-underline-offset:3px}
 
 <article id="geometric" style="background:#FFFFFF;color:#000;padding:clamp(56px,9vw,128px) clamp(16px,4vw,56px);border-top:1px solid #000;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px 64px">
   <header style="display:flex;flex-direction:column;gap:20px;align-self:start;position:sticky;top:32px">
-    <span style="font-size:15px;font-weight:500;font-variant-numeric:tabular-nums">2026-08-28 — Keno Vigil</span>
+    <span style="font-size:15px;font-weight:500;font-variant-numeric:tabular-nums"><time datetime="2026-08-28">2026-08-28</time> — Keno Vigil</span>
     <h2 style="margin:0;font-size:clamp(40px,6vw,88px);line-height:0.98;letter-spacing:-0.025em;font-weight:600;text-wrap:balance">A century of circles: the geometric grotesk</h2>
     <div aria-hidden="true" style="font-size:clamp(120px,14vw,220px);line-height:0.9;letter-spacing:-0.04em;font-weight:400">OGa</div>
   </header>
@@ -100,7 +264,7 @@ footer a{text-underline-offset:3px}
 
 <article id="rounded" style="background:#FFFFFF;color:#000;padding:clamp(56px,9vw,128px) clamp(16px,4vw,56px);border-top:1px solid #000;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px 64px">
   <header style="display:flex;flex-direction:column;gap:20px;align-self:start;position:sticky;top:32px">
-    <span style="font-size:15px;font-weight:500;font-variant-numeric:tabular-nums">2026-08-21 — Keno Vigil</span>
+    <span style="font-size:15px;font-weight:500;font-variant-numeric:tabular-nums"><time datetime="2026-08-21">2026-08-21</time> — Keno Vigil</span>
     <h2 style="margin:0;font-size:clamp(40px,6vw,88px);line-height:0.98;letter-spacing:-0.025em;font-weight:600;text-wrap:balance">Soft corners: a short history of the rounded sans</h2>
     <div aria-hidden="true" style="font-size:clamp(120px,14vw,220px);line-height:0.9;letter-spacing:-0.03em;font-weight:700">Kzl</div>
   </header>
