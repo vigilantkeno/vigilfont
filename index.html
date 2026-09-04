@@ -148,11 +148,12 @@ pre{padding:20px;border:1px solid #fff;font-family:inherit;font-size:15px;line-h
 .qa h3{font-size:clamp(20px,2.2vw,26px);line-height:1.15;letter-spacing:-0.015em;font-weight:600;text-wrap:balance}
 .qa p{font-size:17px;line-height:1.5;max-width:60ch;text-wrap:pretty}
 /* footer */
-footer{padding-top:0;padding-bottom:clamp(32px,5vw,56px);font-size:15px;font-weight:400}
-footer>div{border-top:1px solid #fff;padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 40px}
+footer{padding-top:0;padding-bottom:clamp(32px,5vw,56px);font-size:13px;font-weight:400;line-height:1.55;color:#808080}
+footer>div{border-top:1px solid rgba(255,255,255,.18);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 40px}
 footer p{max-width:60ch;text-wrap:pretty}
 footer .meta{display:flex;gap:24px;flex-wrap:wrap}
-footer a{text-underline-offset:3px}
+/* links stay brighter than the surrounding text so they still read as links */
+footer a{text-underline-offset:3px;color:#B0B0B0}
 /* narrow screens */
 @media (max-width:560px){
   .idx a{grid-template-columns:1fr;gap:6px;padding:18px 0}
@@ -181,7 +182,6 @@ footer a{text-underline-offset:3px}
    "name": "Keno Vigil",
    "alternateName": "Joaquin Keno Vigil",
    "url": "https://thinkkeno.com",
-   "email": "hi@thinkkeno.com",
    "address": {
     "@type": "PostalAddress",
     "addressLocality": "Cary",
@@ -490,7 +490,7 @@ footer a{text-underline-offset:3px}
 <footer>
   <div>
     <p>Vigil is designed by Keno Vigil (<a href="https://thinkkeno.com">thinkkeno.com</a>) in Cary, North Carolina. Derived from <a href="https://github.com/erikdkennedy/figtree">Figtree</a> by Erik Kennedy under the SIL Open Font License.</p>
-    <p class="meta"><span class="tnum">Version 1.0.0 — September 2026</span><a href="mailto:hi@thinkkeno.com">hi@thinkkeno.com</a></p>
+    <p class="meta"><span class="tnum">Version 1.0.0 — September 2026</span><a href="https://thinkkeno.com/#contact">thinkkeno.com/#contact</a></p>
   </div>
 </footer>
 

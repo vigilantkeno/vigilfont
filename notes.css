@@ -138,11 +138,12 @@ blockquote{
 .related h2{font-size:15px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
 
 /* ---------- footer ---------- */
-footer{background:#0A0A0A;color:#fff;padding:clamp(32px,5vw,56px) clamp(16px,4vw,56px);font-size:15px;line-height:1.5}
+footer{background:#0A0A0A;color:#808080;padding:clamp(32px,5vw,56px) clamp(16px,4vw,56px);font-size:13px;line-height:1.55}
 footer>div{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 40px}
 footer p{max-width:60ch;text-wrap:pretty}
 footer .meta{display:flex;gap:24px;flex-wrap:wrap}
-footer a{text-underline-offset:3px}
+/* links stay brighter than the surrounding text so they still read as links */
+footer a{text-underline-offset:3px;color:#B0B0B0}
 
 @media (max-width:560px){
   .idx a{grid-template-columns:1fr;gap:6px;padding:18px 0}
