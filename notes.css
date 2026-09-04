@@ -27,10 +27,12 @@ ol,ul{list-style:none;padding:0}
 .skip:focus{left:16px;top:16px;z-index:10;background:#fff;color:#000;padding:12px 18px}
 
 /* ---------- shared nav ---------- */
-.nav{display:flex;justify-content:space-between;align-items:baseline;font-size:15px;font-weight:500;gap:16px}
-.nav nav{display:flex;gap:24px}
-.nav a{text-decoration:none}
+.nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 24px;font-size:15px;font-weight:500}
+.nav nav{display:flex;flex-wrap:wrap;gap:4px 24px}
+/* padding + matching negative margin: 47px touch target, text stays put */
+.nav a{text-decoration:none;padding:12px 0;margin:-12px 0}
 .nav a:hover{text-decoration:underline}
+.nav [aria-current="page"]{text-decoration:underline;text-underline-offset:5px}
 
 /* ---------- index hero ---------- */
 #top{

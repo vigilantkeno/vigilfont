@@ -46,9 +46,12 @@ button,input,textarea{font-family:inherit}
 h1,h2,h3,p,ol,ul,figure,blockquote,pre{margin:0}
 ol,ul{list-style:none;padding:0}
 section,footer{padding:clamp(48px,8vw,112px) clamp(16px,4vw,56px)}
-.nav{display:flex;justify-content:space-between;align-items:baseline;font-size:15px;font-weight:500}
-.nav nav{display:flex;gap:24px}
-.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+.nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 24px;font-size:15px;font-weight:500}
+.nav nav{display:flex;flex-wrap:wrap;gap:4px 24px}
+/* padding + matching negative margin: 47px touch target, text stays put */
+.nav a{text-decoration:none;padding:12px 0;margin:-12px 0}
+.nav a:hover{text-decoration:underline}
+.nav [aria-current="page"]{text-decoration:underline;text-underline-offset:5px}
 .h2{font-size:clamp(40px,7vw,96px);line-height:1;letter-spacing:-0.02em;font-weight:600;text-wrap:balance}
 .small{font-size:15px;font-weight:500}
 .tnum{font-variant-numeric:tabular-nums}
