@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Vigil — Notes</title>
+    <link>https://www.vigilfont.com/notes</link>
+    <atom:link href="https://www.vigilfont.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Field guides to geometric and rounded sans serifs, the typefaces hiding in public life, and notes from the making of Vigil.</description>
+    <language>en-us</language>
+    <copyright>Keno Vigil</copyright>
+    <managingEditor>hi@thinkkeno.com (Keno Vigil)</managingEditor>
+    <lastBuildDate>Fri, 04 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>License plate fonts: shaped by a die, aimed at a forger</title>
+      <link>https://www.vigilfont.com/notes/license-plate-fonts</link>
+      <guid isPermaLink="true">https://www.vigilfont.com/notes/license-plate-fonts</guid>
+      <description>There is no single license plate font. The letterforms were shaped by a stamping die, hardened against tape-and-paint forgery, and are now drawn for cameras.</description>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Keno Vigil</dc:creator>
+    </item>
+    <item>
+      <title>Highway Gothic vs Clearview: two fonts went to war over American road signs</title>
+      <link>https://www.vigilfont.com/notes/highway-gothic-vs-clearview</link>
+      <guid isPermaLink="true">https://www.vigilfont.com/notes/highway-gothic-vs-clearview</guid>
+      <description>American road signs use Highway Gothic, drawn in 1948. A rival called Clearview was approved in 2004, killed in 2016 and revived in 2018.</description>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Keno Vigil</dc:creator>
+    </item>
+    <item>
+      <title>Geometric sans serif fonts: a field guide</title>
+      <link>https://www.vigilfont.com/notes/geometric-sans-serif-fonts</link>
+      <guid isPermaLink="true">https://www.vigilfont.com/notes/geometric-sans-serif-fonts</guid>
+      <description>What makes a sans serif geometric, how to spot one in four seconds, and which geometric sans serif fonts are actually worth using.</description>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Keno Vigil</dc:creator>
+    </item>
+    <item>
+      <title>Typeface vs font: the distinction that stopped mattering in 1985</title>
+      <link>https://www.vigilfont.com/notes/typeface-vs-font</link>
+      <guid isPermaLink="true">https://www.vigilfont.com/notes/typeface-vs-font</guid>
+      <description>A typeface is the design; a font was one size and one style of it, cast in metal. Where the distinction came from, and why digital type dissolved it.</description>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Keno Vigil</dc:creator>
+    </item>
+    <item>
+      <title>A vigil is what you keep when you refuse to go to sleep on something.</title>
+      <link>https://www.vigilfont.com/notes/why-vigil</link>
+      <guid isPermaLink="true">https://www.vigilfont.com/notes/why-vigil</guid>
+      <description>Ten years of a calendar block that said MAKE FONT, and why it finally shipped.</description>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Keno Vigil</dc:creator>
+    </item>
+    <item>
+      <title>A century of circles: the geometric grotesk</title>
+      <link>https://www.vigilfont.com/notes/geometric-grotesk-history</link>
+      <guid isPermaLink="true">https://www.vigilfont.com/notes/geometric-grotesk-history</guid>
+      <description>Erbar, Futura and Kabel arrived within a year of each other in 1926-27 and defined a category still with us.</description>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Keno Vigil</dc:creator>
+    </item>
+    <item>
+      <title>Soft corners: a short history of the rounded sans</title>
+      <link>https://www.vigilfont.com/notes/rounded-sans-history</link>
+      <guid isPermaLink="true">https://www.vigilfont.com/notes/rounded-sans-history</guid>
+      <description>Helvetica Rounded, VAG Rounded and the app-icon era, and the uniform-rounding mistake most of them make.</description>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Keno Vigil</dc:creator>
+    </item>
+  </channel>
+</rss>
