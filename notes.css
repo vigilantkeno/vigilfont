@@ -27,7 +27,9 @@ ol,ul{list-style:none;padding:0}
 .skip:focus{left:16px;top:16px;z-index:10;background:#fff;color:#000;padding:12px 18px}
 
 /* ---------- shared nav ---------- */
-.nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 24px;font-size:15px;font-weight:500}
+/* z-index: the oversized display glyphs use line-height < font-size, so their
+   inline boxes overflow upward and can cover the nav. Keep the nav on top. */
+.nav{position:relative;z-index:1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 24px;font-size:15px;font-weight:500}
 .nav nav{display:flex;flex-wrap:wrap;gap:4px 24px}
 /* padding + matching negative margin: 47px touch target, text stays put */
 .nav a{text-decoration:none;padding:12px 0;margin:-12px 0}
