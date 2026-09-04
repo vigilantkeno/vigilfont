@@ -1,5 +1,5 @@
 Copyright 2026 Joaquin Keno Vigil.
-Derived from Figtree, Copyright 2022 The Figtree Project Authors (https://github.com/erikdkennedy/figtree)
+Copyright 2022 The Figtree Project Authors (https://github.com/erikdkennedy/figtree). Vigil is derived from Figtree.
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
