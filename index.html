@@ -46,7 +46,9 @@ button,input,textarea{font-family:inherit}
 h1,h2,h3,p,ol,ul,figure,blockquote,pre{margin:0}
 ol,ul{list-style:none;padding:0}
 section,footer{padding:clamp(48px,8vw,112px) clamp(16px,4vw,56px)}
-.nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 24px;font-size:15px;font-weight:500}
+/* z-index: #mark has line-height < font-size, so its inline box overflows
+   ~53px above its block box and covers the nav. Keep the nav on top. */
+.nav{position:relative;z-index:1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 24px;font-size:15px;font-weight:500}
 .nav nav{display:flex;flex-wrap:wrap;gap:4px 24px}
 /* padding + matching negative margin: 47px touch target, text stays put */
 .nav a{text-decoration:none;padding:12px 0;margin:-12px 0}
