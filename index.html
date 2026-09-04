@@ -46,9 +46,12 @@ button,input,textarea{font-family:inherit}
 h1,h2,h3,p,ol,ul,figure,blockquote,pre{margin:0}
 ol,ul{list-style:none;padding:0}
 section,footer{padding:clamp(48px,8vw,112px) clamp(16px,4vw,56px)}
-.nav{display:flex;justify-content:space-between;align-items:baseline;font-size:15px;font-weight:500}
-.nav nav{display:flex;gap:24px}
-.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+.nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 24px;font-size:15px;font-weight:500}
+.nav nav{display:flex;flex-wrap:wrap;gap:4px 24px}
+/* padding + matching negative margin: 47px touch target, text stays put */
+.nav a{text-decoration:none;padding:12px 0;margin:-12px 0}
+.nav a:hover{text-decoration:underline}
+.nav [aria-current="page"]{text-decoration:underline;text-underline-offset:5px}
 .h2{font-size:clamp(40px,7vw,96px);line-height:1;letter-spacing:-0.02em;font-weight:600;text-wrap:balance}
 .small{font-size:15px;font-weight:500}
 .tnum{font-variant-numeric:tabular-nums}
@@ -218,7 +221,7 @@ footer a{text-underline-offset:3px}
    "@id": "https://www.vigilfont.com/#vigil",
    "name": "Vigil",
    "alternateName": "Vigil typeface",
-   "description": "A softened geometric grotesk with a large x-height, a double-story a and a single-story g. Rounding is applied by rule: most at exposed terminals, less at structural corners, none on l, 1, I or punctuation. Eight weights from 200 to 900 with matching italics, a variable axis, and a separate outline style.",
+   "description": "A softened geometric grotesk with a large x-height, a double-story a and a single-story g. Rounding is applied by rule: most at exposed terminals, then a smaller, even radius at structural corners and on the stems of l, L, 1 and I. Eight weights from 200 to 900 with matching italics, a variable axis, and a separate outline style.",
    "genre": "Typeface",
    "url": "https://www.vigilfont.com/",
    "image": "https://www.vigilfont.com/og.png",
@@ -379,9 +382,9 @@ footer a{text-underline-offset:3px}
   <div class="glyphs">
     <figure><div aria-hidden="true">Kt</div><figcaption>Most at the terminals.</figcaption></figure>
     <figure><div aria-hidden="true">Ez</div><figcaption>Less at structural corners.</figcaption></figure>
-    <figure><div aria-hidden="true">l1.</div><figcaption>None where recognition depends on a hard edge.</figcaption></figure>
+    <figure><div aria-hidden="true">lL1</div><figcaption>Even on the stems, small enough to keep the edge.</figcaption></figure>
   </div>
-  <p class="body">Vigil is a geometric grotesk with a large x-height, a double-story a and a single-story g. Rounding is applied by rule — most at exposed terminals (C G S c e s, the arms of E F T, the feet of K and z), less at structural corners, none on l, 1, I or punctuation. At 16px it reads as a clean sans. At 96px the softness becomes the signature.</p>
+  <p class="body">Vigil is a geometric grotesk with a large x-height, a double-story a and a single-story g. Rounding is applied by rule — most at exposed terminals (C G S c e s, the arms of E F T, the feet of K and z), then a smaller, even radius at structural corners and on the stems of l, L, 1 and I, which keep enough edge to stay apart. At 16px it reads as a clean sans. At 96px the softness becomes the signature.</p>
 </section>
 
 <section id="in-use">
@@ -392,7 +395,7 @@ footer a{text-underline-offset:3px}
   <div>
     <span class="small">Interface, 15px</span>
     <div class="panel" role="group" aria-label="Settings panel example">
-      <div><span class="k">Storage used</span><span class="tnum">128.4 GB</span></div>
+      <div><span class="k">Variable file</span><span class="tnum">43 KB</span></div>
       <div><span class="k">Sync interval</span><span class="tnum">15 min</span></div>
       <div><span class="k">Tabular figures</span><span class="sw" aria-hidden="true"></span></div>
       <div><span class="k">Hinting on Windows</span><span class="sw off" aria-hidden="true"></span></div>
