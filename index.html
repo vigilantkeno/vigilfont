@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vigil — a softened geometric grotesk. Free forever.</title>
+<meta name="description" content="Vigil is a softened geometric grotesk for body copy. Eight weights, italics, an outline style. SIL Open Font License — free forever, no email.">
+<link rel="preload" href="fonts/Vigil-wght-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Vigil-Italic-wght-.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Vigil";src:url("fonts/Vigil-wght-.woff2") format("woff2");font-weight:200 900;font-display:block}
+@font-face{font-family:"Vigil";src:url("fonts/Vigil-Italic-wght-.woff2") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
+@font-face{font-family:"Vigil Outline";src:url("fonts/VigilOutline-Regular.woff2") format("woff2");font-weight:700;font-display:block}
+@font-face{font-family:"Vigil Outline";src:url("fonts/VigilOutline-Italic.woff2") format("woff2");font-weight:700;font-style:italic;font-display:block}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#0A0A0A}
+body{font-family:"Vigil",sans-serif;font-size:18px;line-height:1.5;color:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+a{color:inherit}a:hover{text-decoration-thickness:2px}
+button,input,textarea{font-family:inherit}
+:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+h1,h2,h3,p,ol,ul,figure,blockquote,pre{margin:0}
+ol,ul{list-style:none;padding:0}
+section,footer{padding:clamp(48px,8vw,112px) clamp(16px,4vw,56px)}
+.nav{display:flex;justify-content:space-between;align-items:baseline;font-size:15px;font-weight:500}
+.nav nav{display:flex;gap:24px}
+.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+.h2{font-size:clamp(40px,7vw,96px);line-height:1;letter-spacing:-0.02em;font-weight:600;text-wrap:balance}
+.small{font-size:15px;font-weight:500}
+.tnum{font-variant-numeric:tabular-nums}
+.btn{display:inline-flex;align-items:center;min-height:56px;padding:0 32px;background:#fff;color:#1D3BFF;font-weight:600;font-size:18px;text-decoration:none;border-radius:999px}
+.btn:hover{background:#000;color:#fff}
+.link{font-weight:500;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
+.pill{min-height:48px;padding:0 22px;border:2px solid currentColor;border-radius:999px;background:transparent;color:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.pill[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.pill:hover{background:var(--fg);color:var(--bg)}
+input[type=range]{height:44px;width:100%;margin:0;background:transparent;cursor:pointer;accent-color:currentColor}
+textarea{field-sizing:content}
+/* hero */
+#top{background:#1D3BFF;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(20px,4vw,48px) clamp(16px,4vw,56px)}
+#mark{font-size:46vw;line-height:0.82;letter-spacing:-0.045em;font-weight:500;text-align:center;white-space:nowrap;padding-bottom:0.14em}
+.hero-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 40px}
+.hero-foot p{font-size:clamp(22px,3vw,40px);line-height:1.15;letter-spacing:-0.02em;font-weight:500;max-width:22ch;text-wrap:pretty}
+.hero-foot div{display:flex;align-items:center;gap:28px}
+@keyframes vigil-sweep{0%{font-weight:200}60%{font-weight:900}100%{font-weight:500}}
+.sweep{animation:vigil-sweep 1.6s cubic-bezier(.45,0,.2,1) forwards}
+@media (prefers-reduced-motion:reduce){.sweep{animation:none}}
+/* tester */
+#tester{--bg:#FF4A1C;--fg:#fff;background:var(--bg);color:var(--fg);display:flex;flex-direction:column;gap:40px}
+#tester-text{width:100%;margin:-32px 0 0;padding:0;border:0;background:transparent;color:inherit;resize:none;outline:none;line-height:1.02;letter-spacing:-0.025em;overflow:hidden;min-height:1.1em}
+#tester-small{font-size:16px;line-height:1.5;max-width:65ch;text-wrap:pretty;word-break:break-word}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px 40px;align-items:end;padding-top:24px;border-top:1px solid currentColor;font-size:15px;font-weight:500}
+.controls>div{display:flex;flex-direction:column;gap:4px}
+.controls label{display:flex;justify-content:space-between}
+.toggles{flex-direction:row!important;flex-wrap:wrap;gap:12px!important}
+/* ladder */
+#weights{background:#C8FF2E;color:#000}
+#weights h2{margin-bottom:clamp(32px,5vw,72px);max-width:14ch}
+#weights li{display:flex;flex-direction:column;gap:6px;padding:16px 0 20px;border-top:1px solid #000}
+#weights li:last-child{border-bottom:1px solid #000}
+#weights .lab{display:flex;gap:12px}
+#weights .row{font-size:clamp(16px,4.4vw,48px);line-height:1.1;letter-spacing:-0.02em;white-space:nowrap}
+/* rounding */
+#rounding{background:#FF5CB8;color:#000;display:flex;flex-direction:column;gap:clamp(40px,6vw,88px)}
+#rounding h2{max-width:16ch}
+.glyphs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px 32px}
+.glyphs figure{display:flex;flex-direction:column;gap:8px}
+.glyphs div{font-size:clamp(150px,17vw,240px);line-height:0.9;letter-spacing:-0.02em;font-weight:500}
+.glyphs figcaption{font-size:18px;font-weight:500;max-width:28ch}
+.body{font-size:18px;line-height:1.5;max-width:62ch;text-wrap:pretty}
+/* in use */
+#in-use{background:#fff;color:#000;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px 40px;align-items:start}
+#in-use>*{display:flex;flex-direction:column;gap:16px}
+.panel{border:1px solid #000;font-size:15px;line-height:1.35;display:flex;flex-direction:column}
+.panel>div{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 16px;border-bottom:1px solid #000}
+.panel>div:last-child{border-bottom:0}
+.panel .k{font-weight:500}
+.sw{width:40px;height:24px;border-radius:12px;background:#000;position:relative;flex:none}
+.sw::after{content:"";position:absolute;top:3px;right:3px;width:18px;height:18px;border-radius:50%;background:#fff}
+.sw.off{background:transparent;border:1.5px solid #000}
+.sw.off::after{top:2px;left:2px;right:auto;width:17px;height:17px;background:#000}
+.poster{background:#1D3BFF;color:#fff;aspect-ratio:3/4;padding:24px;display:flex;align-items:flex-end}
+.poster p{font-size:clamp(56px,6.5vw,104px);line-height:0.9;letter-spacing:-0.035em;font-weight:900}
+/* glyph set */
+#glyphs{background:#fff;color:#000;padding-top:0;display:flex;flex-direction:column;gap:32px}
+.hard{border-top:1px solid #000;padding-top:32px;display:flex;flex-direction:column;gap:8px;overflow:hidden}
+.hard p{font-size:clamp(17px,4.4vw,56px);line-height:1.1;letter-spacing:-0.01em;white-space:nowrap}
+.charset{font-size:clamp(22px,2.4vw,32px);line-height:1.3;overflow-wrap:anywhere;text-wrap:pretty}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;border-top:1px solid #000;padding-top:32px}
+.features figure{display:flex;flex-direction:column;gap:8px}
+.features figcaption{font-size:15px;font-weight:500}
+/* download */
+#download{background:#0A0A0A;display:flex;flex-direction:column;gap:clamp(32px,5vw,64px)}
+#download h2{font-size:clamp(48px,9vw,140px);line-height:0.95;letter-spacing:-0.03em;font-weight:700}
+.dl{display:flex;flex-wrap:wrap;align-items:center;gap:20px 36px}
+.dl .btn{min-height:64px;padding:0 40px;color:#000;font-size:20px}
+.dl .btn:hover{background:#1D3BFF;color:#fff}
+.dl nav{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:18px}
+.embed{display:flex;flex-direction:column;gap:12px;max-width:960px}
+.embed>div{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.embed .pill{min-height:44px;padding:0 18px;border-color:#fff;color:#fff}
+.embed .pill:hover{background:#fff;color:#000}
+pre{padding:20px;border:1px solid #fff;font-family:inherit;font-size:15px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere}
+/* notes */
+#notes{background:#19D69B;color:#000;display:flex;flex-direction:column;gap:clamp(32px,5vw,64px)}
+.notes-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:16px 40px}
+.idx{border-top:1px solid #000}
+.idx li{border-bottom:1px solid #000}
+.idx a{display:grid;grid-template-columns:minmax(120px,160px) 1fr;gap:8px 32px;align-items:baseline;padding:20px 0;text-decoration:none}
+.idx a:hover{text-decoration:underline}
+.idx a>span:last-child{display:flex;flex-direction:column;gap:6px}
+.idx .t{font-size:clamp(24px,3vw,40px);line-height:1.1;letter-spacing:-0.02em;font-weight:500;text-wrap:balance}
+.idx .d{font-size:18px;max-width:60ch;text-wrap:pretty}
+/* footer */
+footer{padding-top:0;padding-bottom:clamp(32px,5vw,56px);font-size:15px;font-weight:400}
+footer>div{border-top:1px solid #fff;padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 40px}
+footer p{max-width:60ch;text-wrap:pretty}
+footer .meta{display:flex;gap:24px;flex-wrap:wrap}
+footer a{text-underline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+
+<section id="top">
+  <header class="nav">
+    <span>Vigil</span>
+    <nav><a href="#tester">Try it</a><a href="#weights">Weights</a><a href="/notes">Notes</a><a href="#download">Download</a></nav>
+  </header>
+  <h1 id="mark" class="sweep">Vigil</h1>
+  <div class="hero-foot">
+    <p>A softened geometric grotesk. Eight weights, italics, free forever.</p>
+    <div><a class="btn" href="downloads/Vigil.zip" download>Download</a><a class="link" href="#tester">Try it</a></div>
+  </div>
+</section>
+
+<section id="tester">
+  <label for="tester-text" class="small">Type anything</label>
+  <textarea id="tester-text" rows="1" spellcheck="false">Fewer things, measured faster.</textarea>
+  <p id="tester-small">Fewer things, measured faster.</p>
+  <div class="controls">
+    <div><label for="wght"><span>Weight</span><span class="tnum" id="wght-out">500</span></label><input id="wght" type="range" min="200" max="900" step="1" value="500"></div>
+    <div><label for="size"><span>Size</span><span class="tnum" id="size-out">96px</span></label><input id="size" type="range" min="24" max="200" step="1" value="96"></div>
+    <div class="toggles">
+      <button type="button" class="pill" id="t-italic" aria-pressed="false" style="font-style:italic">Italic</button>
+      <button type="button" class="pill" id="t-outline" aria-pressed="false">Outline</button>
+      <button type="button" class="pill" id="t-ss01" aria-pressed="false">Single-story a</button>
+      <button type="button" class="pill" id="t-tnum" aria-pressed="false">Tabular figures</button>
+      <button type="button" class="pill" id="t-color" aria-label="Cycle background color">Color: Signal</button>
+    </div>
+  </div>
+</section>
+
+<section id="weights">
+  <h2 class="h2">Eight weights on one axis. One outline.</h2>
+  <ol>
+    <li><span class="lab small"><span>ExtraLight</span><span class="tnum">200</span></span><span class="row" style="font-weight:200">Choosing what not to build <em>is the job.</em></span><span class="small">Display weight — 40px and up.</span></li>
+    <li><span class="lab small"><span>Light</span><span class="tnum">300</span></span><span class="row" style="font-weight:300">Choosing what not to build <em>is the job.</em></span></li>
+    <li><span class="lab small"><span>Regular</span><span class="tnum">400</span></span><span class="row" style="font-weight:400">Choosing what not to build <em>is the job.</em></span></li>
+    <li><span class="lab small"><span>Medium</span><span class="tnum">500</span></span><span class="row" style="font-weight:500">Choosing what not to build <em>is the job.</em></span></li>
+    <li><span class="lab small"><span>SemiBold</span><span class="tnum">600</span></span><span class="row" style="font-weight:600">Choosing what not to build <em>is the job.</em></span></li>
+    <li><span class="lab small"><span>Bold</span><span class="tnum">700</span></span><span class="row" style="font-weight:700">Choosing what not to build <em>is the job.</em></span></li>
+    <li><span class="lab small"><span>ExtraBold</span><span class="tnum">800</span></span><span class="row" style="font-weight:800">Choosing what not to build <em>is the job.</em></span></li>
+    <li><span class="lab small"><span>Black</span><span class="tnum">900</span></span><span class="row" style="font-weight:900">Choosing what not to build <em>is the job.</em></span></li>
+    <li><span class="lab small"><span>Outline</span><span class="tnum">—</span></span><span class="row" style="font-family:'Vigil Outline';font-weight:700">Choosing what not to build <em>is the job.</em></span><span class="small">Separate display style stroked from Bold — 40px and up.</span></li>
+  </ol>
+</section>
+
+<section id="rounding">
+  <h2 class="h2">Rounded by rule, not by default.</h2>
+  <div class="glyphs">
+    <figure><div aria-hidden="true">Kt</div><figcaption>Most at the terminals.</figcaption></figure>
+    <figure><div aria-hidden="true">Ez</div><figcaption>Less at structural corners.</figcaption></figure>
+    <figure><div aria-hidden="true">l1.</div><figcaption>None where recognition depends on a hard edge.</figcaption></figure>
+  </div>
+  <p class="body">Vigil is a geometric grotesk with a large x-height, a double-story a and a single-story g. Rounding is applied by rule — most at exposed terminals (C G S c e s, the arms of E F T, the feet of K and z), less at structural corners, none on l, 1, I or punctuation. At 16px it reads as a clean sans. At 96px the softness becomes the signature.</p>
+</section>
+
+<section id="in-use">
+  <article>
+    <span class="small">Text, 16px</span>
+    <p style="font-size:16px;line-height:1.5;max-width:65ch;text-wrap:pretty"><strong>Type is the interface.</strong> A body face earns its place in the first paragraph, not the first headline. Vigil keeps its counters open and its spacing even at small sizes, so long passages stay quiet and the rounding never announces itself. Set it at 16 over 24 with a measure near sixty-five characters, and the page reads like it was never designed at all — which is the point.</p>
+  </article>
+  <div>
+    <span class="small">Interface, 15px</span>
+    <div class="panel" role="group" aria-label="Settings panel example">
+      <div><span class="k">Storage used</span><span class="tnum">128.4 GB</span></div>
+      <div><span class="k">Sync interval</span><span class="tnum">15 min</span></div>
+      <div><span class="k">Tabular figures</span><span class="sw" aria-hidden="true"></span></div>
+      <div><span class="k">Hinting on Windows</span><span class="sw off" aria-hidden="true"></span></div>
+      <div><span class="k">Last export</span><span class="tnum">2026-09-04 · 09:41</span></div>
+      <div><span class="k">Version</span><span class="tnum">1.0.0</span></div>
+    </div>
+  </div>
+  <div>
+    <span class="small">Display, Black 900</span>
+    <div class="poster"><p>Fewer.<br>Faster.<br>Free.</p></div>
+  </div>
+</section>
+
+<section id="glyphs">
+  <div class="hard">
+    <p style="font-weight:400">Il1 | O0Q | rn m | 8B6 | ecasg | $€£¥ | 2026</p>
+    <p style="font-weight:700">Il1 | O0Q | rn m | 8B6 | ecasg | $€£¥ | 2026</p>
+  </div>
+  <p class="charset">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØŒÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøœùúûüýþÿ ĀāĂăĄąĆćČčĎďĐđĒēĖėĘęĚěĞğĢģĪīĮįİıĶķĹĺĻļĽľŁłŃńŅņŇňŌōŐőŔŕŖŗŘřŚśŞşŠšŢţŤťŪūŮůŰűŲųŴŵŶŷŸŹźŻżŽž .,:;…!¡?¿·•*#/\(){}[]-–—_"“”'‘’«»‹› @&amp;¶§©®™° +−×÷=≠&lt;&gt;≤≥±~^% ‰ $€£¥¢ ½¼¾ ¹²³</p>
+  <div class="features">
+    <figure><div aria-hidden="true" style="font-size:clamp(96px,11vw,160px);line-height:0.9;letter-spacing:-0.02em;font-weight:500;display:flex;gap:0.15em"><span>a</span><span style="font-feature-settings:'ss01' 1">a</span></div><figcaption>Double-story a by default. ss01 for single-story.</figcaption></figure>
+    <figure><div aria-hidden="true" style="font-size:clamp(40px,4.5vw,64px);line-height:1.1;font-weight:500;display:flex;flex-direction:column"><span style="font-variant-numeric:proportional-nums">1,024.19</span><span class="tnum">1,024.19</span></div><figcaption>Proportional and tabular figures.</figcaption></figure>
+    <figure><div aria-hidden="true" style="font-size:clamp(40px,4.5vw,64px);line-height:1.1;font-weight:500;display:flex;gap:0.4em"><span style="font-variant-numeric:diagonal-fractions">3/4</span><span>H<span style="font-variant-position:super">2</span>O</span><span>x<span style="font-variant-position:sub">2</span></span></div><figcaption>Fractions, superscripts, subscripts.</figcaption></figure>
+  </div>
+  <p class="small" style="max-width:70ch">Latin Extended (Western and Central European). Kerning throughout.</p>
+</section>
+
+<section id="notes">
+  <div class="notes-head"><h2 class="h2">Notes</h2><a class="link" href="/notes">All notes</a></div>
+  <ol class="idx">
+    <li><a href="/notes#origin"><span class="small tnum">2026-09-04</span><span><span class="t">A vigil is what you keep when you refuse to go to sleep on something.</span><span class="d">Ten years of a calendar block that said MAKE FONT, and why it finally shipped.</span></span></a></li>
+    <li><a href="/notes#rounded"><span class="small tnum">2026-08-21</span><span><span class="t">Soft corners: a short history of the rounded sans</span><span class="d">From a car company's letterhead to every app icon, and what most rounded fonts get wrong.</span></span></a></li>
+    <li><a href="/notes#geometric"><span class="small tnum">2026-08-28</span><span><span class="t">A century of circles: the geometric grotesk</span><span class="d">Erbar, Futura and Kabel arrived within a year of each other. The idea never left.</span></span></a></li>
+  </ol>
+</section>
+
+<section id="download">
+  <h2>Free. Forever. No email.</h2>
+  <div class="dl">
+    <a class="btn" href="downloads/Vigil.zip" download>Download Vigil</a>
+    <nav aria-label="Alternative downloads">
+      <a class="link" href="fonts/Vigil-wght-.woff2" download="Vigil[wght].woff2">Variable only</a>
+      <a class="link" href="fonts/Vigil-Italic-wght-.woff2" download="Vigil-Italic[wght].woff2">Variable italic</a>
+      <a class="link" href="https://github.com/vigilantkeno/vigilfont">GitHub</a>
+    </nav>
+  </div>
+  <p class="small" style="max-width:70ch">Variable TTF and WOFF2 · 16 static TTF and WOFF2 · 16 OTF · Vigil Outline Regular and Italic. Statics are hinted for Windows.</p>
+  <div class="embed">
+    <div><span class="small">Embed</span><button type="button" class="pill" id="copy">Copy CSS</button></div>
+    <pre id="css">@font-face { font-family: "Vigil"; src: url("Vigil[wght].woff2") format("woff2"); font-weight: 200 900; }
+@font-face { font-family: "Vigil"; src: url("Vigil-Italic[wght].woff2") format("woff2"); font-weight: 200 900; font-style: italic; }</pre>
+  </div>
+  <p class="body" style="max-width:66ch"><a href="https://openfontlicense.org/open-font-license-official-text/" style="text-underline-offset:4px">SIL Open Font License 1.1</a> — use it anywhere, in anything, commercial or not. No attribution required. No account. No newsletter.</p>
+</section>
+
+<footer>
+  <div>
+    <p>Vigil is designed by Keno Vigil (<a href="https://thinkkeno.com">thinkkeno.com</a>) in Cary, North Carolina. Derived from <a href="https://github.com/erikdkennedy/figtree">Figtree</a> by Erik Kennedy under the SIL Open Font License.</p>
+    <p class="meta"><span class="tnum">Version 1.0.0 — September 2026</span><a href="mailto:hi@thinkkeno.com">hi@thinkkeno.com</a></p>
+  </div>
+</footer>
+
+</main>
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  var pal=[["Signal","#FF4A1C","#fff"],["Cobalt","#1D3BFF","#fff"],["Acid","#C8FF2E","#000"],["Rose","#FF5CB8","#000"],["Ink","#0A0A0A","#fff"],["Paper","#FFFFFF","#000"]];
+  var s={italic:false,outline:false,ss01:false,tnum:false,bg:0};
+  var ta=$('tester-text'),sm=$('tester-small'),w=$('wght'),z=$('size'),sec=$('tester');
+  function paint(){
+    var fs=s.italic?'italic':'normal';
+    var feat='"kern" 1, "ss01" '+(s.ss01?1:0)+', "tnum" '+(s.tnum?1:0);
+    ta.style.fontSize=z.value+'px';ta.style.fontWeight=w.value;ta.style.fontStyle=fs;ta.style.fontFeatureSettings=feat;
+    ta.style.fontFamily=s.outline?'"Vigil Outline","Vigil"':'"Vigil"';
+    sm.style.fontWeight=w.value;sm.style.fontStyle=fs;sm.style.fontFeatureSettings=feat;
+    $('wght-out').textContent=w.value;$('size-out').textContent=z.value+'px';
+    var c=pal[s.bg];sec.style.setProperty('--bg',c[1]);sec.style.setProperty('--fg',c[2]);$('t-color').textContent='Color: '+c[0];
+    ['italic','outline','ss01','tnum'].forEach(function(k){$('t-'+k).setAttribute('aria-pressed',String(s[k]))});
+  }
+  ta.addEventListener('input',function(){sm.textContent=ta.value});
+  w.addEventListener('input',paint);z.addEventListener('input',paint);
+  ['italic','outline','ss01','tnum'].forEach(function(k){$('t-'+k).addEventListener('click',function(){s[k]=!s[k];paint()})});
+  $('t-color').addEventListener('click',function(){s.bg=(s.bg+1)%pal.length;paint()});
+  var cp=$('copy');cp.addEventListener('click',function(){
+    if(navigator.clipboard)navigator.clipboard.writeText($('css').textContent);
+    cp.textContent='Copied';setTimeout(function(){cp.textContent='Copy CSS'},1600);
+  });
+  paint();
+})();
+</script>
+</body>
+</html>
