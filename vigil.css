@@ -1,0 +1,43 @@
+/* Vigil — https://www.vigilfont.com
+   Drop-in webfont CSS. One line in your <head>:
+
+     <link rel="stylesheet" href="https://www.vigilfont.com/vigil.css">
+
+   Then: font-family: "Vigil", sans-serif;
+   Weight is a continuous 200–900 axis, so font-weight: 437 is valid.
+
+   SIL Open Font License 1.1 — use it anywhere, commercial or not, no
+   attribution required. Full text: https://www.vigilfont.com/OFL.txt
+   Derived from Figtree by Erik Kennedy. */
+
+@font-face {
+  font-family: "Vigil";
+  src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vigil";
+  src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vigil Outline";
+  src: url("https://www.vigilfont.com/fonts/VigilOutline-Regular.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vigil Outline";
+  src: url("https://www.vigilfont.com/fonts/VigilOutline-Italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}

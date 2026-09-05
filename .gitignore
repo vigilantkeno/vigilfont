@@ -5,3 +5,6 @@ node_modules
 
 # local research / working files
 keyword-research.csv
+package/fonts/
+package/vigil.css
+package/OFL.txt
