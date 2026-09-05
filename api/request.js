@@ -34,10 +34,17 @@ function json(res, status, obj) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
   res.end(JSON.stringify(obj));
 }
+// The query string must come BEFORE the fragment. "/#wild?sent=1" puts sent=1
+// inside the hash, where location.search can't see it and the no-JS confirmation
+// never renders. Correct shape is "/?sent=1#wild".
 function reply(req, res, status, ok, message, back) {
   if (wantsHtml(req)) {
+    const hash = back.indexOf('#');
+    const path = hash === -1 ? back : back.slice(0, hash) || '/';
+    const frag = hash === -1 ? '' : back.slice(hash);
+    const query = ok ? '?sent=1' : '?error=' + encodeURIComponent(message);
     res.statusCode = 303;
-    res.setHeader('Location', back + (ok ? '?sent=1' : '?error=' + encodeURIComponent(message)));
+    res.setHeader('Location', path + query + frag);
     return res.end();
   }
   return json(res, status, ok ? { ok: true } : { ok: false, error: message });
