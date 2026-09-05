@@ -118,6 +118,40 @@ textarea{field-sizing:content}
 .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;border-top:1px solid #000;padding-top:32px}
 .features figure{display:flex;flex-direction:column;gap:8px}
 .features figcaption{font-size:15px;font-weight:500}
+/* vigil in the wild */
+#wild{background:#C8FF2E;color:#000;border-top:1px solid #000;display:flex;flex-direction:column;gap:clamp(24px,3vw,36px)}
+#wild .body{max-width:58ch}
+.wild-form{display:flex;flex-direction:column;gap:18px;max-width:620px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.f-row{display:flex;flex-direction:column;gap:6px}
+.f-row label{font-size:14px;font-weight:600;letter-spacing:.02em}
+.f-row .opt{font-weight:400;opacity:.6}
+.f-row .req{color:#C0202A}
+.f-row input,.f-row textarea{
+  font-size:16px;line-height:1.4;padding:12px 14px;border:2px solid #000;border-radius:0;
+  background:#fff;color:#000;width:100%;min-height:48px;resize:vertical}
+.f-row input::placeholder,.f-row textarea::placeholder{color:#767676}
+.f-row input:focus-visible,.f-row textarea:focus-visible{outline:3px solid #000;outline-offset:2px}
+.f-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px}
+.f-actions .btn{background:#000;color:#C8FF2E}
+.f-actions .btn:hover{background:#1D3BFF;color:#fff}
+.f-actions .small{max-width:34ch;opacity:.75}
+/* use it */
+#use{background:#fff;color:#000;border-top:1px solid #000;display:flex;flex-direction:column;gap:clamp(28px,4vw,48px)}
+#use .body{max-width:60ch}
+.paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(32px,4vw,56px)}
+.paths article{display:flex;flex-direction:column;gap:14px;padding-top:20px;border-top:3px solid #000}
+.who{font-size:12.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase}
+.paths h3{font-size:clamp(21px,2.3vw,26px);line-height:1.15;letter-spacing:-0.018em;font-weight:600;text-wrap:balance}
+.paths p{font-size:16px;line-height:1.5;text-wrap:pretty}
+.paths b{font-weight:600}
+.paths code{font-family:inherit;font-weight:600;background:#F0F0F0;padding:1px 5px;border-radius:3px;font-size:.94em}
+.paths .link{min-height:auto;text-underline-offset:4px;font-weight:600}
+.snip{display:flex;flex-direction:column;gap:8px}
+.snip-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.snip .pill{min-height:38px;padding:0 16px;border-width:1.5px;font-size:13px}
+.snip pre{padding:14px 16px;border:1px solid #000;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:12.5px;line-height:1.55;white-space:pre;overflow-x:auto;background:#FAFAFA}
 /* download */
 #download{background:#0A0A0A;display:flex;flex-direction:column;gap:clamp(32px,5vw,64px)}
 #download h2{font-size:clamp(48px,9vw,140px);line-height:0.95;letter-spacing:-0.03em;font-weight:700}
@@ -152,6 +186,19 @@ pre{padding:20px;border:1px solid #fff;font-family:inherit;font-size:15px;line-h
 .icon-row li{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
 .icon-row img{width:100%;max-width:112px;height:auto;display:block}
 .icon-row span{font-size:14px;font-weight:500;line-height:1.25}
+.icons-pair{font-size:18px;line-height:1.55;max-width:58ch;text-wrap:pretty;font-weight:500}
+.icons-pair a{text-underline-offset:4px}
+/* pulled live from vigilicons.com. mask + currentColor so the icon takes the
+   text colour — an <img> can't, because currentColor in an external SVG
+   resolves against the SVG's own context, not the page's. */
+.vi{display:inline-block;width:1.05em;height:1.05em;vertical-align:-0.16em;margin-right:.42em;
+    background:currentColor;
+    -webkit-mask:var(--i) center/contain no-repeat;mask:var(--i) center/contain no-repeat}
+.icon-live{display:flex;flex-direction:column;gap:12px;max-width:62ch;font-size:17px;line-height:1.5;
+    border-top:1px solid #000;padding-top:clamp(20px,3vw,28px)}
+.icon-live li{text-wrap:pretty}
+.icon-live b{font-weight:600}
+.icon-live b::after{content:" — ";font-weight:400}
 .icons-cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
 .icons-cta .btn{background:#111;color:#FBF6EA;min-height:60px;padding:0 34px}
 .icons-cta .btn:hover{background:#2B3BFF;color:#fff}
@@ -369,18 +416,26 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
      "name": "Is there a matching icon set?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. Vigil Icons is a companion set drawn on the same square grid, and the first 20 are free with no email, the same terms as the font. The full set runs to 101 icons, and eleven dollars unlocks the rest as they are drawn."
+      "text": "Yes. Vigil Icons is a companion set of 111 icons drawn on the same 24px grid with the same 1.25px stroke, and every one of them is free with no email — the same terms as the font. SVG, PNG, sticker packs and Slack and Discord emoji."
      }
     }
    ]
   },
   {
-   "@type": "CreativeWork",
+   "@type": ["CreativeWork", "Product"],
    "@id": "https://www.vigilicons.com/#vigilicons",
    "name": "Vigil Icons",
    "url": "https://www.vigilicons.com/",
-   "description": "A companion icon set drawn on the same square grid as the Vigil typeface. The first 20 icons are free; the full set runs to 101.",
+   "description": "A companion set of 111 icons drawn on the same 24px grid as the Vigil typeface, with a 1.25px stroke. All free.",
    "genre": "Icon set",
+   "isAccessibleForFree": true,
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.vigilicons.com/"
+   },
    "author": {
     "@id": "https://www.vigilfont.com/#keno"
    },
@@ -450,7 +505,7 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
     <figure><div aria-hidden="true">Ez</div><figcaption>Less at structural corners.</figcaption></figure>
     <figure><div aria-hidden="true">lL1</div><figcaption>Even on the stems, small enough to keep the edge.</figcaption></figure>
   </div>
-  <p class="body">Vigil is a geometric grotesk with a large x-height, a double-story a and a single-story g. Rounding is applied by rule — most at exposed terminals (C G S c e s, the arms of E F T, the feet of K and z), then a smaller, even radius at structural corners and on the stems of l, L, 1 and I, which keep enough edge to stay apart. At 16px it reads as a clean sans. At 96px the softness becomes the signature.</p>
+  <p class="body">Vigil is a free variable typeface by Keno Vigil — a geometric grotesk with a large x-height, a double-story a and a single-story g. Rounding is applied by rule — most at exposed terminals (C G S c e s, the arms of E F T, the feet of K and z), then a smaller, even radius at structural corners and on the stems of l, L, 1 and I, which keep enough edge to stay apart. At 16px it reads as a clean sans. At 96px the softness becomes the signature.</p>
 </section>
 
 <section id="in-use">
@@ -501,9 +556,15 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
     <li><img src="/icons/deepfake.svg" alt="Deepfake icon" width="112" height="112" loading="lazy" decoding="async"><span>Deepfake</span></li>
     <li><img src="/icons/people-pleaser.svg" alt="People pleaser icon" width="112" height="112" loading="lazy" decoding="async"><span>People pleaser</span></li>
   </ul>
+  <p class="icons-pair">Vigil pairs with <a href="https://www.vigilicons.com/" target="_blank" rel="noopener noreferrer">Vigil Icons</a> — 111 free stroke icons for the things people accuse each other of. Same 24px grid, same 1.25px stroke, all free.</p>
+  <ul class="icon-live">
+    <li><span class="vi" style="--i:url('https://www.vigilicons.com/icons/svg/red-flag.svg')" aria-hidden="true"></span><b>Red flag</b> The warning sign you noticed, ignored, and later screenshotted.</li>
+    <li><span class="vi" style="--i:url('https://www.vigilicons.com/icons/svg/ghosting.svg')" aria-hidden="true"></span><b>Ghosting</b> Vanishing without technically having to say goodbye.</li>
+    <li><span class="vi" style="--i:url('https://www.vigilicons.com/icons/svg/couldve-been-an-email.svg')" aria-hidden="true"></span><b>Could’ve been an email</b> Thirty minutes of everyone’s life, now unrecoverable.</li>
+  </ul>
   <div class="icons-cta">
-    <a class="btn" href="https://www.vigilicons.com/" target="_blank" rel="noopener noreferrer">Get the first 20 free <span aria-hidden="true">&#8599;</span><span class="vh"> (opens in a new tab)</span></a>
-    <p class="small">Twenty icons free, no email, same as the font. The full set runs to 101; eleven dollars unlocks the rest as they drop.</p>
+    <a class="btn" href="https://www.vigilicons.com/" target="_blank" rel="noopener noreferrer">Get all 111 free <span aria-hidden="true">&#8599;</span><span class="vh"> (opens in a new tab)</span></a>
+    <p class="small">All 111 icons, free, no email — same terms as the font. SVG, PNG, sticker packs, and Slack and Discord emoji.</p>
   </div>
 </section>
 
@@ -549,8 +610,57 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
     </div>
     <div>
       <h3>Is there a matching icon set?</h3>
-      <p>Yes. Vigil Icons is a companion set drawn on the same square grid, and the first 20 are free with no email, the same terms as the font. The full set runs to 101 icons, and eleven dollars unlocks the rest as they are drawn.</p>
+      <p>Yes. Vigil Icons is a companion set of 111 icons drawn on the same 24px grid with the same 1.25px stroke, and every one of them is free with no email — the same terms as the font. SVG, PNG, sticker packs and Slack and Discord emoji.</p>
     </div>
+  </div>
+</section>
+
+<section id="use">
+  <h2 class="h2">Using it takes about a minute.</h2>
+  <p class="body">Three ways in, depending on what you are. Every snippet below is real and copyable — nothing here needs an account.</p>
+
+  <div class="paths">
+    <article>
+      <span class="who">Designers</span>
+      <h3>Install it like any other font.</h3>
+      <p>Download the family, unzip, open the <b>TTF</b> folder, select all and double-click. Figma and Sketch read your installed fonts — quit and reopen Figma’s desktop app and Vigil appears in the picker. On Figma in the browser you need their font installer running.</p>
+      <p><a class="link" href="downloads/Vigil.zip" download>Download the family — 2.4 MB <span aria-hidden="true">↓</span></a></p>
+    </article>
+
+    <article>
+      <span class="who">Developers</span>
+      <h3>One line, no build step.</h3>
+      <p>Served with <code>Access-Control-Allow-Origin</code>, so it works from your domain without downloading anything.</p>
+      <div class="snip">
+        <div class="snip-head"><span class="small">HTML</span><button type="button" class="pill copy" data-copy="snip-link">Copy</button></div>
+        <pre id="snip-link">&lt;link rel="stylesheet" href="https://www.vigilfont.com/vigil.css"&gt;</pre>
+      </div>
+      <div class="snip">
+        <div class="snip-head"><span class="small">CSS — self-hosted, or paste as-is</span><button type="button" class="pill copy" data-copy="snip-face">Copy</button></div>
+        <pre id="snip-face">@font-face {
+  font-family: "Vigil";
+  src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2") format("woff2");
+  font-weight: 200 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Vigil";
+  src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}</pre>
+      </div>
+      <p class="small">One variable axis, so <code>font-weight: 437</code> is a real value, not a rounding error.</p>
+    </article>
+
+    <article>
+      <span class="who">Writers</span>
+      <h3>Slides, decks, documents.</h3>
+      <p><b>Mac</b> — unzip, select the TTFs, double-click, Install Font. Vigil is then in Keynote, Pages, Word and Canva’s desktop app. <b>Windows</b> — select the TTFs, right-click, Install.</p>
+      <p><b>Canva</b> — Brand Kit → Brand Fonts → Upload. Note that font upload is a Canva Pro feature; the desktop app reads your installed fonts for free instead.</p>
+      <p><b>Google Docs cannot do it.</b> Docs only loads fonts from Google’s own library, so no uploaded font works there — Vigil included. That is a Docs limitation, not a licensing one.</p>
+    </article>
   </div>
 </section>
 
@@ -567,10 +677,39 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
   <p class="small" style="max-width:70ch">Variable TTF and WOFF2 · 16 static TTF and WOFF2 · 16 OTF · Vigil Outline Regular and Italic. Statics are hinted for Windows.</p>
   <div class="embed">
     <div><span class="small">Embed</span><button type="button" class="pill" id="copy">Copy CSS</button></div>
-    <pre id="css">@font-face { font-family: "Vigil"; src: url("Vigil[wght].woff2") format("woff2"); font-weight: 200 900; }
-@font-face { font-family: "Vigil"; src: url("Vigil-Italic[wght].woff2") format("woff2"); font-weight: 200 900; font-style: italic; }</pre>
+    <pre id="css">@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2") format("woff2"); font-weight: 200 900; font-display: swap; }
+@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2") format("woff2"); font-weight: 200 900; font-style: italic; font-display: swap; }</pre>
   </div>
   <p class="body" style="max-width:66ch"><a href="https://openfontlicense.org/open-font-license-official-text/" style="text-underline-offset:4px">SIL Open Font License 1.1</a> — use it anywhere, in anything, commercial or not. No attribution required. No account. No newsletter.</p>
+</section>
+
+<section id="wild">
+  <h2 class="h2">Vigil in the wild.</h2>
+  <p class="body">If you have set something in Vigil — a site, a menu, a poster, a school project — send it. Good uses go up here, credited and linked. Missing a glyph or a weight? Ask for it in the same box.</p>
+  <form class="wild-form" method="POST" action="/api/request">
+    <input type="hidden" name="kind" value="wild">
+    <p class="hp"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
+    <div class="f-row">
+      <label for="w-what">What you made <span class="req" aria-hidden="true">*</span></label>
+      <input id="w-what" name="what" type="text" required maxlength="120" placeholder="A menu for a taco place in Durham">
+    </div>
+    <div class="f-row">
+      <label for="w-link">Link <span class="opt">optional</span></label>
+      <input id="w-link" name="link" type="url" maxlength="300" placeholder="https://">
+    </div>
+    <div class="f-row">
+      <label for="w-note">Anything else, or a request <span class="opt">optional</span></label>
+      <textarea id="w-note" name="note" rows="2" maxlength="400" placeholder="Would love a Cyrillic cut."></textarea>
+    </div>
+    <div class="f-row">
+      <label for="w-email">Your email <span class="req" aria-hidden="true">*</span></label>
+      <input id="w-email" name="email" type="email" required maxlength="120" placeholder="you@example.com">
+    </div>
+    <div class="f-actions">
+      <button type="submit" class="btn">Send it</button>
+      <p class="small" id="wild-status" role="status">Used to reply and to credit you. Nothing else, ever.</p>
+    </div>
+  </form>
 </section>
 
 <section id="share">
@@ -657,6 +796,48 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
   var cp=$('copy');cp.addEventListener('click',function(){
     if(navigator.clipboard)navigator.clipboard.writeText($('css').textContent);
     cp.textContent='Copied';setTimeout(function(){cp.textContent='Copy CSS'},1600);
+  });
+  // "Vigil in the wild" — post JSON, keep the reader on the page.
+  // Without JS the form still works: it POSTs normally and the endpoint 303s back.
+  var wf=document.querySelector('.wild-form'),ws=$('wild-status');
+  if(wf&&ws){
+    var DEFAULT=ws.textContent;
+    var q=new URLSearchParams(location.search);
+    if(q.get('sent'))ws.textContent='Thank you — that landed.';
+    else if(q.get('error'))ws.textContent=q.get('error');
+    wf.addEventListener('submit',function(e){
+      if(!window.fetch)return;                       // let the browser POST it the old way
+      e.preventDefault();
+      var btn=wf.querySelector('button[type=submit]'),was=btn.textContent;
+      btn.disabled=true;btn.textContent='Sending…';ws.textContent='Sending…';
+      fetch('/api/request',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify(Object.fromEntries(new FormData(wf)))})
+        .then(function(r){return r.json().catch(function(){return{ok:r.ok}})})
+        .then(function(d){
+          if(d&&d.ok){wf.reset();ws.textContent='Thank you — that landed.';}
+          else if(d&&d.error==='unconfigured'){
+            ws.innerHTML='Email isn’t wired up yet — send it via <a href="https://thinkkeno.com/#contact" target="_blank" rel="noopener">thinkkeno.com/#contact</a>.';
+          } else ws.textContent=(d&&d.error)||'That did not send. Try again in a minute.';
+        })
+        .catch(function(){ws.textContent='That did not send. Try again in a minute.';})
+        .then(function(){btn.disabled=false;btn.textContent=was;
+          setTimeout(function(){if(ws.textContent==='Thank you — that landed.')ws.textContent=DEFAULT},6000);});
+    });
+  }
+  // every [data-copy] button copies the <pre> whose id it names
+  Array.prototype.forEach.call(document.querySelectorAll('[data-copy]'),function(b){
+    b.addEventListener('click',function(){
+      var src=$(b.getAttribute('data-copy')); if(!src)return;
+      var done=function(ok){b.textContent=ok?'Copied':'Press ⌘C';setTimeout(function(){b.textContent='Copy'},1600)};
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(src.textContent).then(function(){done(true)},function(){done(false)});
+      }else{
+        var r=document.createRange();r.selectNodeContents(src);
+        var s=getSelection();s.removeAllRanges();s.addRange(r);
+        var ok=false;try{ok=document.execCommand('copy')}catch(e){}
+        s.removeAllRanges();done(ok);
+      }
+    });
   });
   paint();fit();
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);

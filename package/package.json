@@ -1,0 +1,18 @@
+{
+  "name": "vigil-font",
+  "version": "1.0.0",
+  "description": "Vigil — a free softened geometric grotesk. Eight weights with matching italics, an outline style, and a 200–900 variable axis. SIL Open Font License.",
+  "license": "OFL-1.1",
+  "author": "Keno Vigil (https://thinkkeno.com)",
+  "homepage": "https://www.vigilfont.com/",
+  "repository": { "type": "git", "url": "https://github.com/vigilantkeno/vigilfont" },
+  "keywords": ["font", "typeface", "variable-font", "webfont", "geometric", "sans-serif", "rounded", "woff2", "ofl", "vigil"],
+  "type": "module",
+  "sideEffects": ["*.css"],
+  "files": ["fonts", "vigil.css", "OFL.txt", "README.md"],
+  "exports": {
+    "./vigil.css": "./vigil.css",
+    "./fonts/*": "./fonts/*",
+    "./package.json": "./package.json"
+  }
+}
