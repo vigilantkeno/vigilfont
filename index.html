@@ -60,7 +60,7 @@ section,footer{padding:clamp(48px,8vw,112px) clamp(16px,4vw,56px)}
 .btn{display:inline-flex;align-items:center;min-height:56px;padding:0 32px;background:#fff;color:#1D3BFF;font-weight:600;font-size:18px;text-decoration:none;border-radius:999px}
 .btn:hover{background:#000;color:#fff}
 .link{font-weight:500;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
-.pill{min-height:48px;padding:0 22px;border:2px solid currentColor;border-radius:999px;background:transparent;color:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.pill{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:2px solid currentColor;border-radius:999px;background:transparent;color:inherit;font-size:15px;font-weight:600;text-decoration:none;cursor:pointer}
 .pill[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
 .pill:hover{background:var(--fg);color:var(--bg)}
 input[type=range]{height:44px;width:100%;margin:0;background:transparent;cursor:pointer;accent-color:currentColor}
@@ -140,6 +140,40 @@ pre{padding:20px;border:1px solid #fff;font-family:inherit;font-size:15px;line-h
 .idx a>span:last-child{display:flex;flex-direction:column;gap:6px}
 .idx .t{font-size:clamp(24px,3vw,40px);line-height:1.1;letter-spacing:-0.02em;font-weight:500;text-wrap:balance}
 .idx .d{font-size:18px;max-width:60ch;text-wrap:pretty}
+/* visually hidden, still read aloud */
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+/* vigil icons */
+#icons{background:#FBF6EA;color:#111;border-top:1px solid #000;border-bottom:1px solid #000;display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)}
+#icons h2{max-width:15ch}
+#icons .body{max-width:58ch}
+.icons-proof{font-size:18px;line-height:1.7;max-width:58ch;text-wrap:pretty}
+.icons-proof img{height:0.95em;width:auto;vertical-align:-0.071em}
+.icon-row{display:grid;grid-template-columns:repeat(6,1fr);gap:28px 20px;list-style:none;padding:0;margin:0;border-top:1px solid #000;padding-top:clamp(24px,3vw,36px)}
+.icon-row li{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.icon-row img{width:100%;max-width:112px;height:auto;display:block}
+.icon-row span{font-size:14px;font-weight:500;line-height:1.25}
+.icons-cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
+.icons-cta .btn{background:#111;color:#FBF6EA;min-height:60px;padding:0 34px}
+.icons-cta .btn:hover{background:#2B3BFF;color:#fff}
+.icons-cta .small{max-width:44ch}
+@media (max-width:560px){
+  .icon-row{grid-template-columns:repeat(3,1fr);gap:24px 16px}
+  .icons-cta .btn{width:100%;justify-content:center;padding:0 24px}
+}
+/* share */
+#share{--bg:#1D3BFF;--fg:#fff;background:var(--bg);color:var(--fg);display:flex;flex-direction:column;gap:clamp(24px,4vw,40px)}
+#share h2{max-width:14ch}
+#share .body{max-width:52ch}
+.share-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px}
+.share-row .btn{min-height:56px;padding:0 36px;background:#fff;color:#1D3BFF}
+.share-row .btn:hover{background:#000;color:#fff}
+.share-row .pill{border-color:#fff;color:#fff}
+.share-row .pill:hover{background:#fff;color:#1D3BFF}
+#share-status{min-height:22px;font-weight:500}
+@media (max-width:560px){
+  .share-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .share-row .btn{grid-column:1/-1;justify-content:center;padding:0 24px}
+}
 /* faq */
 #faq{background:#fff;color:#000;display:flex;flex-direction:column;gap:clamp(32px,5vw,64px)}
 #faq h2{max-width:16ch}
@@ -191,7 +225,8 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
    "sameAs": [
     "https://thinkkeno.com",
     "https://github.com/vigilantkeno",
-    "https://github.com/vigilantkeno/vigilfont"
+    "https://github.com/vigilantkeno/vigilfont",
+    "https://www.vigilicons.com/"
    ]
   },
   {
@@ -269,6 +304,9 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
     "name": "Vigil.zip",
     "encodingFormat": "application/zip",
     "contentUrl": "https://www.vigilfont.com/downloads/Vigil.zip"
+   },
+   "isRelatedTo": {
+    "@id": "https://www.vigilicons.com/#vigilicons"
    }
   },
   {
@@ -325,8 +363,34 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
       "@type": "Answer",
       "text": "Download the zip, copy the two variable WOFF2 files to your server, and add the two @font-face rules from the download section below. One file covers all eight weights. Static WOFF2 and TTF files are included for older browsers."
      }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there a matching icon set?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Vigil Icons is a companion set drawn on the same square grid, and the first 20 are free with no email, the same terms as the font. The full set runs to 101 icons, and eleven dollars unlocks the rest as they are drawn."
+     }
     }
    ]
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://www.vigilicons.com/#vigilicons",
+   "name": "Vigil Icons",
+   "url": "https://www.vigilicons.com/",
+   "description": "A companion icon set drawn on the same square grid as the Vigil typeface. The first 20 icons are free; the full set runs to 101.",
+   "genre": "Icon set",
+   "author": {
+    "@id": "https://www.vigilfont.com/#keno"
+   },
+   "creator": {
+    "@id": "https://www.vigilfont.com/#keno"
+   },
+   "isRelatedTo": {
+    "@id": "https://www.vigilfont.com/#vigil"
+   },
+   "inLanguage": "en"
   }
  ]
 }
@@ -425,6 +489,24 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
   <p class="small" style="max-width:70ch">Latin Extended (Western and Central European). Kerning throughout.</p>
 </section>
 
+<section id="icons">
+  <h2 class="h2">Now there are icons.</h2>
+  <p class="body">Vigil Icons is a companion set drawn on the same square grid as the type: stroke-first, rounded by the same rule, black on cream. Icons for the things people accuse each other of.</p>
+  <p class="icons-proof">Set them at text size and they hold the line. That was a <img src="/icons/red-flag.svg" alt="" width="112" height="112" loading="lazy" decoding="async"> red flag. He <img src="/icons/ghosting.svg" alt="" width="112" height="112" loading="lazy" decoding="async"> ghosted, again. Another hour goes to the <img src="/icons/doomscroll-thumb.svg" alt="" width="112" height="112" loading="lazy" decoding="async"> scroll.</p>
+  <ul class="icon-row">
+    <li><img src="/icons/gaslighting.svg" alt="Gaslighting icon" width="112" height="112" loading="lazy" decoding="async"><span>Gaslighting</span></li>
+    <li><img src="/icons/red-flag.svg" alt="Red flag icon" width="112" height="112" loading="lazy" decoding="async"><span>Red flag</span></li>
+    <li><img src="/icons/ghosting.svg" alt="Ghosting icon" width="112" height="112" loading="lazy" decoding="async"><span>Ghosting</span></li>
+    <li><img src="/icons/couldve-been-an-email.svg" alt="Could've been an email icon" width="112" height="112" loading="lazy" decoding="async"><span>Could've been an email</span></li>
+    <li><img src="/icons/doomscroll-thumb.svg" alt="Doomscroll icon" width="112" height="112" loading="lazy" decoding="async"><span>Doomscroll</span></li>
+    <li><img src="/icons/touch-grass.svg" alt="Touch grass icon" width="112" height="112" loading="lazy" decoding="async"><span>Touch grass</span></li>
+  </ul>
+  <div class="icons-cta">
+    <a class="btn" href="https://www.vigilicons.com/" target="_blank" rel="noopener noreferrer">Get the first 20 free <span aria-hidden="true">&#8599;</span><span class="vh"> (opens in a new tab)</span></a>
+    <p class="small">Twenty icons free, no email, same as the font. The full set runs to 101; eleven dollars unlocks the rest as they drop.</p>
+  </div>
+</section>
+
 <section id="notes">
   <div class="notes-head"><h2 class="h2">Notes</h2><a class="link" href="/notes">All notes</a></div>
   <ol class="idx">
@@ -465,6 +547,10 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
       <h3>How do I self-host Vigil on a website?</h3>
       <p>Download the zip, copy the two variable WOFF2 files to your server, and add the two @font-face rules from the download section below. One file covers all eight weights. Static WOFF2 and TTF files are included for older browsers.</p>
     </div>
+    <div>
+      <h3>Is there a matching icon set?</h3>
+      <p>Yes. Vigil Icons is a companion set drawn on the same square grid, and the first 20 are free with no email, the same terms as the font. The full set runs to 101 icons, and eleven dollars unlocks the rest as they are drawn.</p>
+    </div>
   </div>
 </section>
 
@@ -485,6 +571,21 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
 @font-face { font-family: "Vigil"; src: url("Vigil-Italic[wght].woff2") format("woff2"); font-weight: 200 900; font-style: italic; }</pre>
   </div>
   <p class="body" style="max-width:66ch"><a href="https://openfontlicense.org/open-font-license-official-text/" style="text-underline-offset:4px">SIL Open Font License 1.1</a> — use it anywhere, in anything, commercial or not. No attribution required. No account. No newsletter.</p>
+</section>
+
+<section id="share">
+  <h2 class="h2">Pass it on.</h2>
+  <p class="body">Free typefaces travel by word of mouth. If Vigil is useful to you, send it to someone who sets type.</p>
+  <div class="share-row">
+    <button type="button" class="btn" id="share-native" hidden>Share</button>
+    <button type="button" class="pill" id="share-copy">Copy link</button>
+    <a class="pill" href="https://twitter.com/intent/tweet?text=Vigil%20%E2%80%94%20a%20softened%20geometric%20grotesk.%20Eight%20weights%2C%20italics%2C%20free%20forever.&url=https%3A%2F%2Fwww.vigilfont.com%2F" target="_blank" rel="noopener noreferrer">X</a>
+    <a class="pill" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.vigilfont.com%2F" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a class="pill" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.vigilfont.com%2F" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="pill" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.vigilfont.com%2F&title=Vigil%20%E2%80%94%20a%20softened%20geometric%20grotesk.%20Eight%20weights%2C%20italics%2C%20free%20forever." target="_blank" rel="noopener noreferrer">Reddit</a>
+    <a class="pill" href="mailto:?subject=Vigil%20%E2%80%94%20a%20free%20typeface&body=Vigil%20%E2%80%94%20a%20softened%20geometric%20grotesk.%20Eight%20weights%2C%20italics%2C%20free%20forever.%0A%0Ahttps%3A%2F%2Fwww.vigilfont.com%2F">Email</a>
+  </div>
+  <p class="small" id="share-status" role="status" aria-live="polite"></p>
 </section>
 
 <footer>
@@ -519,6 +620,40 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
   w.addEventListener('input',paint);z.addEventListener('input',paint);
   ['italic','outline','ss01','tnum'].forEach(function(k){$('t-'+k).addEventListener('click',function(){s[k]=!s[k];paint()})});
   $('t-color').addEventListener('click',function(){s.bg=(s.bg+1)%pal.length;paint()});
+  var SHARE_URL='https://www.vigilfont.com/';
+  var SHARE_TEXT='Vigil \u2014 a softened geometric grotesk. Eight weights, italics, free forever.';
+  var st=$('share-status');
+  function say(m){st.textContent=m;setTimeout(function(){if(st.textContent===m)st.textContent=''},2600)}
+  function legacyCopy(){
+    try{
+      var el=document.createElement('textarea');
+      el.value=SHARE_URL;el.setAttribute('readonly','');el.contentEditable='true';
+      el.style.position='absolute';el.style.left='-9999px';el.style.fontSize='16px';
+      document.body.appendChild(el);
+      var rng=document.createRange();rng.selectNodeContents(el);
+      var sel=window.getSelection();sel.removeAllRanges();sel.addRange(rng);
+      el.setSelectionRange(0,999999);
+      var ok=document.execCommand('copy');
+      sel.removeAllRanges();document.body.removeChild(el);
+      return ok;
+    }catch(e){return false}
+  }
+  function copyLink(cb){
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(SHARE_URL).then(function(){cb(true)},function(){cb(legacyCopy())});
+    }else{cb(legacyCopy())}
+  }
+  var nat=$('share-native');
+  if(navigator.share){
+    nat.hidden=false;
+    nat.addEventListener('click',function(){
+      navigator.share({title:'Vigil',text:SHARE_TEXT,url:SHARE_URL})
+        .catch(function(e){if(e&&e.name!=='AbortError')say('Sharing was not available.')});
+    });
+  }
+  $('share-copy').addEventListener('click',function(){
+    copyLink(function(ok){say(ok?'Link copied.':'Copy the address bar instead.')});
+  });
   var cp=$('copy');cp.addEventListener('click',function(){
     if(navigator.clipboard)navigator.clipboard.writeText($('css').textContent);
     cp.textContent='Copied';setTimeout(function(){cp.textContent='Copy CSS'},1600);
