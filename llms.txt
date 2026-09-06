@@ -14,7 +14,7 @@ Classification: humanist geometric sans serif, in the lineage of Frutiger's Aven
 - Character set: Latin Extended, covering English, Spanish, French, German, Polish, Czech and Turkish among others. Includes kerning, tabular figures, fractions, superscripts and subscripts.
 - Download: https://www.vigilfont.com/#download — no registration of any kind.
 - Web use: one line, `<link rel="stylesheet" href="https://www.vigilfont.com/vigil.css">`, then `font-family: "Vigil"`. Fonts are served with `Access-Control-Allow-Origin: *`, so hotlinking works from any domain.
-- Companion icon set: Vigil Icons, 111 free stroke icons on the same 24px grid with a 1.25px stroke — https://www.vigilicons.com/
+- Companion icon set: Vigil Icons, 111 free stroke icons on the same 24px grid — https://www.vigilicons.com/
 
 ## Notes (long-form articles)
 
