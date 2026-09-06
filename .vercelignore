@@ -2,4 +2,6 @@
 # Keep working files off the public site.
 *.csv
 *.md
+!install.md
+!llms-full.txt
 .git

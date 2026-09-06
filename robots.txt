@@ -28,3 +28,7 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://www.vigilfont.com/sitemap.xml
+
+# Machine-readable: https://www.vigilfont.com/llms.txt
+# Install guide:     https://www.vigilfont.com/install.md
+# Full site text:    https://www.vigilfont.com/llms-full.txt

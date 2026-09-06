@@ -1,0 +1,1092 @@
+# Vigil — full text
+
+> Vigil is a free, open-source softened geometric grotesk by Keno Vigil, under the SIL Open Font License 1.1. Eight weights with matching italics, an Outline style, and a continuous 200-900 variable axis. Free for commercial use: no cost, no account, no email, no attribution required. This file is the full text of vigilfont.com for machine readers.
+
+Source: https://www.vigilfont.com/ · Install guide: https://www.vigilfont.com/install.md
+
+---
+
+# Install
+
+Vigil is a free variable typeface under the SIL Open Font License 1.1. No account, no API key, no attribution required in your designs.
+
+| | |
+|---|---|
+| CSS family name | `Vigil` |
+| Weight axis | 200–900, continuous (`font-weight: 437` is valid) |
+| Italic | Yes, on the same axis |
+| Second family | `Vigil Outline` (weight 700, roman and italic) |
+| Hosted stylesheet | `https://www.vigilfont.com/vigil.css` |
+| CORS | `Access-Control-Allow-Origin: *` on fonts and CSS, so hotlinking works from any domain |
+| License | SIL Open Font License 1.1 (`OFL-1.1`) |
+
+## 1. One line of HTML
+
+The fastest path. No download, no build step.
+
+```html
+<link rel="stylesheet" href="https://www.vigilfont.com/vigil.css">
+```
+
+```css
+body { font-family: "Vigil", sans-serif; }
+```
+
+## 2. Plain CSS
+
+Paste this anywhere. It works hotlinked as written, or change the URLs to your own paths after downloading the two files.
+
+```css
+@font-face {
+  font-family: "Vigil";
+  src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Vigil";
+  src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
+```
+
+Two files cover all eight weights and both slopes. You do not need the static files unless you are supporting browsers without variable font support.
+
+## 3. Tailwind CSS
+
+Tailwind v4, in your CSS entry point:
+
+```css
+@import "tailwindcss";
+@import url("https://www.vigilfont.com/vigil.css");
+
+@theme {
+  --font-vigil: "Vigil", ui-sans-serif, system-ui, sans-serif;
+}
+```
+
+Then use `font-vigil`. For Tailwind v3, in `tailwind.config.js`:
+
+```js
+export default {
+  theme: {
+    extend: {
+      fontFamily: { vigil: ['Vigil', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+    },
+  },
+}
+```
+
+## 4. Next.js
+
+Self-hosted with `next/font/local`, which is the recommended path because it removes the network request and the layout shift. Download the two variable files into `app/fonts/` first.
+
+```tsx
+// app/layout.tsx
+import localFont from "next/font/local";
+
+const vigil = localFont({
+  src: [
+    { path: "./fonts/Vigil-wght-.woff2", weight: "200 900", style: "normal" },
+    { path: "./fonts/Vigil-Italic-wght-.woff2", weight: "200 900", style: "italic" },
+  ],
+  variable: "--font-vigil",
+  display: "swap",
+});
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" className={vigil.variable}>
+      <body style={{ fontFamily: "var(--font-vigil)" }}>{children}</body>
+    </html>
+  );
+}
+```
+
+```bash
+curl -O https://www.vigilfont.com/fonts/Vigil-wght-.woff2
+curl -O https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2
+```
+
+## 5. Vite, React, Svelte, or any bundler
+
+Put the two woff2 files in your static or public directory, then paste the `@font-face` blocks from section 2 with local paths into your global stylesheet. Import that stylesheet once at your app entry point.
+
+## 6. Desktop, for Figma, Sketch, Word or Illustrator
+
+```
+https://www.vigilfont.com/downloads/Vigil.zip
+```
+
+About 2.4 MB. Unzip it, select the `Vigil-*.ttf` files at the top level, and double-click to install. On Windows, extract the zip before installing; Windows will not install fonts from inside an archive. Figma and Sketch read your installed system fonts, so quit and reopen the desktop app afterwards. Figma in the browser needs their font installer running.
+
+## Using the variable axis
+
+The weight axis is continuous, so any integer between 200 and 900 is real.
+
+```css
+.lede { font-weight: 437; }
+```
+
+Named weights map as: ExtraLight 200, Light 300, Regular 400, Medium 500, SemiBold 600, Bold 700, ExtraBold 800, Black 900.
+
+## Optional typographic features
+
+```css
+/* single-storey a */
+.alt-a { font-feature-settings: "ss01" 1; }
+
+/* tabular figures, for tables and timers */
+.numbers { font-variant-numeric: tabular-nums; }
+```
+
+Vigil also carries fractions, superscripts and subscripts, and kerning throughout.
+
+## Files
+
+| Purpose | URL |
+|---|---|
+| Drop-in stylesheet | `https://www.vigilfont.com/vigil.css` |
+| Variable roman | `https://www.vigilfont.com/fonts/Vigil-wght-.woff2` |
+| Variable italic | `https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2` |
+| Outline roman | `https://www.vigilfont.com/fonts/VigilOutline-Regular.woff2` |
+| Outline italic | `https://www.vigilfont.com/fonts/VigilOutline-Italic.woff2` |
+| Full family zip | `https://www.vigilfont.com/downloads/Vigil.zip` |
+| License text | `https://www.vigilfont.com/OFL.txt` |
+
+Static WOFF2 for all sixteen roman and italic weights are at `https://www.vigilfont.com/fonts/Vigil-{Weight}.woff2`, for example `Vigil-SemiBoldItalic.woff2`. TTF and OTF are inside the zip.
+
+## Character set
+
+Latin Extended: Western and Central European, covering English, Spanish, French, German, Polish, Czech and Turkish among others.
+
+## License
+
+SIL Open Font License 1.1. You may use Vigil in commercial work, embed it in apps and websites, sell products set in it, and use it in a logo or trademark. You may modify and redistribute it. The one restriction is that you may not sell the font files on their own. No attribution is required in your designs.
+
+Derived from [Figtree](https://github.com/erikdkennedy/figtree) by Erik Kennedy, under the same license.
+
+## Related
+
+Vigil Icons is a companion set of stroke icons drawn to match the typeface: <https://www.vigilicons.com/>
+
+Homepage and interactive specimen: <https://www.vigilfont.com/>
+
+---
+
+# Homepage — Vigil — a softened geometric grotesk. Free forever.
+
+https://www.vigilfont.com/
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+# Vigil
+
+A softened geometric grotesk. Eight weights, italics, free forever.
+
+DownloadTry it
+
+Type anything
+Fewer things, measured faster.
+Fewer things, measured faster.
+
+Weight500
+
+Size96px
+
+Italic
+Outline
+Single-story a
+Tabular figures
+Color: Signal
+
+## Eight weights on one axis. One outline.
+
+- ExtraLight200Choosing what not to build is the job.Display weight — 40px and up.
+
+- Light300Choosing what not to build is the job.
+
+- Regular400Choosing what not to build is the job.
+
+- Medium500Choosing what not to build is the job.
+
+- SemiBold600Choosing what not to build is the job.
+
+- Bold700Choosing what not to build is the job.
+
+- ExtraBold800Choosing what not to build is the job.
+
+- Black900Choosing what not to build is the job.
+
+- Outline—Choosing what not to build is the job.Separate display style stroked from Bold — 40px and up.
+
+## Rounded by rule, not by default.
+
+Kt
+
+Most at the terminals.
+
+Ez
+
+Less at structural corners.
+
+lL1
+
+Even on the stems, small enough to keep the edge.
+
+Vigil is a free variable typeface by Keno Vigil — a geometric grotesk with a large x-height, a double-story a and a single-story g. Rounding is applied by rule — most at exposed terminals (C G S c e s, the arms of E F T, the feet of K and z), then a smaller, even radius at structural corners and on the stems of l, L, 1 and I, which keep enough edge to stay apart. At 16px it reads as a clean sans. At 96px the softness becomes the signature.
+
+Text, 16px
+Type is the interface. A body face earns its place in the first paragraph, not the first headline. Vigil keeps its counters open and its spacing even at small sizes, so long passages stay quiet and the rounding never announces itself. Set it at 16 over 24 with a measure near sixty-five characters, and the page reads like it was never designed at all — which is the point.
+
+Interface, 15px
+
+Variable file43 KB
+
+Sync interval15 min
+
+Tabular figures
+
+Hinting on Windows
+
+Last export2026-09-04 · 09:41
+
+Version1.0.0
+
+Display, Black 900
+Fewer.
+Faster.
+Free.
+
+Il1 | O0Q | rn m | 8B6 | ecasg | $€£¥ | 2026
+
+Il1 | O0Q | rn m | 8B6 | ecasg | $€£¥ | 2026
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØŒÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøœùúûüýþÿ ĀāĂăĄąĆćČčĎďĐđĒēĖėĘęĚěĞğĢģĪīĮįİıĶķĹĺĻļĽľŁłŃńŅņŇňŌōŐőŔŕŖŗŘřŚśŞşŠšŢţŤťŪūŮůŰűŲųŴŵŶŷŸŹźŻżŽž .,:;…!¡?¿·•*#/\(){}[]-–—_"“”'‘’«»‹› @&¶§©®™° +−×÷=≠<>≤≥±~^% ‰ $€£¥¢ ½¼¾ ¹²³
+
+aa
+
+Double-story a by default. ss01 for single-story.
+
+1,024.191,024.19
+
+Proportional and tabular figures.
+
+3/4H2Ox2
+
+Fractions, superscripts, subscripts.
+
+Latin Extended (Western and Central European). Kerning throughout.
+
+## Now there are icons.
+
+Vigil Icons is a companion set drawn on the same square grid as the type: stroke-first, rounded by the same rule, black on cream. Icons for the things people accuse each other of.
+
+Set them at text size and they hold the line. Every group chat has a gaslighter, a narcissist, and one helicopter parent circling the lawn.
+
+- Gaslighting
+
+- Narcissist
+
+- Mansplaining
+
+- Helicopter parent
+
+- Deepfake
+
+- People pleaser
+
+Vigil pairs with Vigil Icons — 111 free stroke icons for the things people accuse each other of. Same 24px grid, all free.
+
+- Red flag The warning sign you noticed, ignored, and later screenshotted.
+
+- Ghosting Vanishing without technically having to say goodbye.
+
+- Could’ve been an email Thirty minutes of everyone’s life, now unrecoverable.
+
+Get all 111 free ↗ (opens in a new tab)
+All 111 icons, free, no email — same terms as the font. SVG, PNG, sticker packs, and Slack and Discord emoji.
+
+## Notes
+All notes
+
+- 2026-09-04License plate fonts: shaped by a die, aimed at a forgerDrawn for a stamping die, a camera, and someone with a roll of black tape.
+
+- 2026-09-04Highway Gothic vs Clearview: two fonts went to war over American road signsApproved in 2004, killed in 2016, revived in 2018 — with the government refusing to endorse it.
+
+- 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, why the strict ones are hard to read, and which are actually worth using.
+
+- 2026-09-04Typeface vs font: the distinction that stopped mattering in 1985It was a real difference once, and it described a real object. Here is what it meant.
+
+- 2026-09-04A vigil is what you keep when you refuse to go to sleep on something.Ten years of a calendar block that said MAKE FONT, and why it finally shipped.
+
+- 2026-08-28A century of circles: the geometric groteskErbar, Futura and Kabel arrived within a year of each other. The idea never left.
+
+- 2026-08-21Soft corners: a short history of the rounded sansFrom a car company's letterhead to every app icon, and what most rounded fonts get wrong.
+
+## Questions, answered.
+
+### Is Vigil free for commercial use?
+
+Yes. Vigil is released under the SIL Open Font License 1.1, so you can use it in commercial work, embed it in apps and websites, and sell products set in it. There is no cost, no account, and no attribution required in your designs.
+
+### What is Vigil based on?
+
+Vigil is derived from Figtree, Erik Kennedy's open-source geometric sans, under the SIL Open Font License. Figtree supplies the skeleton. The rounding rules, the outline style and the finished curves are Vigil's own.
+
+### How many weights does Vigil have?
+
+Eight weights, from ExtraLight 200 to Black 900, each with a matching italic. There is also a separate Vigil Outline style in roman and italic. One variable font file covers the whole 200 to 900 axis.
+
+### Can I use Vigil in a logo?
+
+Yes. The SIL Open Font License places no restriction on what you set in the typeface, logos and wordmarks included. The one thing the license forbids is selling the font files on their own.
+
+### Which languages does Vigil support?
+
+Vigil covers Latin Extended, which includes Western and Central European languages such as English, Spanish, French, German, Polish, Czech and Turkish. Kerning runs throughout, alongside tabular figures, fractions, superscripts and subscripts.
+
+### How do I self-host Vigil on a website?
+
+Download the zip, copy the two variable WOFF2 files to your server, and add the two @font-face rules from the download section below. One file covers all eight weights. Static WOFF2 and TTF files are included for older browsers.
+
+### Is there a matching icon set?
+
+Yes. Vigil Icons is a companion set of 111 icons drawn on the same 24px grid as the type, and every one of them is free with no email — the same terms as the font. SVG, PNG, sticker packs and Slack and Discord emoji.
+
+## Using it takes about a minute.
+
+Three ways in, depending on what you are. Every snippet below is real and copyable — nothing here needs an account.
+
+Designers
+
+### Install it like any other font.
+
+Download, unzip, select the 16 Vigil-*.ttf files sitting right there in the folder, double-click, Install. Nothing to dig through — they are at the top level on purpose. On Windows, extract the zip first; it will not install fonts from inside one. There is a Read me first.txt in there if anything goes sideways. Figma and Sketch read your installed fonts — quit and reopen Figma’s desktop app and Vigil appears in the picker. On Figma in the browser you need their font installer running.
+
+Download the family — 2.4 MB ↓
+
+Developers
+
+### One line, no build step.
+
+Served with Access-Control-Allow-Origin, so it works from your domain without downloading anything.
+
+HTMLCopy
+
+<link rel="stylesheet" href="https://www.vigilfont.com/vigil.css">
+
+CSS — self-hosted, or paste as-isCopy
+
+@font-face {
+font-family: "Vigil";
+src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2") format("woff2");
+font-weight: 200 900;
+font-display: swap;
+}
+@font-face {
+font-family: "Vigil";
+src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2") format("woff2");
+font-weight: 200 900;
+font-style: italic;
+font-display: swap;
+}
+
+One variable axis, so font-weight: 437 is a real value, not a rounding error.
+
+Writers
+
+### Slides, decks, documents.
+
+Mac — unzip, select the TTFs, double-click, Install Font. Vigil is then in Keynote, Pages, Word and Canva’s desktop app. Windows — select the TTFs, right-click, Install.
+
+Canva — Brand Kit → Brand Fonts → Upload. Note that font upload is a Canva Pro feature; the desktop app reads your installed fonts for free instead.
+
+Google Docs cannot do it. Docs only loads fonts from Google’s own library, so no uploaded font works there — Vigil included. That is a Docs limitation, not a licensing one.
+
+## Free. Forever. No email.
+
+Download Vigil
+
+Variable only
+Variable italic
+GitHub
+
+16 weights ready to install at the top of the folder · variable font, OTF and web files tucked underneath · plain-English install guide included. Statics are hinted for Windows.
+
+EmbedCopy CSS
+
+@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2") format("woff2"); font-weight: 200 900; font-display: swap; }
+@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2") format("woff2"); font-weight: 200 900; font-style: italic; font-display: swap; }
+
+SIL Open Font License 1.1 — use it anywhere, in anything, commercial or not. No attribution required. No account. No newsletter.
+
+## Vigil in the wild.
+
+If you have set something in Vigil — a site, a menu, a poster, a school project — send it. Good uses go up here, credited and linked. Missing a glyph or a weight? Ask for it in the same box.
+
+Website
+
+What you made *
+
+Link optional
+
+Anything else, or a request optional
+
+Your email *
+
+Send it
+Used to reply and to credit you. Nothing else, ever.
+
+## Pass it on.
+
+Free typefaces travel by word of mouth. If Vigil is useful to you, send it to someone who sets type.
+
+Share
+Copy link
+X
+Facebook
+LinkedIn
+Reddit
+Email
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+Version 1.0.0 — September 2026thinkkeno.com/#contact
+
+---
+
+# Notes
+
+## A century of circles: the geometric grotesk — Vigil
+
+https://www.vigilfont.com/notes/geometric-grotesk-history
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-08-28 — Keno Vigil
+
+# A century of circles: the geometric grotesk
+
+OGa
+
+Three German typefaces appeared within about a year of each other and defined a category that is still with us. Jakob Erbar's Erbar came first, in 1926. Paul Renner's Futura and Rudolf Koch's Kabel followed in 1927. All three drew letters from the compass and the ruler — circles for O, C and G, triangles for A and V, straight strokes everywhere else — in the spirit of the Bauhaus conviction that form should come from construction rather than from the pen.
+
+Futura won. Its perfectly round O and pointed apexes became shorthand for modernity, and it travelled further than any of its contemporaries — eventually to the Moon, on the plaque Apollo 11 left behind in 1969. But the pure geometric sans has a well-known flaw: circles and straight lines don't set comfortably as text. The letters fight each other for space, and long passages feel mechanical.
+
+The second generation fixed that by cheating, gracefully. Herb Lubalin and Tom Carnase's ITC Avant Garde Gothic in 1970 kept the geometry but pushed it toward display, with famously tight spacing and ligatures. Adrian Frutiger's Avenir in 1988 went the other way: he described it as a geometric sans drawn by a human hand, with an O that isn't quite a circle and strokes that thin where they join. Avenir is the ancestor of nearly every "humanist geometric" that followed.
+
+The current wave — Gotham, Circular, Figtree and their many relatives — inherits Frutiger's compromise and adds large x-heights tuned for screens. Vigil sits inside this tradition and makes one more adjustment: it treats the corners as a variable, not a constant.
+
+If you want the practical version of this — how to recognise a geometric sans on sight, and which ones are worth using — that's the field guide.
+
+## Keep reading
+
+- 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, where the category came from, and the ones worth using.
+
+- 2026-08-21Soft corners: a short history of the rounded sansFrom a car company’s letterhead to every app icon, and what most rounded fonts get wrong.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+Eight weights with matching italics, an outline style, and one variable file that runs the whole 200–900 axis. SIL Open Font License. No email, no account, no “just tell us where you work.”
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## Geometric sans serif fonts: a field guide — Vigil
+
+https://www.vigilfont.com/notes/geometric-sans-serif-fonts
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-04 — Keno Vigil
+
+# Geometric sans serif fonts: a field guide
+
+How to spot one in four seconds, why the strict ones are hard to read, and which are actually worth using.
+
+OAao
+
+A geometric sans serif is a typeface built from the compass and the ruler instead of the pen. Its O is close to a true circle, its strokes hold a single uniform weight, and its A comes to a point. Everything else in the category follows from those three decisions — including its famous weakness, which is that a perfect circle is a bad letter.
+
+This is the practical guide. If you want the hundred-year argument behind it, that's a separate note.
+
+## The four tells
+
+You can classify a sans serif in about four seconds if you know where to look. Set the word Oahu and check these in order.
+
+### 1. Draw a square around the O
+
+A geometric O fills that square almost exactly. A grotesque O — Helvetica, Arial, Univers — is a slightly narrowed oval, taller than it is wide. A humanist O is narrower still and often visibly tilted. The circle is the single loudest signal in the category, which is why the letter O is on the cover of roughly every specimen ever printed for one of these faces.
+
+### 2. Look for thick and thin
+
+Geometric sans faces are monolinear: the vertical of the H and the curve of the O are drawn at the same weight. Most other sans serifs quietly thin their strokes where two curves join, because the eye reads an untreated joint as a dark blot. A face that refuses to do this is telling you it cares about construction more than optics.
+
+### 3. Check the apex of the A
+
+Compass-and-ruler construction gives you a triangle, so the A comes to a genuine point and the M is a pair of them. Flatten that apex and you are almost always looking at a grotesque instead.
+
+### 4. Then look at the lowercase a — this one splits the category
+
+This is the tell most guides get wrong. A single-storey a — a circle with a stem, the way a child draws it — means a strict geometric: Futura, Century Gothic, ITC Avant Garde Gothic, Poppins. A double-storey a, with the little hood over the bowl, means a humanist geometric: Avenir, Gotham, Proxima Nova, Montserrat, Figtree.
+
+Oahu OAao
+Vigil Regular — circular o, monolinear strokes, pointed A, double-storey a
+
+Both are geometric sans serifs. But that one letter tells you which half of the category you're in, and the two halves are good at completely different jobs.
+
+## Why the strict ones are hard to read
+
+Reading is pattern recognition, and it runs mostly on the top half of the lowercase. The eye distinguishes letters by their differences — the way an n is not quite an h, the way a c opens where an o closes. Pure geometry works against exactly that. When every round letter is generated from the same circle, b, d, p, q, o, c and e converge on a single shape, and the reader has to slow down and disambiguate.
+
+The 1920s originals compounded this with small x-heights. Futura's lowercase is short relative to its capitals, which looks elegant in a headline and turns a paragraph into grey soup. Set a page in Futura at 16 pixels and you will feel it in your neck.
+
+None of which makes them bad typefaces. It makes them display typefaces that were marketed as text typefaces, which is a different problem.
+
+## How the second generation fixed it
+
+Adrian Frutiger's Avenir, in 1988, is the hinge. He kept the geometric skeleton and then broke the rules where reading demanded it: the O isn't quite a circle, the strokes thin slightly at the joints, the x-height goes up, and the lowercase a gets its second storey back. He described it as a geometric sans drawn by a human hand.
+
+Nearly everything since has followed that compromise and pushed the x-height further for screens. That's the lineage running through Gotham, Proxima Nova, Circular, Figtree and their many relatives — geometric enough to feel constructed and modern, humanist enough to survive a thousand-word article.
+
+## The ones worth knowing
+
+### The originals
+
+- Futura — Paul Renner, 1927. The category's definition and still its best display face. Went to the Moon on the Apollo 11 plaque. Small x-height; use it big.
+
+- Erbar — Jakob Erbar, 1926. Beat Futura to the idea by a year and lost the century to it.
+
+- Kabel — Rudolf Koch, 1927. The strangest of the three, with a tilted e and an oddly high waist. Worth using precisely because it's odd.
+
+- ITC Avant Garde Gothic — Herb Lubalin and Tom Carnase, 1970. Geometry pushed to display extremes, with a famous set of overlapping ligatures. Almost impossible to set well and unmistakable when you do.
+
+- Century Gothic — Monotype, 1991. The one already installed on your machine. Enormously wide, which costs you line length.
+
+### The workhorses
+
+- Avenir — Adrian Frutiger, 1988. The humanist geometric that made the rest possible.
+
+- Gotham — Tobias Frere-Jones, 2000. Drawn from New York architectural lettering rather than Bauhaus theory, which is why it reads as American rather than German.
+
+- Proxima Nova — Mark Simonson, 2005. Geometric proportions with grotesque details; for a decade it was the default voice of the web.
+
+- Circular — Laurenz Brunner, 2013. The one every startup rebranded into, and still very good.
+
+### The free ones
+
+All of these are open-licensed and free for commercial use, which matters more than it should — a typeface you cannot afford to renew is a typeface you will have to redesign around later.
+
+- Poppins — Indian Type Foundry, 2014. Strict geometric, monolinear, single-storey a. Excellent for headlines, tiring for paragraphs.
+
+- Montserrat — Julieta Ulanovsky, 2011. Drawn from painted signage in a Buenos Aires neighbourhood, which gives it a warmth the Bauhaus faces don't have.
+
+- Jost* — a Futura-inspired open-source revival, and the closest you'll legally get to Futura for nothing.
+
+- League Spartan — another Futura-lineage face, heavier and better suited to display.
+
+- Josefin Sans — unmistakably 1920s, with a very small x-height. A display face; treat it as one.
+
+- Figtree — Erik Kennedy. A humanist geometric with a large x-height, built for interfaces. Vigil is derived from it.
+
+- Outfit — clean, contemporary, geometric, and unusually consistent across its weights.
+
+## Which one to pick
+
+- For a headline or a logo, take a strict geometric. Futura, Poppins, Josefin Sans, Jost. The uniformity that hurts reading is exactly what makes a wordmark look inevitable.
+
+- For body copy, take a humanist geometric with a large x-height. Avenir, Proxima Nova, Figtree, Vigil. You want the constructed feel without the reading tax.
+
+- For an interface, prioritise x-height and a distinguishable 1/l/I over purity of geometry. Test at 13 and 14 pixels, not at 48.
+
+- For signage, go wider and heavier than feels right on screen, and check the counters — the enclosed spaces in a, e and o are the first thing to fill in at distance or in the rain.
+
+## Where Vigil sits
+
+Vigil is a humanist geometric in the Avenir lineage: circular bones, large x-height, double-storey a, built to be set at sixteen pixels. Its one departure from the category is that it treats corner softness as a variable rather than a constant — rounded most at the exposed terminals where a stroke ends in open space, less at the structural joints, and not at all on the punctuation. The effect is that it reads as a clean geometric sans in a paragraph and only looks visibly rounded when you set it large. The reasoning is here.
+
+It is not the best geometric sans on this page. Futura is a better display face and Avenir is a better book face. It is a good one that costs nothing and always will, which for a lot of projects is the specification that actually matters.
+
+## Keep reading
+
+- 2026-08-28A century of circles: the geometric groteskErbar, Futura and Kabel arrived within a year of each other. The idea never left.
+
+- 2026-09-04Typeface vs font: the distinction that stopped mattering in 1985It was a real difference once. Here is what it meant, and why almost nobody needs to keep score.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A humanist geometric with a large x-height and rationed corner softness. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## Highway Gothic vs Clearview: the fight over American road sign fonts — Vigil
+
+https://www.vigilfont.com/notes/highway-gothic-vs-clearview
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-04 — Keno Vigil
+
+# Highway Gothic vs Clearview: two fonts went to war over American road signs
+
+The government approved the challenger in 2004, killed it in 2016, and brought it back in 2018 while refusing to endorse it. A story about halation, aging eyes, and twenty percent.
+
+aes
+
+The font on American road signs is called Highway Gothic. Formally it is the FHWA Standard Alphabets, drawn by Theodore W. Forbes and published in 1948, and you have read more of it than of any book you own. It is also the subject of the only typeface dispute in history to be settled, unsettled, and then re-settled by an act of the United States Congress.
+
+## A wartime alphabet
+
+The FHWA series came out of the Public Roads Administration during the Second World War, and arrived as six widths rather than one design: Series A through F, narrow to wide. The width you use depends on how much room the sign has. Series A is so condensed it was eventually abandoned as illegible; Series F is the generous one you get when the sign is big enough not to argue.
+
+Then California changed it. Between 1949 and 1950, Caltrans engineers working on freeway signing took Series E and thickened its strokes to twenty percent of the letter height. The result — Series E-Modified — is the one you actually picture when you picture a road sign: wide, chunky, white on green.
+
+The reason for the thickening is a detail almost nobody knows. Early guide signs weren't printed in reflective material. They were studded with button copy: dozens of small glass reflectors embedded along the spine of every letter, so headlights would light up the letterform as a constellation of dots. A stroke too thin couldn't hold enough buttons. The most recognisable letterform in American public life owes its proportions to the width of a piece of hardware.
+
+The other decision that shaped modern signs came in 1958, when the AASHTO manual for Interstate signing made mixed case the standard for freeway place names. ALL CAPS had been normal. Mixed case won because word shape — the ascenders and descenders that give Baltimore a silhouette BALTIMORE doesn't have — is something the eye can catch at distance and at speed.
+
+## Then the signs got too bright
+
+Highway Gothic was drawn for a world of dim reflectors. Retroreflective sheeting kept improving through the following decades, and eventually it improved past the typeface.
+
+The problem has a name: halation, also called irradiation or overglow. When a letter is bright enough, it appears to bleed outward. The glow spills into the enclosed spaces — the counters — of the letters that depend on them. A lowercase e fills in and becomes a luminous blob. An a stops being an a. And because Series E-Modified had those deliberately thick strokes, it had comparatively little counter space to lose.
+
+This lands hardest on older drivers, whose contrast sensitivity declines with age, and on anyone driving tired in rain. It was, in other words, a public safety problem produced by an improvement.
+
+## The challenger
+
+Clearview was the answer. It was developed by Don Meeker and Christopher O'Hara of Meeker & Associates with James Montalbano of Terminal Design, working alongside Martin Pietrucha and Philip Garvey at the Pennsylvania Transportation Institute, with supporting research from Gene Hawkins and Paul Carlson.
+
+The design strategy followed directly from the diagnosis. If halation eats counters, give it more counter to eat. Clearview opened up the problem letters — a, e and s — and raised the height of the lowercase relative to the capitals, so the letters carrying the word's shape are simply bigger. Committed to mixed case throughout. The claim from the research was roughly a twenty percent improvement in legibility and recognition at the same sign size, which in highway terms is enormous: it means reading your exit meaningfully earlier at seventy miles an hour.
+
+aes — Baltimore
+The three letters Clearview opened up, and why mixed case beat ALL CAPS. Shown here in Vigil, not in either highway face.
+
+On 2 September 2004, the FHWA granted Clearview Interim Approval IA-5. Note the wording, because everything later turns on it: positive contrast, guide signs. Light letters on a dark background — white on green, blue, brown. Nothing else was approved. Not black-on-white speed limit signs. Not yellow warning signs.
+
+## What went wrong
+
+Two things, and neither is really the typeface's fault.
+
+The first is that an interim approval covering one narrow case met a country of state highway departments who liked the new letters. Clearview started appearing where it had never been approved — in negative contrast, on regulatory and warning signs — and in the narrower widths. Subsequent evaluation found that in exactly those uses it performed worse than the Highway Gothic series it replaced. Dark letters on a bright ground have the opposite problem to halation: the background blooms inward and eats the letter, and generous open counters stop helping.
+
+The second is subtler and more uncomfortable. When you replace an old sign with a new one, you don't only change the typeface — you change the sheeting, the sign, and often the size. Some portion of the measured gain was very plausibly the new sign, not the new letters.
+
+On 25 January 2016, the FHWA terminated the interim approval. Existing signs could stay; new ones would go back to Highway Gothic.
+
+## And then Congress got involved
+
+The termination did not hold. States that had re-signed entire networks in Clearview now faced re-signing them again. Congress required the FHWA to review the prior research along with the safety and cost implications of its own decision, and on 28 March 2018 the agency reinstated the interim approval on the terms that existed before 2016.
+
+It did so while stating that it made no recommendation or endorsement of the font.
+
+> Approved, terminated, reinstated, unendorsed. Fourteen years, and the official position is that you may use it and they would rather not say.
+
+So both typefaces are on the road today. Highway Gothic is the standard and the default. Clearview is permitted, on some signs, in some contrasts, at the discretion of the state. The next sign you pass is a vote in an argument nobody officially won.
+
+## What about street name signs?
+
+Different problem, same alphabet. The green blades on residential corners generally use the same FHWA series in a narrower width, because a street name has to fit a sign a fraction the size of a freeway gantry. This is where Series C and D earn their keep, and where you occasionally find a city that has commissioned something of its own and is quietly pleased about it.
+
+The MUTCD requirement people notice most is the mixed-case one: street name signs moved away from ALL CAPS for the same reason freeway signs did in 1958. Word shape is information, and capitals throw it away.
+
+## What a type designer takes from this
+
+The lesson of the Clearview affair is not that Clearview was bad. It is a careful, well-researched typeface built by serious people to solve a real problem, and in the case it was designed for it appears to do so.
+
+The lesson is that legibility is a property of a system, not of a font. The same letterforms that win in white-on-green lose in black-on-white. The same design that helps at a hundred feet of glowing sheeting does nothing on a printed page. Change the contrast, the size, the material or the distance, and the ranking changes with it. A typeface is not legible; a typeface is legible at something, for someone, on something.
+
+Which is the argument for testing type in the conditions it will actually live in, rather than in a specimen. A face chosen because it looked convincing at 200 pixels on a designer's monitor is a face chosen under laboratory conditions that no reader will ever reproduce.
+
+It is also, if I'm honest, the reason I started drawing letters at all. I grew up reading highway signs, and the thing that stuck was that letters which have to work outdoors, at speed, for strangers are the honest ones. Nothing on a road sign is there to be admired. Every decision in it is load-bearing.
+
+## A footnote from Britain
+
+Britain ran the same experiment and got a cleaner result. In the late 1950s and early 1960s, Jock Kinneir and Margaret Calvert designed the Transport typeface for British road signs, arriving independently at mixed case and at generous, open letterforms — and paired it with a matched system of pictograms and colour rules rather than treating the letters as a separate problem.
+
+It was adopted, and it stayed adopted. Sixty years on it is still there, essentially unrevised. Designing the whole system at once, it turns out, is more durable than swapping the typeface inside a system built for a different one.
+
+## Can you download either of them?
+
+Not straightforwardly. The FHWA Standard Alphabets exist as federal engineering drawings rather than as a font you install, and the digital versions floating around vary a great deal in quality and fidelity. Clearview is a commercial typeface and is licensed as one.
+
+If you want the highway idiom under an open license, Overpass — drawn by Delve Fonts and available through Google Fonts — is an interpretation of the Highway Gothic letterforms and is free to use.
+
+Vigil is not a highway typeface and I am not going to pretend otherwise. It is a geometric sans built for text, with the same large lowercase and open counters that the road-sign research keeps arriving at, for the same underlying reason: the counters are where legibility lives.
+
+## Keep reading
+
+- 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, why the strict ones are hard to read, and which are actually worth using.
+
+- 2026-09-04A vigil is what you keep when you refuse to go to sleep on something.Ten years of a calendar block that said MAKE FONT, and why it finally shipped.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A geometric sans with a large lowercase and open counters, built to be read rather than admired. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## License plate fonts: shaped by a die, aimed at a forger — Vigil
+
+https://www.vigilfont.com/notes/license-plate-fonts
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-04 — Keno Vigil
+
+# License plate fonts: shaped by a die, aimed at a forger
+
+Every other typeface is drawn for a reader. This one is drawn for a stamping die, a camera, and someone with a roll of black tape.
+
+FE
+
+There is no such thing as the license plate font. Road signs in the United States run on a single federal standard. Plates don't: every issuing jurisdiction picks its own, so North America alone carries dozens of variants, and a plate from Ontario and a plate from California are not speaking the same alphabet.
+
+What they share isn't a design. It's a set of adversaries. A plate typeface has to survive a stamping die, resist a criminal with tape, and satisfy a camera — and only incidentally be read by a person. No other letterforms in daily life are designed under those conditions.
+
+## The die drew the letters
+
+Start with manufacturing, because manufacturing came first. A traditional plate is not printed. It is embossed: a die presses the characters up out of a flat sheet of aluminium, and the raised faces are then inked or foiled.
+
+A die has opinions. It wants shapes it can cut accurately and press repeatedly without tearing the metal or wearing the tool. In practice that meant letters built only from straight lines and circular arcs — geometry you can lay out with a ruler and compass, and later specify exactly in CAD. It also meant a single uniform stroke weight, since a stroke that thins and thickens is a stroke that deforms unevenly under pressure.
+
+That is the entire explanation for why plate letters look the way they look. The flat, industrial, slightly stiff quality isn't a style decision anybody made. It is what you get when the tool is a press rather than a pen.
+
+The typographer Leeward Pro's survey of North American plate fonts — still the most thorough catalogue of these letterforms anywhere — sorts them into four construction types, and once you know them you cannot stop seeing them in traffic:
+
+- Semicircular — straight sides closed off by half-circles top and bottom. Close cousins of Germany's DIN 1451, usually narrower.
+
+- Squarish — bowls become boxes with rounded corners, typically true 90-degree arcs. Eurostile's industrial relatives.
+
+- Oval — elliptical bowls and arcs, the closest these ever get to a humanist sans, though the mechanical construction and even stroke weight keep them firmly in the family.
+
+- Hybrid — inconsistent, often with one logic for the letters and another for the numerals. Squarish alphas, oval digits.
+
+## Germany drew letters against a criminal
+
+The most interesting plate typeface in the world exists because the old one could be edited with tape.
+
+West Germany used DIN 1451, an excellent engineering sans with a serious flaw in this specific job: its letters are too closely related to one another. A strip of black tape or a dab of paint turns a P into an R. An F or an L becomes an E. Against a backdrop of 1970s terrorism and ordinary plate theft, a registration you could edit by hand at the roadside was a genuine security problem.
+
+The answer was FE-Schrift — fälschungserschwerende Schrift, "forgery-impeding typeface" — designed by Karlgeorg Hoefer between 1978 and 1980, introduced in 1994 and mandatory on German plates from November 2000.
+
+F E   P R   3 8
+The pairs a forger works on. FE-Schrift's job is to keep each one from becoming the other. Shown in Vigil, not FE-Schrift.
+
+Its method inverts everything a type designer is normally taught. A good text family is built on shared parts — the same bowl in the b, d, p and q, the same shoulder in the n and m — because consistency is what makes a page feel like one voice. FE-Schrift refuses that. The letters are deliberately disproportionate, and no character is derived from any other. Each one is its own irregular object, precisely so that no amount of added ink turns it into its neighbour.
+
+It is a typeface designed to be internally inconsistent on purpose, which is close to heresy, and it works. Several other countries adopted it, and the Mercosur bloc — Brazil, Argentina, Paraguay, Uruguay — standardised on it too.
+
+## Britain legislated the stroke width
+
+The British approach was to leave the drawing alone and regulate everything around it.
+
+The typeface is Charles Wright, originally from 1935. The version in force is Charles Wright 2001, adopted by the DVLA as the single legal standard and modified for automatic number plate recognition cameras. Since 2001 it has been mandatory: no substitutions, no clever spacing, with only a 3D-effect variant permitted.
+
+And the regulations are specific in a way typographers rarely see. Characters must be 79mm tall and 50mm wide — the 1 and the I excepted, for obvious reasons — with a stroke width of 14mm.
+
+> A stroke width written into law. Most typefaces are lucky to get an opinion; this one got a statute.
+
+The point of fixing the dimensions and the spacing is the same as the point of FE-Schrift's irregularity. If the gaps are legally defined, you cannot shuffle characters to make BD51 SMR read as a name, and a camera always knows where to look.
+
+## Then the reader stopped being human
+
+The quiet turn in this story is that the primary audience changed.
+
+For most of the twentieth century a plate was read by a police officer, at distance, in bad light. Now it is read overwhelmingly by machines: ANPR and ALPR cameras at toll gantries, car parks and junctions, running at speed on infrared. Charles Wright 2001 was explicitly adjusted for those cameras. FE-Schrift's separation of similar characters serves them just as well as it serves against tape, because the failure mode of an algorithm and the failure mode of a forger turn out to be the same one: this character resembles that character too closely.
+
+It is a rare case of security and legibility pulling in the same direction. Usually they don't.
+
+## The die is gone. The shapes stayed.
+
+Here is the part I find genuinely funny.
+
+Embossing is on the way out. Flat plates, digitally printed on reflective sheeting, are cheaper, lighter and let a jurisdiction put whatever it likes on the background. Every manufacturing constraint that produced those stiff arcs and uniform strokes has evaporated. A flat plate could be set in anything.
+
+And what do the states printing flat plates use? Digital replicas of the embossed fonts. The exact letterforms that a stamping die demanded, now reproduced by a printer that has never met a stamping die.
+
+The constraint became the identity. Those shapes stopped meaning "this is what metal-forming permits" and started meaning "this is a licence plate" — and once a form carries meaning, the engineering reason for it is no longer load-bearing. This is skeuomorphism, but in aluminium, and nobody planned it.
+
+## What a type designer takes from this
+
+Two things, and the first is the same lesson the road-sign fight teaches from the other end.
+
+Legibility is not a property a typeface has. It is a relationship between letters and a specific reader under specific conditions — and here the "reader" is a die, a camera, an officer and a criminal at once, wanting contradictory things. FE-Schrift is superb at its job and would make an atrocious book face. That is not a criticism of it. It is the whole idea.
+
+The second is about distinctiveness, and it is more useful than it first appears. A text face gets its evenness from shared parts, and I build that way too — the same curve logic runs through Vigil's b, d, p and q. But the plate designers found the limit of that principle. When it matters most that this letter is not that letter, similarity becomes the enemy, and you have to give each character something no other character has.
+
+Which is why the useful question when you are choosing type for anything that must not be misread — a dosage, a serial number, a code someone will type back — is not "is this legible?" It is "how far apart are the letters that could be confused?" Check the 1, the l and the I. Check the 0 and the O. Check the 8 against the B. A face that keeps those apart is doing the work a licence plate does, and a face that doesn't will fail in exactly the place it costs you.
+
+## Can you download a license plate font?
+
+Not the official ones, mostly, and it's worth knowing what you're actually getting. FE-Schrift and Charles Wright 2001 are regulated standards attached to legal specifications, not consumer downloads. Plate manufacture is a licensed business in most jurisdictions for good reason.
+
+What circulate freely are replicas — independently drawn digital fonts based on observed plates, of varying fidelity:
+
+- Penitentiary Gothic — often mistaken for a historical typeface, it's a 2003 commercial font by Andrew Leman and Richard Lucas, drawn from California plates specifically to make props for film and television. Its extra styles stack in different colours to fake the embossed relief.
+
+- Driver Gothic — based on Ontario's letterforms.
+
+- License Plate — Dave Hansen's, drawn from Washington state.
+
+- Keystone State and Pennsylvania — Pennsylvania-derived.
+
+Use them for what they are: period props, film work, and the pleasure of the reference. Do not use one to make a plate.
+
+Vigil is not a plate font and would be a bad one — it is a geometric sans built for paragraphs, and it shares parts across letters on purpose, which is precisely the thing FE-Schrift refuses to do. What it does take from this corner of the world is the discipline underneath it: open counters, a large lowercase, and a 1, l and I you can tell apart. The counters are where legibility lives, whoever is doing the reading.
+
+## Keep reading
+
+- 2026-09-04Highway Gothic vs Clearview: two fonts went to war over American road signsApproved in 2004, killed in 2016, revived in 2018 — with the government refusing to endorse it.
+
+- 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, why the strict ones are hard to read, and which are actually worth using.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## Soft corners: a short history of the rounded sans — Vigil
+
+https://www.vigilfont.com/notes/rounded-sans-history
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-08-21 — Keno Vigil
+
+# Soft corners: a short history of the rounded sans
+
+Kzl
+
+Rounded terminals are older than type. Any letter painted with a brush or cut with a router ends in a curve, and signwriters have relied on that softness for as long as there have been shopfronts. In metal and phototype, though, rounding was a deliberate choice, and for most of the twentieth century it was a rare one.
+
+The modern rounded sans is largely a product of the late 1970s. Helvetica Rounded appeared in 1978. A year later, Volkswagen commissioned a corporate face, and VAG Rounded — geometric bones, fully rounded ends — became one of the most recognisable brand typefaces of its era, later travelling well beyond the car company that named it. Arial Rounded followed the same recipe, and for two decades "rounded" meant exactly this: take a sans, round every terminal to the full stroke width, stop.
+
+Screens changed the audience. Rounded sans faces read as friendly and approachable, which is why they became the default for consumer apps and children's products alike. Gotham Rounded, Nunito, Quicksand and Varela Round all arrived in the 2000s and 2010s, and the open-source ones spread everywhere Google Fonts did. Their shared weakness is the one VAG Rounded had: uniform rounding. Every corner is soft, so the I looks like a pill, the 1 loses its flag, and at text sizes the whole page goes slightly out of focus.
+
+Vigil's answer is to ration the softness. Round where a stroke ends in open space and the eye reads it as a gesture. Round less where two strokes meet and the corner is doing structural work. Keep it to a minimum where recognition depends on a clean vertical — l, L, 1 and I take the softening, but only just enough to belong to the same alphabet. The result reads as a clean sans at 16px and only becomes visibly rounded at display sizes — the reverse of what most rounded fonts do, and the point of the whole exercise.
+
+The underlying skeleton is a geometric one, which is a category with its own hundred-year argument behind it — that history is here, and the practical guide to spotting and choosing one is here.
+
+## Keep reading
+
+- 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, where the category came from, and the ones worth using.
+
+- 2026-08-28A century of circles: the geometric groteskErbar, Futura and Kabel arrived within a year of each other. The idea never left.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A rounded geometric sans that rations its softness — clean at 16px, visibly rounded at display sizes. Eight weights, italics, an outline, and one variable file. SIL Open Font License.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## Typeface vs font: the distinction that stopped mattering in 1985 — Vigil
+
+https://www.vigilfont.com/notes/typeface-vs-font
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-04 — Keno Vigil
+
+# Typeface vs font: the distinction that stopped mattering in 1985
+
+It was a real difference once, and it described a real object. Here is what it meant, and why almost nobody needs to keep score.
+
+Aa
+
+A typeface is the design. A font is the thing you set it with. Garamond is a typeface. Ten-point Garamond Italic, as a drawer full of metal, was a font. That distinction was precise, useful and physical for about four hundred years, and then digital type quietly dissolved the reason for it.
+
+## Where the words came from
+
+“Font” comes from the French fonte — something melted, something cast. That is exactly what it was. A punchcutter cut each character at a specific size, a matrix was struck from it, and molten metal was cast into that matrix. The output was a physical set of sorts: every letter, numeral and mark you needed, at one size, in one style.
+
+So a font was inventory. If a print shop owned Caslon in 10-point roman, 10-point italic and 12-point roman, it owned three fonts of one typeface. Wanting the same design a little larger meant buying more metal, because there was no way to scale a piece of lead.
+
+The typeface, meanwhile, was the design itself — the decisions a punchcutter made about how an a should be shaped. It existed across every size, and it belonged to whoever drew it.
+
+> A typeface is what you see. A font is what you use.
+
+## What broke it
+
+Phototypesetting came first, in the 1950s and 60s, projecting characters from film through a lens. One filmstrip could now be enlarged or reduced, so a single “font” covered a range of sizes for the first time. The link between a font and one specific size was already loosening.
+
+Then PostScript arrived in 1984, the Apple LaserWriter shipped in 1985, and type became mathematics. An outline described by curves scales to any size at all. The physical object the word “font” had named for four centuries — the case of metal at one size — simply stopped existing.
+
+What replaced it was a file. And because the file is the thing you buy, install, license and email to a printer, “font” attached itself to the file, and then, inevitably, to the design inside it.
+
+## What the words mean now
+
+TypefaceThe design. The intellectual work — the shapes, proportions and rules that make Futura recognisably Futura at any size.
+
+FontThe file that delivers the design. In practice also the common word for the design itself, which is not an error so much as a change.
+
+Font familyAll the related styles that share one design: the weights, their italics, and any extra widths or variants.
+
+WeightHow heavy the strokes are — Light, Regular, Bold, Black. Usually numbered 100 to 900.
+
+StyleRoman or italic. A true italic is drawn separately, not slanted by software.
+
+Variable fontOne file containing a continuous range rather than fixed steps. This is where the old distinction quietly returns.
+
+GlyphOne drawn shape in the file. Distinct from a character: “fi” is one glyph and two characters.
+
+## A worked example
+
+Vigil is one typeface. Its family contains eight weights from ExtraLight to Black, each with a matching italic — sixteen styles — plus a separate Outline style in roman and italic.
+
+Shipped as individual files, that is twenty fonts. Shipped as variable fonts, it is two: one roman file and one italic file, each carrying the entire 200–900 weight axis as a continuous range. Same typeface, same family, same eighteen styles. Two files or twenty, depending on how you want to load it.
+
+That sentence is only sayable because the words still mean different things. It is also the clearest case for keeping both of them around.
+
+## When it still matters
+
+- Licensing. You license fonts, not typefaces. A licence usually grants a specific number of installations of specific files, which is why the file is the unit that counts. In most jurisdictions the letterform designs themselves are far harder to protect than the software that draws them.
+
+- Production. “Send me the font” means send the file. “Which typeface is this?” means name the design. Asking the wrong one gets you the wrong answer.
+
+- Variable fonts. Once a single file spans a hundred weights, “font” means something genuinely distinct from any one of the designs inside it.
+
+## The verdict
+
+The distinction is real, and it is worth understanding if you work with type, because it explains why licences are shaped the way they are and why a family can be two files or twenty.
+
+It is not worth correcting people over. The word “font” absorbed the broader meaning because the object it originally named stopped existing, and language does that. Anyone who says “I love this font” is being understood perfectly. Where it matters — a licence, a handoff, an invoice — say which one you mean and move on.
+
+## Keep reading
+
+- 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, where the category came from, and the ones worth using.
+
+- 2026-09-04A vigil is what you keep when you refuse to go to sleep on something.Ten years of a calendar block that said MAKE FONT, and why it finally shipped.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+One typeface, eighteen styles, two variable files. SIL Open Font License — commercial use, embedding and logos all permitted, with no cost, no account and no attribution required.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## A vigil is what you keep when you refuse to go to sleep on something — Vigil
+
+https://www.vigilfont.com/notes/why-vigil
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-04 — Keno Vigil
+
+# A vigil is what you keep when you refuse to go to sleep on something.
+
+K.
+
+For more than ten years there was a calendar block on my phone that said MAKE FONT. All caps. Recurring. Set to “free,” which is calendar-speak for this will not happen today either. I started three times. Maybe four. A sketchbook of lowercase a’s here, a half-drawn alphabet there, a folder called font_final_v2 that I’m not going to open in front of you. Every start died the same way: I got the letters I loved and then met the four hundred glyphs I didn’t, and I went back to my actual job.
+
+My actual job, for fifteen years, has been building software for people who don’t have time for bad software. Nurses studying at 11pm. Doctors trying to learn a procedure between patients. Clinical trials that live or die on a form. That work teaches you one thing above everything else: nobody is going to admire your interface. They’re going to read it, fast, tired, on a phone, and either understand or not. Typography isn’t decoration in that world. It’s the whole product wearing a disguise.
+
+So I always knew what I wanted. Not a display face, not a logo with pretensions. A text face. Something you could set a paragraph in at sixteen pixels and forget about, and then blow up to 200 pixels and go, oh. Oh, that’s got a personality.
+
+## Where the taste comes from
+
+I grew up in Parsippany, New Jersey, which is to say I grew up reading highway signs, and then in Morehead City, North Carolina, which is to say I grew up reading the sides of boats. Both taught me the same lesson: letters that have to work outdoors, at speed, for strangers, are the honest ones. Geometric bones. Big x-height. No tricks.
+
+Then came the fonts I actually fell for. Gotham’s confidence. Avenir’s quiet intelligence, the way it looks mathematical and isn’t. Montserrat, which taught a whole generation of us what a free font could be. And the rounded ones, which I loved and didn’t trust, because most rounded fonts are just regular fonts that got a little too friendly at the party.
+
+The thing I wanted didn’t exist: a geometric grotesk with the softness applied like an engineer would apply it. On purpose. In specific places. With a rule.
+
+## Rounded by rule, not by default
+
+That became the whole design. Vigil rounds most at the exposed terminals, the ends of the C and S and the arms of the E, where a stroke stops and the eye lands. It rounds less at the structural corners. It doesn’t round the punctuation at all, because a period should still be a period.
+
+> Soften where you meet people. Stay square where the structure needs you. Don’t blur the periods.
+
+I have come to believe this is also a decent way to live.
+
+## Why it finally shipped
+
+Two things changed.
+
+The first is that in June I climbed the height of Everest on a ski hill in Utah over 36 hours, one lap at a time, because I’d signed up for it and the date came. I had also, at some point before that, run a marathon for the same reason. The lesson was not inspiring. It was procedural. Things get finished when the finish line is on the calendar as a fact instead of a wish.
+
+The second is that I stopped pretending a font has to be born from nothing. Every typeface is a fork of the alphabet. Vigil is built on Figtree, Erik Kennedy’s open-source geometric sans, under a license that exists precisely so people like me can take a great skeleton and give it a different body. I didn’t draw every curve from scratch. I decided what every curve should be, which turns out to be the part I’d been avoiding for ten years. The rest is code, patience, and a lot of squinting at the letter K.
+
+It shipped on September 4, 2026. Eight weights, italics, an outline for when you want to shout, and a variable axis that goes from whisper to wall. It is free. It will always be free. No email, no account, no “just tell us where you work.” Download the zip.
+
+## What Vigil means
+
+It’s my name, sure. But the word came first. A vigil is staying awake through the long stretch when nothing is happening yet, because you’ve decided something will.
+
+Ten years is a long vigil. Turns out you can keep one and still finish.
+
+Now go set something in it.
+
+— Keno Vigil, Cary, North Carolina
+
+## Keep reading
+
+- 2026-08-21Soft corners: a short history of the rounded sansFrom a car company’s letterhead to every app icon, and what most rounded fonts get wrong.
+
+- 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, where the category came from, and the ones worth using.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+Eight weights with matching italics, an outline style, and one variable file that runs the whole 200–900 axis. SIL Open Font License. No email, no account, no “just tell us where you work.”
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
