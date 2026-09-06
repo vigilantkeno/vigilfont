@@ -55,8 +55,13 @@ while IFS= read -r d; do
   [ "$n" -le 1 ] || { echo "mixed formats in ${d#$stage/}" >&2; exit 1; }
 done < <(find "$stage" -mindepth 1 -type d)
 
+# Deterministic output: zip records each entry's mtime, so without this the
+# archive differs on every run and shows up as a modified binary in git even
+# when nothing changed. Pin mtimes and sort the entry order; -X drops extra
+# platform attributes.
+find "$stage" -exec touch -t 202609040000 {} +
 rm -f "$out"
-( cd "$stage" && zip -qr "$root/$out" . -x '.DS_Store' )
+( cd "$stage" && find . -type f ! -name '.DS_Store' | LC_ALL=C sort | zip -qX "$root/$out" -@ )
 unzip -t "$out" >/dev/null
 printf 'built %s  (%s KB)  ttf:%s otf:%s woff2:%s\n' "$out" \
   "$(( $(wc -c < "$out") / 1024 ))" \
