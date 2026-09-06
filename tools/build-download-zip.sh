@@ -25,32 +25,39 @@ out="downloads/Vigil.zip"
 stage="$(mktemp -d)"
 trap 'rm -rf "$stage"' EXIT
 
-mkdir -p "$stage"/{ttf,woff2,otf,variable/ttf,variable/woff2,outline/ttf,outline/woff2}
+mkdir -p "$stage"/{"Variable font","Web fonts","Extras/OTF","Extras/Outline"}
 
-is_special() { case "$1" in *'[wght]'*|VigilOutline-*) return 0;; *) return 1;; esac; }
-
+# The 16 statics sit at the ROOT. A non-technical person unzips, sees font
+# files, double-clicks. Nothing to navigate. This is the Inter/rsms layout and
+# it is why their package installs cleanly for people who have never installed
+# a font before. Everything else is demoted.
 for f in fonts/ttf/*.ttf; do
   b=$(basename "$f")
   case "$b" in
-    *'[wght]'*)      cp "$f" "$stage/variable/ttf/$b" ;;
-    VigilOutline-*)  cp "$f" "$stage/outline/ttf/$b" ;;
-    *)               cp "$f" "$stage/ttf/$b" ;;
+    *'[wght]'*)     : ;;                      # handled below, renamed
+    VigilOutline-*) cp "$f" "$stage/Extras/Outline/$b" ;;
+    *)              cp "$f" "$stage/$b" ;;
   esac
 done
-for f in fonts/otf/*.otf; do cp "$f" "$stage/otf/$(basename "$f")"; done
+# Square brackets read as machine output. "Vigil Variable.ttf" reads as a font.
+cp "fonts/ttf/Vigil[wght].ttf"        "$stage/Variable font/Vigil Variable.ttf"
+cp "fonts/ttf/Vigil-Italic[wght].ttf" "$stage/Variable font/Vigil Variable Italic.ttf"
+for f in fonts/otf/*.otf; do cp "$f" "$stage/Extras/OTF/$(basename "$f")"; done
 for f in fonts/*.woff2; do
   b=$(basename "$f")
   case "$b" in
-    Vigil-wght-.woff2)        cp "$f" "$stage/variable/woff2/Vigil[wght].woff2" ;;
-    Vigil-Italic-wght-.woff2) cp "$f" "$stage/variable/woff2/Vigil-Italic[wght].woff2" ;;
-    VigilOutline-*)           cp "$f" "$stage/outline/woff2/$b" ;;
-    *)                        cp "$f" "$stage/woff2/$b" ;;
+    Vigil-wght-.woff2)        cp "$f" "$stage/Web fonts/Vigil-Variable.woff2" ;;
+    Vigil-Italic-wght-.woff2) cp "$f" "$stage/Web fonts/Vigil-Variable-Italic.woff2" ;;
+    *)                        cp "$f" "$stage/Web fonts/$b" ;;
   esac
 done
-cp downloads/src/README.md downloads/src/Vigil-specimen.html OFL.txt "$stage/"
+cp "downloads/src/Read me first.txt" "$stage/"
+cp downloads/src/Vigil-specimen.html "$stage/Vigil specimen.html"
+cp OFL.txt "$stage/"
 
 # no folder may contain more than one format
 while IFS= read -r d; do
+  [ "$d" = "$stage" ] && continue
   n=$(find "$d" -maxdepth 1 -type f -name '*.*' | sed 's/.*\.//' | sort -u | wc -l | tr -d ' ')
   [ "$n" -le 1 ] || { echo "mixed formats in ${d#$stage/}" >&2; exit 1; }
 done < <(find "$stage" -mindepth 1 -type d)

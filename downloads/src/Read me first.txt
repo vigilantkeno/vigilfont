@@ -1,0 +1,124 @@
+VIGIL
+A free typeface by Keno Vigil — https://www.vigilfont.com
+
+
+IN A HURRY?
+
+  Select all 16 files in this folder whose names start with "Vigil-"
+  and end in ".ttf". Double-click them. Click Install.
+
+  That's it. Vigil will be in Word, Canva, Keynote, Figma, Photoshop
+  and everything else the next time you open them.
+
+
+---------------------------------------------------------------------
+1. INSTALLING ON A MAC
+---------------------------------------------------------------------
+
+  1. Unzip this folder if you haven't already — double-click the .zip.
+  2. Select the 16 files starting with "Vigil-" and ending in ".ttf".
+     (Click the first, hold Shift, click the last.)
+  3. Double-click any of them. Font Book opens.
+  4. Click "Install" (or "Install Font").
+  5. Quit and reopen any app that was already running.
+
+  If Font Book says the fonts are already installed, you're done.
+
+
+---------------------------------------------------------------------
+2. INSTALLING ON WINDOWS
+---------------------------------------------------------------------
+
+  1. Right-click the .zip and choose "Extract All". Do this first —
+     Windows will not install fonts from inside a zip.
+  2. Select the 16 files starting with "Vigil-" and ending in ".ttf".
+  3. Right-click the selection and choose "Install".
+     (If you see "Install for all users", that works too and needs
+     an administrator password.)
+  4. Quit and reopen any app that was already running.
+
+
+---------------------------------------------------------------------
+3. WHAT'S IN HERE
+---------------------------------------------------------------------
+
+  Vigil-*.ttf         The fonts. 8 weights, each with an italic.
+                      These are the ones you install.
+
+  Variable font/      One file containing every weight, including the
+                      in-between ones. Modern apps can slide smoothly
+                      from thin to heavy. Older apps may only show a
+                      single weight — that's why it isn't the default.
+
+                      Install EITHER the 16 files above OR this. Both
+                      are named "Vigil", so installing both leaves two
+                      entries competing in your font menu.
+
+  Web fonts/          For putting Vigil on a website. Not installable —
+                      your computer will refuse these. See section 4.
+
+  Extras/OTF/         The same 16 fonts in a different format. Install
+                      these INSTEAD of the .ttf files if you prefer
+                      OTF. Don't install both.
+
+  Extras/Outline/     A hollow display style. Big sizes only, 40px and
+                      up. Install like any other font.
+
+  Vigil specimen.html Double-click to open in your browser. Shows every
+                      weight with a slider.
+
+  OFL.txt             The license. Short version in section 5.
+
+
+---------------------------------------------------------------------
+4. PUTTING VIGIL ON A WEBSITE
+---------------------------------------------------------------------
+
+  You don't need any of these files. Add one line to your HTML:
+
+    <link rel="stylesheet" href="https://www.vigilfont.com/vigil.css">
+
+  Then use it in your CSS:
+
+    font-family: "Vigil", sans-serif;
+
+  To host the files yourself instead, use the ones in "Web fonts/"
+  and copy the @font-face block from the specimen file.
+
+
+---------------------------------------------------------------------
+5. LICENSE
+---------------------------------------------------------------------
+
+  Vigil is free under the SIL Open Font License 1.1. Use it for
+  anything — personal, commercial, client work, logos, products you
+  sell. No payment, no credit required, no permission needed.
+
+  The one thing you can't do is sell the font files themselves.
+
+  Vigil is derived from Figtree by Erik Kennedy, also under the SIL
+  Open Font License. Full text in OFL.txt.
+
+
+---------------------------------------------------------------------
+6. TROUBLE?
+---------------------------------------------------------------------
+
+  "Nothing happened when I double-clicked."
+      On Windows, extract the zip first. Fonts can't install from
+      inside a compressed folder.
+
+  "It says the file is damaged or not a valid font."
+      You probably selected a file from "Web fonts/". Those are for
+      websites and can't be installed. Use the Vigil-*.ttf files in
+      the main folder.
+
+  "I installed it but my app doesn't show it."
+      Quit the app completely and reopen it. Most apps only look for
+      new fonts at startup.
+
+  "I only see one weight."
+      You installed the variable font in an app too old to read it.
+      Remove it and install the 16 .ttf files in the main folder.
+
+  Still stuck: https://thinkkeno.com/#contact
