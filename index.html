@@ -177,6 +177,56 @@ pre{padding:20px;border:1px solid #fff;font-family:inherit;font-size:15px;line-h
 .idx .d{font-size:18px;max-width:60ch;text-wrap:pretty}
 /* visually hidden, still read aloud */
 .vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+/* specimen — Vigil Variable 200–900 through meaning. One of five passages per
+   page load: a shuffled deck kept in localStorage, chosen before first paint by
+   the inline script that follows the section. ?specimen=<id> forces one. */
+#specimen{--spec-pink:#FF2D95;--spec-lime:#D9FF2F;background:#111;color:#fff;padding:96px 40px}
+.spec{max-width:1240px;margin:0 auto}
+.spec-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px;font-size:13px;font-weight:500;line-height:1.3;letter-spacing:.08em;text-transform:uppercase;color:#888;border-bottom:1px solid #333;padding-bottom:14px;margin-bottom:clamp(40px,5vw,64px)}
+.spec-head span{white-space:nowrap}
+.spec-q{display:flex;flex-direction:column;gap:clamp(14px,2vw,26px)}
+.spec-row{display:flex;align-items:baseline;font-size:clamp(30px,6vw,96px);line-height:1.04;letter-spacing:-.035em;font-weight:var(--w,400)}
+.spec-row.lt{color:#eee}
+.spec-row.pay{font-size:clamp(34px,7vw,116px);line-height:1;letter-spacing:-.05em}
+.spec-row.it{font-style:italic}
+/* weight ticks: one number per weight in the row, first number on the first baseline */
+.spec-tick{flex:0 0 44px;display:flex;flex-direction:column;gap:3px;font-size:12px;line-height:1;font-weight:500;font-style:normal;letter-spacing:0;color:#555;font-variant-numeric:tabular-nums}
+.spec-txt{flex:1 1 auto;min-width:0;text-wrap:balance}
+.spec-txt span{font-weight:var(--w)}
+.spec-txt .it{font-style:italic}
+.spec-txt .hv{color:#fff}
+.spec-row.pink,.spec-txt .pink{color:var(--spec-pink)}
+.spec-row.lime,.spec-txt .lime{color:var(--spec-lime)}
+/* one restrained entrance, gated on the font so the reveal and the face arrive together */
+.spec-q[data-in="0"]{opacity:0;transform:translateY(3px)}
+.spec-q[data-in="1"]{opacity:1;transform:none;transition:opacity .26s ease-out,transform .26s ease-out}
+.spec-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px 32px;margin-top:clamp(40px,5vw,64px)}
+.spec-cite{font-size:14px;line-height:1.5;color:#888;max-width:56ch;text-wrap:pretty}
+.spec-cite cite{font-style:italic}
+#specimen .pill{border-color:#fff;color:#fff;min-height:52px;padding:0 26px;font-size:16px;gap:.5em}
+#specimen .pill:hover{background:#fff;color:#111}
+/* border-top lives on the wrapper: on the grid itself it paints as a grey band */
+.spec-ladder{border-top:1px solid #333;padding-top:32px;margin-top:clamp(48px,6vw,72px)}
+.spec-ladder ul{display:grid;grid-template-columns:repeat(8,1fr);gap:2px;padding:2px;background:#333}
+.spec-ladder li{background:#111;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:22px 6px 18px}
+.spec-ladder .aa{font-size:clamp(20px,2.6vw,42px);line-height:1;letter-spacing:-.03em;font-weight:var(--w)}
+.spec-ladder .n{font-size:11px;line-height:1;color:#666;font-variant-numeric:tabular-nums}
+/* nav roll-over: clip-path instead of overflow:hidden so the link keeps a real text baseline */
+.nav .roll{position:relative;display:inline-block;clip-path:inset(0);line-height:1.2;white-space:nowrap}
+.nav .roll>span{display:block;transition:transform .45s cubic-bezier(.76,0,.24,1)}
+.nav .roll>span:last-child{position:absolute;left:0;top:100%;font-style:italic}
+.nav a:hover .roll>span{transform:translateY(-100%)}
+.nav a.has-roll:hover{text-decoration:none}
+@media (prefers-reduced-motion:reduce){
+  .spec-q[data-in]{opacity:1;transform:none;transition:none}
+  .nav .roll>span{transition:none}
+}
+@media (max-width:720px){
+  #specimen{padding-left:20px;padding-right:20px}
+  .spec-tick{display:none}
+  .spec-ladder ul{grid-template-columns:repeat(4,1fr)}
+  .spec-foot{flex-direction:column;align-items:flex-start}
+}
 /* vigil icons */
 #icons{background:#FBF6EA;color:#111;border-top:1px solid #000;border-bottom:1px solid #000;display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)}
 #icons h2{max-width:15ch}
@@ -458,7 +508,7 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
 <section id="top">
   <header class="nav">
     <span>Vigil</span>
-    <nav><a href="#tester">Try it</a><a href="#weights">Weights</a><a href="/notes">Notes</a><a href="#use">Use it</a><a href="#download">Download</a></nav>
+    <nav><a href="#tester">Try it</a><a href="#weights">Weights</a><a href="#specimen" class="has-roll"><span class="roll"><span>Specimen</span><span aria-hidden="true">200–900</span></span></a><a href="/notes">Notes</a><a href="#use">Use it</a><a href="#download">Download</a></nav>
   </header>
   <h1 id="mark" class="sweep">Vigil</h1>
   <div class="hero-foot">
@@ -545,6 +595,134 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
   <p class="small" style="max-width:70ch">Latin Extended (Western and Central European). Kerning throughout.</p>
 </section>
 
+<section id="specimen" aria-labelledby="spec-title">
+  <div class="spec">
+    <p class="spec-head"><span id="spec-title">Specimen — Vigil Variable, 200–900</span><span id="spec-src">Tao Te Ching, 33</span></p>
+    <blockquote class="spec-q" id="spec-q" data-id="laozi">
+      <p class="spec-row lt" style="--w:200"><span class="spec-tick" aria-hidden="true"><span>200</span></span><span class="spec-txt">He who knows other men</span></p>
+      <p class="spec-row it" style="--w:400"><span class="spec-tick" aria-hidden="true"><span>400</span></span><span class="spec-txt">is discerning;</span></p>
+      <p class="spec-row" style="--w:700"><span class="spec-tick" aria-hidden="true"><span>700</span></span><span class="spec-txt">he who knows himself</span></p>
+      <p class="spec-row pay pink" style="--w:900"><span class="spec-tick" aria-hidden="true"><span>900</span></span><span class="spec-txt">is intelligent.</span></p>
+      <p class="spec-row lt" style="--w:300"><span class="spec-tick" aria-hidden="true"><span>300</span></span><span class="spec-txt">He who overcomes others</span></p>
+      <p class="spec-row it" style="--w:500"><span class="spec-tick" aria-hidden="true"><span>500</span></span><span class="spec-txt">is strong;</span></p>
+      <p class="spec-row" style="--w:600"><span class="spec-tick" aria-hidden="true"><span>600</span></span><span class="spec-txt">he who overcomes himself</span></p>
+      <p class="spec-row pay lime" style="--w:800"><span class="spec-tick" aria-hidden="true"><span>800</span></span><span class="spec-txt">is mighty.</span></p>
+    </blockquote>
+    <div class="spec-foot">
+      <p class="spec-cite" id="spec-cite">Laozi, <cite>Tao Te Ching</cite>, ch. 33 — translated by James Legge, 1891. Public domain.</p>
+      <a class="pill" href="#download">Get Vigil — free <span aria-hidden="true">&#8594;</span></a>
+    </div>
+    <div class="spec-ladder" aria-hidden="true">
+      <ul>
+        <li style="--w:200"><span class="aa">Aa</span><span class="n">200</span></li>
+        <li style="--w:300"><span class="aa">Aa</span><span class="n">300</span></li>
+        <li style="--w:400"><span class="aa">Aa</span><span class="n">400</span></li>
+        <li style="--w:500"><span class="aa">Aa</span><span class="n">500</span></li>
+        <li style="--w:600"><span class="aa">Aa</span><span class="n">600</span></li>
+        <li style="--w:700"><span class="aa">Aa</span><span class="n">700</span></li>
+        <li style="--w:800"><span class="aa">Aa</span><span class="n">800</span></li>
+        <li style="--w:900"><span class="aa">Aa</span><span class="n">900</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  /* Five specimens. A row is {w: base weight, i: italic, pay: payoff size,
+     tone: 'pink'|'lime', t: string | [{t, w, i, tone}]}. Weight follows the
+     meaning: pink and lime mark the conceptual payoff, never a fixed slot.
+     The static markup above is the Laozi row set, rendered by the same
+     row() below, and stands in when this script does not run. */
+  var S=[
+    {id:'laozi',src:'Tao Te Ching, 33',
+     cite:'Laozi, <cite>Tao Te Ching</cite>, ch. 33 — translated by James Legge, 1891. Public domain.',
+     rows:[
+      {w:200,t:'He who knows other men'},
+      {w:400,i:1,t:'is discerning;'},
+      {w:700,t:'he who knows himself'},
+      {w:900,pay:1,tone:'pink',t:'is intelligent.'},
+      {w:300,t:'He who overcomes others'},
+      {w:500,i:1,t:'is strong;'},
+      {w:600,t:'he who overcomes himself'},
+      {w:800,pay:1,tone:'lime',t:'is mighty.'}]},
+    {id:'sagan',src:'Contact, 1985',
+     cite:'Carl Sagan, <cite>Contact</cite>, 1985 — line credited to Ann Druyan.',
+     rows:[ /* small → vast → love: a single ramp, 200 to 900 */
+      {w:200,t:'For small creatures such as we'},
+      {w:400,t:[{t:'the '},{t:'vastness',w:500},{t:' is bearable'}]},
+      {w:700,pay:1,t:[{t:'only through '},{t:'love.',w:900,tone:'pink'}]}]},
+    {id:'spinoza',src:'Ethics, IV.67',
+     cite:'Baruch Spinoza, <cite>Ethics</cite>, Part IV, Proposition 67, 1677.',
+     rows:[ /* death carries weight once, loses it, and life takes the colour */
+      {w:200,t:[{t:'A free man thinks of '},{t:'death',w:700}]},
+      {w:300,i:1,t:'least of all things;'},
+      {w:400,t:'and his wisdom is a meditation'},
+      {w:300,t:'not of death'},
+      {w:900,pay:1,tone:'lime',t:'but of life.'}]},
+    {id:'nietzsche-star',src:'Zarathustra, 1883',
+     cite:'Friedrich Nietzsche, <cite>Thus Spoke Zarathustra</cite>, 1883–1885.',
+     rows:[ /* chaos → creation → star */
+      {w:200,t:[{t:'One must still have '},{t:'chaos in oneself',w:700}]},
+      {w:400,i:1,t:'to be able to give birth'},
+      {w:900,pay:1,tone:'pink',t:'to a dancing star.'}]},
+    {id:'nietzsche-dancing',src:'Anonymous',
+     cite:'Anonymous — commonly attributed to Friedrich Nietzsche; attribution unverified.',
+     rows:[ /* dancing → insane → music: the one opposition, so both colours */
+      {w:200,t:[{t:'And those who were seen '},{t:'dancing',w:500,i:1}]},
+      {w:300,t:[{t:'were thought to be '},{t:'insane',w:800,tone:'pink'}]},
+      {w:300,t:'by those who could not hear'},
+      {w:900,pay:1,tone:'lime',t:'the music.'}]}
+  ];
+  var IDS=S.map(function(s){return s.id}),KEY='vigil-specimen';
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+  function span(p,base){
+    var cls=[];if(p.i)cls.push('it');if(p.tone)cls.push(p.tone);if(base<=300&&(p.w||base)>=600&&!p.tone)cls.push('hv');
+    var st=p.w&&p.w!==base?' style="--w:'+p.w+'"':'';
+    if(!cls.length&&!st)return esc(p.t);
+    return '<span'+(cls.length?' class="'+cls.join(' ')+'"':'')+st+'>'+esc(p.t)+'</span>';
+  }
+  function row(r){
+    var parts=typeof r.t==='string'?[{t:r.t}]:r.t,ws=[r.w];
+    parts.forEach(function(p){if(p.w&&ws.indexOf(p.w)<0)ws.push(p.w)});
+    var cls=['spec-row'];if(r.w<=300)cls.push('lt');if(r.pay)cls.push('pay');if(r.i)cls.push('it');if(r.tone)cls.push(r.tone);
+    return '<p class="'+cls.join(' ')+'" style="--w:'+r.w+'"><span class="spec-tick" aria-hidden="true">'
+      +ws.map(function(w){return '<span>'+w+'</span>'}).join('')+'</span><span class="spec-txt">'
+      +parts.map(function(p){return span(p,r.w)}).join('')+'</span></p>';
+  }
+  function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+  /* Shuffled deck: every specimen once, then reshuffle, never the same card
+     across the boundary. ?specimen= is a review override and leaves the deck alone. */
+  function choose(){
+    try{var q=new URLSearchParams(location.search).get('specimen');if(q&&IDS.indexOf(q)>-1)return q}catch(e){}
+    var st=null;try{st=window.localStorage;st.getItem(KEY)}catch(e){st=null}
+    if(!st)return IDS[Math.floor(Math.random()*IDS.length)];
+    var deck=[],pos=0;
+    try{var d=JSON.parse(st.getItem(KEY)||'null');if(d&&d.deck instanceof Array){deck=d.deck.filter(function(id){return IDS.indexOf(id)>-1});pos=d.pos>>0}}catch(e){}
+    if(deck.length!==IDS.length||pos<0||pos>=deck.length){
+      var last=deck.length?deck[deck.length-1]:null;
+      deck=shuffle(IDS.slice());
+      if(last&&deck[0]===last){var k=1+Math.floor(Math.random()*(deck.length-1)),t=deck[0];deck[0]=deck[k];deck[k]=t}
+      pos=0;
+    }
+    try{st.setItem(KEY,JSON.stringify({deck:deck,pos:pos+1}))}catch(e){}
+    return deck[pos];
+  }
+  var id=choose(),s=null,q=document.getElementById('spec-q');
+  for(var i=0;i<S.length;i++)if(S[i].id===id)s=S[i];
+  if(!s||!q)return;
+  q.innerHTML=s.rows.map(row).join('');
+  q.setAttribute('data-id',s.id);
+  document.getElementById('spec-src').textContent=s.src;
+  document.getElementById('spec-cite').innerHTML=s.cite;
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  q.setAttribute('data-in','0');
+  var done=false;
+  function reveal(){if(done)return;done=true;requestAnimationFrame(function(){void getComputedStyle(q).opacity;q.setAttribute('data-in','1')})}
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(reveal,reveal);
+  setTimeout(reveal,900);
+})();
+</script>
+
 <section id="icons">
   <h2 class="h2">Now there are icons.</h2>
   <p class="body">Vigil Icons is a companion set drawn on the same square grid as the type: stroke-first, rounded by the same rule, black on cream. Icons for the things people accuse each other of.</p>
@@ -572,6 +750,8 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
 <section id="notes">
   <div class="notes-head"><h2 class="h2">Notes</h2><a class="link" href="/notes">All notes</a></div>
   <ol class="idx">
+    <li><a href="/notes/worst-fonts"><span class="small tnum">2026-09-07</span><span><span class="t">The worst fonts, by someone who makes fonts</span><span class="d">The famous villains are competent typefaces with sincere origin stories. The genuinely bad ones fail elsewhere.</span></span></a></li>
+    <li><a href="/notes/coca-cola-font"><span class="small tnum">2026-09-07</span><span><span class="t">The Coca-Cola logo isn’t a font</span><span class="d">A bookkeeper’s handwriting from 1886, in the penmanship style he already used at work.</span></span></a></li>
     <li><a href="/notes/easiest-font-to-read"><span class="small tnum">2026-09-06</span><span><span class="t">What font is easiest to read?</span><span class="d">There is no single easiest font. Size, spacing and line length decide more than the typeface does.</span></span></a></li>
     <li><a href="/notes/stranger-things-font"><span class="small tnum">2026-09-06</span><span><span class="t">The Stranger Things font is ITC Benguiat</span><span class="d">Drawn by Ed Benguiat in 1977. The brief was twelve Stephen King paperbacks in a padded envelope.</span></span></a></li>
     <li><a href="/notes/license-plate-fonts"><span class="small tnum">2026-09-04</span><span><span class="t">License plate fonts: shaped by a die, aimed at a forger</span><span class="d">Drawn for a stamping die, a camera, and someone with a roll of black tape.</span></span></a></li>

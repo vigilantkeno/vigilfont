@@ -19,6 +19,8 @@ Classification: humanist geometric sans serif, in the lineage of Frutiger's Aven
 
 ## Notes (long-form articles)
 
+- [The worst fonts, by someone who makes fonts](https://www.vigilfont.com/notes/worst-fonts): Why Comic Sans and Papyrus are competent faces misused, with their real origins, and what actually makes a typeface bad.
+- [The Coca-Cola logo isn’t a font](https://www.vigilfont.com/notes/coca-cola-font): The wordmark is Spencerian handwriting by bookkeeper Frank Mason Robinson in 1886, not a typeface, and why that is why it has never dated.
 - [What font is easiest to read?](https://www.vigilfont.com/notes/easiest-font-to-read): Why there is no single easiest font, what actually changes reading speed, and the studies showing dyslexia-specific fonts do not measurably help.
 - [The Stranger Things font is ITC Benguiat](https://www.vigilfont.com/notes/stranger-things-font): The logo is ITC Benguiat, drawn by Ed Benguiat in 1977 and used on 1980s Stephen King paperbacks; Imaginary Forces built the title sequence from twelve of those covers.
 - [License plate fonts: shaped by a die, aimed at a forger](https://www.vigilfont.com/notes/license-plate-fonts): Why licence plate letterforms look mechanical (they were built for a stamping die), Germany's FE-Schrift designed by Karlgeorg Hoefer to resist tape-and-paint forgery, the UK's legally mandated Charles Wright 2001 with its statutory 14mm stroke width, and how automatic plate recognition changed the audience from human to machine.

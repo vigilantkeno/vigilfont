@@ -182,7 +182,7 @@ Homepage and interactive specimen: <https://www.vigilfont.com/>
 https://www.vigilfont.com/
 
 Vigil
-Try itWeightsNotesUse itDownload
+Try itWeightsSpecimen200–900NotesUse itDownload
 
 # Vigil
 
@@ -282,6 +282,30 @@ Fractions, superscripts, subscripts.
 
 Latin Extended (Western and Central European). Kerning throughout.
 
+Specimen — Vigil Variable, 200–900Tao Te Ching, 33
+
+> 200He who knows other men 400is discerning; 700he who knows himself 900is intelligent. 300He who overcomes others 500is strong; 600he who overcomes himself 800is mighty.
+
+Laozi, Tao Te Ching, ch. 33 — translated by James Legge, 1891. Public domain.
+
+Get Vigil — free →
+
+- Aa200
+
+- Aa300
+
+- Aa400
+
+- Aa500
+
+- Aa600
+
+- Aa700
+
+- Aa800
+
+- Aa900
+
 ## Now there are icons.
 
 Vigil Icons is a companion set drawn on the same square grid as the type: stroke-first, rounded by the same rule, black on cream. Icons for the things people accuse each other of.
@@ -313,6 +337,10 @@ All 111 icons, free, no email — same terms as the font. SVG, PNG, sticker pack
 
 ## Notes
 All notes
+
+- 2026-09-07The worst fonts, by someone who makes fontsThe famous villains are competent typefaces with sincere origin stories. The genuinely bad ones fail elsewhere.
+
+- 2026-09-07The Coca-Cola logo isn’t a fontA bookkeeper’s handwriting from 1886, in the penmanship style he already used at work.
 
 - 2026-09-06What font is easiest to read?There is no single easiest font. Size, spacing and line length decide more than the typeface does.
 
@@ -465,6 +493,96 @@ Version 1.0.0 — September 2026thinkkeno.com/#contact
 ---
 
 # Notes
+
+## The Coca-Cola logo isn’t a font — Vigil
+
+https://www.vigilfont.com/notes/coca-cola-font
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-07 — Keno Vigil
+
+# The Coca-Cola logo isn’t a font
+
+It is a bookkeeper’s handwriting from 1886, in the penmanship style he already used at work. Nobody designed it. Somebody just wrote it down.
+
+CC
+
+There is no Coca-Cola font. The wordmark was written by hand in 1886 by Frank Mason Robinson — bookkeeper and partner to John S. Pemberton, who had invented the drink — as an adaptation of Spencerian script, the ordinary business penmanship of the day. It has been redrawn many times since. It has never been a typeface you could install.
+
+That distinction sounds pedantic and isn't. It explains why the logo has outlived every typographic fashion of the last hundred and forty years.
+
+## The bookkeeper named it, then wrote it
+
+Robinson did two things that are still visible on a can today. First, he proposed the name — reasoning, in the company's own telling, that the two Cs would look well in advertising. That is a lettering judgement, not a marketing one. He picked the name partly because of how it would look written down.
+
+Then he wrote it down. He experimented with an adaptation of Spencerian script, and what he produced was adopted by everyone at Pemberton's company by unanimous consent. The script began appearing in Atlanta newspaper advertising the following year.
+
+Consider how little apparatus was involved. No brief, no studio, no rounds. A man who was good at handwriting because his job required good handwriting wrote two words the way he wrote everything, and got them slightly more beautiful than usual.
+
+## Why a bookkeeper had this in his hands
+
+Spencerian script was not an artistic flourish in 1886. It was the standard hand of American business — taught in commercial schools, expected in ledgers and correspondence, the thing clerks were drilled in. Oval forms, a steady rightward slant, and thick-and-thin strokes that come from pressure on a flexible steel nib rather than from the shape of the pen.
+
+So Robinson was not reaching for a decorative style. He was writing in his professional hand, the way you or I would type in whatever the default is. The most valuable wordmark in the world is, in origin, a competent professional doing his ordinary job slightly better than he had to.
+
+That is also why it looks the way it does. The swelling stems, the long lead-in stroke, the way the two Cs throw those descending tails underneath the word — none of that was drawn to be a logo. It is what a flexible nib does when a trained hand moves quickly.
+
+## Lettering and type are different crafts
+
+This is the part worth internalising, because it is not obvious and it comes up constantly.
+
+A typeface is a system. Every character has to work beside every other character, in any order, in words nobody has written yet. That constraint is enormous, and it is why type design is slow.
+
+Lettering has no such obligation. Robinson only ever had to make these two words work, in this order, forever. He could let the C swing out further than any systematic C could, because no other letter would ever have to live next to that swing.
+
+Almost every wordmark you can picture from memory is lettering, not type, and this is why. The freedom to solve one arrangement perfectly beats the discipline of solving all arrangements adequately — when you only need one arrangement.
+
+## Why nobody has been able to replace it
+
+Coca-Cola has modernised nearly everything else. The script has survived largely intact through Art Deco, modernism, the Swiss grid, the corporate-identity boom, the flat-design purge, and every phase since.
+
+Part of that is simple recognition value. But part is that the mark is not of a period, because it was never fashionable to begin with. Spencerian script in 1886 was not a style choice; it was infrastructure. Marks born from a fashion age with it. Marks born from an ordinary practice sometimes don't.
+
+There is also a mechanical reason. Because it is lettering rather than a font, it has no sibling characters to become dated alongside. A logo set in a 1970s typeface carries the 1970s in every letter. This one carries only itself.
+
+## The fonts pretending to be it
+
+Search for a Coca-Cola font and you will find several free downloads that approximate the script. They are unofficial, they are usually rough where the original is most careful — the entry strokes and the tail of the second C — and they exist to let people fake the mark.
+
+Which is the actual reason to avoid them: the wordmark is a registered trademark. The problem with using a lookalike for your own brand is legal, not aesthetic. Nobody at Coca-Cola cares what font is on your birthday invitation; they care a great deal about a beverage company whose logo resembles theirs.
+
+If you want that feeling honestly, use a well-drawn Spencerian or English roundhand script and letter your own word. You will get something better anyway, because a script cut for general use is drawn to handle any word, and yours only has to handle one.
+
+## What a type designer takes from this
+
+The lesson I keep returning to is about where identity actually lives.
+
+Robinson had no design training and no theory. What he had was a practised hand and a name chosen partly for how it would look written. The mark works because the constraint and the craft were sitting in the same person, and he did not overthink it.
+
+Modern branding tends to invert this: pick a typeface, then commission a designer to make it feel bespoke. It produces competent wordmarks that could belong to any of four companies. The 1886 process — write the thing, in a hand you actually have, until it looks right — produced something that could not belong to anyone else.
+
+Vigil is on the other side of that line, and deliberately so. It is a system built to set words I will never see, which means it can never do what Robinson's two words do. A typeface that tried to be as distinctive as a wordmark would be unusable as a typeface — that is the trade, and the fonts people love to hate are mostly the ones that took the distinctive side of it and got handed to everybody.
+
+## Keep reading
+
+- 2026-09-04Typeface vs font: the distinction that stopped mattering in 1985It was a real difference once, and it described a real object. Here is what it meant.
+
+- 2026-09-07The worst fonts, by someone who makes fontsThe famous villains are competent typefaces with sincere origin stories.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+Not a script, and not a logo — a geometric sans built to set words it has never seen. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
 
 ## What font is easiest to read? — Vigil
 
@@ -1312,6 +1430,116 @@ Set in Vigil
 ## It’s free. It stays free.
 
 Eight weights with matching italics, an outline style, and one variable file that runs the whole 200–900 axis. SIL Open Font License. No email, no account, no “just tell us where you work.”
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## The worst fonts, by someone who makes fonts — Vigil
+
+https://www.vigilfont.com/notes/worst-fonts
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-07 — Keno Vigil
+
+# The worst fonts, by someone who makes fonts
+
+The famous villains are competent typefaces with sincere origin stories. The genuinely bad ones fail at things nobody argues about on the internet.
+
+?!
+
+Almost every font on almost every worst-fonts list is fine. Comic Sans, Papyrus, Curlz, Brush Script — these are competently drawn typefaces that got put to work in places they were never designed for, and then took the blame for the person who put them there. The genuinely bad ones are boring, and nobody argues about them.
+
+I want to defend the famous ones first, because the defence explains what actually makes type bad.
+
+## Comic Sans was made for a product it missed
+
+Vincent Connare designed Comic Sans at Microsoft, released in October 1994. He made it for Microsoft Bob, a piece of software with a cartoon dog that spoke to you in speech bubbles — and which, when Connare saw it, was setting those speech bubbles in Times New Roman. A cartoon dog talking to you in the typeface of the London Times. He was right that this was wrong.
+
+He had The Dark Knight Returns, lettered by John Costanza, and Watchmen, lettered by Dave Gibbons, in his office. He drew a face from that tradition: hand-lettered, informal, cheerfully irregular. It is not an imitation of either, but it comes from the same place.
+
+Then he finished it too late, and it never shipped in Bob at all. It went out with 3D Movie Maker instead, another product with cartoon guides and speech bubbles, and from there into Windows — onto tens of millions of desktops, sitting in the font menu next to Arial and Times New Roman.
+
+That is the whole story of the hatred, and it has nothing to do with the drawing. For roughly a decade, Comic Sans was the only informal typeface most people owned. Anyone making a birthday flyer, a lost-cat poster, a church newsletter — anyone who wanted to sound like a human rather than a memo — had exactly one lever, and pulled it. Including, inevitably, people announcing funerals and delivering test results.
+
+Blaming the typeface for that is like blaming a hammer for a room full of things that turned out not to be nails. The design brief was cartoon speech bubbles. It performs that brief well. It was simply the only tool in the drawer.
+
+## Papyrus is a twenty-three-year-old's sincere idea
+
+Chris Costello drew Papyrus in 1982, aged twenty-three and just out of college. He had been reading the Bible, and started wondering what writing would have looked like in the Middle East at that time — rough surface, reed pen, irregular edges. He hand-drew the whole thing over about six months with a calligraphy pen on textured paper. Letraset released it in 1983.
+
+Read that again as a piece of work rather than a punchline. Six months of hand-drawing, from a coherent idea, by someone barely out of school. Most typefaces are worse than Papyrus and almost none of them are as clear about what they are trying to be.
+
+What happened next is the same thing that happened to Comic Sans: it shipped with everything, it became the only vaguely ancient or organic option most people had, and it went onto every yoga studio, herbal tea box and Mediterranean restaurant menu in the world. Then it went onto a blockbuster film's subtitles, and became a joke with a much larger audience.
+
+Costello has been remarkably gracious about all of it, which is more than most of us would manage.
+
+## So what is actually wrong with them?
+
+Nothing, in the drawing. The problem is ubiquity plus a narrow brief.
+
+A typeface designed for one specific tone, distributed to everyone, will be used for every tone. The face itself carries a strong voice — that is what it was hired for — and when the voice does not match the message, the mismatch is loud and it is the typeface you can see. Nobody looks at a funeral notice in Comic Sans and thinks poor tool selection by the bereaved. They think that font is awful.
+
+The tell is that neither face is criticised on typographic grounds. Nobody says Papyrus has bad spacing, or that Comic Sans has a weak italic. The complaint is always about where it turned up. That is a criticism of a decision, not a drawing.
+
+## The genuinely bad ones
+
+Here is what actually makes a typeface bad, and none of it is fun to argue about:
+
+- Characters you cannot tell apart. A capital I, a lowercase l and a numeral 1 drawn as the same vertical bar. An O and a zero with no distinguishing mark. This is the failure that costs someone a wrong digit in a serial number, and it is the one thing where the typeface genuinely outranks the setting.
+
+- Spacing that was never done. Plenty of free fonts are a nice set of drawings with no kerning and default sidebearings. They look fine as a word in a specimen and fall apart as a paragraph, with holes after every capital and collisions on every AV pair.
+
+- A character set that stops at the edge of English. No accents, so the moment someone writes café or Zoë the browser silently swaps in a different font mid-word.
+
+- Weights that are not related. A "family" where the bold is just the regular with a stroke added, so the counters close up and the proportions shift. You notice it instantly and cannot say why.
+
+- Hinting that gives up on Windows. A face that is beautiful on a Mac and a smear on a ClearType screen at 13px. Half the world is on the other machine.
+
+These are the real failures, and they are almost never the fonts on the lists — because a font has to be popular to be hated, and popularity usually means somebody did the boring work.
+
+## The campaign, and its ending
+
+Ban Comic Sans was started by Dave and Holly Combs, graphic designers in Indianapolis, after an employer insisted they use the font for a children's museum exhibit — which, in fairness, is close to the one context it was built for. It became a manifesto, stickers, a genuine internet movement.
+
+A note on sourcing: reference works disagree on the year it began, giving both 1999 and 2002. I have left the date out rather than pick one.
+
+The part worth knowing is how it ended. The Combses wound the campaign down in 2019, with Dave Combs saying the hatred had got out of hand. The joke had stopped being a joke about typography and had turned into a way of sneering at people who had never been taught to choose a typeface and had no reason to know.
+
+> The campaign against the world’s most hated font was ended by the people who started it, because the hating got mean.
+
+## The uncomfortable footnote
+
+Comic Sans is widely used in schools, and it has two properties that legibility research actually supports: characters that resist being confused with their own mirror images, and unusually wide spacing. Those are real virtues, and they are the same mechanism that makes a licence plate readable.
+
+That is not a claim that it is a remedy. No typeface is — the research on faces sold for dyslexia has repeatedly failed to find a measurable benefit. But it does mean the most mocked typeface of the last thirty years is doing something defensible for the readers who use it most, and the people mocking it mostly have not checked.
+
+## What a type designer takes from this
+
+Two things, and the first stings.
+
+If you draw a face with a strong voice and give it away to everyone, you are signing up for it to be used badly, publicly, forever. That is not a reason to draw bland type. It is a reason to be clear-eyed that reach and control are traded against each other, and that the trade is permanent.
+
+The second is about where criticism should point. Choosing type badly is a skill problem, and skill problems are fixable with a sentence of advice. Ridiculing the tool teaches nobody anything and mostly signals membership. If a menu is set in Papyrus, the useful response is that the face is doing all the talking and the words cannot get a word in — not that the owner is an idiot.
+
+Vigil is a quiet face on purpose, which is a different bet: less voice, more range, harder to use conspicuously wrong. That is not virtue. It is just a different trade, and it comes with its own failure mode — nobody ever loved a typeface for being sensible.
+
+## Keep reading
+
+- 2026-09-06What font is easiest to read?There is no single easiest font. Size, spacing and line length decide more than the typeface does.
+
+- 2026-09-06The Stranger Things font is ITC BenguiatDrawn by Ed Benguiat in 1977. The brief was twelve Stephen King paperbacks in a padded envelope.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A quiet geometric sans with open counters and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
