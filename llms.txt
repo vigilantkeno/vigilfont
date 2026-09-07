@@ -19,6 +19,8 @@ Classification: humanist geometric sans serif, in the lineage of Frutiger's Aven
 
 ## Notes (long-form articles)
 
+- [What font is easiest to read?](https://www.vigilfont.com/notes/easiest-font-to-read): Why there is no single easiest font, what actually changes reading speed, and the studies showing dyslexia-specific fonts do not measurably help.
+- [The Stranger Things font is ITC Benguiat](https://www.vigilfont.com/notes/stranger-things-font): The logo is ITC Benguiat, drawn by Ed Benguiat in 1977 and used on 1980s Stephen King paperbacks; Imaginary Forces built the title sequence from twelve of those covers.
 - [License plate fonts: shaped by a die, aimed at a forger](https://www.vigilfont.com/notes/license-plate-fonts): Why licence plate letterforms look mechanical (they were built for a stamping die), Germany's FE-Schrift designed by Karlgeorg Hoefer to resist tape-and-paint forgery, the UK's legally mandated Charles Wright 2001 with its statutory 14mm stroke width, and how automatic plate recognition changed the audience from human to machine.
 - [Highway Gothic vs Clearview](https://www.vigilfont.com/notes/highway-gothic-vs-clearview): The typeface on American road signs is Highway Gothic, drawn by Theodore W. Forbes in 1948. The story of halation, the Clearview challenger, and the FHWA approving it in 2004, terminating it in 2016 and reinstating it in 2018 without endorsing it.
 - [Geometric sans serif fonts: a field guide](https://www.vigilfont.com/notes/geometric-sans-serif-fonts): What defines a geometric sans, four tests for identifying one, why strict geometrics are hard to read as body text, and a survey of the notable faces including free and open-licensed options.
