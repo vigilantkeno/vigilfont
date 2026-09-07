@@ -314,6 +314,10 @@ All 111 icons, free, no email — same terms as the font. SVG, PNG, sticker pack
 ## Notes
 All notes
 
+- 2026-09-06What font is easiest to read?There is no single easiest font. Size, spacing and line length decide more than the typeface does.
+
+- 2026-09-06The Stranger Things font is ITC BenguiatDrawn by Ed Benguiat in 1977. The brief was twelve Stephen King paperbacks in a padded envelope.
+
 - 2026-09-04License plate fonts: shaped by a die, aimed at a forgerDrawn for a stamping die, a camera, and someone with a roll of black tape.
 
 - 2026-09-04Highway Gothic vs Clearview: two fonts went to war over American road signsApproved in 2004, killed in 2016, revived in 2018 — with the government refusing to endorse it.
@@ -461,6 +465,129 @@ Version 1.0.0 — September 2026thinkkeno.com/#contact
 ---
 
 # Notes
+
+## What font is easiest to read? — Vigil
+
+https://www.vigilfont.com/notes/easiest-font-to-read
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-06 — Keno Vigil
+
+# What font is easiest to read?
+
+The honest answer is not a font name. It is a set of conditions — and the research on the fonts sold as easier to read is not kind to them.
+
+Il1
+
+There isn't one. Legibility is a relationship between letters and a particular reader under particular conditions, and among competently drawn text faces the differences are small — small enough that they are routinely swamped by size, line length and spacing. A well-set page in Arial beats a badly set page in anything.
+
+That is an unsatisfying answer to a question people ask sincerely, usually because they are trying to do right by someone. So here is the useful version: what actually moves the needle, what demonstrably doesn't, and a test you can run in ten seconds.
+
+## The serif versus sans argument is mostly noise
+
+You have heard that serifs guide the eye along the line, and that sans serifs are cleaner on screens. Both claims are repeated with total confidence and neither survives contact with the evidence. Studies comparing the two have been run for decades and have failed to produce a consistent winner on reading speed or comprehension.
+
+What they do produce is a pattern worth noticing: whenever a study finds a difference, it is usually smaller than the difference you get from bumping the type up two points. The variable everyone argues about is not the variable doing the work.
+
+Use a serif or a sans because of what the page should feel like. That is a real reason. Just don't tell yourself it is a legibility decision.
+
+## The uncomfortable part: dyslexia fonts
+
+OpenDyslexic was released in 2011 by Abbie Gonzalez, with weighted bottoms on the letters intended to stop them flipping or rotating for readers with dyslexia. It spread fast, into schools and e-readers and accessibility toolbars, on an idea that sounds obviously right.
+
+The research has not backed it up.
+
+- In 2013, Luz Rello and Ricardo Baeza-Yates used eye tracking with Spanish readers aged 11 to 50 who had dyslexia. OpenDyslexic did not significantly improve reading time, and did not shorten fixations.
+
+- In 2016, Kuster and colleagues asked readers with dyslexia which face they preferred among Arial, Times New Roman and dyslexia-specific designs. They preferred Arial.
+
+- In 2017, Wery and Diliberto tested children with dyslexia across Times New Roman, Arial and OpenDyslexic in Annals of Dyslexia, and found no consistent gain for the dyslexia-specific face.
+
+- In 2023, Broadbent compared Arial and OpenDyslexic with dyslexic and non-dyslexic students. Of those who expressed a preference, most chose OpenDyslexic — largely on how it looked. Test scores showed no difference by font.
+
+That last finding is the one to sit with. People liked it, and it did not help them. Preference and performance came apart, which is exactly the trap that makes design decisions feel obvious and be wrong.
+
+None of this means the fonts are fraudulent or that people who prefer them are mistaken about their own comfort. It means the specific claim — that these letterforms measurably improve reading for dyslexic readers — has been tested repeatedly and has not held up. And the same body of work found something more actionable: plain, unadorned faces did better than decorative or italic ones. The win was in the absence of noise, not in the presence of a special trick.
+
+## What actually moves the needle
+
+In rough order of how much they matter:
+
+- Size. Nothing else in this list comes close. Most text on the web is set smaller than it should be because designers evaluate it at arm's length on a good monitor while young.
+
+- Line length. Somewhere around 45 to 75 characters. Too long and the eye loses the return; too short and it breaks the rhythm every few words.
+
+- Line spacing. Near 1.5 for body text. Tight leading makes the eye pick up the wrong line on the way back.
+
+- Contrast. Grey text on white looks refined in a mockup and fails a tired reader on a phone in daylight.
+
+- Character distinction. The first genuinely typeface-level item, and the one people never check. More below.
+
+- Which family you picked. Last. Genuinely last, among faces drawn for text.
+
+## Three settings that cost you more than any font choice
+
+If the typeface is the last thing on the list, these are near the top, and all three are decisions people make for reasons that have nothing to do with reading.
+
+All caps. Capitals throw away word shape — the pattern of ascenders and descenders that lets a reader identify a word before resolving its letters. It is the same reason American freeway signs moved to mixed case in 1958 and British ones followed, a change made on legibility grounds after testing rather than taste. A heading in caps is a stylistic choice with a real cost; a paragraph in caps is just harder to read.
+
+Italics for long passages. Italic is a change of voice, not a body style. Set more than a few sentences in it and reading slows measurably. This is one of the few places the dyslexia research is unambiguous and positive: plain upright faces outperformed decorative and italic ones, which is a finding about restraint rather than about any particular font.
+
+Justified text without hyphenation. Justification without a hyphenation engine opens rivers of white space through the paragraph, and the eye follows them downward instead of along the line. Left-aligned ragged-right is almost always the safer setting on the web, where hyphenation support is still uneven.
+
+## Why people ask this question
+
+Almost nobody asks it idly. It usually arrives attached to a real obligation — a form that older patients have to fill in, a school handout, a set of instructions for people who will be tired and in a hurry. The question is a proxy for how do I not fail this reader.
+
+Which is why the font-name answer is worse than unhelpful. It converts a solvable problem into a shopping decision, and it lets everyone stop before they have done the part that would have worked. A document set at 12px in a beautiful accessible typeface is still set at 12px.
+
+If someone hands you that brief, the useful reply is a question back: how big, how wide, how far away, and who is reading it in what light? Every one of those has a bigger lever attached to it than the font menu does.
+
+## The ten-second test
+
+Set this string in the face you are considering, at the size you will actually use:
+
+Il1 O0 rn m
+Capital i, lowercase L, one. Capital o, zero. R-n against m. Shown in Vigil.
+
+If the first three are the same shape, you have a face that will turn Illinois into a picket fence and make every password, licence key and serial number a guessing game. If the O and the zero are indistinguishable, the same applies to anything numeric. If rn closes up into something like an m, you will get modern read as modem at small sizes.
+
+This is the check that actually separates faces, and it takes ten seconds. It is also the one place where the choice of typeface genuinely beats a setting decision — no amount of extra leading will rescue a font whose l and 1 are the same drawing.
+
+## Where the real accessibility work is happening
+
+Atkinson Hyperlegible, released by the Braille Institute in 2019 and named for its founder J. Robert Atkinson, is instructive precisely because it does not claim a trick. It was drawn for readers with low vision, and its method is to push confusable characters further apart — some letters exaggerated well beyond what you would draw in a normal text face, because recognition matters more than evenness. It won Fast Company's Innovation by Design award for graphic design that year.
+
+Note what it optimises. Not flow, not weighting, not some theory about how the eye moves. Just: make sure this character cannot be mistaken for that one. That is the mechanism legibility research keeps returning to, and it is the same mechanism Germany's licence plate typeface arrived at from a completely different direction, trying to stop a forger with a roll of tape.
+
+## What a type designer takes from this
+
+Two things, and the first is humbling if you draw type for a living.
+
+The typeface is not the lever. If someone asks which font to use for a document their whole team has to read, the honest answer is to set it bigger, give it a sane measure, loosen the leading, and stop worrying about the family. Recommending a font feels like helping. Fixing the setting is helping.
+
+The second is where a typeface does earn its keep: the confusable pairs. That is a drawing decision, it cannot be fixed downstream, and it is the reason Vigil keeps the tail on its l, the flag on its 1, and open counters at text sizes — the whole point of rationing the rounding rather than softening every corner. A face that blurs those is not a stylistic preference. It is a face that will cost somebody a wrong digit at the wrong moment.
+
+## Keep reading
+
+- 2026-09-04License plate fonts: shaped by a die, aimed at a forgerDrawn for a stamping die, a camera, and someone with a roll of black tape.
+
+- 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, and which are actually worth using.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
 
 ## A century of circles: the geometric grotesk — Vigil
 
@@ -917,6 +1044,108 @@ Set in Vigil
 ## It’s free. It stays free.
 
 A rounded geometric sans that rations its softness — clean at 16px, visibly rounded at display sizes. Eight weights, italics, an outline, and one variable file. SIL Open Font License.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## The Stranger Things font is ITC Benguiat — Vigil
+
+https://www.vigilfont.com/notes/stranger-things-font
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-06 — Keno Vigil
+
+# The Stranger Things font is ITC Benguiat
+
+Drawn in 1977, twenty years before the show is set to remember it. The brief was twelve Stephen King paperbacks in a padded envelope.
+
+1977
+
+It's ITC Benguiat — a decorative serif drawn by Ed Benguiat and released by the International Typeface Corporation in 1977. The title treatment stretches its serifs and tightens the fit, so what you see on screen is a customised setting rather than the typeface straight from the box. But the bones, and all of the feeling, are Benguiat's.
+
+## The brief was a stack of paperbacks
+
+When the Duffer Brothers briefed the title sequence, they didn't describe a typeface. They sent twelve vintage Stephen King book covers and asked for that style and that feeling.
+
+That is a better brief than most typographers ever get, because it specifies the association rather than the artefact. It doesn't say "serif, condensed, glowing red." It says: make me feel the thing I felt looking at a rack of paperbacks in 1983.
+
+The studio that answered it was Imaginary Forces, with creative director Michelle Dougherty. What they found when they went looking through those covers was that a single face kept recurring — because ITC Benguiat had been all over King's 1980s editions. The show didn't borrow a mood and then find a font. It followed the mood back to the font that had been generating it all along.
+
+## Why a 1977 typeface says "1983" so well
+
+ITC Benguiat is loosely based on Art Nouveau letterforms, though it is explicitly not an academic revival — Benguiat took the flavour of the period, the swelling curves and the high waistline, and drew something that had never actually existed. It is a 1970s idea of an older thing.
+
+That double distance is exactly why it works. The show is a 2016 idea of the 1980s, whose paperbacks were a 1980s idea of the 1970s, whose type was a 1970s idea of 1900. Nostalgia stacked four deep, and it reads as authentic because each layer was sincere when it was made.
+
+There is a lesson in that for anyone reaching for a retro face. The reason Benguiat evokes the era isn't that it looks old. It's that it looks like a specific era's taste in looking old.
+
+## The sequence is doing something harder than it looks
+
+The title itself is close to still. Letters drift in from the edges, red on black, and lock into place while the synthesiser climbs. There is no camera move to hide behind, no imagery, nothing happening but type assembling itself.
+
+Dougherty has described the work as concentrating on the type and finding the most beautiful combinations of it — which sounds modest and is not. A sequence with nothing in it but letterforms has nowhere to put a weak decision. Every frame is the typeface, so every frame is either working or exposed.
+
+What the drift buys is unease. The letters begin disjointed, slightly wrong, not yet a word, and the resolution into STRANGER THINGS arrives as relief a half-second before the music confirms it. That is a typographic effect, not a cinematic one. The tension comes from withholding legibility and then granting it.
+
+It is also the reason the logo survives outside the sequence. Because the treatment is nearly the typeface itself — extended serifs, tight fit, no illustration — it still reads on a phone icon, a T-shirt, a birthday cake. Title designs that lean on effects usually don't travel. This one is just letters, and letters travel.
+
+## You have been reading it your whole life
+
+Once you can see ITC Benguiat you cannot stop. It is on the 1980s Stephen King covers, obviously. It is also on the Choose Your Own Adventure books, which means an entire generation absorbed it before they could name a typeface at all. It is on The Smiths' Strangeways, Here We Come. It runs through Quentin Tarantino's title sequences, including the cast names in Pulp Fiction. It has appeared in Star Trek film titles.
+
+That is a strange career for a piece of lettering: children's gamebooks, horror paperbacks, an English guitar band, and a director who quotes the seventies on purpose. The common thread isn't genre. It's that all of them wanted to feel like a slightly disreputable memory.
+
+## The man who drew it
+
+Ed Benguiat, 1927 to 2020, drew more than six hundred typefaces. Tiffany, Bookman, Souvenir, Edwardian Script, and the Benguiat family that carries his name. He was central to the founding of the International Typeface Corporation, the first independent licensing company for type designers, and worked with Herb Lubalin on U&lc, the magazine that taught a generation of designers what type could do.
+
+He died on 15 October 2020, aged 92, which means he lived to watch a typeface he had drawn forty-three years earlier become the visual signature of one of the most-watched shows on television. Not many designers get that. Most typefaces that end up defining a decade do it long after the person who drew them has stopped being able to enjoy it.
+
+> Six hundred typefaces, and the one everybody knows is the one that spells a town in Indiana that doesn’t exist.
+
+## What the letters are actually doing
+
+Strip the red glow and look at the drawing. ITC Benguiat is high-contrast for a display serif — thick stems against hairline-ish thins — with a waistline pushed unusually high, so the crossbar of the E and the joint of the R sit above the optical centre. That is the Art Nouveau inheritance, and it is what gives the face its slightly stretched, top-heavy poise.
+
+The serifs are the signature. They are not the crisp wedges of a Times or the slabs of a Rockwell; they flare, curving out of the stem rather than meeting it at an angle. In the show's treatment they are extended further still, which is the one real intervention — pull those flares out and the letters start to interlock, which is why the logo reads as a single object rather than fourteen characters.
+
+It is also, honestly, a difficult face. That high waist and heavy contrast make it uncomfortable below about thirty pixels, and the flared serifs clog at small sizes. ITC Benguiat is a poster face wearing a book face's serifs, and it should be treated as one. The people who set body copy in it because they liked the show are finding this out.
+
+## Can you download it?
+
+Not for free, not legitimately. ITC Benguiat is a commercial typeface and is licensed through its publisher. The results promising a free Stranger Things font are, with few exceptions, either unlicensed copies of Benguiat's work or loose imitations drawn to resemble it — and the imitations tend to fall apart exactly where the original is doing its best work, at the serif joins and the terminals.
+
+If you need the real thing for a real project, buy the licence. It is a hundred-year-old idea drawn by a master and it is still earning its keep; paying for it is not a hardship.
+
+If you want the feeling without the licence, look for openly licensed faces with genuine Art Nouveau bones rather than a Benguiat knock-off. You will get something honest instead of something that will look wrong at large sizes and get your project a takedown notice.
+
+## What a type designer takes from this
+
+The Stranger Things logo is often held up as great type design. It isn't, quite — it's great type selection, which is a different and in some ways harder skill.
+
+Nobody drew new letterforms to make you feel 1983. Someone recognised that the feeling already lived inside a forty-year-old typeface, and had the discipline to use it nearly straight, stretch the serifs, and get out of the way. The work was in the looking.
+
+That is the part worth stealing. A typeface arrives carrying everywhere it has already been — every paperback, every album sleeve, every gamebook a nine-year-old read under a duvet. You cannot draw that in. You can only find it, and then decide whether the baggage is the thing you want.
+
+Which is also the argument for knowing what category a face belongs to before you pick it. Vigil is a geometric sans and carries geometric baggage: Bauhaus, modernity, confidence, a certain coolness. It would be a terrible choice for a horror title, and no amount of good drawing would fix that.
+
+## Keep reading
+
+- 2026-08-28A century of circles: the geometric groteskErbar, Futura and Kabel arrived within a year of each other. The idea never left.
+
+- 2026-09-04Highway Gothic vs Clearview: two fonts went to war over American road signsApproved in 2004, killed in 2016, revived in 2018 — with the government refusing to endorse it.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+Not a horror face. A geometric sans built for paragraphs — eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
