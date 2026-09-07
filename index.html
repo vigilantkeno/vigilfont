@@ -717,7 +717,8 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
   if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
   q.setAttribute('data-in','0');
   var done=false;
-  function reveal(){if(done)return;done=true;requestAnimationFrame(function(){void getComputedStyle(q).opacity;q.setAttribute('data-in','1')})}
+  /* forced style read commits the hidden state first, so the fade runs even before the first frame; no rAF, so a background tab still reveals */
+  function reveal(){if(done)return;done=true;void getComputedStyle(q).opacity;q.setAttribute('data-in','1')}
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(reveal,reveal);
   setTimeout(reveal,900);
 })();
