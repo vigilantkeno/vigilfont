@@ -282,29 +282,24 @@ Fractions, superscripts, subscripts.
 
 Latin Extended (Western and Central European). Kerning throughout.
 
-Specimen — Vigil Variable, 200–900Tao Te Ching, 33
+## Specimen
 
-> 200He who knows other men 400is discerning; 700he who knows himself 900is intelligent. 300He who overcomes others 500is strong; 600he who overcomes himself 800is mighty.
+One passage per page load, drawn from five, set in Vigil Variable with the weight of each line following its meaning. Every line is ticked with its weight, 200 to 900.
 
-Laozi, Tao Te Ching, ch. 33 — translated by James Legge, 1891. Public domain.
+Laozi, Tao Te Ching, ch. 33 — translated by James Legge, 1891. Public domain:
+He who knows other men / is discerning; / he who knows himself / is intelligent. / He who overcomes others / is strong; / he who overcomes himself / is mighty.
 
-Get Vigil — free →
+Carl Sagan, Contact, 1985 — line credited to Ann Druyan:
+For small creatures such as we / the vastness is bearable / only through love.
 
-- Aa200
+Baruch Spinoza, Ethics, Part IV, Proposition 67, 1677:
+A free man thinks of death / least of all things; / and his wisdom is a meditation / not of death / but of life.
 
-- Aa300
+Friedrich Nietzsche, Thus Spoke Zarathustra, 1883–1885:
+One must still have chaos in oneself / to be able to give birth / to a dancing star.
 
-- Aa400
-
-- Aa500
-
-- Aa600
-
-- Aa700
-
-- Aa800
-
-- Aa900
+Anonymous — commonly attributed to Friedrich Nietzsche; attribution unverified:
+And those who were seen dancing / were thought to be insane / by those who could not hear / the music.
 
 ## Now there are icons.
 
