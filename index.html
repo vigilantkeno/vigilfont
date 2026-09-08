@@ -938,9 +938,39 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
   }
   var autosize=!(window.CSS&&CSS.supports&&CSS.supports('field-sizing','content'));
   function fit(){if(!autosize)return;ta.style.height='auto';ta.style.height=ta.scrollHeight+'px'}
+  /* The opening size used to be a hard 96px, which breaks the default line in
+     two on a 1280 or 1366 screen and leaves "faster." stranded on its own row.
+     No fixed number fixes it: one line needs <=89px at 1280 but <=77px at 1100,
+     while 1440 and up have room for 96. So measure the space and take the
+     largest size that still fits, capped at the 96 the design wants.
+     Below MIN the string cannot fit any sane size — phones put one word per
+     line whatever you do — so leave 96 alone and let it wrap as a specimen. */
+  var START=96,MIN=72;
+  function startSize(){
+    var avail=ta.clientWidth-(parseFloat(getComputedStyle(ta).paddingLeft)||0)-(parseFloat(getComputedStyle(ta).paddingRight)||0);
+    if(!avail||!ta.value)return START;
+    var probe=document.createElement('span'),cs=getComputedStyle(ta);
+    probe.textContent=ta.value;
+    probe.style.cssText='position:absolute;left:-99999px;top:0;white-space:pre;visibility:hidden;'+
+      'font-family:'+cs.fontFamily+';font-weight:'+cs.fontWeight+';font-style:'+cs.fontStyle+
+      ';letter-spacing:'+cs.letterSpacing+';font-size:'+START+'px';
+    document.body.appendChild(probe);
+    var wAt96=probe.getBoundingClientRect().width;
+    probe.remove();
+    if(!wAt96)return START;
+    var best=Math.floor(START*avail/wAt96);            /* width scales with size */
+    return best>=START?START:(best>=MIN?best:START);
+  }
+  function applyStartSize(){
+    var n=startSize();
+    if(n!==+z.value){z.value=n;paint();}
+  }
   ta.addEventListener('input',function(){sm.textContent=ta.value;fit()});
-  window.addEventListener('resize',fit);
-  w.addEventListener('input',paint);z.addEventListener('input',paint);
+  /* Once the reader moves the size slider it is theirs; stop re-fitting. */
+  var sizeTouched=false;
+  window.addEventListener('resize',function(){fit();if(!sizeTouched)applyStartSize();});
+  w.addEventListener('input',paint);
+  z.addEventListener('input',function(){sizeTouched=true;paint();});
   ['italic','outline','ss01','tnum'].forEach(function(k){$('t-'+k).addEventListener('click',function(){s[k]=!s[k];paint()})});
   $('t-color').addEventListener('click',function(){s.bg=(s.bg+1)%pal.length;paint()});
   var SHARE_URL='https://www.vigilfont.com/';
@@ -1023,8 +1053,9 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
       }
     });
   });
-  paint();fit();
-  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+  paint();fit();applyStartSize();
+  /* Re-fit once the real font has loaded — the fallback's metrics differ. */
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit();if(!sizeTouched)applyStartSize();});
 })();
 </script>
 </body>
