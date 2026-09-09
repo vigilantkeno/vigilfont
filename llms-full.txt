@@ -282,24 +282,29 @@ Fractions, superscripts, subscripts.
 
 Latin Extended (Western and Central European). Kerning throughout.
 
-## Specimen
+Specimen — Vigil Variable, 200–900Tao Te Ching, 33
 
-One passage per page load, drawn from five, set in Vigil Variable with the weight of each line following its meaning. Every line is ticked with its weight, 200 to 900.
+> 200He who knows other men 400is discerning; 700he who knows himself 900is intelligent. 300He who overcomes others 500is strong; 600he who overcomes himself 800is mighty.
 
-Laozi, Tao Te Ching, ch. 33 — translated by James Legge, 1891. Public domain:
-He who knows other men / is discerning; / he who knows himself / is intelligent. / He who overcomes others / is strong; / he who overcomes himself / is mighty.
+Laozi, Tao Te Ching, ch. 33 — translated by James Legge, 1891. Public domain.
 
-Carl Sagan, Contact, 1985 — line credited to Ann Druyan:
-For small creatures such as we / the vastness is bearable / only through love.
+Get Vigil — free →
 
-Baruch Spinoza, Ethics, Part IV, Proposition 67, 1677:
-A free man thinks of death / least of all things; / and his wisdom is a meditation / not of death / but of life.
+- Aa200
 
-Friedrich Nietzsche, Thus Spoke Zarathustra, 1883–1885:
-One must still have chaos in oneself / to be able to give birth / to a dancing star.
+- Aa300
 
-Anonymous — commonly attributed to Friedrich Nietzsche; attribution unverified:
-And those who were seen dancing / were thought to be insane / by those who could not hear / the music.
+- Aa400
+
+- Aa500
+
+- Aa600
+
+- Aa700
+
+- Aa800
+
+- Aa900
 
 ## Now there are icons.
 
@@ -332,6 +337,10 @@ All 111 icons, free, no email — same terms as the font. SVG, PNG, sticker pack
 
 ## Notes
 All notes
+
+- 2026-09-09The Nike font is Futura — with an asteriskFutura, a $35 Swoosh, and a slogan borrowed from a man facing a firing squad.
+
+- 2026-09-09The New York subway font isn’t the one you thinkThe signs are Helvetica. The 1970 manual wasn’t. Both are still down there.
 
 - 2026-09-07The worst fonts, by someone who makes fontsThe famous villains are competent typefaces with sincere origin stories. The genuinely bad ones fail elsewhere.
 
@@ -523,6 +532,24 @@ Spencerian script was not an artistic flourish in 1886. It was the standard hand
 So Robinson was not reaching for a decorative style. He was writing in his professional hand, the way you or I would type in whatever the default is. The most valuable wordmark in the world is, in origin, a competent professional doing his ordinary job slightly better than he had to.
 
 That is also why it looks the way it does. The swelling stems, the long lead-in stroke, the way the two Cs throw those descending tails underneath the word — none of that was drawn to be a logo. It is what a flexible nib does when a trained hand moves quickly.
+
+## What the nib is doing
+
+Look at any stroke in the wordmark and you will see it start thin, swell through the middle, and taper again. That is not a drawn outline. It is the physical behaviour of a pointed flexible nib: the tines spread under downward pressure and close when the pressure lifts, so weight follows force rather than direction.
+
+This is worth separating from the other way scripts get their contrast. A broad-edge pen — the chisel-tipped kind used for blackletter and italic — produces thicks and thins from the angle of the nib against the direction of travel, with no change in pressure at all. Spencerian is the other family entirely, and it is why the strokes swell in the middle of a curve instead of on one particular diagonal.
+
+Once you know that, the logo stops looking designed and starts looking performed. The long entry stroke before the C is a run-up, the way a runner needs a few steps before a jump. The tails under both Cs are exit strokes, the hand carrying on past the letter because stopping dead would be harder than continuing. Those are artefacts of movement, not decisions.
+
+That is also the part imitations get wrong. A drawn approximation puts weight where a designer thinks it looks balanced. A written one puts weight where the hand happened to press.
+
+## The hand that wrote it disappeared
+
+Spencerian script did not fade because taste moved on. It was made obsolete by a machine.
+
+Business penmanship existed because commerce ran on handwriting — every ledger, invoice and letter was produced by a person with a pen, so the ability to write quickly and legibly was a hireable skill worth years of drilling. The typewriter removed the reason for it. Within a generation the ornamental business hand went from professional necessity to hobby.
+
+Which means the Coca-Cola wordmark is a fossil of a vanished workplace competence. Nobody today writes that way because their job demands it, in the way Robinson did. The most reproduced piece of lettering on earth records a skill that stopped being useful about a century ago.
 
 ## Lettering and type are different crafts
 
@@ -1109,6 +1136,230 @@ Vigil is not a plate font and would be a bad one — it is a geometric sans buil
 - 2026-09-04Highway Gothic vs Clearview: two fonts went to war over American road signsApproved in 2004, killed in 2016, revived in 2018 — with the government refusing to endorse it.
 
 - 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, why the strict ones are hard to read, and which are actually worth using.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## The New York subway font isn’t the one you think — Vigil
+
+https://www.vigilfont.com/notes/new-york-subway-font
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-08 — Keno Vigil
+
+# The New York subway font isn’t the one you think
+
+The signs are Helvetica. The famous manual wasn’t. Two typefaces have been quietly sharing the system for fifty years, and you can tell them apart from the platform.
+
+es
+
+The New York City subway is set in Helvetica — officially, and only since December 1989. The typeface in the famous 1970 sign manual, the one on the tote bags and the design-school reading lists, was a different face altogether: Standard Medium, an American rebadging of a German typeface from the 1890s.
+
+This is the rare piece of design trivia where the popular answer and the correct answer are both true, just not at the same time. Ask what font the subway uses today and Helvetica is right. Ask what font Massimo Vignelli specified and Helvetica is wrong, by about nineteen years.
+
+## The manual everyone cites specified something else
+
+The document in question is the New York City Transit Authority Graphics Standards Manual, credited by the Museum of Modern Art to Massimo Vignelli, Bob Noorda and Unimark International, and dated 1966–70. That range matters. The manual is usually called a 1970 document, but the work behind it ran for four years before the binder existed.
+
+What the manual specified was Standard Medium. Not Helvetica — which by 1966 was already the fashionable choice among modernists, and which Vignelli personally admired.
+
+So the single most photographed piece of American wayfinding design is routinely credited to a typeface it does not contain.
+
+## Standard was Akzidenz-Grotesk with an American passport
+
+Standard was not an original design. It was Akzidenz-Grotesk, the German sans that Berthold made famous, sold under a different name for the English-speaking market. The renaming happened in the 1950s, when Amsterdam Continental began selling the typeface in New York and gave it a name a US printer would actually say out loud.
+
+Its origins are murkier than the tidy version suggests. Research by Klim Type Foundry and the type historian Dan Reynolds traces the oldest weights to 1896, with the first weight published jointly by Bauer & Co. in Stuttgart and Berthold in Berlin in 1898 — and not under the Akzidenz-Grotesk name at all. They started life as Enge Steinschrift and Halbfette Bücher-Grotesk, and were gathered under one family name later.
+
+Which means the typeface that ran New York for two decades was a nineteenth-century jobbing sans, assembled retroactively into a family, renamed for export, and then credited to the wrong typeface entirely. Type history is rarely as clean as the posters make it look.
+
+## Why not Helvetica? Nobody is completely sure
+
+The most honest source on this is also the most thorough one. Paul Shaw, a design historian, spent years on the question and published the results as Helvetica and the New York City Subway System in 2011. The subtitle is The True (Maybe) Story, and the parenthesis is not a joke — Shaw has said the hedge is there because he was not certain he had solved why Unimark and the Transit Authority landed on Standard rather than Helvetica.
+
+The best-supported explanation is dull in the most instructive way: the signs were fabricated in the Transit Authority's own shop on Bergen Street, and that shop already held Standard. Adopting Helvetica would have meant buying and shipping large quantities of metal type from Europe. The budget decided the typeface.
+
+> The most influential wayfinding system in America was set in whatever the sign shop already owned.
+
+A second story circulates among transit-design people and is worth repeating with its label on: that Standard's J was not hooked enough for a system that runs an entire J line, and that Helvetica's more definite J helped push the switch. It is a good story. It is also the kind of detail that gets sharper each time it is retold, so treat it as folklore unless someone produces the memo.
+
+What is documented is the shape of the transition. Helvetica did not arrive in a single changeover. It seeped in through the 1970s and 1980s as individual signs were replaced, until December 1989, when the Transit Authority made official a decision the maintenance schedule had already made for it.
+
+## Bob Noorda did the part nobody photographs
+
+Vignelli gets the name recognition. Noorda did the fieldwork, and the fieldwork is the actual design.
+
+Before drawing anything, Noorda spent weeks riding the system and watching where people got lost, tracking the paths commuters took in order to find the exact points at which a rider needs to make a decision. He tested sign legibility in perspective — the way a sign is really seen, at an angle, from down the platform — rather than flat on a desk.
+
+That produced the principle the whole system rests on: give the rider the information at the point of decision. Never before, never after.
+
+It is worth noticing that none of that is typographic. The famous part of this project is a research finding about human behaviour in tunnels, and the typeface was the cheapest available vehicle for it. The fight over American road signs ran the same way — the argument that mattered was about legibility conditions, not letterforms.
+
+## How to date a subway sign from the platform
+
+Both typefaces are still down there, because the system has never been fully repainted at once. Telling them apart takes one glance at a lowercase s.
+
+c e s
+The three letters that give it away. Angled cuts mean Standard; flat ones mean Helvetica. Shown in Vigil, which is neither.
+
+In Akzidenz-Grotesk, and therefore in Standard, the terminals — the cut ends of the strokes in c, e and s — are sliced at an angle. In Helvetica those same cuts are always horizontal or vertical. Helvetica's rigour is exactly this: every stroke ends square to the baseline, no exceptions, which is what gives it its slightly airless perfection.
+
+Once you know it, older signage in the system stops being generic and starts being dated. Add the mosaic name tablets in the oldest stations — ceramic lettering that predates any of this and was never a font in the first place — and a single platform can hold three distinct eras of American public lettering.
+
+## The map is a separate argument
+
+Vignelli's other subway artefact is more famous and more contested: the 1972 diagrammatic map, built on 45- and 90-degree angles, with the geography of the boroughs bent to serve the diagram. Central Park became a small rectangle. Riders complained. It was replaced in 1979 by a more geographic design.
+
+MoMA credits that map to Vignelli, Joan Charysyn, Bob Noorda and Unimark, and Charysyn's name is the one most often dropped in the retelling. Worth putting back in.
+
+The manual itself has had a better afterlife than the map. Jesse Reed and Hamish Smyth crowdfunded a facsimile reissue in 2014, which found tens of thousands of buyers — a corporate sign specification turned collector's object, which is its own comment on how design remembers things.
+
+## What a type designer takes from this
+
+The uncomfortable lesson is that availability beat aesthetics, and the result was fine. The most admired signage system in the United States ran for two decades on a typeface chosen because it was already in the building. Nobody rode past their stop because of it.
+
+The second lesson is sharper, and it cuts against Helvetica's reputation. Helvetica is not an obviously good signage face. Its apertures are tight — the gap in the c, the opening of the e — and tight apertures are the first thing to close up at distance, in glare, or in the blur of a moving train. Faces designed specifically for wayfinding tend to open those gaps deliberately. Helvetica did not win the subway on a legibility test. It won on supply, momentum and taste, and then became so associated with the system that changing it would now read as vandalism.
+
+That is how signage typefaces actually get chosen. Not the best letterforms. The ones that were available, then defended.
+
+## What you can actually use
+
+Neither of these is free. Helvetica is licensed through Monotype, which also acquired Berthold's library and with it Akzidenz-Grotesk. There is no official free subway release, and the fonts marketed as one are unaffiliated redraws of varying quality.
+
+If the goal is the look, the honest advice is to license the real thing or pick a neo-grotesque built for screens rather than a knock-off of a metal face.
+
+And if the goal is Vigil: this is not the job for it. Vigil is a geometric sans, built on circles and straight lines, and the subway's whole aesthetic is grotesque — closed, neutral, deliberately unremarkable. Set a station name in Vigil and it will look like a brand, not a system. Where Vigil earns its place is the paragraph underneath the sign: the service change notice nobody can read, the timetable, the app. Open counters and a large lowercase do more work there than any amount of Swiss neutrality.
+
+## Keep reading
+
+- 2026-09-04Highway Gothic vs Clearview: two fonts went to war over American road signsApproved in 2004, killed in 2016, revived in 2018 — with the government refusing to endorse it.
+
+- 2026-09-06What font is easiest to read?The honest answer is that it depends on the reader, the size and the light — but the research narrows it a lot.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## The Nike font is Futura — with an asterisk — Vigil
+
+https://www.vigilfont.com/notes/nike-font
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-09 — Keno Vigil
+
+# The Nike font is Futura — with an asterisk
+
+A 1927 German typeface, a logo that cost thirty-five dollars, and a slogan lifted from a man facing a firing squad.
+
+NK
+
+The Nike font is Futura. The NIKE wordmark that ran from 1978 to 1995 was set in Futura Bold — capitals, slanted forward, tucked into the Swoosh — and the company later licensed a bespoke cut of it. The asterisk is that Nike's logo has had no wordmark at all since 1995. The most valuable typography the brand owns is a shape with no letters in it.
+
+This makes Nike the useful counter-example to Coca-Cola. Coke's logo is handwriting — a bookkeeper's Spencerian script from 1886, never a typeface, impossible to license. Nike's began with a font you can buy. Two of the most recognisable marks on earth, built the opposite way round.
+
+## The $35 logo came first. The type came later.
+
+The Swoosh was drawn in 1971 by Carolyn Davidson, then a graphic design student at Portland State University, where Phil Knight taught accounting. She was paid $35. It was registered as a trademark in June 1971 and appeared on shoes at the U.S. Olympic Trials in Eugene the following summer.
+
+The $35 is the part everyone repeats, usually as a story about a company getting something for nothing. The rest of it gets left out: in 1983 Knight gave Davidson a gold Swoosh ring and 500 shares of Nike stock. She kept them.
+
+Type was not part of that first mark. Through the early 1970s the Swoosh was paired with a lowercase cursive nike. The version people picture — solid Swoosh, hard capitals, the E running out into the Swoosh's tail — arrives in 1978, and that is where Futura enters.
+
+## Futura, and the man the Gestapo came for
+
+Futura was designed by Paul Renner and released by the Bauer Type Foundry in Frankfurt in 1927. It is the definitive geometric sans: circles for the round letters, straight lines for the stems, an alphabet assembled as though from a compass and a ruler.
+
+Renner was not a Nazi sympathiser, which in 1930s Germany was a career. He published Kulturbolschewismus? — "Cultural Bolshevism?" — attacking the regime's cultural politics, and in 1933 he was arrested by the Gestapo and removed from his post running the Munich master school for printers.
+
+The typeface outlived all of it. Futura is the only typeface to have reached the surface of the Moon: it is the type on the plaque the Apollo 11 crew left behind in 1969.
+
+> A typeface drawn by a man the Gestapo arrested went to the Moon, and then sold running shoes. Type has a longer memory than the people who commission it.
+
+So when a sportswear company in Oregon reached for a geometric sans in 1978, it was picking up something with a considerable amount of history already attached — none of which had anything to do with athletics.
+
+## What "custom" actually means here
+
+"Nike's font is custom" gets repeated a lot, usually without anyone saying what was customised. In this case there is something concrete to point at.
+
+Neufville Digital — the foundry that holds and reissues the Bauer originals, Futura among them — publishes a family called Futura ND for Nike 365. It is a real, separately named release, listed in the type-reference literature and previously sold through retail channels. It is not available to the public now.
+
+NIKE
+Capitals, condensed, leaning forward. Shown in Vigil — not Futura, and not Nike's cut of it.
+
+That is the ordinary shape of a large brand's relationship with type: license a classic, pay a foundry to cut a version fitted to your name, keep it. The wordmark was never Futura straight from the box. It was condensed, slanted, and spaced so that one letter could hand off into a logo.
+
+## The claim nobody can actually source
+
+Search for the Just Do It typeface and the internet will answer instantly and in unison. It should not.
+
+Some sites say Futura Bold Condensed Oblique. Others say Futura Condensed Extra Black. They cannot both be right, and nearly all of them are font-download pages that exist to sell a lookalike — a category that copies from itself and rarely cites anything. Nike has published no specification. Wikipedia's article on the slogan reproduces the lettering and names no typeface at all.
+
+What can be said honestly: it is a condensed, very heavy Futura, consistent with the family Nike already had cut for it. What cannot be said honestly is the exact weight, and the confident version of that answer is worth nothing.
+
+This is the failure mode of "what font is that" as a genre. A guess gets published, the next site copies it, and repetition hardens into fact. It is the same mechanism that put a 2003 film-prop font in the history books as America's licence plate typeface.
+
+## Where the line came from
+
+The slogan is worth the detour, because its origin is genuinely dark and entirely on the record.
+
+Dan Wieden, co-founder of Wieden+Kennedy in Portland, wrote Just Do It in 1988 for the campaign that launched that July. He has said publicly, more than once, that he took it from Gary Gilmore — the convicted murderer executed by firing squad in Utah in 1977, whose last words were "let's do it."
+
+Wieden's account of the edit is characteristically dry: he did not like the "let's," and changing it meant he did not have to give Gilmore credit.
+
+The commercial result is not in dispute. Between 1988 and 1998 Nike's share of the North American sport-shoe market went from 18% to 43%, and worldwide sales from roughly $877 million to $9.2 billion.
+
+## Then they deleted the letters
+
+The most interesting typographic decision Nike ever made was to stop using type.
+
+In 1995 the word came off the logo. What remained was the Swoosh alone — no name, no wordmark, nothing to read. Very few companies can do this. It requires having spent two decades teaching the world to attach a name to a shape, and it only works once the teaching is finished.
+
+Which reframes the whole question. People search for the Nike font expecting the answer to be the source of the brand's power. It isn't. The typography did its job and was then dismissed. Futura's role was to be legible, confident and slightly foreign for seventeen years while the Swoosh became the thing people actually recognised.
+
+## What a type designer takes from this
+
+Two things.
+
+The first is that a logo is not a font, even when it is made of one. Futura Bold is a typeface; the Nike wordmark is a fixed drawing with a specific slant, specific spacing and one letter deliberately broken to meet a curve. Setting NIKE in Futura Bold on a computer does not reproduce the logo, and this is why "what font is that logo" so often has no clean answer. Wordmarks get frozen. Fonts stay flexible.
+
+The second is about borrowed meaning. Futura in 1978 carried Bauhaus-era modernism, engineering, the Space Age — none of it about sport. Nike did not neutralise those associations. It used them: geometric type reads as precise and machine-made, and that is a useful thing to project onto a running shoe. Choosing a typeface is choosing a set of second-hand connotations and hoping they point where you need them to.
+
+## What you can actually use
+
+Futura is commercial. Neufville Digital licenses it as Futura ND, and the Nike cut is not for sale. Free files calling themselves the Nike font are either unlicensed Futura or hand-traced logos — and if the plan is to imitate Nike, the trademark problem arrives long before the font licence does.
+
+If the goal is that geometric character with a licence you can live with, there are genuine options, and Vigil is not the closest of them. Vigil is not a Futura substitute and this piece is not going to pretend otherwise. Futura has a tiny lowercase, a single-storey a and a sharply pointed A — the things that make it look like 1927. Vigil has a large lowercase and a double-storey a, because it was drawn to be read in paragraphs rather than admired in headlines.
+
+That difference is the recommendation. For a display line where the geometry is the point, use Futura and pay for it. For the eleven pages of copy behind that line — where Futura's small lowercase and wide spacing genuinely hurt — a geometric sans built for text will serve better. Vigil is free, under the SIL Open Font License, and drawn for exactly that job.
+
+## Keep reading
+
+- 2026-09-07The Coca-Cola logo isn’t a fontIt is handwriting from 1886. A bookkeeper wrote it in Spencerian script, the penmanship style he already used at work.
+
+- 2026-09-04Geometric sans serif fonts: a field guideWhat makes a sans serif geometric, how to identify one in four seconds, and which geometric sans serif fonts are worth using.
 
 Set in Vigil
 
