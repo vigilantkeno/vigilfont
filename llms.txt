@@ -19,6 +19,8 @@ Classification: humanist geometric sans serif, in the lineage of Frutiger's Aven
 
 ## Notes (long-form articles)
 
+- [The Nike font is Futura — with an asterisk](https://www.vigilfont.com/notes/nike-font): The NIKE wordmark was Futura Bold from 1978 to 1995 and later a custom Neufville cut; the logo has had no wordmark since 1995, and no authoritative source names the Just Do It weight.
+- [The New York subway font isn’t the one you think](https://www.vigilfont.com/notes/new-york-subway-font): Signs are Helvetica, official only since December 1989; the 1970 Vignelli and Noorda manual specified Standard, the American name for Akzidenz-Grotesk.
 - [The worst fonts, by someone who makes fonts](https://www.vigilfont.com/notes/worst-fonts): Why Comic Sans and Papyrus are competent faces misused, with their real origins, and what actually makes a typeface bad.
 - [The Coca-Cola logo isn’t a font](https://www.vigilfont.com/notes/coca-cola-font): The wordmark is Spencerian handwriting by bookkeeper Frank Mason Robinson in 1886, not a typeface, and why that is why it has never dated.
 - [What font is easiest to read?](https://www.vigilfont.com/notes/easiest-font-to-read): Why there is no single easiest font, what actually changes reading speed, and the studies showing dyslexia-specific fonts do not measurably help.
