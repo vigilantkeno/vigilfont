@@ -19,6 +19,8 @@ Classification: humanist geometric sans serif, in the lineage of Frutiger's Aven
 
 ## Notes (long-form articles)
 
+- [The Spotify font is Spotify Mix](https://www.vigilfont.com/notes/spotify-font): Spotify Mix launched May 2024, drawn by Dinamo with Spotify’s in-house team over eighteen months; it replaced Circular rather than being a custom cut of it.
+- [Fonts like Futura: what actually comes close](https://www.vigilfont.com/notes/fonts-like-futura): The closest free alternatives are Jost, Poppins and League Spartan; Century Gothic is a redrawn Twentieth Century fitted to ITC Avant Garde Gothic’s widths.
 - [The Nike font is Futura — with an asterisk](https://www.vigilfont.com/notes/nike-font): The NIKE wordmark was Futura Bold from 1978 to 1995 and later a custom Neufville cut; the logo has had no wordmark since 1995, and no authoritative source names the Just Do It weight.
 - [The New York subway font isn’t the one you think](https://www.vigilfont.com/notes/new-york-subway-font): Signs are Helvetica, official only since December 1989; the 1970 Vignelli and Noorda manual specified Standard, the American name for Akzidenz-Grotesk.
 - [The worst fonts, by someone who makes fonts](https://www.vigilfont.com/notes/worst-fonts): Why Comic Sans and Papyrus are competent faces misused, with their real origins, and what actually makes a typeface bad.
