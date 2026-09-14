@@ -338,6 +338,10 @@ All 111 icons, free, no email — same terms as the font. SVG, PNG, sticker pack
 ## Notes
 All notes
 
+- 2026-09-14There is no VHS fontThe logo is Lee, 1976. The on-screen text was a chip, not a typeface. The look is mostly signal damage.
+
+- 2026-09-14Fonts similar to Avenir — and what they missAvenir broke the geometry on purpose. Substitute it with a strict geometric sans and you undo the fix.
+
 - 2026-09-14The Spotify font is Spotify MixSpotify Mix, built by Dinamo in 2024. It replaced Circular — it is not a custom cut of it.
 
 - 2026-09-14Fonts like Futura: what actually comes closeJost, Poppins and League Spartan are free. Century Gothic is a copy of a copy.
@@ -844,6 +848,125 @@ What Vigil is good for is the job Futura is genuinely bad at: sustained reading 
 ## Keep reading
 
 - 2026-09-09The Nike font is Futura — with an asteriskFutura, a $35 Swoosh, and a slogan borrowed from a man facing a firing squad.
+
+- 2026-09-04Geometric sans serif fonts: a field guideWhat makes a sans serif geometric, how to identify one in four seconds, and which geometric sans serif fonts are worth using.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## Fonts similar to Avenir — and what they miss — Vigil
+
+https://www.vigilfont.com/notes/fonts-similar-to-avenir
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-14 — Keno Vigil
+
+# Fonts similar to Avenir — and what they miss
+
+Avenir is already an answer to a question. Substitute it badly and you undo the thing it was built to fix.
+
+oat
+
+Montserrat is the closest free alternative to Avenir, with Nunito Sans the better pick for interfaces and long text, and Mulish the most restrained of the three. All are free under the SIL Open Font License. But the useful part of this question is not the list — it is knowing which of Avenir's properties you cannot afford to lose.
+
+Because almost every "fonts similar to Avenir" list makes the same mistake: it recycles the Futura list. And Avenir is not a Futura-style geometric sans, which is the entire point of it.
+
+## Avenir was built to break the geometry
+
+Adrian Frutiger designed Avenir in 1987; Linotype released it in 1988. The name is French for future, and the reference is not subtle — it is a direct nod to Futura and the circle-based sans-serifs of the 1920s.
+
+But Frutiger did not draw another one of those. He took the geometric idea and then deliberately violated it in three specific places:
+
+- The vertical strokes are slightly thicker than the horizontals. A true geometric sans is monolinear — every stroke the same weight. That looks clean and reads poorly, because the eye uses weight differences to tell letters apart.
+
+- The o is not a perfect circle. It is very slightly narrowed. A perfect circle is wider than every other letter in the alphabet and pulls the rhythm apart.
+
+- The ascenders are shortened. Futura's long extenders are beautiful and waste vertical space; Avenir's restraint is what lets it set tightly without collisions.
+
+None of those are compromises in the pejorative sense. They are the design. Avenir is Futura's clarity with the readability problems engineered out, which is why it survives at 14px and Futura does not.
+
+o a t
+Where Avenir shows its hand: a narrowed o, a double-storey a, a t with a real hook. Shown in Vigil, which resolves all three the same way for the same reasons.
+
+## So the wrong substitutes are the strict ones
+
+This is why the advice to replace Avenir with Jost, or with any rigorously geometric free face, gets it backwards. Those are good typefaces and they are solving the opposite problem — they restore the 1920s purity that Frutiger spent a career arguing against.
+
+> Swapping Avenir for a strict geometric sans re-introduces every legibility issue Avenir exists to fix. It will look similar in a logo and worse in a paragraph.
+
+If what you liked about Avenir was the circles, you actually liked Futura, and you should go and use Futura. If what you liked was that it stayed calm and legible through a long block of text, you liked the corrections, and you need a substitute that makes the same ones.
+
+## Why the question gets asked at all
+
+Almost nobody goes looking for an Avenir substitute because they dislike Avenir. They go looking because of how type is sold.
+
+Avenir is commercial, and commercial type is not licensed the way software usually is. A desktop licence covers a fixed number of workstations, so a team that grows has to re-buy. A webfont licence is typically metered on monthly page views, so a site that succeeds gets a larger invoice. An app licence is separate again, and so is anything embedded in a PDF sent outside the company.
+
+For a studio billing a client, that is a line item. For a one-person project, a nonprofit, or anyone shipping something that might quietly get popular, it is an open-ended liability attached to a design decision made in week one. That is the actual reason these searches exist, and it is a completely rational reason.
+
+It is also worth saying plainly: the foundries are not being greedy. Type takes years to draw and there is no other way to get paid for it. But an honest answer to "what looks like Avenir" has to acknowledge that most people asking have a budget of zero and need a face they will never have to re-license.
+
+## The free ones worth using
+
+Montserrat, by Julieta Ulanovsky, released in 2011 and later redrawn by Jacques Le Bailly, is the usual best answer. It was drawn from the painted signage of the Montserrat neighbourhood in Buenos Aires rather than from any Swiss model, which gives it a slightly warmer, sturdier personality than Avenir. It is a touch friendlier and a touch less neutral. In display sizes the swap is close to invisible.
+
+Nunito Sans is the flat-terminal companion to Nunito, which Vernon Adams drew with rounded terminals for display use; Jacques Le Bailly extended the family and produced the non-rounded version. Nunito Sans is the one to reach for in interfaces and long text — open apertures, a generous but controlled lowercase, and subtle stroke modulation that does the same job Frutiger's does.
+
+Mulish, also begun by Vernon Adams and released under the OFL, is the most minimal of the three. Its one conspicuous divergence is a single-storey a, which is exactly the feature Avenir does not have. If your text is short, that reads as a stylistic choice; across a page it changes the texture noticeably.
+
+All three are on Google Fonts, so hosting and licensing are non-issues.
+
+Set side by side, the ranking depends entirely on the job. In a headline, Montserrat wins — it has the presence and the closest overall colour. In a paragraph at 15px, Nunito Sans wins, because its aperture and spacing were tuned for screens and Montserrat's wider forms start to feel loose. Mulish is the safest choice when the type should disappear entirely, provided that single-storey a does not bother you.
+
+One thing none of them reproduces: Avenir's particular evenness across the weight range. Frutiger's family was planned as a system from the start, so Light, Book, Medium and Heavy sit at genuinely even intervals. The free families grew more organically, and their middle weights tend to cluster. If your design depends on a clear step between two adjacent weights, check that specific pair before committing.
+
+## The one nobody mentions: you may already own Avenir
+
+Worth checking before hunting for a replacement at all. Avenir Next ships with macOS and iOS. Frutiger reworked the family with Linotype's Akira Kobayashi from 2004, expanding the weights and widths and improving the fitting for digital use, and that reworked family is bundled with the operating system.
+
+That covers desktop and print work on a Mac outright. It does not cover webfont use — a bundled system font is not a web licence, and self-hosting it would be a licensing violation. But a great many people looking for an Avenir substitute for a document, a deck or a poster have it installed already.
+
+## How to check a candidate in five minutes
+
+- Set 100 words at the real size. Not the alphabet. Avenir's virtues are text virtues and do not show up in a headline.
+
+- Look for stroke modulation. Zoom into the o. If the sides and the top are identical in weight, it is a strict geometric and will not behave like Avenir in text.
+
+- Check the a. Avenir's is double-storey. A single-storey a is an immediate, unmistakable difference.
+
+- Measure the line width. Same sentence, both faces. Montserrat runs wider than Avenir; if your layout is tight, that is the constraint that will bite first.
+
+- Test the numerals. Especially if anything tabulates — prices, times, data.
+
+## What a type designer takes from this
+
+Avenir is the clearest case in modern type of a family whose defining features are its deviations. Describe it by its system and you get "geometric sans-serif", which is nearly useless. Describe it by where it departs from that system and you get the actual typeface.
+
+That generalises. The thing that makes any family feel like itself is usually not the rule it follows but the handful of places it declines to. A substitute chosen on the rule will always disappoint, because the rule is the part every other typeface in the genre shares.
+
+There is a second, more practical lesson, which is that readable and pure pull against each other and somebody has to lose. Frutiger made that trade explicitly, in public, with his name on it. A lot of type decisions are the same trade made accidentally.
+
+## Where Vigil sits
+
+Vigil makes the same corrections Avenir does, for the same reasons: a double-storey a, a lowercase large enough to survive small sizes, counters kept open rather than geometrically ideal. If you are looking for an Avenir substitute because you need geometric character that holds up in body text, that is the shelf Vigil is on.
+
+It is not an Avenir clone and will not pass as one. Vigil is softer at the corners and its geometry is more overt; Frutiger's proportions are the product of decades of signage work and are more finely tuned than mine. On a project where Avenir is already approved and licensed, keep Avenir. Where the budget is zero and the job is paragraphs, Vigil is free under the SIL Open Font License and was drawn for exactly that.
+
+## Keep reading
+
+- 2026-09-14Fonts like Futura: what actually comes closeJost, Poppins and League Spartan are free. Century Gothic is a copy of a copy.
 
 - 2026-09-04Geometric sans serif fonts: a field guideWhat makes a sans serif geometric, how to identify one in four seconds, and which geometric sans serif fonts are worth using.
 
@@ -1848,6 +1971,137 @@ Set in Vigil
 ## It’s free. It stays free.
 
 One typeface, eighteen styles, two variable files. SIL Open Font License — commercial use, embedding and logos all permitted, with no cost, no account and no attribution required.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## There is no VHS font — Vigil
+
+https://www.vigilfont.com/notes/vhs-font
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-14 — Keno Vigil
+
+# There is no VHS font
+
+Three different things go by that name, and only one of them has a typeface as the answer. The other two are a chip and a broken signal.
+
+PLAY
+
+"VHS font" is three questions wearing one coat. The VHS logo is set in Lee, a 1970s typeface by Leo Weisz. The blocky on-screen text from a VCR was never a typeface at all — it was a bitmap baked into a chip. And the VHS look people actually want is mostly not typography.
+
+Sort out which one you mean and the answer becomes easy. Fail to, and you end up with crisp retro lettering that stubbornly refuses to look like a tape.
+
+## The logo: Lee, by Leo Weisz, 1976
+
+The VHS wordmark — the tall, tightly packed capitals with those distinctive flat-sided curves — was produced in 1976 for the Victor HR-3300, the first VCR to use the format. It is set in Lee, a typeface drawn by Leo Weisz for Visual Graphics Corporation.
+
+Lee is a very 1970s object: dense, geometric, slightly claustrophobic, built for photo-lettering rather than metal. The same face was used for the Charlie's Angels title sequence the same year. Weisz, by the accounts of people who track this, lived past a hundred and kept working.
+
+> One typeface, one year, two artefacts that now function as shorthand for the entire decade. 1976 was a good year for Leo Weisz.
+
+Lee also explains why the logo is so hard to reproduce by setting it. Photo-lettering faces of that era were drawn to be manipulated — stretched, tightened, overlapped on the film — and the VHS wordmark takes full advantage, with the three letters packed far closer than any default spacing would allow. Type it out in Lee and you get something recognisably related and visibly not the logo.
+
+This is the only part of the question with a clean typographic answer, and it is the part almost nobody is asking about.
+
+## The on-screen text: a chip, not a font
+
+What people usually mean by "the VHS font" is the chunky white lettering a VCR painted over the picture. PLAY. REC. STOP. 12:00.
+
+That was never type in any sense a foundry would recognise. It came from the machine's on-screen display circuit, which held a font ROM — a small read-only memory storing each character as a grid of dots. The circuit decoded a position, pulled the matching bit pattern, and painted it into the video signal during the blanking interval between scan lines.
+
+So the letters were not drawn by a type designer and licensed. They were drawn by an engineer, on graph paper, to fit a dot matrix and a memory budget. Different manufacturers shipped different character sets. Different models from the same manufacturer often did too.
+
+## Why it looks like that
+
+Every feature of that lettering is a consequence of the job, in the same way that licence plate letters were shaped by a stamping die.
+
+- Coarse and blocky because a character was a handful of dots across. There was no resolution for a curve, so curves became staircases.
+
+- Monospaced because a character generator addresses a fixed grid. Proportional spacing needs arithmetic the chip was not going to do.
+
+- Heavy strokes because thin ones vanish on an interlaced display, where alternate scan lines refresh on alternate fields and a one-pixel horizontal flickers.
+
+- Outlined or drop-shadowed because the text sits on top of arbitrary video. White on white is unreadable, so the characters carry their own contrast with them.
+
+- Widely spaced because analogue bandwidth smears horizontal detail, and letters set tight would bleed into each other.
+
+Not one of those is a style decision. The aesthetic that now signals nostalgia was a set of grudging compromises with a cheap chip and a noisy signal.
+
+## The font everyone actually downloads
+
+If you want that look as type, the answer in practice is VCR OSD Mono, released in 2014 by Riciery Santos Leal. It is a monospaced bitmap-style font emulating vintage VCR on-screen display text, free for personal and commercial use, and it has been downloaded several million times.
+
+It is worth being precise about what it is. VCR OSD Mono is a homage, not a digitisation — it was drawn to evoke the category, not traced from one manufacturer's character ROM. That is not a criticism. There is no canonical original to be faithful to, because every machine had its own.
+
+PLAY ▮ 12:00
+The two strings that carry the whole reference. Shown in Vigil, which is a completely wrong choice for this and is here to make the point.
+
+## The part the font will not fix
+
+Here is where most VHS-styled work goes wrong. Set VCR OSD Mono cleanly, in white, on a flat background, and it does not read as VHS. It reads as a pixel font.
+
+The VHS signature is not in the letterforms. It is in the degradation:
+
+- Chroma bleed — colour carried at far lower bandwidth than brightness, so saturated edges smear sideways, especially reds and magentas.
+
+- Scan lines and interlacing, with the comb artefacts that appear on anything moving.
+
+- Tracking error — the torn horizontal band that shudders up the frame.
+
+- Generation loss, the softness and noise of a copy of a copy.
+
+Those are signal properties, not typographic ones. A designer chasing the VHS look with font choice alone is solving maybe a fifth of the problem. The other four fifths are a chroma-offset filter and a willingness to make things look broken.
+
+## Building the look, in the right order
+
+If the goal is a convincing tape, the typography is the last step rather than the first. A workable order:
+
+- Start at 4:3. Nothing reads as VHS in a widescreen frame. The aspect ratio does more work than any filter.
+
+- Set the text in a monospaced bitmap face, in white, with a hard black outline or shadow. Keep it in the corners — top left for the mode, bottom for the counter — because that is where a real machine put it, and placement is a stronger cue than letterform.
+
+- Only then degrade. Chroma offset first, pushing red and blue apart horizontally by a pixel or two. Then scan lines. Then a little noise and softness.
+
+- Break something. One tracking band, one dropout, one moment of instability. Perfect degradation is a contradiction, and evenly-applied grain reads as a filter rather than as damage.
+
+- Resist the urge to be legible. The reference depends on the picture being slightly worse than you are comfortable shipping.
+
+The common failure is applying a heavy filter to everything uniformly, including the overlay text. On a real machine the character generator painted after the tape was read, so the on-screen text was noticeably cleaner than the footage under it. Degrading them equally is the tell that something was made in software.
+
+## What a type designer takes from this
+
+Two things, and the first is now a running theme on this site.
+
+Constraints become styles once the constraints are gone. Nobody in 1985 thought the VCR character generator was attractive. It was what fit in the chip. Forty years later, the marks left by that limitation are the entire point — exactly as happened with embossed plate lettering, which is now reproduced by flat printers that never met a die. A constraint that leaves a visible fingerprint will eventually be imitated by people who have no idea what caused it.
+
+The second is about where meaning lives. If the feeling you want comes from degradation, no typeface will deliver it, because typefaces are drawn clean. This is a genuinely useful diagnostic: when a reference will not come together, ask whether the thing you are copying is the shape or the damage. Half the time it is the damage, and then you need a filter, not a font.
+
+## Vigil is the wrong tool here, obviously
+
+No hedging required. Vigil is a clean geometric sans with smooth curves and open counters, drawn for screens that render accurately. It has nothing to offer a project that wants to look like a worn tape, and dressing it up with a glitch filter would be a costume rather than a reference.
+
+Use VCR OSD Mono for the on-screen text. Track down Lee if you need the logo, and expect to draw the wordmark rather than set it. Then spend your effort on the signal, because that is where the effect actually lives.
+
+Vigil is for the other part — the legible geometric sans that carries the words around the reference. It is free under the SIL Open Font License, and it is honest about not being a time machine.
+
+## Keep reading
+
+- 2026-09-04License plate fonts: shaped by a die, aimed at a forgerEvery other typeface is drawn for a reader. This one is drawn for a stamping die, a camera, and someone with a roll of black tape.
+
+- 2026-09-06The Stranger Things font is ITC BenguiatDrawn by Ed Benguiat in 1977. The brief was twelve Stephen King paperbacks in a padded envelope.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
