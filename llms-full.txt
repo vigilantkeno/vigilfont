@@ -338,6 +338,10 @@ All 111 icons, free, no email — same terms as the font. SVG, PNG, sticker pack
 ## Notes
 All notes
 
+- 2026-09-14The Spotify font is Spotify MixSpotify Mix, built by Dinamo in 2024. It replaced Circular — it is not a custom cut of it.
+
+- 2026-09-14Fonts like Futura: what actually comes closeJost, Poppins and League Spartan are free. Century Gothic is a copy of a copy.
+
 - 2026-09-09The Nike font is Futura — with an asteriskFutura, a $35 Swoosh, and a slogan borrowed from a man facing a firing squad.
 
 - 2026-09-09The New York subway font isn’t the one you thinkThe signs are Helvetica. The 1970 manual wasn’t. Both are still down there.
@@ -715,6 +719,133 @@ The second is where a typeface does earn its keep: the confusable pairs. That is
 - 2026-09-04License plate fonts: shaped by a die, aimed at a forgerDrawn for a stamping die, a camera, and someone with a roll of black tape.
 
 - 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, and which are actually worth using.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## Fonts like Futura: what actually comes close — Vigil
+
+https://www.vigilfont.com/notes/fonts-like-futura
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-14 — Keno Vigil
+
+# Fonts like Futura: what actually comes close
+
+Three free ones worth using, a run of 1930s knockoffs nobody mentions, and the substitute almost every list recommends for the wrong reason.
+
+aoA
+
+The closest free alternative to Futura is Jost. Poppins and League Spartan are the other two worth your time, and all three are open source. The catch is that no substitute is neutral: each one trades away something specific, and knowing which thing matters more than any ranking.
+
+Most "fonts like Futura" lists are assembled by people who have never compared the letterforms. The usual top recommendation is Century Gothic, which is not really a Futura substitute at all — for reasons that are genuinely interesting once you follow the paperwork.
+
+## What makes Futura hard to replace
+
+Futura was drawn by Paul Renner and released by the Bauer Type Foundry in 1927. Four features do most of the work:
+
+- A single-storey a — a circle with a stem, no bowl-and-hook. This alone identifies the family across a room.
+
+- A small x-height with long extenders. The lowercase is short and the ascenders and descenders run long, which gives Futura its airy, slightly aristocratic texture.
+
+- A near-perfect circular o, and round letters built from that circle rather than from an oval.
+
+- A pointed apex on the A, and a sharply triangular M and W.
+
+Here is the trap. Those are precisely the features that modern geometric sans-serifs soften, because every one of them costs legibility at small sizes. Enlarging the lowercase makes text easier to read and makes it stop looking like Futura. You cannot have both.
+
+a o A
+The three letters to check first in any candidate. Shown in Vigil, which answers all three differently from Futura on purpose.
+
+## The 1930s were full of Futura knockoffs
+
+The substitution problem is not new. Futura sold extremely well, and competing typesetting systems could not use Bauer's metal. So they made their own.
+
+- Airport — Baltotype, 1930s.
+
+- Twentieth Century — drawn by Sol Hess at Lanston Monotype, worked on from roughly 1936 into the 1940s, made so Monotype's machines had a Futura equivalent.
+
+- Spartan — issued in 1939 for Mergenthaler Linotype with identical foundry type from ATF, aimed directly at Bauer's Futura.
+
+None of these were tributes. They were commercial equivalents, produced because a printer who owned a Linotype machine could not buy Bauer's Futura and needed something that would set the same job. The history of geometric sans-serifs is mostly a history of machine compatibility.
+
+## Century Gothic is a copy of a copy
+
+Which brings us to the recommendation you see everywhere, and the reason it is misleading.
+
+Century Gothic was released by Monotype Imaging in 1990. It is a redrawn version of Monotype's own Twentieth Century — already a Futura copy — with the widths adjusted to match ITC Avant Garde Gothic, Herb Lubalin's 1970 display face. The commercial motive was straightforward: it let Microsoft ship something metrically interchangeable with Avant Garde without licensing Avant Garde.
+
+> A copy of a copy, refitted to a third typeface's measurements. Recommending it as "basically Futura" skips two generations of the family tree.
+
+The practical consequence is visible. Century Gothic's lowercase is much larger than Futura's and its proportions are wider, because it inherited Avant Garde's widths. Set the same paragraph in both and the colour on the page is nowhere near the same. If you need to stand in for Avant Garde, it is excellent. For Futura it is a poor likeness with a good reputation.
+
+## The free ones worth using
+
+Three open-source families do the job honestly, and they fail in different directions.
+
+Jost, by Owen Earl at indestructible type, is the closest. It is licensed under the SIL Open Font License, ships as a variable font, and is drawn from the same 1920s German geometric tradition rather than traced from Futura's outlines — Earl describes it as blending that precise German geometry with the legibility of English humanist faces. It has a small quirk of history: it was originally called Renner, after Futura's designer, and was renamed to Jost over intellectual property concerns. Naming a Futura homage after Paul Renner turned out to be a legal problem rather than a compliment.
+
+Poppins, published by Indian Type Foundry in 2014 and free on Google Fonts under the OFL, is the most widely deployed geometric sans on the web. Its monolinear strokes and circular bowls are Futura-adjacent, but the x-height is far larger and the a is single-storey in a different, rounder way. Its real distinction is that it covers Devanagari as well as Latin — an internationalist take on a genre that was aggressively European.
+
+League Spartan, from The League of Moveable Type, descends from Matt Bailey's Spartan and through it from those same early American geometric sans-serifs. It ships as a single variable file spanning Thin to Black. It is heavier and more compact than Futura and works best where you want the geometry to feel blunt rather than elegant.
+
+## The paid ones, briefly
+
+If the budget exists, the honest advice is usually to license Futura itself — Neufville Digital publishes it as Futura ND, drawn from the Bauer originals. Nothing imitates a typeface as well as the typeface.
+
+Beyond that, Avenir (Adrian Frutiger, 1988) is the standard recommendation for people who want geometric character with humanist warmth and better text performance. It is worth being clear that Avenir is not an imitation: Frutiger set out to temper the geometric idea with the proportions of a readable text face, which is why it survives at small sizes where Futura struggles. If your actual requirement is "Futura, but it has to work in an interface", Avenir is usually the honest answer.
+
+And Avant Garde remains the right answer when what you actually liked was Avant Garde — which, given how often Century Gothic is the face people have really been looking at, is more often than they expect.
+
+## How to audition a substitute in ten minutes
+
+Rankings are worth less than a test you run yourself, and the test is quick.
+
+- Set a real paragraph, at the real size. Not the alphabet, not a headline. Roughly a hundred words at whatever size the work actually uses. Most substitution mistakes are invisible above 40px.
+
+- Compare the texture, not the letters. Squint until the words blur. If one block looks noticeably darker or looser than the other, the proportions differ and your line spacing and measure will need redoing.
+
+- Check the ambiguous set. Type Il1 O0 rn m. Geometric faces are prone to a capital I with no distinguishing feature and an O identical to a zero. Futura has this problem too; some substitutes make it worse.
+
+- Count the widths. Type the same sentence in both and measure the line. A substitute that runs 8% wider will break every layout you already built.
+
+- Look at the numerals. They are where cheap families fall apart, and where Futura's own figures — old-style in some cuts, with a distinctive one — surprise people.
+
+If a candidate survives all five, it will survive the project. If it fails the width test, it is not a substitute no matter how similar the letters look.
+
+## What a type designer takes from this
+
+The useful lesson is that "similar" is not one measurement. Two faces can share a skeleton and diverge completely in texture, because texture comes from proportion — x-height against cap height, counter size, sidebearings — and not from the shapes of individual letters.
+
+This is why swapping a typeface for a lookalike so often goes wrong in a way nobody can name. The letters look right in a specimen and the page looks wrong, because the line spacing, measure and colour were tuned to proportions the substitute does not share. When you audition a replacement, do it in a paragraph at the real size, never in a headline of the alphabet.
+
+The second lesson is about what a constraint buys. Futura's small lowercase is a liability on a phone and the source of its entire character. The 1930s copies kept the proportions because printers needed a true drop-in. Modern free alternatives mostly do not, because they were drawn for screens. That is a defensible choice — it is just not the same typeface, and lists that rank them as interchangeable are measuring the wrong thing.
+
+## Where Vigil fits, honestly
+
+Vigil is not a Futura alternative, and it would be easy money to pretend otherwise on a page like this.
+
+It is a geometric sans, and it shares the circular logic. But it has a large lowercase and a double-storey a, which are the two things that most define the difference. Set Vigil next to Futura and nobody would confuse them.
+
+What Vigil is good for is the job Futura is genuinely bad at: sustained reading at text sizes on a screen, where a small lowercase and wide default spacing actively hurt. The sensible pairing, if you love the look, is Futura in display and something with a bigger lowercase underneath it. That is how most of the brands you associate with Futura — Nike among them — actually set their body copy. Vigil is free under the SIL Open Font License and drawn for that second job.
+
+## Keep reading
+
+- 2026-09-09The Nike font is Futura — with an asteriskFutura, a $35 Swoosh, and a slogan borrowed from a man facing a firing squad.
+
+- 2026-09-04Geometric sans serif fonts: a field guideWhat makes a sans serif geometric, how to identify one in four seconds, and which geometric sans serif fonts are worth using.
 
 Set in Vigil
 
@@ -1408,6 +1539,121 @@ Set in Vigil
 ## It’s free. It stays free.
 
 A rounded geometric sans that rations its softness — clean at 16px, visibly rounded at display sizes. Eight weights, italics, an outline, and one variable file. SIL Open Font License.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## The Spotify font is Spotify Mix — Vigil
+
+https://www.vigilfont.com/notes/spotify-font
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-09-14 — Keno Vigil
+
+# The Spotify font is Spotify Mix
+
+Eighteen months of work by a Berlin foundry, and a counter shaped like a transmitter. It replaced Circular — it is not a version of it, whatever the font blogs tell you.
+
+pbd
+
+Spotify uses Spotify Mix, a bespoke typeface launched in May 2024. It was drawn by the Berlin foundry Dinamo with Spotify's in-house creative team over roughly eighteen months, and it replaced Spotify Circular — the customised Circular the company had run on for years.
+
+That last clause is where almost every other answer to this question goes wrong.
+
+## The error worth correcting first
+
+Search this question and you will repeatedly be told that Spotify Mix is "a custom variant of Circular with modified letterforms and spacing." It is not. Mix replaced Circular. It is a different typeface, by a different foundry, drawn from scratch.
+
+The mistake is easy to reconstruct. Spotify genuinely did use a customised Circular, genuinely does now use something called Spotify Mix, and a site summarising both without checking dates will happily glue them into one sentence. Then the next site copies it. Within a year the invented version outnumbers the real one.
+
+> This is the failure mode of the entire "what font is that" genre. Nobody checks. Everybody copies. A plausible sentence hardens into a fact.
+
+It is the same mechanism that made a 2003 film-prop font into America's supposed licence plate typeface, and the reason no honest source will tell you the exact weight of the Nike "Just Do It" lettering.
+
+## What came before: Circular, and the font of the 2010s
+
+Circular was designed by Laurenz Brunner and published by the Swiss foundry Lineto. Spotify adopted a customised version of it during the mid-2010s and ran on it for the better part of a decade.
+
+Circular is worth understanding because of how thoroughly it defined a period. A geometric sans with a large lowercase, tight even spacing and a friendly, slightly rounded feel, it became the house look of an entire cohort of technology companies — most famously Airbnb. For a stretch of years, "modern tech brand" and "Circular or something close to it" were nearly the same statement.
+
+It earned that. Circular solved a real problem: it kept the clean geometry that reads as modern while enlarging the lowercase enough to survive a phone screen, which is exactly the compromise the older geometric faces refuse to make. It was warm without being cute, and it held up at interface sizes where stricter geometry falls apart.
+
+Which is precisely the problem a company eventually runs into. A typeface you license is a typeface anyone can license.
+
+## What Dinamo actually built
+
+Spotify Mix is not a subtle refresh. The stated idea is mixing: it deliberately blends conventions from geometric, grotesque and humanist sans-serifs rather than committing to one genre, which is meant to echo the range of music and podcasts on the service.
+
+The details that matter to a type designer:
+
+- A transmitter shape in the counters. The enclosed negative space in letters like p, b and d is not a plain oval — it is shaped to suggest audio radiating outward. A brand metaphor buried inside the whitespace of a letter, where most people will never consciously notice it.
+
+- A wide variable range, condensed through extended. Spotify's brand design lead framed this as emotional range: moving from condensed to extended lets the same words carry a different tone.
+
+- Flicks and diagonal cuts on stroke terminals — the humanist inheritance, and what keeps it from reading as another neutral geometric sans.
+
+- Alternates and multiple numeral sets, including plainer forms for moments when expressiveness is unwanted.
+
+- Drawn for motion. It was built expecting to be animated, which is a design constraint that barely existed for typefaces twenty years ago.
+
+p b d
+The three letters where Mix hides its audio metaphor. Shown in Vigil, whose counters are plain open ovals and mean nothing at all.
+
+## But the logo is a separate question
+
+Plenty of people searching for the Spotify font do not want the interface typeface at all. They want the wordmark — the Spotify in the green.
+
+That is its own object, and the general rule holds: a logotype is a fixed drawing, not a font. Once a wordmark is approved it stops being type and becomes artwork, with its spacing, proportions and any quirks frozen into a vector file. Setting the word in whatever typeface the brand uses elsewhere will not reproduce it, because the logo has been adjusted in ways no font can apply automatically.
+
+So "what font is the Spotify logo" has the same answer as most versions of that question: none, exactly. It is lettering, drawn once and kept. The typeface question and the logo question look identical from a search box and are two entirely different things — which is a large part of why answers to both are so consistently muddled.
+
+## Why a company builds its own typeface
+
+Commissioning custom type is no longer exotic, and the reasoning is consistent.
+
+Licensing at scale gets expensive and awkward. A retail licence covers a defined number of users, installs, page views. Multiply that across apps, web, television, out-of-home and dozens of markets, and the accounting becomes a standing obligation.
+
+A licensed face carries no ownership. Circular was excellent and it was everywhere. There is no equity in looking like your competitors.
+
+Off-the-shelf families rarely cover the range. A product surface needs a condensed weight for a cramped label, an extended one for a hero image, tabular numerals for durations, and the whole thing interpolating smoothly for animation. Commissioning that is often cheaper than assembling it from three families that disagree about proportion.
+
+The contrast with Coca-Cola is instructive. Coke's identity is a piece of handwriting from 1886 that has barely moved. Spotify's is a variable font system with alternates, rebuilt from scratch after a decade. One brand's typography is a relic it protects; the other's is infrastructure it replaces.
+
+## What a type designer takes from this
+
+The interesting decision is not the drawing. It is the range.
+
+Mix is built to be a toolbox rather than a voice: wide enough in width and weight that the same family can whisper or shout, with alternates for when the personality needs turning down. That is a genuinely different brief from the one most typefaces are drawn to. A text face wants to be consistent and invisible. A brand system increasingly wants to be a controllable instrument.
+
+Variable font technology is what made that practical. Shipping condensed-through-extended as one interpolating file, rather than forty static cuts nobody installs correctly, is the difference between a system designers use and a system they route around.
+
+The second thing worth noticing is that Mix's most distinctive feature is in the counters — the holes. Counters are where a typeface's character actually lives, far more than the outer silhouette, and they are the first thing to close up at small sizes or low contrast. Putting the brand idea there is a confident bet that the family will mostly be seen large.
+
+## What you can actually use
+
+Spotify Mix is proprietary. It is not sold, and it will not be. Circular can be licensed from Lineto, and it remains a genuinely good typeface. Anything offered as a free Spotify font download is an unlicensed copy of Circular, which is piracy with extra steps.
+
+If what appeals is the category rather than the brand, plenty of geometric sans-serifs are free and legitimate. The field guide covers the options, and Vigil is one of them — a geometric sans with open counters and a large lowercase, free under the SIL Open Font License.
+
+What Vigil will not do is imitate Spotify Mix, and it is worth saying plainly. Mix is a wide variable system with genre-mixing terminals and alternate sets, built by a commercial foundry over eighteen months for one company's specific surfaces. Vigil is a straight geometric sans for people who need good type and have no budget. Different problems. Reaching for a free font to imitate a bespoke one is the reliable way to end up with something that looks like a near-miss, and a near-miss reads worse than an honest difference.
+
+## Keep reading
+
+- 2026-09-07The Coca-Cola logo isn’t a fontA bookkeeper’s handwriting from 1886, in the penmanship style he already used at work.
+
+- 2026-09-04Geometric sans serif fonts: a field guideWhat makes a sans serif geometric, how to identify one in four seconds, and which geometric sans serif fonts are worth using.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
