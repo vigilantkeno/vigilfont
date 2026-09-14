@@ -19,6 +19,8 @@ Classification: humanist geometric sans serif, in the lineage of Frutiger's Aven
 
 ## Notes (long-form articles)
 
+- [There is no VHS font](https://www.vigilfont.com/notes/vhs-font): The VHS logo is set in Lee by Leo Weisz (1976); VCR on-screen text was a bitmap in a font ROM, never a typeface; the aesthetic is signal degradation, not letterforms.
+- [Fonts similar to Avenir — and what they miss](https://www.vigilfont.com/notes/fonts-similar-to-avenir): Avenir is not strictly geometric — Frutiger thickened the verticals, narrowed the o and shortened the ascenders; Montserrat, Nunito Sans and Mulish are the free options.
 - [The Spotify font is Spotify Mix](https://www.vigilfont.com/notes/spotify-font): Spotify Mix launched May 2024, drawn by Dinamo with Spotify’s in-house team over eighteen months; it replaced Circular rather than being a custom cut of it.
 - [Fonts like Futura: what actually comes close](https://www.vigilfont.com/notes/fonts-like-futura): The closest free alternatives are Jost, Poppins and League Spartan; Century Gothic is a redrawn Twentieth Century fitted to ITC Avant Garde Gothic’s widths.
 - [The Nike font is Futura — with an asterisk](https://www.vigilfont.com/notes/nike-font): The NIKE wordmark was Futura Bold from 1978 to 1995 and later a custom Neufville cut; the logo has had no wordmark since 1995, and no authoritative source names the Just Do It weight.
