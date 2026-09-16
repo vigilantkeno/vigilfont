@@ -26,13 +26,13 @@
 <meta name="twitter:title" content="Vigil Serif — preview">
 <meta name="twitter:description" content="A serif companion to Vigil, in preview. Same cap height, same x-height, same line box.">
 <meta name="twitter:image" content="https://www.vigilfont.com/og.png">
-<link rel="preload" href="/fonts/VigilSerif-wght-.woff2?v=preview-2026-09-16" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/VigilSerif-wght-.woff2?v=preview-2026-09-16b" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/Vigil-wght-.woff2?v=1.001" as="font" type="font/woff2" crossorigin>
 <style>
 @font-face{font-family:"Vigil";src:url("/fonts/Vigil-wght-.woff2?v=1.001") format("woff2");font-weight:200 900;font-display:block}
 @font-face{font-family:"Vigil";src:url("/fonts/Vigil-Italic-wght-.woff2?v=1.001") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
-@font-face{font-family:"Vigil Serif";src:url("/fonts/VigilSerif-wght-.woff2?v=preview-2026-09-16") format("woff2");font-weight:300 900;font-display:block}
-@font-face{font-family:"Vigil Serif";src:url("/fonts/VigilSerif-Italic-wght-.woff2?v=preview-2026-09-16") format("woff2");font-weight:300 900;font-style:italic;font-display:block}
+@font-face{font-family:"Vigil Serif";src:url("/fonts/VigilSerif-wght-.woff2?v=preview-2026-09-16b") format("woff2");font-weight:300 900;font-display:block}
+@font-face{font-family:"Vigil Serif";src:url("/fonts/VigilSerif-Italic-wght-.woff2?v=preview-2026-09-16b") format("woff2");font-weight:300 900;font-style:italic;font-display:block}
 *,*::before,*::after{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#FBF6EA}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
@@ -95,13 +95,10 @@ section,footer{padding:clamp(48px,8vw,112px) clamp(16px,4vw,56px)}
 .stand{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:36px 56px;align-items:start}
 .stand>div{display:flex;flex-direction:column;gap:14px}
 .stand h3{font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#7A7468}
-table.st{border-collapse:collapse;width:100%;font-size:16px}
+table.st{border-collapse:collapse;width:100%;max-width:640px;font-size:16px}
 table.st td{padding:9px 16px 9px 0;border-top:1px solid #DED8CB;vertical-align:top}
 table.st tr:last-child td{border-bottom:1px solid #DED8CB}
 table.st td:first-child{color:#7A7468;white-space:nowrap;width:1%}
-.stand ul{display:flex;flex-direction:column;gap:10px;font-size:17px;line-height:1.5;text-wrap:pretty}
-.stand ul li{padding-left:1.2em;position:relative}
-.stand ul li::before{content:"—";position:absolute;left:0;color:#7A7468}
 footer{padding-top:0;padding-bottom:clamp(32px,5vw,56px);font-size:13px;font-weight:400;line-height:1.55;color:#7A7468;background:#fff}
 footer>div{border-top:1px solid #DED8CB;padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 40px}
 footer p{max-width:60ch;text-wrap:pretty}
@@ -194,22 +191,6 @@ footer a{text-underline-offset:3px;color:#5F5A50}
         <tr><td>figures</td><td>lining by default, old-style on onum</td></tr>
         <tr><td>weight axis</td><td>300–900, roman and italic</td></tr>
       </table>
-    </div>
-    <div>
-      <h3>What changed from Vollkorn</h3>
-      <ul>
-        <li>Cap height, x-height and ascenders moved to Vigil's, with the lowercase scaled uniformly so its round letters kept their shape.</li>
-        <li>The wide letters condensed at constant stem weight, so the two faces set to nearly the same measure.</li>
-        <li>Descenders shortened to Vigil's, lining figures made the default.</li>
-        <li>A Light master at 300, extended from the existing axis, so the serif at 300 pairs with the sans at 400 stem for stem.</li>
-      </ul>
-      <h3>What is not done</h3>
-      <ul>
-        <li>The name is a working name.</li>
-        <li>The Light is derived, not yet drawn; it may be redrawn by hand.</li>
-        <li>No hinting yet, so Windows rendering is unfinished.</li>
-        <li>No download until it ships. Vollkorn is under the SIL Open Font License and so is this, which means it will be free, usable and embeddable anywhere, and cannot be sold by itself. Vollkorn's copyright stays in the files.</li>
-      </ul>
     </div>
   </div>
 </section>
