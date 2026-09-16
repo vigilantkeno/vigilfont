@@ -163,6 +163,10 @@ Static WOFF2 for all sixteen roman and italic weights are at `https://www.vigilf
 
 Latin Extended: Western and Central European, covering English, Spanish, French, German, Polish, Czech and Turkish among others.
 
+## Changes
+
+**1.001 (2026-09-16).** The lowercase `l` now has a tail by default, so `l` and `I` read apart at every weight; the accented `ĺ ľ ļ` follow. Stylistic set 2 (`ss02`) is reversed: it now gives the *plain* `l`. If you had `ss02` on to get the tail, turn it off. `ł` keeps its plain stem.
+
 ## License
 
 SIL Open Font License 1.1. You may use Vigil in commercial work, embed it in apps and websites, sell products set in it, and use it in a logo or trademark. You may modify and redistribute it. The one restriction is that you may not sell the font files on their own. No attribution is required in your designs.
