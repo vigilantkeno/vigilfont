@@ -122,3 +122,13 @@ IN A HURRY?
       Remove it and install the 16 .ttf files in the main folder.
 
   Still stuck: https://thinkkeno.com/#contact
+
+
+---------------------------------------------------------------------
+WHAT'S NEW IN 1.001
+---------------------------------------------------------------------
+
+  The lowercase l has a tail, so l and I no longer look the same.
+  The accented forms follow. Stylistic set 2 (ss02) is reversed:
+  it now gives the plain l. The Polish l with stroke keeps its
+  plain stem.
