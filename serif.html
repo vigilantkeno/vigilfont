@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vigil Serif — preview</title>
+<meta name="description" content="Vigil Serif is a serif companion to Vigil, in preview: reproportioned to share the sans's cap height, x-height and line box. Derived from Vollkorn under the SIL Open Font License.">
+<link rel="canonical" href="https://www.vigilfont.com/serif">
+<meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="#FBF6EA">
+<meta name="author" content="Keno Vigil">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vigil">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.vigilfont.com/serif">
+<meta property="og:title" content="Vigil Serif — preview">
+<meta property="og:description" content="A serif companion to Vigil, in preview. Same cap height, same x-height, same line box.">
+<meta property="og:image" content="https://www.vigilfont.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vigil Serif — preview">
+<meta name="twitter:description" content="A serif companion to Vigil, in preview. Same cap height, same x-height, same line box.">
+<meta name="twitter:image" content="https://www.vigilfont.com/og.png">
+<link rel="preload" href="/fonts/VigilSerif-wght-.woff2?v=preview-2026-09-16" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Vigil-wght-.woff2?v=1.001" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Vigil";src:url("/fonts/Vigil-wght-.woff2?v=1.001") format("woff2");font-weight:200 900;font-display:block}
+@font-face{font-family:"Vigil";src:url("/fonts/Vigil-Italic-wght-.woff2?v=1.001") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
+@font-face{font-family:"Vigil Serif";src:url("/fonts/VigilSerif-wght-.woff2?v=preview-2026-09-16") format("woff2");font-weight:300 900;font-display:block}
+@font-face{font-family:"Vigil Serif";src:url("/fonts/VigilSerif-Italic-wght-.woff2?v=preview-2026-09-16") format("woff2");font-weight:300 900;font-style:italic;font-display:block}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#FBF6EA}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-family:"Vigil",sans-serif;font-size:18px;line-height:1.5;color:#111;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid #1D3BFF;outline-offset:3px}
+h1,h2,h3,p,ol,ul,figure,blockquote,pre,table{margin:0}
+ol,ul{padding:0;list-style:none}
+section,footer{padding:clamp(48px,8vw,112px) clamp(16px,4vw,56px)}
+.serif{font-family:"Vigil Serif",Georgia,serif}
+.nav{position:relative;z-index:1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 24px;font-size:15px;font-weight:500}
+.nav nav{display:flex;flex-wrap:wrap;gap:4px 24px}
+.nav a{text-decoration:none;padding:12px 0;margin:-12px 0}
+.nav a:hover{text-decoration:underline}
+.nav [aria-current="page"]{text-decoration:underline;text-underline-offset:5px}
+.h2{font-size:clamp(40px,7vw,96px);line-height:1;letter-spacing:-0.02em;font-weight:600;text-wrap:balance}
+.small{font-size:15px;font-weight:500}
+.tnum{font-variant-numeric:tabular-nums}
+.body{font-size:18px;line-height:1.5;max-width:62ch;text-wrap:pretty}
+.btn{display:inline-flex;align-items:center;min-height:56px;padding:0 32px;background:#111;color:#FBF6EA;font-weight:600;font-size:18px;text-decoration:none;border-radius:999px}
+.btn:hover{background:#1D3BFF;color:#fff}
+.link{font-weight:500;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
+.pill{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:2px solid currentColor;border-radius:999px;background:transparent;color:inherit;font-size:15px;font-weight:600;text-decoration:none;cursor:pointer;font-family:inherit}
+.pill[aria-pressed="true"],.pill:hover{background:#111;color:#FBF6EA}
+.badge{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid #111;border-radius:999px;padding:6px 12px;line-height:1}
+#top{display:flex;flex-direction:column;gap:clamp(32px,6vw,72px);padding-bottom:clamp(24px,4vw,48px)}
+#top h1{font-family:"Vigil Serif",Georgia,serif;font-weight:500;font-size:clamp(64px,15vw,200px);line-height:.95;letter-spacing:-0.01em}
+.hero-foot{display:flex;flex-direction:column;gap:20px}
+.hero-foot>div{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
+#display{padding-top:0;display:flex;flex-direction:column;gap:8px}
+#display p{font-family:"Vigil Serif",Georgia,serif;font-size:clamp(32px,6.4vw,88px);line-height:1.08;letter-spacing:-0.01em;text-wrap:balance}
+#weights{background:#fff;border-top:1px solid #111;border-bottom:1px solid #111}
+#weights h2{margin-bottom:clamp(32px,5vw,72px);max-width:16ch}
+#weights li{display:flex;flex-direction:column;gap:6px;padding:16px 0 20px;border-top:1px solid #111}
+#weights li:last-child{border-bottom:1px solid #111}
+#weights .lab{display:flex;gap:12px}
+#weights .row{font-family:"Vigil Serif",Georgia,serif;font-size:clamp(17px,4.4vw,46px);line-height:1.1;white-space:nowrap}
+#pairing{background:#111;color:#FBF6EA;display:flex;flex-direction:column;gap:clamp(24px,4vw,40px)}
+#pairing h2{max-width:16ch}
+.pair{display:flex;flex-direction:column;gap:14px}
+.pair p{font-size:clamp(22px,4.2vw,48px);line-height:1.2;letter-spacing:-0.01em;border-bottom:1px dashed rgba(251,246,234,.35);padding-bottom:10px;text-wrap:balance}
+.pair .vs{font-family:"Vigil Serif",Georgia,serif}
+#pairing .small{color:#B8B3A6;max-width:60ch}
+#text{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:40px 48px;align-items:start}
+#text>div{display:flex;flex-direction:column;gap:12px}
+#text .lab{font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;color:#7A7468}
+#text p.t{font-size:18px;line-height:1.6;max-width:36em;text-wrap:pretty}
+#text p.t.serif{font-family:"Vigil Serif",Georgia,serif}
+#tester{background:#fff;border-top:1px solid #111;border-bottom:1px solid #111;display:flex;flex-direction:column;gap:32px}
+#s-text{width:100%;margin:0;padding:0;border:0;background:transparent;color:inherit;resize:none;outline:none;font-family:"Vigil Serif",Georgia,serif;line-height:1.1;overflow:hidden;display:block}
+.controls{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:end}
+.controls>div{display:flex;flex-direction:column;gap:8px;min-width:200px}
+.controls label{display:flex;justify-content:space-between;font-size:15px;font-weight:500}
+.controls input[type=range]{width:100%;accent-color:#111}
+.controls .pills{display:flex;gap:10px;flex-wrap:wrap}
+#glyphs{display:flex;flex-direction:column;gap:20px}
+#glyphs p.g{font-family:"Vigil Serif",Georgia,serif;font-size:clamp(20px,3.4vw,34px);line-height:1.35;overflow-wrap:anywhere}
+#status{background:#fff;border-top:1px solid #111;display:flex;flex-direction:column;gap:clamp(28px,4vw,48px)}
+#status h2{max-width:12ch}
+.stand{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:36px 56px;align-items:start}
+.stand>div{display:flex;flex-direction:column;gap:14px}
+.stand h3{font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#7A7468}
+table.st{border-collapse:collapse;width:100%;font-size:16px}
+table.st td{padding:9px 16px 9px 0;border-top:1px solid #DED8CB;vertical-align:top}
+table.st tr:last-child td{border-bottom:1px solid #DED8CB}
+table.st td:first-child{color:#7A7468;white-space:nowrap;width:1%}
+.stand ul{display:flex;flex-direction:column;gap:10px;font-size:17px;line-height:1.5;text-wrap:pretty}
+.stand ul li{padding-left:1.2em;position:relative}
+.stand ul li::before{content:"—";position:absolute;left:0;color:#7A7468}
+footer{padding-top:0;padding-bottom:clamp(32px,5vw,56px);font-size:13px;font-weight:400;line-height:1.55;color:#7A7468;background:#fff}
+footer>div{border-top:1px solid #DED8CB;padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 40px}
+footer p{max-width:60ch;text-wrap:pretty}
+footer .meta{display:flex;gap:24px;flex-wrap:wrap}
+footer a{text-underline-offset:3px;color:#5F5A50}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+<section id="top">
+  <header class="nav">
+    <span><a href="/" style="text-decoration:none">Vigil</a></span>
+    <nav><a href="/#tester">Try the sans</a><a href="/#weights">Weights</a><a href="/#specimen">Specimen</a><a href="/serif" aria-current="page">Serif</a><a href="/notes">Notes</a><a href="/#download">Download</a></nav>
+  </header>
+  <div>
+    <p class="badge">Preview</p>
+    <h1>Vigil Serif</h1>
+  </div>
+  <div class="hero-foot">
+    <p class="body">A serif companion to Vigil, in preview. Derived from Vollkorn by Friedrich Althausen and reproportioned to sit beside the sans: the same cap height, the same x-height, the same line box, so the two can share a page. Working name. Free under the SIL Open Font License when it ships.</p>
+    <div><a class="btn" href="#tester">Try it</a><a class="link" href="#status">Where it stands</a></div>
+  </div>
+</section>
+
+<section id="display" aria-label="Display setting">
+  <p>Handgloves &amp; bibliography</p>
+  <p style="font-style:italic">Handgloves &amp; bibliography</p>
+</section>
+
+<section id="weights">
+  <h2 class="h2">Seven weights on one axis, 300 to 900.</h2>
+  <ol>
+    <li><span class="lab small"><span>Light</span><span class="tnum">300</span></span><span class="row" style="font-weight:300">The thick black bibliography <em>held.</em></span></li>
+    <li><span class="lab small"><span>Regular</span><span class="tnum">400</span></span><span class="row" style="font-weight:400">The thick black bibliography <em>held.</em></span></li>
+    <li><span class="lab small"><span>Medium</span><span class="tnum">500</span></span><span class="row" style="font-weight:500">The thick black bibliography <em>held.</em></span></li>
+    <li><span class="lab small"><span>SemiBold</span><span class="tnum">600</span></span><span class="row" style="font-weight:600">The thick black bibliography <em>held.</em></span></li>
+    <li><span class="lab small"><span>Bold</span><span class="tnum">700</span></span><span class="row" style="font-weight:700">The thick black bibliography <em>held.</em></span></li>
+    <li><span class="lab small"><span>ExtraBold</span><span class="tnum">800</span></span><span class="row" style="font-weight:800">The thick black bibliography <em>held.</em></span></li>
+    <li><span class="lab small"><span>Black</span><span class="tnum">900</span></span><span class="row" style="font-weight:900">The thick black bibliography <em>held.</em></span></li>
+  </ol>
+</section>
+
+<section id="pairing">
+  <h2 class="h2">Paired with Vigil, same size, shared baseline.</h2>
+  <div class="pair" aria-label="Vigil beside Vigil Serif">
+    <p><span>Vigil sans</span> <span class="vs">and Vigil Serif</span> <span>on one line.</span></p>
+    <p><span class="vs">Hamburgefonstiv</span> <span>Hamburgefonstiv</span></p>
+    <p><span class="vs" style="font-weight:300">Serif at 300</span> <span>and sans at 400</span> <span class="vs" style="font-weight:300">share a stem;</span> <span class="vs">at 400 the serif is heavier.</span></p>
+  </div>
+  <p class="small">Cap height, x-height and line box match exactly. At the same nominal weight the serif's stems are heavier than the sans's, so the stem-matched pairing is serif 300 beside sans 400.</p>
+</section>
+
+<section id="text" aria-label="Text setting">
+  <div><p class="lab">Vigil Serif, 18px</p><p class="t serif">The thick black bibliography held eighteen highlighted titles, all bound in libraries that fell behind the building. Field notebooks, half-lit hallways and bottled ink filled the shelf that held both halves of the old atlas. <em>A phrase in italic, for contrast.</em></p></div>
+  <div><p class="lab">Vigil, 18px</p><p class="t">The thick black bibliography held eighteen highlighted titles, all bound in libraries that fell behind the building. Field notebooks, half-lit hallways and bottled ink filled the shelf that held both halves of the old atlas. <em>A phrase in italic, for contrast.</em></p></div>
+</section>
+
+<section id="tester">
+  <label for="s-text" class="small">Type anything</label>
+  <textarea id="s-text" rows="1" spellcheck="false">Nothing hurried, nothing missing.</textarea>
+  <div class="controls">
+    <div><label for="s-wght"><span>Weight</span><span class="tnum" id="s-wght-out">400</span></label><input id="s-wght" type="range" min="300" max="900" step="1" value="400"></div>
+    <div><label for="s-size"><span>Size</span><span class="tnum" id="s-size-out">80px</span></label><input id="s-size" type="range" min="24" max="180" step="1" value="80"></div>
+    <div class="pills"><button type="button" class="pill" id="s-italic" aria-pressed="false" style="font-style:italic">Italic</button><button type="button" class="pill" id="s-onum" aria-pressed="false">Old-style figures</button></div>
+  </div>
+</section>
+
+<section id="glyphs" aria-label="Character set">
+  <p class="g">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+  <p class="g">abcdefghijklmnopqrstuvwxyz</p>
+  <p class="g">0123456789 &amp; @ # $ % — “quotes” Il1 O0 rn m</p>
+  <p class="g">АБВГДЕЖЗИЙКЛМНОПРСТ абвгдежзийклмнопрст αβγδεζηθικλμνξοπρστυφχψω</p>
+  <p class="small" style="max-width:70ch">Latin, Cyrillic and Greek, about 2,300 glyphs inherited from Vollkorn. Lining figures by default, old-style figures on <span class="tnum">onum</span>, small caps, fractions. Kerning throughout.</p>
+</section>
+
+<section id="status">
+  <h2 class="h2">Where it stands.</h2>
+  <div class="stand">
+    <div>
+      <h3>Measured against Vigil, 200px em</h3>
+      <table class="st">
+        <tr><td>cap height</td><td>140.6 — Vigil 140.0</td></tr>
+        <tr><td>x-height</td><td>100.4 — Vigil 100.0</td></tr>
+        <tr><td>x-height ÷ cap</td><td>0.714 — matches exactly</td></tr>
+        <tr><td>ascender</td><td>flat on the cap, as Vigil's is</td></tr>
+        <tr><td>descender</td><td>40.0 — Vigil 40.0</td></tr>
+        <tr><td>line box</td><td>1.200 em — matches Vigil</td></tr>
+        <tr><td>lowercase width</td><td>6% wider than Vigil; the rest is serifs</td></tr>
+        <tr><td>figures</td><td>lining by default, old-style on onum</td></tr>
+        <tr><td>weight axis</td><td>300–900, roman and italic</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3>What changed from Vollkorn</h3>
+      <ul>
+        <li>Cap height, x-height and ascenders moved to Vigil's, with the lowercase scaled uniformly so its round letters kept their shape.</li>
+        <li>The wide letters condensed at constant stem weight, so the two faces set to nearly the same measure.</li>
+        <li>Descenders shortened to Vigil's, lining figures made the default.</li>
+        <li>A Light master at 300, extended from the existing axis, so the serif at 300 pairs with the sans at 400 stem for stem.</li>
+      </ul>
+      <h3>What is not done</h3>
+      <ul>
+        <li>The name is a working name.</li>
+        <li>The Light is derived, not yet drawn; it may be redrawn by hand.</li>
+        <li>No hinting yet, so Windows rendering is unfinished.</li>
+        <li>No download until it ships. Vollkorn is under the SIL Open Font License and so is this, which means it will be free, usable and embeddable anywhere, and cannot be sold by itself. Vollkorn's copyright stays in the files.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <p>Vigil Serif is designed by Keno Vigil (<a href="https://thinkkeno.com">thinkkeno.com</a>) in Cary, North Carolina. Derived from <a href="https://github.com/FAlthausen/Vollkorn-Typeface">Vollkorn</a> by Friedrich Althausen under the SIL Open Font License 1.1. Preview; not yet released.</p>
+    <p class="meta"><a href="/">Back to Vigil</a><a href="/notes">Notes</a><a href="https://thinkkeno.com/#contact">thinkkeno.com/#contact</a></p>
+  </div>
+</footer>
+</main>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var t=$('s-text'),w=$('s-wght'),z=$('s-size'),it=$('s-italic'),on=$('s-onum');
+  function fit(){t.style.height='auto';t.style.height=t.scrollHeight+'px'}
+  function u(){t.style.fontWeight=w.value;$('s-wght-out').textContent=w.value;t.style.fontSize=z.value+'px';$('s-size-out').textContent=z.value+'px';fit()}
+  w.addEventListener('input',u);z.addEventListener('input',u);t.addEventListener('input',fit);window.addEventListener('resize',fit);
+  it.addEventListener('click',function(){var v=it.getAttribute('aria-pressed')!=='true';it.setAttribute('aria-pressed',v);t.style.fontStyle=v?'italic':'normal';fit()});
+  on.addEventListener('click',function(){var v=on.getAttribute('aria-pressed')!=='true';on.setAttribute('aria-pressed',v);t.style.fontVariantNumeric=v?'oldstyle-nums':'normal'});
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(fit)}
+  u();
+})();
+</script>
+</body>
+</html>

@@ -7,7 +7,8 @@ Single-page marketing site for **Vigil**, a softened geometric grotesk by Keno V
 - `index.html` — the page (hero, type tester, weights, rounding story, in-use, character set, notes index, download)
 - `notes/` — one file per post, served at `/notes/{slug}` via `cleanUrls`. `notes/index.html` is the index at `/notes`
 - `notes.css` — shared styles for every Notes page. Font `src` paths must stay absolute (`/fonts/…`); posts live one level deep, where a relative path would 404
-- `fonts/` — variable WOFF2 (roman + italic), 16 static WOFF2, Vigil Outline Regular + Italic
+- `fonts/` — variable WOFF2 (roman + italic), 16 static WOFF2, Vigil Outline Regular + Italic — plus the Vigil Serif preview WOFF2 (`VigilSerif-*`)
+- `serif.html` — the Vigil Serif preview at `/serif`, `noindex` while it is a preview; the homepage `#serif` section links to it
 - `downloads/Vigil.zip` — the full family package
 - `vercel.json` — clean URLs, long cache on fonts, attachment header on downloads
 
