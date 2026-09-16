@@ -157,7 +157,7 @@ Latin Extended: Western and Central European, covering English, Spanish, French,
 
 ## Changes
 
-**1.001 (2026-09-16).** The lowercase `l` now has a tail by default, so `l` and `I` read apart at every weight; the accented `ĺ ľ ļ` follow. Stylistic set 2 (`ss02`) is reversed: it now gives the *plain* `l`. If you had `ss02` on to get the tail, turn it off. `ł` keeps its plain stem.
+**1.001 (2026-09-16).** The lowercase `l` now has a tail by default, so `l` and `I` read apart at every weight; the accented `ĺ ľ ļ` follow. Stylistic set 2 (`ss02`) is reversed: it now gives the *plain* `l`. If you had `ss02` on to get the tail, turn it off. `ł` follows, since Figtree draws a tailed one as well.
 
 ## License
 
