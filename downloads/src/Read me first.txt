@@ -125,6 +125,16 @@ IN A HURRY?
 
 
 ---------------------------------------------------------------------
+WHAT'S NEW IN 1.002
+---------------------------------------------------------------------
+
+  The tailed l is spaced properly. It shipped with no room on its
+  right, so it crowded the next letter, and above SemiBold the tail
+  crossed into it. Kerning now gives the space back before a period,
+  comma, colon, semicolon, x and z. No letterform changed.
+
+
+---------------------------------------------------------------------
 WHAT'S NEW IN 1.001
 ---------------------------------------------------------------------
 
