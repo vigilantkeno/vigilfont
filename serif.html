@@ -241,7 +241,14 @@ table.fin td{padding:8px 0;border-top:1px solid var(--rule)}
 
 /* ── tester ───────────────────────────── */
 #tester{background:var(--white);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);display:flex;flex-direction:column;gap:28px}
-#s-text{width:100%;margin:0;padding:0;border:0;background:transparent;color:inherit;resize:none;outline:none;font-family:"Vigil Serif",Georgia,serif;line-height:1.08;letter-spacing:-0.015em;overflow:hidden;display:block}
+#s-wrap{position:relative}
+#s-text{width:100%;margin:0;padding:0;border:0;background:transparent;color:inherit;resize:none;outline:none;font-family:"Vigil Serif",Georgia,serif;line-height:1.08;letter-spacing:-0.015em;overflow:hidden;display:block;position:relative;z-index:1}
+/* a blinking caret at the end of the text, so the line reads as editable before
+   anyone clicks it; #s-mirror is an invisible copy that says where the text ends */
+#s-mirror{position:absolute;left:0;top:0;width:100%;margin:0;padding:0;visibility:hidden;pointer-events:none;white-space:pre-wrap;overflow-wrap:break-word;font-family:"Vigil Serif",Georgia,serif;line-height:1.08;letter-spacing:-0.015em}
+#s-caret{position:absolute;width:.05em;background:currentColor;pointer-events:none;opacity:0;animation:caret-blink 1.1s step-end infinite}
+#s-wrap:focus-within #s-caret{display:none}
+@keyframes caret-blink{0%,50%{opacity:.85}50.01%,100%{opacity:0}}
 .controls{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:end}
 .controls>div{display:flex;flex-direction:column;gap:8px;min-width:200px}
 .controls label{display:flex;justify-content:space-between;font-size:15px;font-weight:500}
@@ -299,14 +306,14 @@ footer a{text-underline-offset:3px;color:#4A4A49}
 
 /* size ramp */
 #ramp{background:var(--white);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);display:flex;flex-direction:column;gap:clamp(24px,3vw,40px)}
-.ramp li{display:grid;grid-template-columns:76px 1fr;gap:8px 24px;align-items:baseline;padding:18px 0;border-top:1px solid var(--rule)}
+.ramp li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:8px 24px;align-items:baseline;padding:18px 0;border-top:1px solid var(--rule)}
 .ramp li:last-child{border-bottom:1px solid var(--rule)}
 .ramp .n{font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
 .ramp{--avail:calc(100vw - 190px);--s1:min(64px,calc(var(--avail)/25.6));--s2:min(40px,calc(var(--avail)/30.2),var(--s1));--s3:min(28px,calc(var(--avail)/15.8),var(--s2))}
 .ramp p{font-family:"Vigil Serif",Georgia,serif}
 .ramp p.one{white-space:nowrap}
 .ramp p.m{width:578px;max-width:100%;text-wrap:pretty}
-@media (max-width:620px){.ramp li{grid-template-columns:1fr}}
+@media (max-width:620px){.ramp li{grid-template-columns:minmax(0,1fr)}}
 
 /* in situ */
 #situ{display:flex;flex-direction:column;gap:clamp(28px,4vw,48px)}
@@ -378,6 +385,7 @@ footer a{text-underline-offset:3px;color:#4A4A49}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *{animation:none!important;transition:none!important}
+  #s-caret{opacity:.85}
 }
 </style>
 </head>
@@ -627,7 +635,10 @@ footer a{text-underline-offset:3px;color:#4A4A49}
 
 <section id="tester">
   <label for="s-text" class="small">Type anything</label>
-  <textarea id="s-text" rows="1" spellcheck="false">Nothing hurried, nothing missing.</textarea>
+  <div id="s-wrap">
+    <textarea id="s-text" rows="1" spellcheck="false">Nothing hurried, nothing missing.</textarea>
+    <div id="s-mirror" aria-hidden="true"></div><span id="s-caret" aria-hidden="true"></span>
+  </div>
   <p id="s-echo">Nothing hurried, nothing missing.</p>
   <div class="controls">
     <div><label for="s-wght"><span>Weight</span><span class="tnum" id="s-wght-out">400</span></label><input id="s-wght" type="range" min="200" max="900" step="1" value="400"></div>
@@ -869,6 +880,19 @@ footer a{text-underline-offset:3px;color:#4A4A49}
   var t=$('s-text'),w=$('s-wght'),z=$('s-size'),ec=$('s-echo');
   var st={italic:false,onum:false,smcp:false};
   var fit=function(){t.style.height='auto';t.style.height=t.scrollHeight+'px'};
+  var mir=$('s-mirror'),car=$('s-caret'),mark=document.createElement('i');
+  mark.style.cssText='display:inline-block;width:0;height:1em;vertical-align:baseline';
+  var caret=function(){
+    if(!mir||!car)return;
+    var cs=getComputedStyle(t);
+    ['fontSize','fontWeight','fontStyle','fontVariantNumeric','fontVariantCaps'].forEach(function(k){mir.style[k]=cs[k]});
+    mir.style.width=t.clientWidth+'px';
+    var v=t.value;
+    mir.textContent=/\n$/.test(v)?v+'\u200b':v;
+    mir.appendChild(mark);
+    var m=mark.getBoundingClientRect(),b=mir.getBoundingClientRect();
+    car.style.left=(m.left-b.left)+'px';car.style.top=(m.top-b.top)+'px';car.style.height=m.height+'px';
+  };
   var paintT=function(){
     t.style.fontWeight=w.value;$('s-wght-out').textContent=w.value;
     t.style.fontSize=z.value+'px';$('s-size-out').textContent=z.value+'px';
@@ -878,15 +902,15 @@ footer a{text-underline-offset:3px;color:#4A4A49}
     [t,ec].forEach(function(el){el.style.fontStyle=fs;el.style.fontVariantNumeric=num;el.style.fontVariantCaps=caps});
     ec.style.fontWeight=w.value;
     [['s-italic','italic'],['s-onum','onum'],['s-smcp','smcp']].forEach(function(p){$(p[0]).setAttribute('aria-pressed',String(st[p[1]]))});
-    fit();
+    fit();caret();
   };
   w.addEventListener('input',paintT);z.addEventListener('input',paintT);
-  t.addEventListener('input',function(){ec.textContent=t.value;fit()});
-  window.addEventListener('resize',fit);
+  t.addEventListener('input',function(){ec.textContent=t.value;fit();caret()});
+  window.addEventListener('resize',function(){fit();caret()});
   [['s-italic','italic'],['s-onum','onum'],['s-smcp','smcp']].forEach(function(p){
     $(p[0]).addEventListener('click',function(){st[p[1]]=!st[p[1]];paintT()});
   });
-  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(fit)}
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(function(){fit();caret()})}
   paintT();
 })();
 </script>
