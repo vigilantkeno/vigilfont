@@ -1,0 +1,189 @@
+FONTLOG for Vigil Serif
+-------------------------------------------------------------------
+This file provides detailed information on the Vigil Serif font software and
+should be distributed along with the Vigil Serif fonts and any derivative works.
+
+Vigil Serif is a derivative of Vollkorn by Friedrich Althausen, reproportioned
+to pair with Vigil, a softened geometric grotesk, so that the two share a cap
+height, an x-height and a line box. Vollkorn's own information and its changelog
+from 2005 onward follow this section unchanged, as the SIL Open Font License FAQ
+asks of a derivative.
+
+Vollkorn declares no Reserved Font Name, so the rename is permitted outright.
+The licence requires only that Vollkorn's copyright notice and the licence
+travel with every copy, which they do: in OFL.txt, in the copyright field of
+every font file, and on the specimen page.
+
+vigilfont.com
+
+
+Vigil Serif ChangeLog
+-------------------------------------------------------------------
+(Most recent first. Vollkorn's own entries continue below this section.)
+
+18 September 2026 (Joaquin Keno Vigil) Vigil Serif Version 1.000
+- First release, as Vigil Serif: the name is final. Variable roman and italic
+  on one weight axis from 300 to 900, and fourteen static instances.
+- The statics are hinted with ttfautohint and carry the hinted flag; the
+  variable fonts carry a gasp table and a smart-dropout prep program. Every
+  font has a STAT table with the seven named weights and an ital axis linking
+  roman to italic, so the family enumerates as one on Windows and macOS.
+  Every instance names its PostScript font; usWinAscent/Descent are the
+  family's real bounds.
+- The Light, extrapolated from the Regular-Black axis, was measured stroke by
+  stroke against the Regular along the normals of the union outline: nothing
+  thins beyond proportion, so it ships as drawn. Small caps keep Vollkorn's
+  ratio to the cap height.
+
+18 September 2026 (Joaquin Keno Vigil) — pre-release work, version 0.001
+- Reconnected the figure features to the figures that are actually encoded.
+  Making lining figures the default moved the codepoints, which silently killed
+  sups, subs, numr, dnom and ordn, and half of frac, because all of them were
+  written against the bare digit names. 504 rules added across the six feature
+  files; no outline moved and no glyph was renamed.
+- Rejoined the junctions the Light extrapolation pulled apart. Vollkorn draws
+  several letters as overlapping pieces, and extrapolating below Regular shrank
+  the overlap until it went negative, so nineteen glyphs rendered in two halves
+  at weight 300: f and longs, Y and the fifteen that composite from it, F and
+  franc. Four hidden edges moved back inside the pieces that lap over them, so
+  no visible outline changed and Regular came out byte-identical.
+- Cleared the stale upstream files that still described Vollkorn rather than
+  this font, and renamed the designspace source and instance labels. The
+  copyright notice, this FONTLOG and the attribution on the specimen page are
+  kept deliberately.
+
+16 September 2026 (Joaquin Keno Vigil)
+- Repaired the case map. The reproportioning scripts chose a glyph's scale from
+  the Unicode category of its codepoint and fell back to the cap factor for
+  anything unencoded, so every unencoded lowercase glyph grew about 5% too
+  little: the italic bowls and shoulders, every drawn ligature, and the
+  stylistic and locl alternates.
+
+15 September 2026 (Joaquin Keno Vigil)
+- Reproportioned to Vigil's metrics: cap and x-height raised, the lowercase
+  condensed at constant stem weight, descenders shortened, ascenders flattened
+  to cap height.
+- Lining figures made the default, old-style moved to onum.
+- A Light master added at 300 by extending the Regular to Black axis, so the
+  serif can be set beside the sans stem for stem. Still extrapolated rather
+  than drawn, which is the open question on this family.
+- Renamed from Vollkorn to Vigil Serif; Vollkorn's copyright and the OFL kept.
+
+
+FONTLOG for Vollkorn
+–––––––––––––––––––––––––––––––––––––––––
+This file provides detailed information on the Vollkorn Font Software. 
+This information should be distributed along with the Vollkorn fonts and any derivative works.
+
+
+Basic Font Information
+–––––––––––––––––––––––––––––––––––––––––
+Vollkorn is a quiet, modest and well working body copy typeface for bread and butter use. It has dark and meaty serifs and a bouncing and healthy look and might be used as body type as well as for headlines or titles. More than 2000 glyphs per font support a wide range of languages in Latin, Cyrillic and Greek scripts.
+»Vollkorn« [pronounce ‘follkorn’] is German for “wholemeal”. It refers to the old term “Brotschrift” [literally ‘bread type’] which described the small fonts for every day use in the days of hand-compositing.
+Vollkorn came into being as Friedrich Althausen’s first type designing attempt while his studies at Bauhaus University Weimar, Germany. The Regular style was initially published in 2005 under a Creative-Commons-License. When GoogleFonts launched in 2010 Vollkorn was one the first twenty featured fonts.
+Since 19 May 2010 Vollkorn is published under the OFL.
+Original Designers address: Friedrich Althausen, friedrichalthausen.de, Germany
+vollkorn-typeface.com
+
+
+ChangeLog
+–––––––––––––––––––––––––––––––––––––––––
+(This should list both major and minor changes, most recent first.)
+
+May 22nd 2018 (Friedrich Althausen) Vollkorn Version 4.106
+- prepared for Beta Variable Font Tests
+
+May 9th 2018 (Friedrich Althausen) Vollkorn Version 4.105
+- fixed feature code for figures
+- added Dcedilla
+- generated OTF, TTF, WOFF, WOFF2, EOT
+
+May 2nd 2018 (Friedrich Althausen) Vollkorn Version 4.104
+- fixed ascender of λ
+- added several top anchors to Xx and greek letters
+
+April 19th 2018 (Friedrich Althausen) Vollkorn Version 4.103
+- added missing uni0258 ereversed
+
+April 11th 2018 (Friedrich Althausen) Vollkorn Version 4.102
+- fixed SemiBold font name
+- fixed some kerning issues
+- added some brackets and musical bars
+- added some anchors to Greek lowercase
+
+December 22nd 2017 (Friedrich Althausen) Vollkorn Version 4.100
+- added intermediate weights “Medium” and “Extrabold” (and adjusted “SemiBold” and “Bold”)
+- optimised Vietnamese
+- added ca. 40 glyphs to support more languages
+- some new Greek and Latin glyphs
+- fixed Eng
+- added half brackets
+
+May 2nd 2017 (Friedrich Althausen) Vollkorn Version 4.015
+- Styles with SC included for vollkorn-typeface.com
+
+22nd March 2017 (Friedrich Althausen) Vollkorn Version 4.014
+- Fixed vert Metrics
+- Fixed Semibold Italic’s usWeightClass
+- Added SC Instances
+
+1st March 2017 (Friedrich Althausen) Vollkorn Version 4.012
+- Support of »GoogleFonts Latin Pro«, »GoogleFonts Latin Plus«, »GoogleFonts Latin Expert«, »GoogleFonts Cyrillic Pro«, »GoogleFonts Cyrillic Plus«, »GoogleFonts Greek Core«, »GoogleFonts Vietnamese«, »Adobe Latin 3«, »Adobe Cyrillic 3« and more 
+- Smallcaps
+- character count increase from 535 up to over 2000
+- etc.
+
+18 March 2014 (Friedrich Althausen) Vollkorn Version 3.005
+- fixing of catalan l•l and L•L
+- fixing of version counters and style linking
+- added underlinePosition and underlineThickness 
+
+5 February 2014 (Friedrich Althausen) Vollkorn Version 3.003
+- fix dot of j again
+
+31 January 2014 (Friedrich Althausen) Vollkorn Version 3.002
+- minor changes: semibold name fix, corrected small g-commaaccent, tidied up automatic metrics
+
+7 January 2014 (Friedrich Althausen) Vollkorn Version 3.001
+- minor corrections (added non-breaking space, hinting stuff) 
+- now on own webpage: vollkorn-typeface.com
+
+29 December 2013 (Friedrich Althausen, Potsdam) Vollkorn Version 3.0
+- adding several characters (now 533 in the romans, 456 in the italics)
+- full support of “Adobe Latin 3” 
+- basic cyrillic in the roman styles
+- interpolation of 4 new styles: medium, medium italic, semibold, semibold italic
+- new tt-hinting with the ttf-autohinter
+
+15 September 2010 (Yanone) Vollkorn Version 2.1
+- fixing TT-Hinting: droping-out horizontal strokes at 14 px
+
+07 September 2010 (Friedrich Althausen, supported by Yanone) Vollkorn Version 2.1
+- Initial release of the styles Vollkorn Italic and Bold-Italic
+- Small improvements in the Regular and Bold styles
+
+19 May 2010 (Friedrich Althausen, supported by Yanone) Vollkorn Version 2.0
+- Initial release of the fonts Vollkorn Regular and Bold under the SIL OFL 1.1
+
+late 2005 (Friedrich Althausen) Vollkorn Version 1.0
+- First release of Vollkorn under the Creative Commons License “Attribution 2.0 Germany”
+
+
+Acknowledgements
+–––––––––––––––––––––––––––––––––––––––––
+(Here is where contributors can be acknowledged. If you make modifications be sure to add your name (N), email (E), web-address (W) and description (D). This list is sorted by last name in alphabetical order.)
+
+N: Joaquin Keno Vigil
+W: https://thinkkeno.com
+D: Reproportioning and engineering of Vigil Serif
+
+N: Friedrich Althausen
+E: post@friedrichalthausen.de
+W: http://friedrichalthausen.de/
+D: Principal Design
+
+N: Jan Yanone Gerner
+E: post@yanone.de
+W: http://yanone.de/
+D: Engineer/Designer – TrueType hinting and mastering of Version 2.1
+
