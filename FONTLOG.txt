@@ -1,0 +1,83 @@
+FONTLOG for Vigil
+---------------------------------------------------------------------
+
+This file provides information on the Vigil font software. It should be
+distributed along with the Vigil fonts and any derivative works, as the SIL
+Open Font License FAQ recommends.
+
+
+Basic Font Information
+---------------------------------------------------------------------
+
+Vigil is a softened geometric grotesk: geometric construction with the corners
+and stroke ends rounded on a constant 22-unit radius, so it reads as a clean
+sans at 16px and shows its softness at display sizes. Eight weights from
+ExtraLight to Black with matching italics, an outline style, and a 200-900
+variable axis in both romans and italics. Latin Extended coverage: Western and
+Central European, including Polish, Czech and Turkish.
+
+Vigil is a derivative of Figtree by Erik Kennedy, reproportioned and modified
+as recorded below. Figtree's own history is kept in its repository at
+https://github.com/erikdkennedy/figtree and is not reproduced here.
+
+Vigil is published under the SIL Open Font License 1.1. Figtree declares no
+Reserved Font Name, so the rename to Vigil is permitted outright; the licence
+requires only that Figtree's copyright notice and the licence travel with every
+copy, which they do, in OFL.txt, in the copyright field of every font file, and
+in the readme inside the download.
+
+vigilfont.com
+
+
+ChangeLog
+---------------------------------------------------------------------
+(Most recent first.)
+
+1.004 (18 September 2026, Joaquin Keno Vigil)
+- The tail comes back off the lowercase l, and ss02 again yields the tailed
+  form, which is the arrangement Figtree ships and the one Vigil had at 1.000.
+  The tail worked, but it fell on the most frequent lowercase letter in English
+  and its curve is the J's curve mirrored, so it read as a reversed J wherever
+  nothing followed it. The capital I now carries the distinction instead.
+- The kerning added in 1.002 moves with the tail onto the ss02 forms, since a
+  plain l needs none of it.
+
+1.003 (18 September 2026, Joaquin Keno Vigil)
+- The capital I takes a short nub crossbar, built from the face's own serifed
+  I with the overhang compressed to 45% of its reach, so it inherits that
+  form's bar thickness, end treatment and scaling across the weight axis.
+  Iacute and Idieresis are rebuilt with it; the five composited accented forms
+  and IJ follow. The plain I remains on ss02.
+- Measured as ink differing from the plain form at 16px, the nub reads at 3.5
+  pixels against the tail's 3.4, so it does the same work on a rarer letter.
+
+1.002 (17 September 2026, Joaquin Keno Vigil)
+- The tailed l is spaced. It shipped in 1.001 carrying Figtree's advance for
+  that glyph, which left it no right sidebearing at all and a negative one from
+  SemiBold up, so it crowded whatever followed. The bearing is set to 0.35 of
+  the one n carries and kerning gives space back before the period, comma,
+  colon, semicolon, x and z, which are the glyphs whose ink meets the tail on
+  the baseline. Kerns vary down the weight axis, as the rest of the font's do.
+- No letterform changed. The italics were already correct and were not touched.
+
+1.001 (16 September 2026, Joaquin Keno Vigil)
+- The lowercase l takes a tail by default, using Figtree's own l.ss02 drawing,
+  so that l and I read apart. Stylistic set 2 is reversed and yields the plain
+  l. The Polish l with stroke and the accented forms follow.
+
+1.000 (September 2026, Joaquin Keno Vigil)
+- First release. Derived from Figtree: reproportioned, respaced, renamed, with
+  the outline style and the variable axes built for this family.
+
+
+Acknowledgements
+---------------------------------------------------------------------
+(Contributors, most recent first. N: name, W: web address, D: description.)
+
+N: Joaquin Keno Vigil
+W: https://thinkkeno.com
+D: Design and engineering of Vigil
+
+N: Erik Kennedy
+W: https://github.com/erikdkennedy/figtree
+D: Design of Figtree, from which Vigil is derived

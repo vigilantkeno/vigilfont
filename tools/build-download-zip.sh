@@ -8,7 +8,7 @@
 #   fonts/otf/*.otf     16 statics + 2 outline
 #   fonts/*.woff2       the same faces for the web
 #   downloads/src/      README.md and Vigil-specimen.html
-#   OFL.txt
+#   OFL.txt and FONTLOG.txt
 #
 # Desktop and web formats go into separate folders on purpose. When .ttf and
 # .woff2 shared a folder, anyone selecting everything in it handed Font Book
@@ -53,7 +53,7 @@ for f in fonts/*.woff2; do
 done
 cp "downloads/src/Read me first.txt" "$stage/"
 cp downloads/src/Vigil-specimen.html "$stage/Vigil specimen.html"
-cp OFL.txt "$stage/"
+cp OFL.txt FONTLOG.txt "$stage/"
 
 # no folder may contain more than one format
 while IFS= read -r d; do
