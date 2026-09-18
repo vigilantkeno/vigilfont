@@ -165,6 +165,10 @@ Latin Extended: Western and Central European, covering English, Spanish, French,
 
 ## Changes
 
+**1.004 (2026-09-18).** The tail comes back off the lowercase `l`, and the capital `I` takes a short crossbar instead. The tail did separate `l` from `I`, but it fell on one of the most frequent letters in English and its curve reads as a mirrored `J` wherever nothing follows it. The `I` does the same job on a rarer letter, in a shape nothing else claims. Stylistic set 2 goes back to giving the *tailed* `l`, as it did at 1.000 and as Figtree ships it; the full-serif `I` stays on it, as it always has. `ł` and the accented forms follow. Nothing else changed.
+
+**1.002 (2026-09-17, not released).** The tailed `l` is spaced properly. It shipped with no right sidebearing at all, so it crowded whatever followed, and from SemiBold up its tail crossed into the next letter. The bearing is now set tight, and kerning gives the space back only where the tail actually collides: before `.` `,` `:` `;` and before `x` and `z`. No letterform changed, and the italics were already correct.
+
 **1.001 (2026-09-16).** The lowercase `l` now has a tail by default, so `l` and `I` read apart at every weight; the accented `ĺ ľ ļ` follow. Stylistic set 2 (`ss02`) is reversed: it now gives the *plain* `l`. If you had `ss02` on to get the tail, turn it off. `ł` follows, since Figtree draws a tailed one as well.
 
 ## License
@@ -432,13 +436,13 @@ CSS — self-hosted, or paste as-isCopy
 
 @font-face {
 font-family: "Vigil";
-src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2?v=1.001") format("woff2");
+src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2?v=1.004") format("woff2");
 font-weight: 200 900;
 font-display: swap;
 }
 @font-face {
 font-family: "Vigil";
-src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2?v=1.001") format("woff2");
+src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2?v=1.004") format("woff2");
 font-weight: 200 900;
 font-style: italic;
 font-display: swap;
@@ -468,8 +472,8 @@ GitHub
 
 EmbedCopy CSS
 
-@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2?v=1.001") format("woff2"); font-weight: 200 900; font-display: swap; }
-@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2?v=1.001") format("woff2"); font-weight: 200 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2?v=1.004") format("woff2"); font-weight: 200 900; font-display: swap; }
+@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2?v=1.004") format("woff2"); font-weight: 200 900; font-style: italic; font-display: swap; }
 
 SIL Open Font License 1.1 — use it anywhere, in anything, commercial or not. No attribution required. No account. No newsletter.
 
@@ -504,7 +508,7 @@ Email
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-Version 1.0.1 — September 2026thinkkeno.com/#contact
+Version 1.0.4 — September 2026thinkkeno.com/#contact
 
 ---
 
