@@ -117,8 +117,9 @@ input[type=range]{width:118px;accent-color:#FFF224}
   display:flex;gap:10px;align-items:baseline}
 .blk h2 b{font-weight:400;letter-spacing:0;text-transform:none;color:#5A5A5A}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--cell,76px),1fr));
-  gap:1px;background:#202020;border:1px solid #202020}
-.cell{background:#0A0A0A;border:0;padding:0;cursor:pointer;position:relative;aspect-ratio:1;
+  border-top:1px solid #202020;border-left:1px solid #202020}
+.cell{background:#0A0A0A;border:0;border-right:1px solid #202020;border-bottom:1px solid #202020;
+  padding:0;cursor:pointer;position:relative;aspect-ratio:1;
   display:grid;place-items:center;color:#fff;font-size:var(--size,36px);line-height:1;
   font-family:var(--face,"Vigil");font-variation-settings:"wght" var(--w,400);overflow:hidden}
 .cell:hover{background:#1D3BFF}
