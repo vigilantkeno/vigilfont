@@ -6,9 +6,14 @@
    Then: font-family: "Vigil", sans-serif;
    Weight is a continuous 200–900 axis, so font-weight: 437 is valid.
 
+   The serif companion is here too: font-family: "Vigil Serif", serif;
+   weight 200–900, roman and italic. Same cap height, x-height and line
+   box as the sans, so the two sit on one baseline at one size.
+
    SIL Open Font License 1.1 — use it anywhere, commercial or not, no
    attribution required. Full text: https://www.vigilfont.com/OFL.txt
-   Derived from Figtree by Erik Kennedy. */
+   Vigil is derived from Figtree by Erik Kennedy; Vigil Serif from Vollkorn
+   by Friedrich Althausen. */
 
 @font-face {
   font-family: "Vigil";
@@ -38,6 +43,22 @@
   font-family: "Vigil Outline";
   src: url("https://www.vigilfont.com/fonts/VigilOutline-Italic.woff2?v=1.004") format("woff2");
   font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vigil Serif";
+  src: url("https://www.vigilfont.com/fonts/VigilSerif-wght-.woff2?v=1.100") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vigil Serif";
+  src: url("https://www.vigilfont.com/fonts/VigilSerif-Italic-wght-.woff2?v=1.100") format("woff2");
+  font-weight: 200 900;
   font-style: italic;
   font-display: swap;
 }

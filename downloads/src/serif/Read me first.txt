@@ -1,0 +1,117 @@
+VIGIL SERIF
+A free serif companion to Vigil, by Keno Vigil — https://www.vigilfont.com/serif
+
+
+IN A HURRY?
+
+  Select all 16 files in this folder whose names start with "VigilSerif-"
+  and end in ".ttf". Double-click them. Click Install.
+
+  That's it. Vigil Serif will be in Word, Canva, Keynote, Figma, Photoshop
+  and everything else the next time you open them.
+
+
+---------------------------------------------------------------------
+1. INSTALLING ON A MAC
+---------------------------------------------------------------------
+
+  1. Unzip this folder if you haven't already — double-click the .zip.
+  2. Select the 16 files starting with "VigilSerif-" and ending in ".ttf".
+     (Click the first, hold Shift, click the last.)
+  3. Double-click any of them. Font Book opens.
+  4. Click "Install" (or "Install Font").
+  5. Quit and reopen any app that was already running.
+
+
+---------------------------------------------------------------------
+2. INSTALLING ON WINDOWS
+---------------------------------------------------------------------
+
+  1. Unzip the folder (right-click, "Extract All").
+  2. Select the 16 files starting with "VigilSerif-" and ending in ".ttf".
+  3. Right-click the selection and choose "Install" (or "Install for all
+     users", which needs an administrator).
+  4. Restart any app that was already open.
+
+  The static files are hinted, so they render cleanly at small sizes in
+  Word and older Windows apps.
+
+
+---------------------------------------------------------------------
+3. WHAT'S IN THIS FOLDER
+---------------------------------------------------------------------
+
+  VigilSerif-*.ttf              16 styles, ready to install: ExtraLight,
+                                Light, Regular, Medium, SemiBold, Bold,
+                                ExtraBold, Black, each with an italic.
+
+  Variable font/                One file per style axis instead of eight:
+                                "Vigil Serif Variable.ttf" and its italic,
+                                weight 200–900 continuous. Use these in apps
+                                that support variable fonts (Figma, Adobe
+                                apps, Affinity, recent Office).
+
+  Web fonts/                    The same faces as WOFF2 for websites: the 14
+                                statics and the two variable files.
+
+  OFL.txt                       The license (SIL Open Font License 1.1).
+  FONTLOG.txt                   What changed, and the history it inherits
+                                from Vollkorn.
+
+
+---------------------------------------------------------------------
+4. USING IT ON A WEBSITE
+---------------------------------------------------------------------
+
+  The quickest way is one line in your <head>, which also gives you Vigil:
+
+    <link rel="stylesheet" href="https://www.vigilfont.com/vigil.css">
+
+  Then:
+
+    font-family: "Vigil Serif", Georgia, serif;
+
+  Self-hosting instead? Copy the two variable files from "Web fonts/" and:
+
+    @font-face { font-family: "Vigil Serif";
+                 src: url("VigilSerif-Variable.woff2") format("woff2");
+                 font-weight: 200 900; }
+    @font-face { font-family: "Vigil Serif";
+                 src: url("VigilSerif-Variable-Italic.woff2") format("woff2");
+                 font-weight: 200 900; font-style: italic; }
+
+  Weight is a continuous axis, so font-weight: 437 is valid.
+
+
+---------------------------------------------------------------------
+5. PAIRING WITH VIGIL
+---------------------------------------------------------------------
+
+  Cap height, x-height, descender and line box match Vigil exactly, so the
+  two sit on one baseline at one size with no adjustment. At the same
+  nominal weight the serif reads heavier, because serifs add ink; the
+  stem-matched pairing is serif 300 beside sans 400. A rule that works:
+  content in the serif, interface in the sans.
+
+  OpenType features: small caps (smcp), old-style figures (onum), lining
+  figures (lnum, the default), tabular figures (tnum), fractions (frac),
+  superscripts and subscripts (sups, subs), and the ligatures.
+
+
+---------------------------------------------------------------------
+6. LICENSE
+---------------------------------------------------------------------
+
+  SIL Open Font License 1.1. Use it anywhere, commercial or not, embed it,
+  bundle it, modify it. The only things you cannot do are sell the font
+  files by themselves or release a modified version under another license.
+  No attribution is required in your work.
+
+  Vigil Serif is derived from Vollkorn by Friedrich Althausen, which is
+  also under the OFL; Vollkorn's copyright notice travels with these files,
+  as the license asks. Vollkorn is not a reserved font name, so the rename
+  is permitted.
+
+
+Vigil Serif 1.000 — 18 September 2026
+Keno Vigil, Cary, North Carolina — https://thinkkeno.com

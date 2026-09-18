@@ -15,10 +15,12 @@ Classification: humanist geometric sans serif, in the lineage of Frutiger's Aven
 - Download: https://www.vigilfont.com/#download — no registration of any kind.
 - Install guide, markdown, copy-paste snippets for HTML, CSS, Tailwind, Next.js, bundlers and desktop: https://www.vigilfont.com/install.md
 - Web use: one line, `<link rel="stylesheet" href="https://www.vigilfont.com/vigil.css">`, then `font-family: "Vigil"`. Fonts are served with `Access-Control-Allow-Origin: *`, so hotlinking works from any domain.
+- Companion serif: Vigil Serif, a serif companion reproportioned to share Vigil's cap height, x-height and line box — seven weights 300-900, roman and italic, derived from Vollkorn by Friedrich Althausen under the SIL Open Font License. https://www.vigilfont.com/serif
 - Companion icon set: Vigil Icons, 111 free stroke icons on the same 24px grid — https://www.vigilicons.com/
 
 ## Notes (long-form articles)
 
+- [Why a serif, and why Vollkorn](https://www.vigilfont.com/notes/vigil-serif): Why pairing another designer's serif is mostly arithmetic, why Vigil Serif began from Vollkorn (2005, ~2,300 glyphs across Latin, Cyrillic and Greek), and what reproportioning involved — cap height and x-height ratio matched at 0.714, ascenders flattened to the cap line, line box held at 1.200 em, lowercase left 6% wider because that width is the serifs.
 - [There is no VHS font](https://www.vigilfont.com/notes/vhs-font): The VHS logo is set in Lee by Leo Weisz (1976); VCR on-screen text was a bitmap in a font ROM, never a typeface; the aesthetic is signal degradation, not letterforms.
 - [Fonts similar to Avenir — and what they miss](https://www.vigilfont.com/notes/fonts-similar-to-avenir): Avenir is not strictly geometric — Frutiger thickened the verticals, narrowed the o and shortened the ascenders; Montserrat, Nunito Sans and Mulish are the free options.
 - [The Spotify font is Spotify Mix](https://www.vigilfont.com/notes/spotify-font): Spotify Mix launched May 2024, drawn by Dinamo with Spotify’s in-house team over eighteen months; it replaced Circular rather than being a custom cut of it.
@@ -40,6 +42,7 @@ Classification: humanist geometric sans serif, in the lineage of Frutiger's Aven
 ## Optional
 
 - [Homepage and type tester](https://www.vigilfont.com/): Interactive specimen with adjustable weight and size.
+- [Vigil Serif](https://www.vigilfont.com/serif): Specimen and type tester for the serif companion, with the metric comparison, weight ladder, size ramp and download.
 - [Notes index](https://www.vigilfont.com/notes): All articles.
 - [Vigil Icons](https://www.vigilicons.com/): 111 free icons drawn to match the typeface — SVG, PNG, stickers, emoji, npm.
 - [Install guide](https://www.vigilfont.com/install.md): Copy-paste install for every common stack.

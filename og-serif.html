@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>og-serif</title>
+<style>
+@font-face{font-family:"Vigil";src:url("fonts/Vigil-wght-.woff2") format("woff2");font-weight:200 900;font-display:block}
+@font-face{font-family:"Vigil Serif";src:url("fonts/VigilSerif-wght-.woff2") format("woff2");font-weight:300 900;font-display:block}
+@font-face{font-family:"Vigil Serif";src:url("fonts/VigilSerif-Italic-wght-.woff2") format("woff2");font-weight:300 900;font-style:italic;font-display:block}
+html,body{margin:0;background:#8E8A80}
+*{box-sizing:border-box}
+#og{width:1200px;height:630px;background:#F1F1F0;color:#111111;padding:64px 72px;display:flex;flex-direction:column;justify-content:space-between;font-family:"Vigil",sans-serif;overflow:hidden}
+.row{display:flex;justify-content:space-between;align-items:baseline;font-size:20px;font-weight:600;letter-spacing:.02em}
+.tag{display:inline-block;font-size:16px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;background:#FFF224;color:#111;border-radius:999px;padding:7px 14px;line-height:1}
+.mark{font-family:"Vigil Serif",Georgia,serif;font-size:210px;line-height:.92;letter-spacing:-0.02em;font-weight:400;margin:0}
+.mark em{font-weight:300}
+.lede{font-size:30px;line-height:1.25;font-weight:500;max-width:34ch;margin:0}
+.rule{border-top:1px solid #D9D9D8;padding-top:20px;display:flex;justify-content:space-between;align-items:baseline;gap:40px;font-size:19px;font-weight:500;color:#4A4A49;white-space:nowrap}
+.rule b{color:#111111;font-weight:600}
+.spec{font-family:"Vigil Serif",Georgia,serif;font-size:19px;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div id="og">
+  <div class="row"><span>vigilfont.com/serif</span><span class="tag">New</span></div>
+  <h1 class="mark">Vigil <em style="background:#FFF224;box-shadow:.1em 0 0 #FFF224,-.1em 0 0 #FFF224">Serif</em></h1>
+  <p class="lede">A serif companion to Vigil. Same cap height, same x&#8209;height, same line box.</p>
+  <div class="rule">
+    <span><b>300–900</b> roman &amp; italic</span>
+    <span class="spec"><b>x ÷ cap 0.714</b> — matches the sans</span>
+    <span>SIL Open Font License</span>
+  </div>
+</div>
+</body>
+</html>

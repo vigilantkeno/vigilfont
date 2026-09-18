@@ -190,7 +190,7 @@ Homepage and interactive specimen: <https://www.vigilfont.com/>
 https://www.vigilfont.com/
 
 Vigil
-Try itWeightsSpecimen200–900NotesUse itDownload
+Try itWeightsSpecimen200–900SerifNewNotesUse itDownload
 
 # Vigil
 
@@ -314,11 +314,21 @@ Get Vigil — free →
 
 - Aa900
 
-## Now there are icons.
+## Two companions.
 
-Vigil Icons is a companion set drawn on the same square grid as the type: stroke-first, rounded by the same rule, black on cream. Icons for the things people accuse each other of.
+A serif that shares Vigil's cap height, x-height and line box, and a set of icons drawn on Vigil's grid. Both free, on the same terms as the font.
 
-Set them at text size and they hold the line. Every group chat has a gaslighter, a narcissist, and one helicopter parent circling the lawn.
+Vigil Serif New
+
+Vigil sans and Vigil Serif on one line.
+
+Serif at 300 and sans at 400 share a stem.
+
+Eight weights from 200 to 900, roman and italic, with hinted statics. Derived from Vollkorn under the SIL Open Font License.
+
+Get Vigil Serif
+
+Vigil Icons
 
 - Gaslighting
 
@@ -332,16 +342,9 @@ Set them at text size and they hold the line. Every group chat has a gaslighter,
 
 - People pleaser
 
-Vigil pairs with Vigil Icons — 111 free stroke icons for the things people accuse each other of. Same 24px grid, all free.
+111 stroke icons for the things people accuse each other of, on the same 24px grid. SVG, PNG, sticker packs, Slack and Discord emoji.
 
-- Red flag The warning sign you noticed, ignored, and later screenshotted.
-
-- Ghosting Vanishing without technically having to say goodbye.
-
-- Could’ve been an email Thirty minutes of everyone’s life, now unrecoverable.
-
-Get all 111 free ↗ (opens in a new tab)
-All 111 icons, free, no email — same terms as the font. SVG, PNG, sticker packs, and Slack and Discord emoji.
+Get all 111 ↗ (opens in a new tab)
 
 ## Notes
 All notes
@@ -467,6 +470,8 @@ Download Vigil
 Variable only
 Variable italic
 GitHub
+
+Vigil Serif has its own package, statics and variable: download Vigil Serif.
 
 16 weights ready to install at the top of the folder · variable font, OTF and web files tucked underneath · plain-English install guide included. Statics are hinted for Windows.
 
@@ -2115,6 +2120,88 @@ Download Vigil
 Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to Vigilthinkkeno.com/#contact
+
+## Why a serif, and why Vollkorn — Vigil
+
+https://www.vigilfont.com/notes/vigil-serif
+
+Vigil
+Try itWeightsSerifNotesDownload
+
+2026-09-18 — Keno Vigil
+
+# Why a serif, and why Vollkorn.
+
+a
+
+Vigil shipped as a sans and nothing else. A text sans that disappears at 16px and shows its personality at 96 was the whole brief. Set real things in it — a long article, a set of release notes, a page of documentation — and you run into the thing every sans-only system runs into. There is no second voice. Every quote, every aside, every footnote has to be signalled with size or weight or color, because the typeface itself only has one register.
+
+Italics help. They are not enough. An italic is a change of tone inside a sentence; what long-form writing wants is a change of material between blocks. Body copy in one family, interface in another. That's the oldest layout convention there is, and it exists because it works.
+
+## The problem with pairing
+
+The usual fix is to pair your sans with someone else's serif. The candidates are not the problem; the arithmetic is. Two typefaces drawn by two people at two different times almost never share an x-height, and they never share a line box. So you spend your afternoon nudging: serif at 17.5 to match the sans at 17, one family's line-height at 1.6 and the other at 1.52, a negative margin on the pull quote because its cap sits four pixels high.
+
+> Every one of those nudges is a decision that should have been made once, in the font, instead of a thousand times, in the CSS.
+
+So the goal stopped being "find a serif that looks nice beside Vigil" and became "make a serif that measures the same as Vigil." Same cap height. Same x-height. Same descender. Same line box. Drop it in at the same size on the same baseline and nothing moves.
+
+## Why Vollkorn
+
+Vigil Serif is not drawn from scratch, for the same reason Vigil itself is not: the alphabet is not the hard part. What it needed was a skeleton with the right temperament, released under a license that lets you rebuild it.
+
+Friedrich Althausen's Vollkorn is that. It was first published in 2005, one of the first genuinely good free serifs, it has been maintained and expanded for twenty years, and it carries about 2,300 glyphs across Latin, Cyrillic and Greek — a range it would take me years to draw and longer to kern. Critically, it isn't precious. It's a warm, sturdy, slightly rustic bread-and-butter serif; the name means "wholegrain." It was built to be read in long stretches, which is exactly the job.
+
+It also had the one quality I couldn't manufacture: it doesn't fight a geometric sans. A high-contrast Didone beside Vigil looks like a costume change. Vollkorn's moderate contrast and open counters sit next to a large-x-height geometric sans without either one shouting.
+
+Vigil Serif, 300 — the stem-matched pairing
+
+Handgloves & bibliography
+
+Serif at 300 and sans at 400 share a stem.
+
+## What reproportioning actually means
+
+This is the part I underestimated. Matching another typeface's metrics is not a scale factor. Vollkorn's proportions are its own: relative to Vigil the x-height sits differently against the caps, and the ascenders don't stop where Vigil's do. Scaling the whole thing until the x-heights agree gives you caps that are too tall, a descender that's too deep, and a line box that no longer matches — you've traded one mismatch for three.
+
+So the work was structural, one horizontal at a time. Set the cap height to Vigil's. Pull the x-height up until the ratio matches — Vigil's is 0.714, and that number is the whole reason the two look like relatives rather than neighbors. Bring the ascenders down to stop flat on the cap line, as Vigil's do, so caps and lowercase share one ceiling. Hold the descender at Vigil's depth. Then rebuild the vertical metrics so the line box lands on 1.200 em, identical to the sans.
+
+What I deliberately did not do is squeeze the widths. The serif sets about six percent wider than Vigil in lowercase, and it should: that extra width is the serifs. Forcing it to Vigil's set width would mean narrowing the skeleton to make room for the brackets, which is how you get a serif that looks starved. Six percent is the honest cost of the serifs, and it's small enough that a paragraph reflows by a word or two rather than a line or two.
+
+One consequence worth knowing, because it will bite anyone who pairs them: at the same nominal weight, the serif reads heavier. Serifs add ink at every terminal. So the stem-matched pairing is serif 300 beside sans 400 — the serif steps down one stop to look like it weighs the same.
+
+## What it's for, and what it isn't
+
+Content. Articles, documentation, books, quotes, footnotes, tables of figures where old-style numerals keep the column quiet. Above roughly fourteen pixels it is a better reading face than the sans, and the italic is a real italic with its own drawings, not a slant.
+
+Not interface. Below fourteen pixels the serifs thicken into the counters and dense rows stop scanning; tracked-out all-caps navigation pulls the serifs apart until each word reads as separate marks. The division I've settled on is the simplest one available: content in the serif, interface in the sans.
+
+## Where it stands
+
+Version 1.100: variable roman and italic on one axis from 200 to 900, and sixteen hinted statics. Small caps, old-style, lining and tabular figures, fractions, superscripts and subscripts all work. It is free under the SIL Open Font License, like the sans, because Vollkorn was free under it first. That's not generosity on anyone's part; it's the license doing exactly what it was written to do, twice.
+
+Go look at it and tell me what breaks.
+
+— Keno Vigil, Cary, North Carolina
+
+## Keep reading
+
+- 2026-09-04A vigil is what you keep when you refuse to go to sleep on something.Ten years of a calendar block that said MAKE FONT, and why it finally shipped.
+
+- 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, where the category came from, and the ones worth using.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+Eight weights with matching italics, an outline style, and one variable file that runs the whole 200–900 axis. SIL Open Font License. No email, no account, no “just tell us where you work.”
+
+Download Vigil
+See Vigil Serif
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License. Vigil Serif is derived from Vollkorn by Friedrich Althausen under the same license.
 
 All notesBack to Vigilthinkkeno.com/#contact
 

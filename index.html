@@ -37,7 +37,7 @@
 @font-face{font-family:"Vigil";src:url("fonts/Vigil-Italic-wght-.woff2?v=1.004") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
 @font-face{font-family:"Vigil Outline";src:url("fonts/VigilOutline-Regular.woff2?v=1.004") format("woff2");font-weight:700;font-display:block}
 @font-face{font-family:"Vigil Outline";src:url("fonts/VigilOutline-Italic.woff2?v=1.004") format("woff2");font-weight:700;font-style:italic;font-display:block}
-@font-face{font-family:"Vigil Serif";src:url("fonts/VigilSerif-wght-latin.woff2?v=preview-2026-09-18b") format("woff2");font-weight:300 900;font-display:swap}
+@font-face{font-family:"Vigil Serif";src:url("fonts/VigilSerif-wght-latin.woff2?v=1.100") format("woff2");font-weight:200 900;font-display:swap}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#0A0A0A}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
@@ -229,35 +229,16 @@ pre{padding:20px;border:1px solid #fff;font-family:inherit;font-size:15px;line-h
   .spec-foot{flex-direction:column;align-items:flex-start}
 }
 /* vigil icons */
-#icons{background:#FBF6EA;color:#111;border-top:1px solid #000;border-bottom:1px solid #000;display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)}
-#icons h2{max-width:15ch}
-#icons .body{max-width:58ch}
-.icons-proof{font-size:18px;line-height:1.7;max-width:58ch;text-wrap:pretty}
-.icons-proof img{height:0.95em;width:auto;vertical-align:-0.071em}
 .icon-row{display:grid;grid-template-columns:repeat(6,1fr);gap:28px 20px;list-style:none;padding:0;margin:0;border-top:1px solid #000;padding-top:clamp(24px,3vw,36px)}
 .icon-row li{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
 .icon-row img{width:100%;max-width:112px;height:auto;display:block}
 .icon-row span{font-size:14px;font-weight:500;line-height:1.25}
-.icons-pair{font-size:18px;line-height:1.55;max-width:58ch;text-wrap:pretty;font-weight:500}
-.icons-pair a{text-underline-offset:4px}
 /* pulled live from vigilicons.com. mask + currentColor so the icon takes the
    text colour — an <img> can't, because currentColor in an external SVG
    resolves against the SVG's own context, not the page's. */
-.vi{display:inline-block;width:1.05em;height:1.05em;vertical-align:-0.16em;margin-right:.42em;
-    background:currentColor;
-    -webkit-mask:var(--i) center/contain no-repeat;mask:var(--i) center/contain no-repeat}
-.icon-live{display:flex;flex-direction:column;gap:12px;max-width:62ch;font-size:17px;line-height:1.5;
-    border-top:1px solid #000;padding-top:clamp(20px,3vw,28px)}
-.icon-live li{text-wrap:pretty}
-.icon-live b{font-weight:600}
-.icon-live b::after{content:" — ";font-weight:400}
-.icons-cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
-.icons-cta .btn{background:#111;color:#FBF6EA;min-height:60px;padding:0 34px}
-.icons-cta .btn:hover{background:#2B3BFF;color:#fff}
-.icons-cta .small{max-width:44ch}
 @media (max-width:560px){
   .icon-row{grid-template-columns:repeat(3,1fr);gap:24px 16px}
-  .icons-cta .btn{width:100%;justify-content:center;padding:0 24px}
+  
 }
 /* share */
 #share{--bg:#1D3BFF;--fg:#fff;background:var(--bg);color:var(--fg);display:flex;flex-direction:column;gap:clamp(24px,4vw,40px)}
@@ -293,16 +274,24 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
   #weights .row,.hard p{white-space:normal}
   #in-use{gap:36px 24px}
 }
-#serif{background:#fff;color:#000;border-top:1px solid #000;display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)}
-#serif h2{max-width:14ch}
-#serif .body{max-width:58ch}
 .serif-pair{display:flex;flex-direction:column;gap:12px}
 .serif-pair p{font-size:clamp(22px,4.2vw,46px);line-height:1.2;letter-spacing:-0.01em;border-bottom:1px dashed #cfcfcf;padding-bottom:10px;text-wrap:balance}
 .serif-pair .vs{font-family:"Vigil Serif",Georgia,serif}
-.serif-cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
-.serif-cta .btn{background:#111;color:#fff;min-height:60px;padding:0 34px}
-.serif-cta .btn:hover{background:#1D3BFF;color:#fff}
-.serif-cta .small{max-width:46ch}
+#companions{background:#FBF6EA;color:#111;border-top:1px solid #000;border-bottom:1px solid #000;display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)}
+#companions h2{max-width:14ch}
+#companions .body{max-width:58ch}
+.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px);align-items:stretch}
+.comp{display:flex;flex-direction:column;gap:22px;padding:clamp(22px,3vw,36px);background:#fff;border:1px solid #000;border-radius:24px;min-width:0}
+.comp-kicker{font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:4px;margin:0}
+.comp .serif-pair p{font-size:clamp(22px,2.6vw,34px)}
+.comp .icon-row{grid-template-columns:repeat(3,1fr);gap:22px 16px;border-top:0;padding-top:0}
+.comp .icon-row img{max-width:88px}
+.comp .small{max-width:40ch;margin:0}
+.comp-cta{margin:auto 0 0}
+.comp-cta .btn{background:#111;color:#FBF6EA;min-height:56px;padding:0 30px}
+.comp-cta .btn:hover{background:#2B3BFF;color:#fff}
+.tag{display:inline-block;font-size:10px;line-height:1;letter-spacing:.08em;text-transform:uppercase;font-weight:700;background:#FFF224;color:#111;border-radius:999px;padding:4px 7px 3px;margin-left:7px;vertical-align:1px}
+@media (max-width:720px){.comp-grid{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
 {
@@ -519,7 +508,7 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
 <section id="top">
   <header class="nav">
     <span>Vigil</span>
-    <nav><a href="#tester">Try it</a><a href="#weights">Weights</a><a href="#specimen" class="has-roll"><span class="roll"><span>Specimen</span><span aria-hidden="true">200–900</span></span></a><a href="/serif">Serif</a><a href="/notes">Notes</a><a href="#use">Use it</a><a href="#download">Download</a></nav>
+    <nav><a href="#tester">Try it</a><a href="#weights">Weights</a><a href="#specimen" class="has-roll"><span class="roll"><span>Specimen</span><span aria-hidden="true">200–900</span></span></a><a href="/serif">Serif<span class="tag">New</span></a><a href="/notes">Notes</a><a href="#use">Use it</a><a href="#download">Download</a></nav>
   </header>
   <h1 id="mark" class="sweep">Vigil</h1>
   <div class="hero-foot">
@@ -735,25 +724,22 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
 })();
 </script>
 
-<section id="serif">
-  <h2 class="h2">Now there is a serif.</h2>
-  <p class="body">Vigil Serif is a companion in preview: a serif reproportioned to sit beside the sans, with the same cap height, the same x-height and the same line box, so the two can share a page. Derived from Vollkorn by Friedrich Althausen, under the same license as Vigil.</p>
-  <div class="serif-pair" aria-label="Vigil beside Vigil Serif">
-    <p><span>Vigil sans</span> <span class="vs">and Vigil Serif</span> <span>on one line.</span></p>
-    <p><span class="vs">Hamburgefonstiv</span> <span>Hamburgefonstiv</span></p>
-    <p><span class="vs" style="font-weight:300">Serif at 300</span> <span>and sans at 400</span> <span class="vs" style="font-weight:300">share a stem.</span></p>
-  </div>
-  <div class="serif-cta">
-    <a class="btn" href="/serif">See the preview</a>
-    <p class="small">Work in progress: seven weights, roman and italic, no download yet. Free when it ships, on the same terms as Vigil.</p>
-  </div>
-</section>
-
-<section id="icons">
-  <h2 class="h2">Now there are icons.</h2>
-  <p class="body">Vigil Icons is a companion set drawn on the same square grid as the type: stroke-first, rounded by the same rule, black on cream. Icons for the things people accuse each other of.</p>
-  <p class="icons-proof">Set them at text size and they hold the line. Every group chat has a <img src="/icons/gaslighting.svg" alt="" width="112" height="112" loading="lazy" decoding="async"> gaslighter, a <img src="/icons/narcissist.svg" alt="" width="112" height="112" loading="lazy" decoding="async"> narcissist, and one <img src="/icons/helicopter-parent.svg" alt="" width="112" height="112" loading="lazy" decoding="async"> helicopter parent circling the lawn.</p>
-  <ul class="icon-row">
+<section id="companions">
+  <h2 class="h2">Two companions.</h2>
+  <p class="body">A serif that shares Vigil's cap height, x-height and line box, and a set of icons drawn on Vigil's grid. Both free, on the same terms as the font.</p>
+  <div class="comp-grid">
+    <article class="comp" id="serif">
+      <p class="comp-kicker">Vigil Serif <span class="tag">New</span></p>
+      <div class="serif-pair" aria-label="Vigil beside Vigil Serif">
+        <p><span>Vigil sans</span> <span class="vs">and Vigil Serif</span> <span>on one line.</span></p>
+        <p><span class="vs" style="font-weight:300">Serif at 300</span> <span>and sans at 400</span> <span class="vs" style="font-weight:300">share a stem.</span></p>
+      </div>
+      <p class="small">Eight weights from 200 to 900, roman and italic, with hinted statics. Derived from Vollkorn under the SIL Open Font License.</p>
+      <p class="comp-cta"><a class="btn" href="/serif">Get Vigil Serif</a></p>
+    </article>
+    <article class="comp" id="icons">
+      <p class="comp-kicker">Vigil Icons</p>
+      <ul class="icon-row">
     <li><img src="/icons/gaslighting.svg" alt="Gaslighting icon" width="112" height="112" loading="lazy" decoding="async"><span>Gaslighting</span></li>
     <li><img src="/icons/narcissist.svg" alt="Narcissist icon" width="112" height="112" loading="lazy" decoding="async"><span>Narcissist</span></li>
     <li><img src="/icons/mansplaining.svg" alt="Mansplaining icon" width="112" height="112" loading="lazy" decoding="async"><span>Mansplaining</span></li>
@@ -761,15 +747,9 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
     <li><img src="/icons/deepfake.svg" alt="Deepfake icon" width="112" height="112" loading="lazy" decoding="async"><span>Deepfake</span></li>
     <li><img src="/icons/people-pleaser.svg" alt="People pleaser icon" width="112" height="112" loading="lazy" decoding="async"><span>People pleaser</span></li>
   </ul>
-  <p class="icons-pair">Vigil pairs with <a href="https://www.vigilicons.com/" target="_blank" rel="noopener noreferrer">Vigil Icons</a> — 111 free stroke icons for the things people accuse each other of. Same 24px grid, all free.</p>
-  <ul class="icon-live">
-    <li><span class="vi" style="--i:url('https://www.vigilicons.com/icons/svg/red-flag.svg')" aria-hidden="true"></span><b>Red flag</b> The warning sign you noticed, ignored, and later screenshotted.</li>
-    <li><span class="vi" style="--i:url('https://www.vigilicons.com/icons/svg/ghosting.svg')" aria-hidden="true"></span><b>Ghosting</b> Vanishing without technically having to say goodbye.</li>
-    <li><span class="vi" style="--i:url('https://www.vigilicons.com/icons/svg/couldve-been-an-email.svg')" aria-hidden="true"></span><b>Could’ve been an email</b> Thirty minutes of everyone’s life, now unrecoverable.</li>
-  </ul>
-  <div class="icons-cta">
-    <a class="btn" href="https://www.vigilicons.com/" target="_blank" rel="noopener noreferrer">Get all 111 free <span aria-hidden="true">&#8599;</span><span class="vh"> (opens in a new tab)</span></a>
-    <p class="small">All 111 icons, free, no email — same terms as the font. SVG, PNG, sticker packs, and Slack and Discord emoji.</p>
+      <p class="small">111 stroke icons for the things people accuse each other of, on the same 24px grid. SVG, PNG, sticker packs, Slack and Discord emoji.</p>
+      <p class="comp-cta"><a class="btn" href="https://www.vigilicons.com/" target="_blank" rel="noopener noreferrer">Get all 111 <span aria-hidden="true">&#8599;</span><span class="vh"> (opens in a new tab)</span></a></p>
+    </article>
   </div>
 </section>
 
@@ -889,7 +869,8 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
       <a class="link" href="https://github.com/vigilantkeno/vigilfont">GitHub</a>
     </nav>
   </div>
-  <p class="small" style="max-width:70ch">16 weights ready to install at the top of the folder · variable font, OTF and web files tucked underneath · plain-English install guide included. Statics are hinted for Windows.</p>
+  <p class="small" style="max-width:70ch">Vigil Serif has its own package, statics and variable: <a class="link" href="/serif#download">download Vigil Serif</a>.</p>
+<p class="small" style="max-width:70ch">16 weights ready to install at the top of the folder · variable font, OTF and web files tucked underneath · plain-English install guide included. Statics are hinted for Windows.</p>
   <div class="embed">
     <div><span class="small">Embed</span><button type="button" class="pill" id="copy">Copy CSS</button></div>
     <pre id="css">@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2?v=1.004") format("woff2"); font-weight: 200 900; font-display: swap; }
