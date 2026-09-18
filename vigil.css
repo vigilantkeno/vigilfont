@@ -7,7 +7,7 @@
    Weight is a continuous 200–900 axis, so font-weight: 437 is valid.
 
    The serif companion is here too: font-family: "Vigil Serif", serif;
-   weight 300–900, roman and italic. Same cap height, x-height and line
+   weight 200–900, roman and italic. Same cap height, x-height and line
    box as the sans, so the two sit on one baseline at one size.
 
    SIL Open Font License 1.1 — use it anywhere, commercial or not, no
@@ -49,16 +49,16 @@
 
 @font-face {
   font-family: "Vigil Serif";
-  src: url("https://www.vigilfont.com/fonts/VigilSerif-wght-.woff2?v=1.000") format("woff2");
-  font-weight: 300 900;
+  src: url("https://www.vigilfont.com/fonts/VigilSerif-wght-.woff2?v=1.100") format("woff2");
+  font-weight: 200 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Vigil Serif";
-  src: url("https://www.vigilfont.com/fonts/VigilSerif-Italic-wght-.woff2?v=1.000") format("woff2");
-  font-weight: 300 900;
+  src: url("https://www.vigilfont.com/fonts/VigilSerif-Italic-wght-.woff2?v=1.100") format("woff2");
+  font-weight: 200 900;
   font-style: italic;
   font-display: swap;
 }

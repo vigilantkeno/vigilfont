@@ -21,6 +21,41 @@ Vigil Serif ChangeLog
 -------------------------------------------------------------------
 (Most recent first. Vollkorn's own entries continue below this section.)
 
+18 September 2026 (Joaquin Keno Vigil) Vigil Serif Version 1.100
+- Added an ExtraLight at 200, roman and italic, so the axis runs 200 to 900 and
+  the serif reaches the light end the sans already had. Sixteen static instances.
+  It is built the way the Light was and from the same two drawn masters, at twice
+  the step: Regular + 0.4 * (Regular - Black), which lands on design 64. Measured
+  on the build, the stem comes out at 55 against the Regular's 98 and the Light's
+  76, and the contrast (the stem over the o's thinnest) eases from 1.95 at Regular
+  through 1.69 at Light to 1.39, which is the direction a lighter cut wants: its
+  thins proportionally thicker, or they disappear.
+- Rejoined the junctions the second extrapolation pulled apart. Vollkorn draws
+  many letters as overlapping pieces rather than one merged outline, and every
+  step lighter spends some of the overlap; at 200 thirty of them had gone
+  negative and 113 encoded glyphs rendered in two halves. E and every accented
+  form that composites from it, Y and the yen, F and the franc, f, long s, x,
+  chi, kappa, the ampersand, the section sign, all four rays of the currency
+  sign, the ff fk and long-s-k ligatures, the small-cap f, and in the italic
+  H K AE and their Cyrillic cousins. tools/repair_extralight_junctions.py moves
+  89 points across 45 junctions; every edge it moves is inside the piece that
+  laps over it, so no letter changed shape, only the depth of an overlap nobody
+  can see. The Y needed more than that: its fork's flat bottom had risen to
+  within half a unit of the notch between the arms, so the arms met along a
+  hairline. Both bottom corners now run on down their own edges into the stem.
+- Repaired sixteen junctions in the Light masters at the same time. Measuring
+  every pair of contours in every glyph in order to size the 200's repairs found
+  nine that were already severed at 300 in 1.000 -- the roman E and reversed E,
+  both chis, the ff ligature's second f, the fk and long-s-k ligatures, the
+  small-cap f -- and six more holding by less than a unit. They rendered joined
+  only because the rasteriser filled the last fraction, which is luck, not
+  drawing. Same kind of edit, same invisibility: no Light outline moved.
+- Known at 200 and left alone on purpose: the italic ordfeminine, whose shoulder
+  notch the extrapolation deepens (a redraw, not an edge to hide); the italic
+  tcaron, whose caron sits clear of the t as it already did at 300; H with breve
+  below, whose mark stops touching the H, which is the more correct placement;
+  and three bracket-layer glyphs that are only ever substituted above 700.
+
 18 September 2026 (Joaquin Keno Vigil) Vigil Serif Version 1.000
 - First release, as Vigil Serif: the name is final. Variable roman and italic
   on one weight axis from 300 to 900, and fourteen static instances.

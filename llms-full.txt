@@ -324,7 +324,7 @@ Vigil sans and Vigil Serif on one line.
 
 Serif at 300 and sans at 400 share a stem.
 
-Seven weights from 300 to 900, roman and italic, with hinted statics. Derived from Vollkorn under the SIL Open Font License.
+Eight weights from 200 to 900, roman and italic, with hinted statics. Derived from Vollkorn under the SIL Open Font License.
 
 Get Vigil Serif
 
@@ -2180,7 +2180,7 @@ Not interface. Below fourteen pixels the serifs thicken into the counters and de
 
 ## Where it stands
 
-Version 1.000: variable roman and italic on one axis from 300 to 900, and fourteen hinted statics. Small caps, old-style, lining and tabular figures, fractions, superscripts and subscripts all work. It is free under the SIL Open Font License, like the sans, because Vollkorn was free under it first. That's not generosity on anyone's part; it's the license doing exactly what it was written to do, twice.
+Version 1.100: variable roman and italic on one axis from 200 to 900, and sixteen hinted statics. Small caps, old-style, lining and tabular figures, fractions, superscripts and subscripts all work. It is free under the SIL Open Font License, like the sans, because Vollkorn was free under it first. That's not generosity on anyone's part; it's the license doing exactly what it was written to do, twice.
 
 Go look at it and tell me what breaks.
 

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vigil Serif — a free serif companion to Vigil</title>
-<meta name="description" content="Vigil Serif is a free serif companion to Vigil, reproportioned to share the sans's cap height, x-height and line box. Seven weights, roman and italic. SIL Open Font License.">
+<meta name="description" content="Vigil Serif is a free serif companion to Vigil, reproportioned to share the sans's cap height, x-height and line box. Eight weights, roman and italic. SIL Open Font License.">
 <link rel="canonical" href="https://www.vigilfont.com/serif">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 <meta name="theme-color" content="#FFF224">
@@ -26,7 +26,7 @@
 <meta name="twitter:title" content="Vigil Serif — a free serif companion to Vigil">
 <meta name="twitter:description" content="A free serif companion to Vigil. Same cap height, same x-height, same line box.">
 <meta name="twitter:image" content="https://www.vigilfont.com/og-serif.png">
-<link rel="preload" href="fonts/VigilSerif-wght-.woff2?v=1.000" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/VigilSerif-wght-.woff2?v=1.100" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/Vigil-wght-.woff2?v=1.004" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
 {
@@ -37,7 +37,7 @@
    "@id": "https://www.vigilfont.com/serif#webpage",
    "url": "https://www.vigilfont.com/serif",
    "name": "Vigil Serif — a free serif companion to Vigil",
-   "description": "A free serif companion to Vigil, reproportioned to share the sans's cap height, x-height and line box. Seven weights, roman and italic.",
+   "description": "A free serif companion to Vigil, reproportioned to share the sans's cap height, x-height and line box. Eight weights, roman and italic.",
    "inLanguage": "en",
    "isPartOf": { "@id": "https://www.vigilfont.com/#website" },
    "breadcrumb": { "@id": "https://www.vigilfont.com/serif#breadcrumb" },
@@ -48,7 +48,7 @@
    "@type": "CreativeWork",
    "@id": "https://www.vigilfont.com/serif#vigilserif",
    "name": "Vigil Serif",
-   "description": "A serif companion to Vigil: geometric-sans metrics, bracketed serifs, seven weights on one axis from 300 to 900, roman and italic.",
+   "description": "A serif companion to Vigil: geometric-sans metrics, bracketed serifs, eight weights on one axis from 200 to 900, roman and italic.",
    "url": "https://www.vigilfont.com/serif",
    "creator": { "@id": "https://www.vigilfont.com/#keno" },
    "author": { "@id": "https://www.vigilfont.com/#keno" },
@@ -79,8 +79,8 @@
 <style>
 @font-face{font-family:"Vigil";src:url("fonts/Vigil-wght-.woff2?v=1.004") format("woff2");font-weight:200 900;font-display:block}
 @font-face{font-family:"Vigil";src:url("fonts/Vigil-Italic-wght-.woff2?v=1.004") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
-@font-face{font-family:"Vigil Serif";src:url("fonts/VigilSerif-wght-.woff2?v=1.000") format("woff2");font-weight:300 900;font-display:block}
-@font-face{font-family:"Vigil Serif";src:url("fonts/VigilSerif-Italic-wght-.woff2?v=1.000") format("woff2");font-weight:300 900;font-style:italic;font-display:block}
+@font-face{font-family:"Vigil Serif";src:url("fonts/VigilSerif-wght-.woff2?v=1.100") format("woff2");font-weight:200 900;font-display:block}
+@font-face{font-family:"Vigil Serif";src:url("fonts/VigilSerif-Italic-wght-.woff2?v=1.100") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
 
 :root{
   --paper:#F1F1F0;       /* ink wash — neutral gray base */
@@ -426,9 +426,9 @@ footer a{text-underline-offset:3px;color:#4A4A49}
     <div><dt>x-height</dt><dd>100.4<small>Vigil 100.0</small></dd></div>
     <div><dt>x ÷ cap</dt><dd>0.714<small>matches exactly</small></dd></div>
     <div><dt>line box</dt><dd>1.200<small>em — matches Vigil</small></dd></div>
-    <div><dt>set width</dt><dd>+6%<small>lowercase; the rest is serifs</small></dd></div>
+    <div><dt>set width</dt><dd>+5.7%<small>lowercase at Regular; the rest is serifs</small></dd></div>
   </dl>
-  <p class="body">Stem-matched, the pairing is serif 300 beside sans 400: at the same nominal weight the serif's stems run heavier. Set them at one size on one baseline and nothing shifts.</p>
+  <p class="body">Stem-matched, the pairing is serif 300 beside sans 400: at the same nominal weight the serif's stems run heavier, so the pairing steps down a stop — the serif's new 200 sits nearest the sans at 275, not at 200. Set them at one size on one baseline and nothing shifts.</p>
 </section>
 
 <section id="anat">
@@ -443,9 +443,9 @@ footer a{text-underline-offset:3px;color:#4A4A49}
     </figure>
     <figure>
       <div class="box">
-        <span class="glyph s ghosted"><span class="ghost" aria-hidden="true">nono</span>nono</span>
+        <span class="glyph s ghosted"><span class="ghost" aria-hidden="true">sour</span>sour</span>
       </div>
-      <figcaption><b>Six percent wider, all serifs</b><span>The gray ghost is Vigil at the same size, starting from the same left edge. The gap grows letter by letter: lowercase sets 6% wider, and the rest is serifs.</span></figcaption>
+      <figcaption><b>Wider at Regular, all serifs</b><span>The gray ghost is Vigil at the same size, from the same left edge. The gap grows letter by letter: at Regular the lowercase sets 5.7% wider. It is weight-dependent — 1.5% at 200, 15% at 900 — and all of it is serifs.</span></figcaption>
     </figure>
     <figure>
       <div class="box" style="gap:0.12em">
@@ -458,12 +458,13 @@ footer a{text-underline-offset:3px;color:#4A4A49}
 </section>
 
 <section id="axis">
-  <h2 class="h2">Seven weights, <em>one axis</em>, 300 to 900.</h2>
+  <h2 class="h2">Eight weights, <em>one axis</em>, 200 to 900.</h2>
   <div>
     <p class="axis-live" id="axis-live">Archaeology</p>
-    <p class="axis-read"><span class="small">Scroll drives the axis</span><b class="tnum" id="axis-out">300</b></p>
+    <p class="axis-read"><span class="small">Scroll drives the axis</span><b class="tnum" id="axis-out">200</b></p>
   </div>
   <ol class="ladder">
+    <li><span class="l small"><span>ExtraLight</span><span class="tnum">200</span></span><span class="row" style="font-weight:200">Coffee winning its daily argument with <em>everything else.</em></span></li>
     <li><span class="l small"><span>Light</span><span class="tnum">300</span></span><span class="row" style="font-weight:300">Coffee winning its daily argument with <em>everything else.</em></span></li>
     <li><span class="l small"><span>Regular</span><span class="tnum">400</span></span><span class="row" style="font-weight:400">Coffee winning its daily argument with <em>everything else.</em></span></li>
     <li><span class="l small"><span>Medium</span><span class="tnum">500</span></span><span class="row" style="font-weight:500">Coffee winning its daily argument with <em>everything else.</em></span></li>
@@ -629,7 +630,7 @@ footer a{text-underline-offset:3px;color:#4A4A49}
   <textarea id="s-text" rows="1" spellcheck="false">Nothing hurried, nothing missing.</textarea>
   <p id="s-echo">Nothing hurried, nothing missing.</p>
   <div class="controls">
-    <div><label for="s-wght"><span>Weight</span><span class="tnum" id="s-wght-out">400</span></label><input id="s-wght" type="range" min="300" max="900" step="1" value="400"></div>
+    <div><label for="s-wght"><span>Weight</span><span class="tnum" id="s-wght-out">400</span></label><input id="s-wght" type="range" min="200" max="900" step="1" value="400"></div>
     <div><label for="s-size"><span>Size</span><span class="tnum" id="s-size-out">80px</span></label><input id="s-size" type="range" min="24" max="180" step="1" value="80"></div>
     <div class="pills">
       <button type="button" class="pill" id="s-italic" aria-pressed="false" style="font-style:italic">Italic</button>
@@ -672,19 +673,19 @@ footer a{text-underline-offset:3px;color:#4A4A49}
     <tr><td>ascender</td><td>flat on the cap, as Vigil's is</td></tr>
     <tr><td>descender</td><td>40.0 — Vigil 40.0</td></tr>
     <tr><td>line box</td><td>1.200 em — matches Vigil</td></tr>
-    <tr><td>lowercase width</td><td>6% wider than Vigil; the rest is serifs</td></tr>
+    <tr><td>lowercase width</td><td>5.7% wider than Vigil at Regular; 1.5% at 200, 15% at 900</td></tr>
     <tr><td>figures</td><td>lining by default, old-style on onum</td></tr>
-    <tr><td>weight axis</td><td>300–900, roman and italic</td></tr>
+    <tr><td>weight axis</td><td>200–900, roman and italic</td></tr>
   </table>
-  <p class="body">Variable roman and italic on one weight axis from 300 to 900, and fourteen static instances, hinted. Version 1.000. Free under the SIL Open Font License, like the sans.</p>
+  <p class="body">Variable roman and italic on one weight axis from 200 to 900, and sixteen static instances, hinted. Version 1.100. Free under the SIL Open Font License, like the sans.</p>
   <div class="embed">
     <div class="embed-head"><p class="lab">Embed</p><button type="button" class="pill" id="copy-css">Copy CSS</button></div>
-    <pre id="serif-css">@font-face { font-family: "Vigil Serif"; src: url("https://www.vigilfont.com/fonts/VigilSerif-wght-.woff2") format("woff2"); font-weight: 300 900; }
-@font-face { font-family: "Vigil Serif"; src: url("https://www.vigilfont.com/fonts/VigilSerif-Italic-wght-.woff2") format("woff2"); font-weight: 300 900; font-style: italic; }</pre>
+    <pre id="serif-css">@font-face { font-family: "Vigil Serif"; src: url("https://www.vigilfont.com/fonts/VigilSerif-wght-.woff2") format("woff2"); font-weight: 200 900; }
+@font-face { font-family: "Vigil Serif"; src: url("https://www.vigilfont.com/fonts/VigilSerif-Italic-wght-.woff2") format("woff2"); font-weight: 200 900; font-style: italic; }</pre>
     <p class="small" style="color:#4A4A49;max-width:62ch">Or take the hosted one-liner: <a href="/vigil.css">vigil.css</a> now declares the serif alongside the sans, so one stylesheet gives you both families.</p>
   </div>
   <p class="ship"><a class="btn" href="downloads/VigilSerif.zip" download>Download Vigil Serif</a><a class="link" href="/#download">Download the sans</a><a class="link" href="https://thinkkeno.com/#contact">Tell me what breaks</a></p>
-  <p class="small" style="color:#4A4A49;max-width:62ch">The package is the fourteen hinted statics, the variable roman and italic, web fonts for all of them, the license and the FONTLOG. No email, no account.</p>
+  <p class="small" style="color:#4A4A49;max-width:62ch">The package is the sixteen hinted statics, the variable roman and italic, web fonts for all of them, the license and the FONTLOG. No email, no account.</p>
 </section>
 
 <footer>
@@ -772,7 +773,7 @@ footer a{text-underline-offset:3px;color:#4A4A49}
     duo.classList.toggle('over',on);
     dob.textContent=on?'Separate them':'Overlay them';
     dnote.textContent=on
-      ? 'Stacked on one baseline: the heights sit exactly on top of each other. The horizontal drift is the 6% — serifs add width, not height.'
+      ? 'Stacked on one baseline: the heights sit exactly on top of each other. The horizontal drift is the set width — serifs add width, not height.'
       : 'Same rules, both rows: cap height, x-height and baseline land in identical places.';
   });
 
@@ -782,7 +783,7 @@ footer a{text-underline-offset:3px;color:#4A4A49}
     var r=sec.getBoundingClientRect(),vh=window.innerHeight||1;
     var p=1-(r.top+r.height*0.25)/vh;          /* 0 entering → 1 passed */
     p=Math.max(0,Math.min(1,p));
-    var w=Math.round(300+p*600);
+    var w=Math.round(200+p*700);
     if(reduce)w=400;
     live.style.fontWeight=w;out.textContent=w;
     var d=document.documentElement;

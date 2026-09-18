@@ -4,7 +4,7 @@ A free serif companion to Vigil, by Keno Vigil — https://www.vigilfont.com/ser
 
 IN A HURRY?
 
-  Select all 14 files in this folder whose names start with "VigilSerif-"
+  Select all 16 files in this folder whose names start with "VigilSerif-"
   and end in ".ttf". Double-click them. Click Install.
 
   That's it. Vigil Serif will be in Word, Canva, Keynote, Figma, Photoshop
@@ -16,7 +16,7 @@ IN A HURRY?
 ---------------------------------------------------------------------
 
   1. Unzip this folder if you haven't already — double-click the .zip.
-  2. Select the 14 files starting with "VigilSerif-" and ending in ".ttf".
+  2. Select the 16 files starting with "VigilSerif-" and ending in ".ttf".
      (Click the first, hold Shift, click the last.)
   3. Double-click any of them. Font Book opens.
   4. Click "Install" (or "Install Font").
@@ -28,7 +28,7 @@ IN A HURRY?
 ---------------------------------------------------------------------
 
   1. Unzip the folder (right-click, "Extract All").
-  2. Select the 14 files starting with "VigilSerif-" and ending in ".ttf".
+  2. Select the 16 files starting with "VigilSerif-" and ending in ".ttf".
   3. Right-click the selection and choose "Install" (or "Install for all
      users", which needs an administrator).
   4. Restart any app that was already open.
@@ -41,13 +41,13 @@ IN A HURRY?
 3. WHAT'S IN THIS FOLDER
 ---------------------------------------------------------------------
 
-  VigilSerif-*.ttf              14 styles, ready to install: Light, Regular,
-                                Medium, SemiBold, Bold, ExtraBold, Black,
-                                each with an italic.
+  VigilSerif-*.ttf              16 styles, ready to install: ExtraLight,
+                                Light, Regular, Medium, SemiBold, Bold,
+                                ExtraBold, Black, each with an italic.
 
-  Variable font/                One file per style axis instead of seven:
+  Variable font/                One file per style axis instead of eight:
                                 "Vigil Serif Variable.ttf" and its italic,
-                                weight 300–900 continuous. Use these in apps
+                                weight 200–900 continuous. Use these in apps
                                 that support variable fonts (Figma, Adobe
                                 apps, Affinity, recent Office).
 
@@ -75,10 +75,10 @@ IN A HURRY?
 
     @font-face { font-family: "Vigil Serif";
                  src: url("VigilSerif-Variable.woff2") format("woff2");
-                 font-weight: 300 900; }
+                 font-weight: 200 900; }
     @font-face { font-family: "Vigil Serif";
                  src: url("VigilSerif-Variable-Italic.woff2") format("woff2");
-                 font-weight: 300 900; font-style: italic; }
+                 font-weight: 200 900; font-style: italic; }
 
   Weight is a continuous axis, so font-weight: 437 is valid.
 

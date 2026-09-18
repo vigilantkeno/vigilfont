@@ -5,8 +5,8 @@
 #   bash tools/build-serif-download-zip.sh
 #
 # Sources:
-#   fonts/serif/ttf/*.ttf      14 hinted statics + 2 variable
-#   fonts/serif/woff2/*.woff2  the 14 statics for the web
+#   fonts/serif/ttf/*.ttf      16 hinted statics + 2 variable
+#   fonts/serif/woff2/*.woff2  the 16 statics for the web
 #   fonts/VigilSerif-*-wght-.woff2   the two variable web fonts the site serves
 #   downloads/src/serif/       Read me first.txt, OFL.txt, FONTLOG.txt
 #
