@@ -47,7 +47,7 @@ ChangeLog
   I with the overhang compressed to 45% of its reach, so it inherits that
   form's bar thickness, end treatment and scaling across the weight axis.
   Iacute and Idieresis are rebuilt with it; the five composited accented forms
-  and IJ follow. The plain I remains on ss02.
+  and IJ follow. The full-serif I remains on ss02, as before.
 - Measured as ink differing from the plain form at 16px, the nub reads at 3.5
   pixels against the tail's 3.4, so it does the same work on a rarer letter.
 

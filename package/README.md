@@ -22,7 +22,7 @@ Pairs with [Vigil Icons](https://www.vigilicons.com/) — 111 free stroke icons 
 
 ## Changes
 
-**1.0.4 / fonts 1.004.** The tail comes off the lowercase `l` and the capital `I` takes a short crossbar instead. `ss02` goes back to giving the tailed `l`, as at 1.000, and now also gives the plain `I`.
+**1.0.4 / fonts 1.004.** The tail comes off the lowercase `l` and the capital `I` takes a short crossbar instead. `ss02` goes back to giving the tailed `l`, as at 1.000; the full-serif `I` stays on it.
 
 **1.0.2 / fonts 1.002 (not released).** The tailed `l` is spaced properly: it shipped with no right sidebearing, so it crowded the next letter and above SemiBold its tail crossed into it. The bearing is now tight, with kerning giving space back before `.` `,` `:` `;` `x` `z`. No letterform changed.
 
