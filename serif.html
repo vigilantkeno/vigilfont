@@ -367,6 +367,14 @@ footer a{text-underline-offset:3px;color:#4A4A49}
 .btn.book{background:#FFF224;color:#111}
 .btn.book:hover{background:#111;color:#FFF224}
 
+@media print{
+  *{transition:none!important;animation:none!important}
+  .rv{clip-path:none!important}
+  .duo .row i,.anat .ruled i{transform:none!important}
+  .duo .tick,.anat .ghosted .ghost{opacity:1!important}
+  .prog{display:none}
+}
+
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *{animation:none!important;transition:none!important}
@@ -731,12 +739,29 @@ footer a{text-underline-offset:3px;color:#4A4A49}
         if(!e.isIntersecting)return;
         var t=e.target,i=ladderRows.indexOf(t);
         if(i>-1){setTimeout(function(){t.style.fontWeight=t.getAttribute('data-w')},i*70)}
-        else{t.classList.add('in')}
+        else{(t.__reveal||t).classList.add('in')}
         io.unobserve(t);
       });
-    },{threshold:0.2,rootMargin:'0px 0px -10% 0px'});
-    Array.prototype.forEach.call(document.querySelectorAll('.rv, .duo, .anat .box'),function(el){io.observe(el)});
+    },{threshold:0.01,rootMargin:'0px 0px 60% 0px'});
+    /* a .rv heading clips itself to zero width, and the intersection rect is
+       computed after the element's own clip-path — so observing the heading
+       directly can never fire, at any scroll position or root margin. Watch
+       its unclipped section instead; each heading has one, ~100px below its top. */
+    Array.prototype.forEach.call(document.querySelectorAll('.rv, .duo, .anat .box'),function(el){
+      var probe=el.classList.contains('rv')&&el.parentNode&&!el.parentNode.__reveal?el.parentNode:el;
+      if(probe!==el){probe.__reveal=el}
+      io.observe(probe);
+    });
     ladderRows.forEach(function(el){io.observe(el)});
+    /* safety net: a full-page capture, a PDF print, or any run where the
+       observer never fires must not leave the page headless */
+    var settleAll=function(){
+      Array.prototype.forEach.call(document.querySelectorAll('.rv, .duo, .anat .box'),function(el){el.classList.add('in')});
+      ladderRows.forEach(function(el){el.style.fontWeight=el.getAttribute('data-w')});
+      io.disconnect();
+    };
+    setTimeout(settleAll,6000);
+    window.addEventListener('beforeprint',settleAll);
   }
 
   /* shared metrics: two rows, optional overlay */
