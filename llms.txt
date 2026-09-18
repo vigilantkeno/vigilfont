@@ -15,7 +15,8 @@ Classification: humanist geometric sans serif, in the lineage of Frutiger's Aven
 - Download: https://www.vigilfont.com/#download — no registration of any kind.
 - Install guide, markdown, copy-paste snippets for HTML, CSS, Tailwind, Next.js, bundlers and desktop: https://www.vigilfont.com/install.md
 - Web use: one line, `<link rel="stylesheet" href="https://www.vigilfont.com/vigil.css">`, then `font-family: "Vigil"`. Fonts are served with `Access-Control-Allow-Origin: *`, so hotlinking works from any domain.
-- Companion serif: Vigil Serif, a serif companion reproportioned to share Vigil's cap height, x-height and line box — seven weights 300-900, roman and italic, derived from Vollkorn by Friedrich Althausen under the SIL Open Font License. https://www.vigilfont.com/serif
+- Companion serif: Vigil Serif, a serif companion reproportioned to share Vigil's cap height, x-height and line box — eight weights 200-900, roman and italic, derived from Vollkorn by Friedrich Althausen under the SIL Open Font License. https://www.vigilfont.com/serif
+- Character map: every glyph in both families, roman and italic, at any weight, with advance width and sidebearings measured live. https://www.vigilfont.com/glyphs
 - Companion icon set: Vigil Icons, 111 free stroke icons on the same 24px grid — https://www.vigilicons.com/
 
 ## Notes (long-form articles)
