@@ -122,8 +122,13 @@ section,footer{padding:clamp(48px,8vw,112px) clamp(16px,4vw,56px)}
 
 .prog{position:fixed;top:0;left:0;right:0;height:2px;z-index:8;pointer-events:none}
 .prog i{display:block;height:100%;background:#FFF224;transform:scaleX(0);transform-origin:left center}
-.rv{clip-path:inset(0 101% 0 -2%);transition:clip-path .75s cubic-bezier(.2,.7,.2,1)}
-.rv.in{clip-path:inset(0 -2% 0 -2%)}
+/* The wipe clips to the element box, but .h2 sets line-height:1, so a descender
+   sits below that box and was being cut: 7.5px off the g in "long attention" at
+   90px, and five other headings with g, j, y or an italic f. The vertical insets
+   are in em so they scale with the clamped font size, and are identical in both
+   states so only the horizontal edge animates. */
+.rv{clip-path:inset(-0.12em 101% -0.24em -2%);transition:clip-path .75s cubic-bezier(.2,.7,.2,1)}
+.rv.in{clip-path:inset(-0.12em -2% -0.24em -2%)}
 .duo .row i,.anat .ruled i{transform:scaleX(0);transform-origin:left center;transition:transform .85s cubic-bezier(.2,.7,.2,1) .12s}
 .duo.in .row i,.anat .box.in .ruled i{transform:scaleX(1)}
 .duo .tick{opacity:0;transition:opacity .5s ease .45s}
