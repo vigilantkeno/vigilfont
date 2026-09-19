@@ -7,7 +7,7 @@
   "homepage": "https://www.vigilfont.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vigilantkeno/vigilfont"
+    "url": "git+https://github.com/vigilantkeno/vigilfont.git"
   },
   "keywords": [
     "font",
