@@ -24,6 +24,11 @@ Pairs with [Vigil Icons](https://www.vigilicons.com/) — 111 free stroke icons 
 
 ## Changes
 
+**1.2.0 / Vigil 1.004, Vigil Serif 1.200.** Vigil Serif gains the Latin letters seven West
+African orthographies need — the open o and open e in both cases (`ɔ Ɔ ɛ Ɛ`), m and n with
+acute and grave, and the combining vertical line below — so Yoruba, Bambara, Dyula, Fanti and
+Akuapem Twi set correctly. Fulah and Hausa still want the hooked letters, which are planned.
+
 **1.1.0 / Vigil 1.004, Vigil Serif 1.100.** Vigil Serif joins the package: `vigil.css` now declares it alongside the sans and the outline, and the serif's variable roman and italic ship with it. Its axis runs 200 to 900 — eight weights, an ExtraLight at each end of the pairing.
 
 **1.0.4 / fonts 1.004.** The tail comes off the lowercase `l` and the capital `I` takes a short crossbar instead. `ss02` goes back to giving the tailed `l`, as at 1.000; the full-serif `I` stays on it.

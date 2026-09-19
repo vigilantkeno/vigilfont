@@ -21,6 +21,71 @@ Vigil Serif ChangeLog
 -------------------------------------------------------------------
 (Most recent first. Vollkorn's own entries continue below this section.)
 
+19 September 2026 (Joaquin Keno Vigil) Vigil Serif Version 1.200
+- Added the nine Latin glyphs standing between the font and seven African
+  orthographies. fontbakery's Google Fonts profile puts the font in the
+  GF_Phonetics_SinoExt glyphset on the strength of its existing Latin Extended
+  coverage and then fails it for mandatory orthography codepoints it does not
+  have; seventeen were missing. Nine are now in, and five of the seven languages
+  pass: Yoruba, Bambara, Dyula, Fanti and Akuapem Twi.
+- Five of the nine needed no drawing: m and M with acute (U+1E3F, U+1E3E) and n
+  and N with grave (U+01F9, U+01F8) are composites placed from each master's own
+  anchors rather than by copying a neighbour's baked offset, and U+0329, the
+  combining vertical line below, is the master's own verticallinemod scaled into
+  the band the other below-marks occupy -- top-aligned with dotbelowcomb at 1.55
+  times its depth -- so every master derives it from its own outline and the
+  point structure stays identical for interpolation.
+- Two more needed none either, which is worth recording because it is not
+  visible from the character set. U+025B, the open e, is epsilon, already drawn.
+  U+0190, its capital, is Reversedze-cy (U+0510), and that is a real capital in
+  its own right: its own 52-point outline standing -7 to 709, drawn at cap height
+  and at capital weight, with nothing in the Latin cmap pointing at it. The
+  alternative had been to scale epsilon by cap over x-height, 1.40, and then walk
+  the weight back down a Regular-to-Black blend to undo the 40% the scale adds to
+  every stroke -- a judgement call at every master, replaced by a drawing the
+  designer already made. Both are plain components and track their base across
+  the axis.
+- The open o, U+0254 and U+0186, is c and C reflected. Reflecting is honest here
+  only because Vollkorn's stress is vertical: o's thin points sit 8 units left of
+  centre on a 482-unit width, 1.7%, so the flip does not visibly reverse the
+  stress axis the way it would in a face with real diagonal stress. The italics
+  are reflected and then sheared by twice the 11 degree italic angle, since a
+  mirror about a vertical axis reverses the lean.
+- Their spacing is measured rather than reasoned about, because reasoning gave
+  the wrong answer twice. Swapping the sidebearings in the deslanted frame is
+  exactly right for the romans and leaves the italic open o overlapping its
+  neighbour by 30 units; swapping them in the slanted frame is closer but misses
+  by -16, +4, -30 and +8 across the four masters. So tools/add_open_letters.py
+  compares the closest ink approach in o + open-o against c + o, and in
+  open-o + o against o + c, and moves the glyph until they agree. The romans
+  settle after 0 to 4 units, which is the evidence that the measurement is sound;
+  the italics move about 95 units left, with the advance almost unchanged.
+- All four open letters joined the kern classes their shape earns, or they would
+  have been the only letters in the font with no kerning at all. The open e and
+  its capital take the classes their own base already sits in; the reflections
+  take the right-hand class a bowl earns, as ereversed and schwa already do. The
+  reflections' left-hand class is deliberately left unset: their left side is a
+  pair of open terminals, which no lowercase in this font has, and inheriting c's
+  public.kern2.o would hand them the tuck T and k give a round left side, when
+  terminals reach further out than a bowl does.
+- The copyright notice in OFL.txt and in every font file now opens in the form
+  Google Fonts asks for, naming the Vigil Serif Project Authors and the
+  repository. Vollkorn's notice is untouched and still travels with it, in the
+  same string and in the same file, as the licence requires.
+- Set nameID 25 on the italic variable font, the Variations PostScript Name
+  Prefix. macOS names each instance from it rather than from nameID 6, so
+  without one the italic's eight instances derive the same PostScript names as
+  the roman's and the two families collide in the system font list.
+  tools/finish_build.py now sets it, and only on italics, which is the only
+  place it is asked for. With that and the copyright form above, the Google
+  Fonts profile has one failing check left -- the eight hooked letters -- and
+  242 passing.
+- Still missing, and the reason Fulah and Hausa still fail: the eight hooked
+  letters, b d k y with hooks, upper and lower. Those are real drawing -- the
+  font owns no top-of-stem hook to borrow, N with left hook curling from the
+  bottom left and f with hook curling the wrong way -- and are left for a later
+  release.
+
 18 September 2026 (Joaquin Keno Vigil) Vigil Serif Version 1.100
 - Added an ExtraLight at 200, roman and italic, so the axis runs 200 to 900 and
   the serif reaches the light end the sans already had. Sixteen static instances.
