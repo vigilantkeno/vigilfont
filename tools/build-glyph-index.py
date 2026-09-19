@@ -32,3 +32,16 @@ for family, styles in FAMILIES.items():
 with open("glyphs.json", "w") as fh:
     json.dump(out, fh, separators=(",", ":"))
 print(f"\nglyphs.json {os.path.getsize('glyphs.json')/1024:.0f} KB")
+
+# The page states the serif's glyph count in four places -- three meta
+# descriptions and the standfirst -- and nothing regenerates them, so they go
+# stale the moment a glyph is added. Say so rather than let it drift silently.
+want = f"{len(out['serif']['roman']):,}"
+page = "glyphs.html"
+if os.path.exists(page):
+    text = open(page, encoding="utf-8").read()
+    if want in text:
+        print(f"glyphs.html agrees: {text.count(want)} mentions of {want}")
+    else:
+        print(f"!! glyphs.html does not say {want} -- update the three meta "
+              f"descriptions and the standfirst")

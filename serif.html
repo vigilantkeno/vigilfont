@@ -26,7 +26,7 @@
 <meta name="twitter:title" content="Vigil Serif — a free serif companion to Vigil">
 <meta name="twitter:description" content="A free serif companion to Vigil. Same cap height, same x-height, same line box.">
 <meta name="twitter:image" content="https://www.vigilfont.com/og-serif.png">
-<link rel="preload" href="fonts/VigilSerif-wght-.woff2?v=1.100" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/VigilSerif-wght-.woff2?v=1.200" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/Vigil-wght-.woff2?v=1.004" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
 {
@@ -79,8 +79,8 @@
 <style>
 @font-face{font-family:"Vigil";src:url("fonts/Vigil-wght-.woff2?v=1.004") format("woff2");font-weight:200 900;font-display:block}
 @font-face{font-family:"Vigil";src:url("fonts/Vigil-Italic-wght-.woff2?v=1.004") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
-@font-face{font-family:"Vigil Serif";src:url("fonts/VigilSerif-wght-.woff2?v=1.100") format("woff2");font-weight:200 900;font-display:block}
-@font-face{font-family:"Vigil Serif";src:url("fonts/VigilSerif-Italic-wght-.woff2?v=1.100") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
+@font-face{font-family:"Vigil Serif";src:url("fonts/VigilSerif-wght-.woff2?v=1.200") format("woff2");font-weight:200 900;font-display:block}
+@font-face{font-family:"Vigil Serif";src:url("fonts/VigilSerif-Italic-wght-.woff2?v=1.200") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
 
 :root{
   --paper:#F1F1F0;       /* ink wash — neutral gray base */
@@ -256,7 +256,9 @@ table.fin td{padding:8px 0;border-top:1px solid var(--rule)}
 .vs2 .ser{font-family:"Vigil Serif",Georgia,serif}
 .vs2 .san{font-family:"Vigil",sans-serif}
 .uirow{display:flex;flex-direction:column;gap:2px;font-size:12px;line-height:1.3}
-.uirow div{display:flex;justify-content:space-between;gap:8px;padding:7px 8px;border:1px solid #282828}
+.uirow div{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 2px;border-top:1px solid #242424}
+.uirow div:first-child{border-top:0}
+.uirow div span:last-child{background:#242424;border-radius:3px;padding:1px 6px;font-size:11px;color:#B5B5B3}
 .capsrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;display:flex;flex-direction:column;gap:9px}
 .legal{font-size:10px;line-height:1.38}
 @media (max-width:430px){.vs2{grid-template-columns:1fr}}
@@ -589,33 +591,33 @@ footer a{text-underline-offset:3px;color:#4A4A49}
   <h2 class="h2">Wrong job, <em>honestly.</em></h2>
   <div class="uses">
     <article class="card">
+      <h3>Dense UI under 14px</h3>
       <div class="demo">
         <div class="vs2">
           <div class="bad"><p class="hd">Serif <span>— don’t</span></p><div class="uirow ser"><div><span>Storage used</span><span>128.4 GB</span></div><div><span>Sync interval</span><span>15 min</span></div><div><span>Retention</span><span>90 days</span></div><div><span>Region</span><span>us-east-1</span></div></div></div>
           <div class="good"><p class="hd">Sans <span>— do</span></p><div class="uirow san"><div><span>Storage used</span><span>128.4 GB</span></div><div><span>Sync interval</span><span>15 min</span></div><div><span>Retention</span><span>90 days</span></div><div><span>Region</span><span>us-east-1</span></div></div></div>
         </div>
       </div>
-      <h3>Dense UI under 14px</h3>
       <p class="note">At 12px the serifs thicken into the counters and the rows stop scanning. Side by side the sans is quieter and the numbers land faster.</p>
     </article>
     <article class="card">
+      <h3>Tracked-out all-caps nav</h3>
       <div class="demo">
         <div class="vs2">
           <div class="bad"><p class="hd">Serif <span>— don’t</span></p><p class="capsrow ser" aria-hidden="true"><span>Overview</span><span>Pricing</span><span>Changelog</span></p></div>
           <div class="good"><p class="hd">Sans <span>— do</span></p><p class="capsrow san" aria-hidden="true"><span>Overview</span><span>Pricing</span><span>Changelog</span></p></div>
         </div>
       </div>
-      <h3>Tracked-out all-caps nav</h3>
       <p class="note">Wide letterspacing pulls the serifs apart until each word reads as separate marks. The sans holds together at the same tracking.</p>
     </article>
     <article class="card">
+      <h3>10px legal copy</h3>
       <div class="demo">
         <div class="vs2">
           <div class="bad"><p class="hd">Serif <span>— don’t</span></p><p class="legal ser" aria-hidden="true">Terms apply to all accounts created after the effective date. Charges accrue monthly and are billed in arrears. Notice periods run from receipt, not dispatch.</p></div>
           <div class="good"><p class="hd">Sans <span>— do</span></p><p class="legal san" aria-hidden="true">Terms apply to all accounts created after the effective date. Charges accrue monthly and are billed in arrears. Notice periods run from receipt, not dispatch.</p></div>
         </div>
       </div>
-      <h3>10px legal copy</h3>
       <p class="note">At caption sizes the contrast between stem and serif collapses on low-DPI screens. There’s no hinted static cut yet either — that’s on the list.</p>
     </article>
   </div>
