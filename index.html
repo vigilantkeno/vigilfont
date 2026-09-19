@@ -56,6 +56,37 @@ section,footer{padding:clamp(48px,8vw,112px) clamp(16px,4vw,56px)}
 .nav a{text-decoration:none;padding:12px 0;margin:-12px 0}
 .nav a:hover{text-decoration:underline}
 .nav [aria-current="page"]{text-decoration:underline;text-underline-offset:5px}
+.nav{--nav-bg:#1D3BFF;--nav-ink:#fff}
+/* mobile navigation — the sheet is built by /nav.js; see there for why */
+.nav-toggle{display:none}
+@media (max-width:700px){
+  .nav.has-toggle{align-items:center}
+  .nav.nav-open{z-index:60}
+  .nav.has-toggle>nav{position:fixed;inset:0;z-index:60;background:var(--nav-bg);color:var(--nav-ink);
+    flex-direction:column;justify-content:center;align-items:flex-start;gap:2px;
+    padding:clamp(20px,6vw,40px);font-size:clamp(30px,8.5vw,46px);font-weight:600;
+    letter-spacing:-0.02em;line-height:1.12;overflow-y:auto;
+    visibility:hidden;opacity:0;transition:opacity .18s ease,visibility 0s .18s}
+  .nav.nav-open>nav{visibility:visible;opacity:1;transition:opacity .18s ease}
+  .nav.has-toggle>nav a{padding:9px 0;margin:0}
+  .nav.has-toggle>nav .tag{font-size:12px;vertical-align:middle}
+  .nav-toggle{display:inline-flex;align-items:center;gap:9px;position:relative;z-index:61;
+    appearance:none;background:none;border:0;color:inherit;font:inherit;font-weight:500;
+    padding:12px 0;margin:-12px 0;cursor:pointer}
+  .nav.nav-open .nav-toggle{color:var(--nav-ink)}
+  .nav-bars{display:block;width:18px;height:2px;background:currentColor;position:relative}
+  .nav-bars::before,.nav-bars::after{content:"";position:absolute;left:0;width:18px;height:2px;
+    background:currentColor;transition:transform .18s ease}
+  .nav-bars::before{top:-6px}
+  .nav-bars::after{top:6px}
+  .nav.nav-open .nav-bars{background:transparent}
+  .nav.nav-open .nav-bars::before{transform:translateY(6px) rotate(45deg)}
+  .nav.nav-open .nav-bars::after{transform:translateY(-6px) rotate(-45deg)}
+}
+@media (max-width:700px) and (prefers-reduced-motion:reduce){
+  .nav.has-toggle>nav,.nav-bars::before,.nav-bars::after{transition:none}
+}
+
 .h2{font-size:clamp(40px,7vw,96px);line-height:1;letter-spacing:-0.02em;font-weight:600;text-wrap:balance}
 .small{font-size:15px;font-weight:500}
 .tnum{font-variant-numeric:tabular-nums}
@@ -517,7 +548,7 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
 <section id="top">
   <header class="nav">
     <span>Vigil</span>
-    <nav><a href="#tester">Try it</a><a href="#weights">Weights</a><a href="#specimen" class="has-roll"><span class="roll"><span>Specimen</span><span aria-hidden="true">200–900</span></span></a><a href="/serif">Serif<span class="tag">New</span></a><a href="/notes">Notes</a><a href="#use">Use it</a><a href="#download">Download</a></nav>
+    <nav><a href="#tester">Try it</a><a href="#weights">Weights</a><a href="#specimen" class="has-roll"><span class="roll"><span>Specimen</span><span aria-hidden="true">200–900</span></span></a><a href="/serif">Serif<span class="tag">New</span></a><a href="/glyphs">Characters</a><a href="/notes">Notes</a><a href="#use">Use it</a><a href="#download">Download</a></nav>
   </header>
   <h1 id="mark" class="sweep">Vigil</h1>
   <div class="hero-foot">
@@ -1101,5 +1132,6 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit();caret();if(!sizeTouched)applyStartSize();});
 })();
 </script>
+<script src="/nav.js" defer></script>
 </body>
 </html>
