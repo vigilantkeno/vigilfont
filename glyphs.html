@@ -272,18 +272,30 @@ function hex(u){return "U+"+u.toString(16).toUpperCase().replace(/^(.{1,3})$/,fu
 /* metrics come from the font itself rather than a shipped table, so they are
    right at every weight on the slider instead of at three sampled ones */
 var cv=document.createElement("canvas").getContext("2d");
+var faceReady={};
 function metrics(ch,weight){
   var spec=(S.style==="italic"?"italic ":"")+weight+' 1000px '+FACE[S.family];
-  /* canvas falls back to a system face without saying so if the one asked for
-     has not loaded — which reads as a plausible wrong number rather than as an
-     error. Ask first, measure only once it is really there. */
-  if(document.fonts&&document.fonts.check){
-    if(!document.fonts.check(spec,ch)){
-      if(document.fonts.load) document.fonts.load(spec,ch).then(function(){
-        if(S.sel!==null) inspect();
-      },function(){});
-      return null;
-    }
+  /* Canvas falls back to a system face without saying so if the one asked for
+     has not loaded, which reads as a plausible wrong number rather than as an
+     error. The obvious guard - document.fonts.check() - does not hold here.
+     check() is answered by any font that can satisfy the request, including one
+     the visitor has INSTALLED under the same family name, while the page itself
+     still renders the @font-face that has not arrived yet. Measured on this
+     machine with Vigil Serif in ~/Library/Fonts and both its faces reporting
+     "unloaded": check() said true and canvas measured 722 for A, where the font
+     is 729. The identical rule under a family name that is not installed
+     reported false, honestly. So it is a trap that only springs for people who
+     have downloaded the font - which on a foundry's character map is a lot of
+     them, and never the developer's visitors.
+     Never gate on check(). fonts.load() resolves immediately when the face is
+     already there and fetches it when it is not, so it costs nothing and is
+     right in both cases. */
+  if(document.fonts&&document.fonts.load&&!faceReady[spec]){
+    document.fonts.load(spec,ch).then(function(){
+      faceReady[spec]=true;
+      if(S.sel!==null) inspect();
+    },function(){faceReady[spec]=true;});
+    return null;
   }
   cv.font=spec;
   var t=cv.measureText(ch);
