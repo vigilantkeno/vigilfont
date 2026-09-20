@@ -21,6 +21,46 @@ Vigil Serif ChangeLog
 -------------------------------------------------------------------
 (Most recent first. Vollkorn's own entries continue below this section.)
 
+20 September 2026 (Joaquin Keno Vigil) Vigil Serif Version 1.300
+- Added the eight hooked letters Fulah and Hausa need: U+0253 U+0257 U+0199
+  U+01B4 and their capitals U+0181 U+018A U+0198 U+01B3. They were the last
+  of the seventeen glyphs fontbakery's Google Fonts profile wanted and the
+  one check it still failed; all seven West African orthographies now set,
+  and the profile passes with no failing check (0 FAIL, 242 PASS). It still
+  warns that the hooked letters have no small capitals, as the open letters
+  of 1.200 have none: those twelve small caps are the next drawing.
+- The drawing is two part glyphs per master, hook.comp for the lowercase and
+  hookcap.comp for the capitals, in the font's own part-glyph convention
+  (schulter.comp, bauch.comp). Each letter is its base letter's own contours
+  with the top serif trimmed off the stem and the part placed on it, so the
+  letters overlap the way the rest of the font overlaps rather than being
+  merged. Drawn on commission by Claude (Anthropic), from the brief in
+  DESIGN-BRIEF.md item 15; tools/draw_hooks.py is the drawing and rebuilds
+  the ten glyphs from the base letters.
+- The lowercase hook is a wide, shallow arch measured from Times New Roman
+  and Baskerville -- the same size in the bold as in the regular, only the
+  stroke following the weight -- ending the way this font ends a stroke, on
+  a chopped beak rather than a ball. The capital hook curls left: the top
+  serif turned into a hook, a slab continuing the letter's top edge past the
+  stem and turning down into a beak. Ɓ and Ɗ curl left in every text serif
+  that carries them, and must, because B and D have their top arm where a
+  right-curling hook would land. Ƙ and Ƴ take the same part, Ƴ on the left
+  arm. ƴ carries the arm's serif flare up as a short stem to a hook cresting
+  at the ascender, as in Times. Nothing is raised: every hooked letter tops
+  out where its base letter does, except ƴ, which reaches the ascender.
+- Spacing is measured from the font's own letters. ɓ and ƙ keep their stems
+  where b's and k's are. ɗ and ƴ, whose hooks overhang to the right, take the
+  clearance the serif had on that side, which keeps the hook off a following
+  ascender or dot, and are kerned back to the base letter's advance against
+  the letters that stay under the hook -- decided geometrically per master,
+  with a margin. The capitals move right so the hook's tip gets the clearance
+  the serif's tip had. Each hooked letter joins its base letter's kerning
+  group on the side that is unchanged and none on the hook side.
+- Light and ExtraLight take the ten glyphs by the same arithmetic that
+  generates those masters, applied to the ten alone so nothing already
+  released moves; the Y's junction repair is carried into Ƴ and the italic
+  K's into Ƙ. fontTools' interpolation check is silent on both designspaces.
+
 19 September 2026 (Joaquin Keno Vigil) Vigil Serif Version 1.200
 - Added the nine Latin glyphs standing between the font and seven African
   orthographies. fontbakery's Google Fonts profile puts the font in the

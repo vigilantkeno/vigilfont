@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Every character in Vigil and Vigil Serif — character map</title>
-<meta name="description" content="Browse all 1,250 glyphs in Vigil Serif and 390 in Vigil, roman and italic, at any weight from 200 to 900. Live advance width and sidebearings for every character.">
+<meta name="description" content="Browse all 1,258 glyphs in Vigil Serif and 390 in Vigil, roman and italic, at any weight from 200 to 900. Live advance width and sidebearings for every character.">
 <link rel="canonical" href="https://www.vigilfont.com/glyphs">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 <meta name="theme-color" content="#0A0A0A">
@@ -18,13 +18,13 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://www.vigilfont.com/glyphs">
 <meta property="og:title" content="Every glyph in Vigil and Vigil Serif">
-<meta property="og:description" content="All 1,250 glyphs in Vigil Serif and 390 in Vigil, roman and italic, at any weight. With live metrics.">
+<meta property="og:description" content="All 1,258 glyphs in Vigil Serif and 390 in Vigil, roman and italic, at any weight. With live metrics.">
 <meta property="og:image" content="https://www.vigilfont.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Every glyph in Vigil and Vigil Serif">
-<meta name="twitter:description" content="All 1,250 glyphs in Vigil Serif and 390 in Vigil, roman and italic, at any weight. With live metrics.">
+<meta name="twitter:description" content="All 1,258 glyphs in Vigil Serif and 390 in Vigil, roman and italic, at any weight. With live metrics.">
 <meta name="twitter:image" content="https://www.vigilfont.com/og.png">
 <link rel="alternate" type="application/rss+xml" title="Vigil Notes" href="/feed.xml">
 <link rel="preload" href="/fonts/Vigil-wght-.woff2?v=1.004" as="font" type="font/woff2" crossorigin>
@@ -33,8 +33,8 @@
    should only cross the wire if someone actually switches to it */
 @font-face{font-family:"Vigil";src:url("/fonts/Vigil-wght-.woff2?v=1.004") format("woff2");font-weight:200 900;font-display:block}
 @font-face{font-family:"Vigil";src:url("/fonts/Vigil-Italic-wght-.woff2?v=1.004") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
-@font-face{font-family:"Vigil Serif";src:url("/fonts/VigilSerif-wght-.woff2?v=1.200") format("woff2");font-weight:200 900;font-display:swap}
-@font-face{font-family:"Vigil Serif";src:url("/fonts/VigilSerif-Italic-wght-.woff2?v=1.200") format("woff2");font-weight:200 900;font-style:italic;font-display:swap}
+@font-face{font-family:"Vigil Serif";src:url("/fonts/VigilSerif-wght-.woff2?v=1.300") format("woff2");font-weight:200 900;font-display:swap}
+@font-face{font-family:"Vigil Serif";src:url("/fonts/VigilSerif-Italic-wght-.woff2?v=1.300") format("woff2");font-weight:200 900;font-style:italic;font-display:swap}
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#0A0A0A}
@@ -212,7 +212,7 @@ footer .meta{display:flex;gap:24px;flex-wrap:wrap}
   </header>
   <div class="head">
     <h1>Every character, both families</h1>
-    <p>1,250 in Vigil Serif and 390 in Vigil, roman and italic, at any weight from 200 to 900. Click one for its advance width and sidebearings, measured live at the weight you are looking at.</p>
+    <p>1,258 in Vigil Serif and 390 in Vigil, roman and italic, at any weight from 200 to 900. Click one for its advance width and sidebearings, measured live at the weight you are looking at.</p>
   </div>
   <div class="say">
     <label for="say-t" class="say-lab">Type anything</label>
@@ -458,7 +458,7 @@ $("bIta").addEventListener("click",function(){setStyle("italic");});
 
 if(new URLSearchParams(location.search).get("family")==="serif") S.family="serif";
 setVars();
-fetch("/glyphs.json?v=1.200").then(function(r){return r.json();}).then(function(d){
+fetch("/glyphs.json?v=1.300").then(function(r){return r.json();}).then(function(d){
   DATA=d;
   setFamily(S.family);
   select(65);
