@@ -631,6 +631,8 @@ Vigil is not a wayfinding typeface and a terminal is the wrong place for it. It 
 
 - 2026-09-14The New York subway font isn’t the one you thinkThe 1970 manual specified Standard. Helvetica only became official in December 1989.
 
+- 2026-09-14Fonts similar to Avenir — and what they missAvenir broke the geometry on purpose. Substitute it with a strict geometric sans and you undo the fix.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -748,6 +750,8 @@ Vigil is the wrong typeface for a jersey and it would be dishonest to pitch it a
 
 - 2026-09-04License plate fonts: shaped by a die, aimed at a forgerDrawn for a stamping die, a camera, and someone with a roll of black tape.
 
+- 2026-09-09The Nike font is Futura — with an asteriskFutura, a $35 Swoosh, and a slogan borrowed from a man facing a firing squad.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -761,7 +765,7 @@ Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived
 
 All notesBack to Vigilthinkkeno.com/#contact
 
-## The Coca-Cola logo isn’t a font — Vigil
+## Coca-Cola font: the logo isn’t a font at all — Vigil
 
 https://www.vigilfont.com/notes/coca-cola-font
 
@@ -855,6 +859,8 @@ Vigil is on the other side of that line, and deliberately so. It is a system bui
 - 2026-09-04Typeface vs font: the distinction that stopped mattering in 1985It was a real difference once, and it described a real object. Here is what it meant.
 
 - 2026-09-07The worst fonts, by someone who makes fontsThe famous villains are competent typefaces with sincere origin stories.
+
+- 2026-09-19The Constitution isn’t written in a fontA clerk, a quill and a weekend. The headings really are blackletter; the body really isn’t.
 
 Set in Vigil
 
@@ -978,6 +984,8 @@ The second is where a typeface does earn its keep: the confusable pairs. That is
 - 2026-09-04License plate fonts: shaped by a die, aimed at a forgerDrawn for a stamping die, a camera, and someone with a roll of black tape.
 
 - 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, and which are actually worth using.
+
+- 2026-09-07The worst fonts, by someone who makes fontsThe famous villains are competent typefaces with sincere origin stories. The genuinely bad ones fail elsewhere.
 
 Set in Vigil
 
@@ -1106,6 +1114,8 @@ What Vigil is good for is the job Futura is genuinely bad at: sustained reading 
 
 - 2026-09-04Geometric sans serif fonts: a field guideWhat makes a sans serif geometric, how to identify one in four seconds, and which geometric sans serif fonts are worth using.
 
+- 2026-09-14Fonts similar to Avenir — and what they missAvenir broke the geometry on purpose. Substitute it with a strict geometric sans and you undo the fix.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -1225,6 +1235,8 @@ It is not an Avenir clone and will not pass as one. Vigil is softer at the corne
 
 - 2026-09-04Geometric sans serif fonts: a field guideWhat makes a sans serif geometric, how to identify one in four seconds, and which geometric sans serif fonts are worth using.
 
+- 2026-09-21The airport font is Frutiger — and Heathrow ran a serifDrawn for Charles de Gaulle, released in 1976. Heathrow used a custom serif for a decade, and the testing backed it.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -1266,6 +1278,8 @@ If you want the practical version of this — how to recognise a geometric sans 
 - 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, where the category came from, and the ones worth using.
 
 - 2026-08-21Soft corners: a short history of the rounded sansFrom a car company’s letterhead to every app icon, and what most rounded fonts get wrong.
+
+- 2026-09-14The Spotify font is Spotify MixSpotify Mix, built by Dinamo in 2024. It replaced Circular — it is not a custom cut of it.
 
 Set in Vigil
 
@@ -1402,6 +1416,8 @@ It is not the best geometric sans on this page. Futura is a better display face 
 
 - 2026-09-04Typeface vs font: the distinction that stopped mattering in 1985It was a real difference once. Here is what it meant, and why almost nobody needs to keep score.
 
+- 2026-09-14Fonts like Futura: what actually comes closeJost, Poppins and League Spartan are free. Century Gothic is a copy of a copy.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -1415,7 +1431,7 @@ Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived
 
 All notesBack to Vigilthinkkeno.com/#contact
 
-## Highway Gothic vs Clearview: the fight over American road sign fonts — Vigil
+## Highway Gothic vs Clearview: the road sign font war — Vigil
 
 https://www.vigilfont.com/notes/highway-gothic-vs-clearview
 
@@ -1517,6 +1533,8 @@ Vigil is not a highway typeface and I am not going to pretend otherwise. It is a
 
 - 2026-09-04A vigil is what you keep when you refuse to go to sleep on something.Ten years of a calendar block that said MAKE FONT, and why it finally shipped.
 
+- 2026-09-09The New York subway font isn’t the one you thinkThe signs are Helvetica. The 1970 manual wasn’t. Both are still down there.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -1530,7 +1548,7 @@ Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived
 
 All notesBack to Vigilthinkkeno.com/#contact
 
-## License plate fonts: shaped by a die, aimed at a forger — Vigil
+## License plate font: shaped by dies, aimed at forgers — Vigil
 
 https://www.vigilfont.com/notes/license-plate-fonts
 
@@ -1646,6 +1664,8 @@ Vigil is not a plate font and would be a bad one — it is a geometric sans buil
 
 - 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, why the strict ones are hard to read, and which are actually worth using.
 
+- 2026-09-21The baseball jersey font isn’t a fontThe rulebook legislates six inches of height and nothing else. The letters are cut from cloth, not typed.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -1757,6 +1777,8 @@ And if the goal is Vigil: this is not the job for it. Vigil is a geometric sans,
 
 - 2026-09-06What font is easiest to read?The honest answer is that it depends on the reader, the size and the light — but the research narrows it a lot.
 
+- 2026-09-21The airport font is Frutiger — and Heathrow ran a serifDrawn for Charles de Gaulle, released in 1976. Heathrow used a custom serif for a decade, and the testing backed it.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -1865,6 +1887,8 @@ Vigil is not a sports face and would be the wrong call for anything above. It is
 - 2026-09-09The Nike font is Futura — with an asteriskFutura, a $35 Swoosh, and a slogan borrowed from a man facing a firing squad.
 
 - 2026-09-04License plate fonts: shaped by a die, aimed at a forgerDrawn for a stamping die, a camera, and someone with a roll of black tape.
+
+- 2026-09-21The baseball jersey font isn’t a fontThe rulebook legislates six inches of height and nothing else. The letters are cut from cloth, not typed.
 
 Set in Vigil
 
@@ -1979,6 +2003,8 @@ That difference is the recommendation. For a display line where the geometry is 
 
 - 2026-09-04Geometric sans serif fonts: a field guideWhat makes a sans serif geometric, how to identify one in four seconds, and which geometric sans serif fonts are worth using.
 
+- 2026-09-14Fonts like Futura: what actually comes closeJost, Poppins and League Spartan are free. Century Gothic is a copy of a copy.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -2020,6 +2046,8 @@ The underlying skeleton is a geometric one, which is a category with its own hun
 - 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, where the category came from, and the ones worth using.
 
 - 2026-08-28A century of circles: the geometric groteskErbar, Futura and Kabel arrived within a year of each other. The idea never left.
+
+- 2026-09-04A vigil is what you keep when you refuse to go to sleep on something.Ten years of a calendar block that said MAKE FONT, and why it finally shipped.
 
 Set in Vigil
 
@@ -2136,6 +2164,8 @@ What Vigil will not do is imitate Spotify Mix, and it is worth saying plainly. M
 
 - 2026-09-04Geometric sans serif fonts: a field guideWhat makes a sans serif geometric, how to identify one in four seconds, and which geometric sans serif fonts are worth using.
 
+- 2026-09-19The NFL font is three different answersEndzone for the brand, Tackle for the network, thirty-two numeral sets for the jerseys. The shield isn’t type at all.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -2240,6 +2270,8 @@ Which is also the argument for knowing what category a face belongs to before yo
 
 - 2026-09-04Highway Gothic vs Clearview: two fonts went to war over American road signsApproved in 2004, killed in 2016, revived in 2018 — with the government refusing to endorse it.
 
+- 2026-09-14There is no VHS fontThe logo is Lee, 1976. The on-screen text was a chip, not a typeface. The look is mostly signal damage.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -2253,7 +2285,7 @@ Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived
 
 All notesBack to Vigilthinkkeno.com/#contact
 
-## Typeface vs font: the distinction that stopped mattering in 1985 — Vigil
+## Typeface vs font: the difference, and why it faded — Vigil
 
 https://www.vigilfont.com/notes/typeface-vs-font
 
@@ -2331,6 +2363,8 @@ It is not worth correcting people over. The word “font” absorbed the broader
 - 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, where the category came from, and the ones worth using.
 
 - 2026-09-04A vigil is what you keep when you refuse to go to sleep on something.Ten years of a calendar block that said MAKE FONT, and why it finally shipped.
+
+- 2026-09-14There is no VHS fontThe logo is Lee, 1976. The on-screen text was a chip, not a typeface. The look is mostly signal damage.
 
 Set in Vigil
 
@@ -2463,6 +2497,8 @@ Vigil is for the other part — the legible geometric sans that carries the word
 
 - 2026-09-06The Stranger Things font is ITC BenguiatDrawn by Ed Benguiat in 1977. The brief was twelve Stephen King paperbacks in a padded envelope.
 
+- 2026-09-14The Spotify font is Spotify MixSpotify Mix, built by Dinamo in 2024. It replaced Circular — it is not a custom cut of it.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -2545,6 +2581,8 @@ Go look at it and tell me what breaks.
 
 - 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, where the category came from, and the ones worth using.
 
+- 2026-09-19The Constitution isn’t written in a fontA clerk, a quill and a weekend. The headings really are blackletter; the body really isn’t.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -2558,7 +2596,7 @@ Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived
 
 All notesBack to Vigilthinkkeno.com/#contact
 
-## The Constitution isn’t written in a font — Vigil
+## Constitution font: it’s handwriting, not type — Vigil
 
 https://www.vigilfont.com/notes/what-font-is-the-constitution-written-in
 
@@ -2664,6 +2702,8 @@ Vigil is the wrong typeface for anything on this page, and it is worth saying pl
 
 - 2026-09-04Typeface vs font: the distinction that stopped mattering in 1985It was a real difference once, and it described a real object. Here is what it meant.
 
+- 2026-09-18Why a serif, and why VollkornPairing someone else’s serif is arithmetic. What it takes to make one measure the same as the sans.
+
 Set in Vigil
 
 ## It’s free. It stays free.
@@ -2737,6 +2777,8 @@ Now go set something in it.
 - 2026-08-21Soft corners: a short history of the rounded sansFrom a car company’s letterhead to every app icon, and what most rounded fonts get wrong.
 
 - 2026-09-04Geometric sans serif fonts: a field guideHow to spot one in four seconds, where the category came from, and the ones worth using.
+
+- 2026-09-18Why a serif, and why VollkornPairing someone else’s serif is arithmetic. What it takes to make one measure the same as the sans.
 
 Set in Vigil
 
@@ -2847,6 +2889,8 @@ Vigil is a quiet face on purpose, which is a different bet: less voice, more ran
 - 2026-09-06What font is easiest to read?There is no single easiest font. Size, spacing and line length decide more than the typeface does.
 
 - 2026-09-06The Stranger Things font is ITC BenguiatDrawn by Ed Benguiat in 1977. The brief was twelve Stephen King paperbacks in a padded envelope.
+
+- 2026-09-04Typeface vs font: the distinction that stopped mattering in 1985It was a real difference once, and it described a real object. Here is what it meant.
 
 Set in Vigil
 
