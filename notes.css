@@ -74,6 +74,7 @@ ol,ul{list-style:none;padding:0}
   padding:clamp(20px,4vw,48px) clamp(16px,4vw,56px);
 }
 #top h1{font-size:clamp(72px,18vw,260px);line-height:.85;letter-spacing:-.04em;font-weight:600}
+#top .intro{margin-top:clamp(20px,3vw,32px);font-size:clamp(19px,2.1vw,26px);line-height:1.32;max-width:52ch;text-wrap:pretty}
 
 /* ---------- index list ---------- */
 .idx{border-top:1px solid #000}
