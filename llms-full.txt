@@ -165,6 +165,8 @@ Latin Extended: Western and Central European, covering English, Spanish, French,
 
 ## Changes
 
+**1.005 (2026-09-25).** The capital `I` goes back to a plain stem, as Figtree draws it. The 1.004 crossbar was short at every weight, so from Bold up it stopped reading as a crossbar and started reading as a notch cut into the stem. The default `I` and `l` are now plain, as in Figtree, Helvetica and Inter. To tell them apart, turn on stylistic set 2 (`ss02`): it gives the full-serif `I` and the tailed `l` together — `font-feature-settings: "ss02" 1` in CSS. The accented `Ì Í Î Ï Ī Į İ` and `Ĳ` follow. Nothing else changed.
+
 **1.004 (2026-09-18).** The tail comes back off the lowercase `l`, and the capital `I` takes a short crossbar instead. The tail did separate `l` from `I`, but it fell on one of the most frequent letters in English and its curve reads as a mirrored `J` wherever nothing follows it. The `I` does the same job on a rarer letter, in a shape nothing else claims. Stylistic set 2 goes back to giving the *tailed* `l`, as it did at 1.000 and as Figtree ships it; the full-serif `I` stays on it, as it always has. `ł` and the accented forms follow. Nothing else changed.
 
 **1.002 (2026-09-17, not released).** The tailed `l` is spaced properly. It shipped with no right sidebearing at all, so it crowded whatever followed, and from SemiBold up its tail crossed into the next letter. The bearing is now set tight, and kerning gives the space back only where the tail actually collides: before `.` `,` `:` `;` and before `x` and `z`. No letterform changed, and the italics were already correct.
@@ -248,7 +250,7 @@ lL1
 
 Even on the stems, small enough to keep the edge.
 
-Vigil is a free variable typeface by Keno Vigil — a geometric grotesk with a large x-height, a double-story a and a single-story g. Rounding is applied by rule — most at exposed terminals (C G S c e s, the arms of E F T, the feet of K and z), then a smaller, even radius at structural corners and on the stems of l, L, 1 and I, which keep enough edge to stay apart. At 16px it reads as a clean sans. At 96px the softness becomes the signature.
+Vigil is a free variable typeface by Keno Vigil — a geometric grotesk with a large x-height, a double-story a and a single-story g. Rounding is applied by rule — most at exposed terminals (C G S c e s, the arms of E F T, the feet of K and z), then a smaller, even radius at structural corners and on the stems of l, L, 1 and I, which keep enough edge to stay crisp. Where an I must never pass for an l, stylistic set 2 gives the l a tail and the I serifs. At 16px it reads as a clean sans. At 96px the softness becomes the signature.
 
 Text, 16px
 Type is the interface. A body face earns its place in the first paragraph, not the first headline. Vigil keeps its counters open and its spacing even at small sizes, so long passages stay quiet and the rounding never announces itself. Set it at 16 over 24 with a measure near sixty-five characters, and the page reads like it was never designed at all — which is the point.
@@ -281,6 +283,10 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 ÀÁÂÃÄÅÆ�
 aa
 
 Double-story a by default. ss01 for single-story.
+
+Il1Il1
+
+Plain I and l by default. ss02 for a serifed I and a tailed l.
 
 1,024.191,024.19
 
@@ -449,13 +455,13 @@ CSS — self-hosted, or paste as-isCopy
 
 @font-face {
 font-family: "Vigil";
-src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2?v=1.004") format("woff2");
+src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2?v=1.005") format("woff2");
 font-weight: 200 900;
 font-display: swap;
 }
 @font-face {
 font-family: "Vigil";
-src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2?v=1.004") format("woff2");
+src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2?v=1.005") format("woff2");
 font-weight: 200 900;
 font-style: italic;
 font-display: swap;
@@ -487,8 +493,8 @@ Vigil Serif has its own package, statics and variable: download Vigil Serif.
 
 EmbedCopy CSS
 
-@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2?v=1.004") format("woff2"); font-weight: 200 900; font-display: swap; }
-@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2?v=1.004") format("woff2"); font-weight: 200 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2?v=1.005") format("woff2"); font-weight: 200 900; font-display: swap; }
+@font-face { font-family: "Vigil"; src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2?v=1.005") format("woff2"); font-weight: 200 900; font-style: italic; font-display: swap; }
 
 SIL Open Font License 1.1 — use it anywhere, in anything, commercial or not. No attribution required. No account. No newsletter.
 
@@ -523,7 +529,7 @@ Email
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-Version 1.0.4 — September 2026thinkkeno.com/#contact
+Version 1.0.5 — September 2026thinkkeno.com/#contact
 
 ---
 
@@ -623,7 +629,7 @@ Not free, no. Frutiger is licensed through Linotype and now Monotype, and the fi
 
 If you want the behaviour rather than the drawing, the useful category is the humanist sans serif: open apertures, generous width, a tall lowercase, characters kept apart. Under open licences that includes Fira Sans, Source Sans 3 and Public Sans. None is a Frutiger clone and none should be sold as one; what they share is the logic, which does the work.
 
-Vigil is not a wayfinding typeface and a terminal is the wrong place for it. It is a geometric sans built for screens and paragraphs, and a geometric skeleton is precisely what the Roissy brief rejected — circles read as circles at distance, the failure Frutiger was drawn to avoid. What carries over is the part that generalises: a large lowercase, counters kept open rather than closed for style, and a 1, l and I you can tell apart. The counters are where legibility lives, at the gate and on the page alike.
+Vigil is not a wayfinding typeface and a terminal is the wrong place for it. It is a geometric sans built for screens and paragraphs, and a geometric skeleton is precisely what the Roissy brief rejected — circles read as circles at distance, the failure Frutiger was drawn to avoid. What carries over is the part that generalises: a large lowercase, counters kept open rather than closed for style, and a 1 that cannot pass for an l, with a stylistic set that parts the l and the I as well. The counters are where legibility lives, at the gate and on the page alike.
 
 ## Keep reading
 
@@ -637,7 +643,7 @@ Set in Vigil
 
 ## It’s free. It stays free.
 
-A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
@@ -742,7 +748,7 @@ Not the real ones, and the honest answer is more useful than a list. No MLB club
 
 And for anyone actually making a jersey, the font question is the wrong one. Lettering shops do not set names in a font file; they cut them from twill using their own cut-file libraries. Ask a supplier for their block and script alphabets and you are asking for the thing that actually goes on the shirt.
 
-Vigil is the wrong typeface for a jersey and it would be dishonest to pitch it as anything else. It is a geometric sans built for screens and paragraphs; a back number needs something far heavier and more condensed than its widest setting, drawn for a blade rather than a screen. What it shares with the good numerals here is the discipline: tabular figures that hold their column, open counters, and a 1, l and I you can tell apart. That test matters at reading distance too — just with less mud.
+Vigil is the wrong typeface for a jersey and it would be dishonest to pitch it as anything else. It is a geometric sans built for screens and paragraphs; a back number needs something far heavier and more condensed than its widest setting, drawn for a blade rather than a screen. What it shares with the good numerals here is the discipline: tabular figures that hold their column, open counters, and a 1 that cannot pass for an l — with a stylistic set that parts the l and the I as well. That test matters at reading distance too — just with less mud.
 
 ## Keep reading
 
@@ -959,7 +965,7 @@ If someone hands you that brief, the useful reply is a question back: how big, h
 Set this string in the face you are considering, at the size you will actually use:
 
 Il1 O0 rn m
-Capital i, lowercase L, one. Capital o, zero. R-n against m. Shown in Vigil.
+Capital i, lowercase L, one. Capital o, zero. R-n against m. Shown in Vigil with stylistic set 2 on.
 
 If the first three are the same shape, you have a face that will turn Illinois into a picket fence and make every password, licence key and serial number a guessing game. If the O and the zero are indistinguishable, the same applies to anything numeric. If rn closes up into something like an m, you will get modern read as modem at small sizes.
 
@@ -977,7 +983,7 @@ Two things, and the first is humbling if you draw type for a living.
 
 The typeface is not the lever. If someone asks which font to use for a document their whole team has to read, the honest answer is to set it bigger, give it a sane measure, loosen the leading, and stop worrying about the family. Recommending a font feels like helping. Fixing the setting is helping.
 
-The second is where a typeface does earn its keep: the confusable pairs. That is a drawing decision, it cannot be fixed downstream, and it is the reason Vigil keeps the tail on its l, the flag on its 1, and open counters at text sizes — the whole point of rationing the rounding rather than softening every corner. A face that blurs those is not a stylistic preference. It is a face that will cost somebody a wrong digit at the wrong moment.
+The second is where a typeface does earn its keep: the confusable pairs. That is a drawing decision, it cannot be fixed downstream, and it is the reason Vigil keeps the flag on its 1 and open counters at text sizes, and ships a stylistic set, ss02, that gives the l a tail and the I serifs for anything that must not be misread — the whole point of rationing the rounding rather than softening every corner. A face that blurs those is not a stylistic preference. It is a face that will cost somebody a wrong digit at the wrong moment.
 
 ## Keep reading
 
@@ -991,7 +997,7 @@ Set in Vigil
 
 ## It’s free. It stays free.
 
-A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
@@ -1120,7 +1126,7 @@ Set in Vigil
 
 ## It’s free. It stays free.
 
-A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
@@ -1241,7 +1247,7 @@ Set in Vigil
 
 ## It’s free. It stays free.
 
-A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
@@ -1656,7 +1662,7 @@ What circulate freely are replicas — independently drawn digital fonts based o
 
 Use them for what they are: period props, film work, and the pleasure of the reference. Do not use one to make a plate.
 
-Vigil is not a plate font and would be a bad one — it is a geometric sans built for paragraphs, and it shares parts across letters on purpose, which is precisely the thing FE-Schrift refuses to do. What it does take from this corner of the world is the discipline underneath it: open counters, a large lowercase, and a 1, l and I you can tell apart. The counters are where legibility lives, whoever is doing the reading.
+Vigil is not a plate font and would be a bad one — it is a geometric sans built for paragraphs, and it shares parts across letters on purpose, which is precisely the thing FE-Schrift refuses to do. What it does take from this corner of the world is the discipline underneath it: open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. The counters are where legibility lives, whoever is doing the reading.
 
 ## Keep reading
 
@@ -1670,7 +1676,7 @@ Set in Vigil
 
 ## It’s free. It stays free.
 
-A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
@@ -1783,7 +1789,7 @@ Set in Vigil
 
 ## It’s free. It stays free.
 
-A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
@@ -1880,7 +1886,7 @@ What those decisions share is that each one is drawn for exactly one distance an
 
 The second lesson is about numerals, and it generalises well past football. Digits carry more load than letters and get a fraction of the attention. A misread word is usually recoverable from context; a misread number is just wrong. The pairs to check are always the same — 0 and O, 1 and l and I, 6 and 8, 3 and 8, 5 and S — and a football jersey is that test run at maximum difficulty: huge, moving, and consequential. Anyone drawing numerals for a dashboard, a scoreboard or a table should look at what survives on a torso.
 
-Vigil is not a sports face and would be the wrong call for anything above. It is a geometric sans for interfaces and paragraphs, and a jersey needs something far heavier and more condensed than its widest setting. For that job, look at a proper athletic block, or at the free League Gothic for the broadcast-condensed look. What Vigil does share with the good numerals here is the discipline: tabular figures that hold their column, open counters, and a 1, l and I you can tell apart. That matters at reading distance too — just with less mud.
+Vigil is not a sports face and would be the wrong call for anything above. It is a geometric sans for interfaces and paragraphs, and a jersey needs something far heavier and more condensed than its widest setting. For that job, look at a proper athletic block, or at the free League Gothic for the broadcast-condensed look. What Vigil does share with the good numerals here is the discipline: tabular figures that hold their column, open counters, and a 1 that cannot pass for an l — with a stylistic set that parts the l and the I as well. That matters at reading distance too — just with less mud.
 
 ## Keep reading
 
@@ -1894,7 +1900,7 @@ Set in Vigil
 
 ## It’s free. It stays free.
 
-A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
@@ -2009,7 +2015,7 @@ Set in Vigil
 
 ## It’s free. It stays free.
 
-A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
@@ -2170,7 +2176,7 @@ Set in Vigil
 
 ## It’s free. It stays free.
 
-A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
@@ -2503,7 +2509,7 @@ Set in Vigil
 
 ## It’s free. It stays free.
 
-A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
@@ -2708,7 +2714,7 @@ Set in Vigil
 
 ## It’s free. It stays free.
 
-A geometric sans with open counters, a large lowercase, and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
@@ -2896,7 +2902,7 @@ Set in Vigil
 
 ## It’s free. It stays free.
 
-A quiet geometric sans with open counters and a 1, l and I you can tell apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+A quiet geometric sans with open counters and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →

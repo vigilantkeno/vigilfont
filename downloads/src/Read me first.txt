@@ -125,6 +125,16 @@ IN A HURRY?
 
 
 ---------------------------------------------------------------------
+WHAT'S NEW IN 1.005
+---------------------------------------------------------------------
+
+  The capital I goes back to a plain stem. The short crossbar from
+  1.004 turned into a notch at the heavy weights. To tell I and l
+  apart, turn on Stylistic Set 2 (ss02): it gives a serifed I and a
+  tailed l together. The accented forms follow.
+
+
+---------------------------------------------------------------------
 WHAT'S NEW IN 1.004
 ---------------------------------------------------------------------
 

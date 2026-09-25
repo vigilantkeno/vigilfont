@@ -157,6 +157,8 @@ Latin Extended: Western and Central European, covering English, Spanish, French,
 
 ## Changes
 
+**1.005 (2026-09-25).** The capital `I` goes back to a plain stem, as Figtree draws it. The 1.004 crossbar was short at every weight, so from Bold up it stopped reading as a crossbar and started reading as a notch cut into the stem. The default `I` and `l` are now plain, as in Figtree, Helvetica and Inter. To tell them apart, turn on stylistic set 2 (`ss02`): it gives the full-serif `I` and the tailed `l` together — `font-feature-settings: "ss02" 1` in CSS. The accented `Ì Í Î Ï Ī Į İ` and `Ĳ` follow. Nothing else changed.
+
 **1.004 (2026-09-18).** The tail comes back off the lowercase `l`, and the capital `I` takes a short crossbar instead. The tail did separate `l` from `I`, but it fell on one of the most frequent letters in English and its curve reads as a mirrored `J` wherever nothing follows it. The `I` does the same job on a rarer letter, in a shape nothing else claims. Stylistic set 2 goes back to giving the *tailed* `l`, as it did at 1.000 and as Figtree ships it; the full-serif `I` stays on it, as it always has. `ł` and the accented forms follow. Nothing else changed.
 
 **1.002 (2026-09-17, not released).** The tailed `l` is spaced properly. It shipped with no right sidebearing at all, so it crowded whatever followed, and from SemiBold up its tail crossed into the next letter. The bearing is now set tight, and kerning gives the space back only where the tail actually collides: before `.` `,` `:` `;` and before `x` and `z`. No letterform changed, and the italics were already correct.

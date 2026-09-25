@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: "Vigil";
-  src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2?v=1.004") format("woff2");
+  src: url("https://www.vigilfont.com/fonts/Vigil-wght-.woff2?v=1.005") format("woff2");
   font-weight: 200 900;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: "Vigil";
-  src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2?v=1.004") format("woff2");
+  src: url("https://www.vigilfont.com/fonts/Vigil-Italic-wght-.woff2?v=1.005") format("woff2");
   font-weight: 200 900;
   font-style: italic;
   font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: "Vigil Outline";
-  src: url("https://www.vigilfont.com/fonts/VigilOutline-Regular.woff2?v=1.004") format("woff2");
+  src: url("https://www.vigilfont.com/fonts/VigilOutline-Regular.woff2?v=1.005") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -41,7 +41,7 @@
 
 @font-face {
   font-family: "Vigil Outline";
-  src: url("https://www.vigilfont.com/fonts/VigilOutline-Italic.woff2?v=1.004") format("woff2");
+  src: url("https://www.vigilfont.com/fonts/VigilOutline-Italic.woff2?v=1.005") format("woff2");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
