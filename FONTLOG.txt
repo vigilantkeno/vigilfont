@@ -33,6 +33,17 @@ ChangeLog
 ---------------------------------------------------------------------
 (Most recent first.)
 
+1.005 (25 September 2026, Joaquin Keno Vigil)
+- The capital I goes back to Figtree's plain stem. The 1.003 nub kept 45% of
+  the serif's reach at every weight, but the serif's bar thickens from 21 to
+  149 units across the axis while its reach barely moves, so at Black the nub
+  was 52 units wide and 149 tall and read as a notch cut into the stem rather
+  than a crossbar. I, Iacute, Idieresis, the five composited accented forms
+  and IJ are restored from 1.002 exactly, outlines, advances and variations.
+- The default I and l are once again the same shape at different widths, as
+  in Figtree. ss02 is the way to tell them apart: it gives the full-serif I and
+  the tailed l together. Nothing else changed.
+
 1.004 (18 September 2026, Joaquin Keno Vigil)
 - The tail comes back off the lowercase l, and ss02 again yields the tailed
   form, which is the arrangement Figtree ships and the one Vigil had at 1.000.

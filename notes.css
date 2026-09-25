@@ -4,8 +4,8 @@
    /notes/{slug}, where a relative "fonts/..." would resolve to
    /notes/fonts/... and 404. */
 
-@font-face{font-family:"Vigil";src:url("/fonts/Vigil-wght-.woff2?v=1.004") format("woff2");font-weight:200 900;font-display:block}
-@font-face{font-family:"Vigil";src:url("/fonts/Vigil-Italic-wght-.woff2?v=1.004") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
+@font-face{font-family:"Vigil";src:url("/fonts/Vigil-wght-.woff2?v=1.005") format("woff2");font-weight:200 900;font-display:block}
+@font-face{font-family:"Vigil";src:url("/fonts/Vigil-Italic-wght-.woff2?v=1.005") format("woff2");font-weight:200 900;font-style:italic;font-display:block}
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#0A0A0A;scroll-behavior:smooth}

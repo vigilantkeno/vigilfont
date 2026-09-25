@@ -24,6 +24,8 @@ Pairs with [Vigil Icons](https://www.vigilicons.com/) — 111 free stroke icons 
 
 ## Changes
 
+**1.4.0 / Vigil 1.005, Vigil Serif 1.300.** The sans's capital `I` goes back to a plain stem; the short crossbar read as a notch from Bold up. Turn on `ss02` (`font-feature-settings: "ss02" 1`) for a serifed `I` and a tailed `l` wherever the two must not be confused.
+
 **1.3.0 / Vigil 1.004, Vigil Serif 1.300.** Vigil Serif gains the eight hooked letters Fulah and
 Hausa need — `ɓ ɗ ƙ ƴ Ɓ Ɗ Ƙ Ƴ` — drawn in all four masters and carried through every weight, with
 their spacing and kerning. The seven West African orthographies the font set out to cover now all
