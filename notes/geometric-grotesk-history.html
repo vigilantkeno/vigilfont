@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<!-- Google tag (gtag.js). Consent is denied by default and never asked for, so
-     gtag sends cookieless pings and stores nothing in your browser. That is why
-     this site has no consent banner: there is nothing to consent to. -->
+<!-- Google tag (gtag.js). Same posture as telljoan.com and thinkkeno.com: advertising
+     storage and signals are denied everywhere, and analytics cookies are denied in the
+     EEA, the UK and Switzerland. There is no consent banner, so those visitors are
+     counted only by Google's cookieless pings. Adding a banner is what would change
+     that, not editing the region list. See /privacy. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MGERCVZC8"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -13,11 +15,18 @@ gtag('consent', 'default', {
   ad_storage: 'denied',
   ad_user_data: 'denied',
   ad_personalization: 'denied',
-  analytics_storage: 'denied'
+  analytics_storage: 'granted'
+});
+gtag('consent', 'default', {
+  analytics_storage: 'denied',
+  region: ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","CH"]
 });
 gtag('set', 'url_passthrough', true);
 gtag('js', new Date());
-gtag('config', 'G-0MGERCVZC8');
+gtag('config', 'G-0MGERCVZC8', {
+  allow_google_signals: false,
+  allow_ad_personalization_signals: false
+});
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>A century of circles: the geometric grotesk — Vigil</title>
@@ -146,7 +155,7 @@ gtag('config', 'G-0MGERCVZC8');
 <footer>
   <div>
     <p>Vigil is designed by Keno Vigil (<a href="https://thinkkeno.com">thinkkeno.com</a>) in Cary, North Carolina. Derived from <a href="https://github.com/erikdkennedy/figtree">Figtree</a> by Erik Kennedy under the SIL Open Font License.</p>
-    <p class="meta"><a href="/notes">All notes</a><a href="/">Back to Vigil</a><a href="https://thinkkeno.com/#contact">thinkkeno.com/#contact</a></p>
+    <p class="meta"><a href="/notes">All notes</a><a href="/">Back to Vigil</a><a href="/privacy">Privacy</a><a href="https://thinkkeno.com/#contact">thinkkeno.com/#contact</a></p>
   </div>
 </footer>
 
