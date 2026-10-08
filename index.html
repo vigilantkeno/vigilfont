@@ -188,6 +188,14 @@ textarea{field-sizing:content}
 /* vigil in the wild */
 #wild{background:#C8FF2E;color:#000;border-top:1px solid #000;display:flex;flex-direction:column;gap:clamp(24px,3vw,36px)}
 #wild .body{max-width:58ch}
+.case{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:0;border:1px solid #000;border-radius:24px;overflow:hidden;background:#F4F0E7;color:#252522;text-decoration:none}
+.case:hover .case-go{text-decoration:underline}
+.case img{display:block;width:100%;height:100%;object-fit:cover;object-position:left top;border-right:1px solid #000}
+.case-text{display:flex;flex-direction:column;gap:14px;padding:clamp(22px,3vw,40px);justify-content:center}
+.case-text .t{font-family:"Vigil Serif",Georgia,serif;font-weight:360;font-size:clamp(28px,3.4vw,46px);line-height:1.02;letter-spacing:-.03em;text-wrap:balance}
+.case-text p{font-size:17px;line-height:1.5;text-wrap:pretty}
+.case-go{font-weight:600}
+@media (max-width:760px){.case{grid-template-columns:1fr}.case img{border-right:0;border-bottom:1px solid #000;aspect-ratio:16/10}}
 .wild-form{display:flex;flex-direction:column;gap:18px;max-width:620px}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .f-row{display:flex;flex-direction:column;gap:6px}
@@ -955,6 +963,15 @@ footer a{text-underline-offset:3px;color:#B0B0B0}
 
 <section id="wild">
   <h2 class="h2">Vigil in the wild.</h2>
+  <a class="case" href="/in-use/telljoan">
+    <img src="/in-use/img/telljoan-home-desktop.webp" width="1800" height="1125" alt="The Tell Joan homepage, its headline set large in Vigil Serif with Vigil for the navigation and button." loading="lazy" decoding="async">
+    <span class="case-text">
+      <span class="small">In use — telljoan.com</span>
+      <span class="t">Joan, a biographer that phones your parents.</span>
+      <p>Every word is Vigil Serif or Vigil: serif for what Joan says, sans for what you press. Plus the one weight that fixed the colour.</p>
+      <span class="case-go">Read the case study →</span>
+    </span>
+  </a>
   <p class="body">If you have set something in Vigil — a site, a menu, a poster, a school project — send it. Good uses go up here, credited and linked. Missing a glyph or a weight? Ask for it in the same box.</p>
   <form class="wild-form" method="POST" action="/api/request">
     <input type="hidden" name="kind" value="wild">

@@ -49,6 +49,7 @@ Classification: humanist geometric sans serif, in the lineage of Frutiger's Aven
 - [Homepage and type tester](https://www.vigilfont.com/): Interactive specimen with adjustable weight and size.
 - [Vigil Serif](https://www.vigilfont.com/serif): Specimen and type tester for the serif companion, with the metric comparison, weight ladder, size ramp and download.
 - [Notes index](https://www.vigilfont.com/notes): All articles.
+- [In use: Tell Joan](https://www.vigilfont.com/in-use/telljoan): Case study of telljoan.com, set entirely in Vigil Serif (content) and Vigil (interface) — the role split, matching display weight 360 to Newsreader 400, the descending J in the wordmark, and the three self-hosted variable files.
 - [Vigil Icons](https://www.vigilicons.com/): 111 free icons drawn to match the typeface — SVG, PNG, stickers, emoji, npm.
 - [Install guide](https://www.vigilfont.com/install.md): Copy-paste install for every common stack.
 - [Full site text](https://www.vigilfont.com/llms-full.txt): Every page and article as plain text.
