@@ -357,6 +357,8 @@ Get all 111 ↗ (opens in a new tab)
 ## Notes
 All notes
 
+- 2026-11-18The meme font is Impact — Internet Explorer’s faultDrawn in 1965 for Sheffield metal type. It reached everyone in March 1996, in a package called Core fonts for the Web.
+
 - 2026-09-21The airport font is Frutiger — and Heathrow ran a serifDrawn for Charles de Gaulle, released in 1976. Heathrow used a custom serif for a decade, and the testing backed it.
 
 - 2026-09-21The baseball jersey font isn’t a fontThe rulebook legislates six inches of height and nothing else. The letters are cut from cloth, not typed.
@@ -500,6 +502,12 @@ SIL Open Font License 1.1 — use it anywhere, in anything, commercial or not. N
 
 ## Vigil in the wild.
 
+In use — telljoan.com
+Joan, a biographer that phones your parents.
+Every word is Vigil Serif or Vigil: serif for what Joan says, sans for what you press. Plus the one weight that fixed the colour.
+
+Read the case study →
+
 If you have set something in Vigil — a site, a menu, a poster, a school project — send it. Good uses go up here, credited and linked. Missing a glyph or a weight? Ask for it in the same box.
 
 Website
@@ -529,7 +537,7 @@ Email
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-Version 1.0.5 — September 2026thinkkeno.com/#contact
+Version 1.0.5 — September 2026Privacythinkkeno.com/#contact
 
 ---
 
@@ -650,7 +658,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## The baseball jersey font is not a font — Vigil
 
@@ -769,7 +777,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## Coca-Cola font: the logo isn’t a font at all — Vigil
 
@@ -879,7 +887,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## What font is easiest to read? — Vigil
 
@@ -1004,7 +1012,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## Fonts like Futura: what actually comes close — Vigil
 
@@ -1133,7 +1141,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## Fonts similar to Avenir — and what they miss — Vigil
 
@@ -1254,7 +1262,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## A century of circles: the geometric grotesk — Vigil
 
@@ -1298,7 +1306,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## Geometric sans serif fonts: a field guide — Vigil
 
@@ -1435,7 +1443,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## Highway Gothic vs Clearview: the road sign font war — Vigil
 
@@ -1552,7 +1560,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## License plate font: shaped by dies, aimed at forgers — Vigil
 
@@ -1683,7 +1691,102 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
+
+## The meme font is Impact — Internet Explorer’s fault — Vigil
+
+https://www.vigilfont.com/notes/meme-font
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-11-18 — Keno Vigil
+
+# The meme font is Impact — Internet Explorer’s fault
+
+A 1965 Sheffield metal typeface, a browser download from March 1996, and a first page of search results where nobody can name it.
+
+LOL
+
+The meme font is Impact. Geoffrey Lee drew it in 1965 for Stephenson Blake, a Sheffield foundry, as display type for posters. It is now one of the most-seen alphabets on earth, and the top result for meme font is somebody on Reddit asking what it is called.
+
+That is not a joke at Reddit's expense. It is the whole situation. Search the phrase and the first page is almost entirely machinery: a meme generator, two font-download portals, a template maker, a Pinterest board, and a listings page offering seven free fonts "in the Meme style." The one result that engages with the question is a thread titled What's the stereotypical meme font called? — and it is ranked first because that is genuinely what people want to know.
+
+## Nobody on the first page answers it
+
+This is worth dwelling on, because it is a specific kind of failure. The question what is the meme font has a single, short, checkable answer. It has had one since the 1960s. And the search results have instead been filled with sites whose business is to sell you a lookalike, preview some text, or hand you a template — all of which are useful things, none of which is the answer.
+
+Google does supply the answer, in its own summary at the top, where it credits Impact to Geoffrey Lee in 1965. It then says Microsoft bundled Impact as a core web font with Windows 98. That part is wrong, and the correction is more interesting than the error.
+
+## Sheffield, 1965, at the end of metal type
+
+Impact was issued by Stephenson Blake, the Sheffield typefounders, and it was one of the last metal typefaces the company cut. It arrived as phototypesetting was taking over — a new alphabet in a technology that was already finished.
+
+It was drawn for display: posters, publicity, headlines. Not for paragraphs, and it has never pretended otherwise. One weight, no italic, no companion text family. The design brief was to put as much black as possible into a given width while remaining readable, which is why the counters — the holes in the a, the e, the o — are squeezed down to slots. Lee was solving a newspaper problem: a headline that has to shout across a page from four feet away.
+
+Microsoft's own typography notes add a detail that rarely travels with the font. The mid-1960s fashion for bold condensed faces, they say, probably began when Paris Match cut up prints of Schmalfette Grotesk — drawn by Walter Haettenschweiler — to squeeze it narrower still. Impact was the less condensed of the two, and designers used them together as companions. The hedge is Microsoft's own, and it is a sensible one.
+
+## It did not arrive with Windows
+
+Here is the part that explains everything, and it is on the record in Microsoft's own font list.
+
+Impact version 2.20 was one of the original Core fonts for the Web, posted on 1 March 1996. It was then supplied with Internet Explorer 3.0, released on 13 August 1996. Windows 98 shipped it too — version 2.20, the same one — and every Windows since has carried it. But the first vehicle was not an operating system. It was a browser, and a free font download aimed at web designers.
+
+> The typeface that became the voice of internet humour was distributed, deliberately and by Microsoft, in a package called Core fonts for the Web.
+
+That timing is the mechanism. When image macros started appearing, the people making them were working in whatever editor they had, choosing from whatever fonts were already installed. Impact was the heaviest condensed face on almost every machine on earth, for free, by 1996 — a decade before anyone needed it. No committee picked it. It won because it was there, and because nothing else installed by default could hold a line of text over a photograph.
+
+## The look is not Lee's design
+
+The thing people actually mean by "meme font" is a treatment, not a typeface: white capitals, a thick black stroke around every letter, pinned to the top and bottom of an image. Lee drew none of that.
+
+The outline exists for a practical reason. White type over an arbitrary photograph fails the moment the photograph contains anything pale, and a black keyline fixes it everywhere at once — a crude, completely effective solution that meme generators hard-coded as a default and then never revisited. The all-caps setting is partly aesthetic and partly because Impact's lowercase, with those slotted counters, closes up badly at small sizes.
+
+So the famous look is three decisions stacked up: a 1965 design brief about newspaper headlines, a 1996 distribution decision at Microsoft, and a 2000s workaround for legibility over pictures. None of the three was about comedy.
+
+## What a type designer takes from this
+
+Two things, and the first one stings a little.
+
+Distribution beats design. Impact is a competent, specific, well-solved display face, and it is not on billions of images because it is the best condensed sans ever drawn. It is there because it was installed. Every argument about which typeface is better is conducted downstream of the question of which typeface is present, and the second question decides far more than the first. This is the same mechanism that put a film-prop font into the history of American licence plates: availability hardens into fact.
+
+And a typeface does not get a say in what it means. Impact spent thirty years as serious newspaper furniture and now reads as a punchline. Nothing in the drawing changed. Geoffrey Lee did not design an ironic typeface; he designed a loud one, and the internet assigned it a tone. Type carries whatever its most visible use case gives it, which is worth remembering before describing any alphabet as neutral.
+
+It also means Impact belongs in a slightly different category from the famous typographic villains. Comic Sans and Papyrus are disliked for being used where they do not fit. Impact is not disliked at all. It is simply so associated with one job that it can no longer do any other, which is a stranger fate and arguably a worse one.
+
+## What you can actually use
+
+If you want Impact, you probably have it: it ships with Windows and comes through Office. The rights sit with Monotype, and the name remains a Stephenson Blake trademark. Files advertised as free Impact downloads are unlicensed copies, and there is no reason to touch them for a font most machines already carry.
+
+If you need something close with a licence you can read, the three names that keep coming up are Anton, Bebas Neue and Oswald, all free through Google Fonts. Anton is the nearest in weight. Bebas Neue has no lowercase at all, which is fine for captions and useless for anything else. Oswald is the most flexible of the three and the least Impact-like.
+
+TOP TEXT
+Shown in Vigil at 900 — not Impact, and not a substitute for it.
+
+Vigil is not a meme font and this piece is not going to pretend otherwise. It is a geometric sans with open counters and a large lowercase, drawn to be read in paragraphs. Impact's entire argument is the opposite: closed counters, extreme condensation, one weight, no interest in text. Setting a meme in Vigil 900 will look clean and will not look like a meme, because the condensation is the thing doing the work and Vigil has none of it.
+
+Which is the honest recommendation. For the caption, use Impact or Anton — the joke depends on the shape people already recognise. For the body copy, the UI and the eleven pages behind it, where Impact has nothing to offer and never claimed to, Vigil is free under the SIL Open Font License and drawn for exactly that.
+
+## Keep reading
+
+- 2026-09-07The worst fonts, by someone who makes fontsThe famous villains are competent typefaces with sincere origin stories. The genuinely bad ones fail elsewhere.
+
+- 2026-09-04License plate fonts: shaped by a die, aimed at a forgerDrawn for a stamping die, a camera, and someone with a roll of black tape.
+
+- 2026-09-04Typeface vs font: the distinction that stopped mattering in 1985It was a real difference once, and it described a real object. Here is what it meant.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## The New York subway font isn’t the one you think — Vigil
 
@@ -1796,7 +1899,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## The NFL font is three different answers — Vigil
 
@@ -1907,7 +2010,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## The Nike font is Futura — with an asterisk — Vigil
 
@@ -2022,7 +2125,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## Soft corners: a short history of the rounded sans — Vigil
 
@@ -2066,7 +2169,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## The Spotify font is Spotify Mix — Vigil
 
@@ -2183,7 +2286,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## The Stranger Things font is ITC Benguiat — Vigil
 
@@ -2289,7 +2392,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## Typeface vs font: the difference, and why it faded — Vigil
 
@@ -2383,7 +2486,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## There is no VHS font — Vigil
 
@@ -2516,7 +2619,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## Why a serif, and why Vollkorn — Vigil
 
@@ -2600,7 +2703,7 @@ See Vigil Serif
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License. Vigil Serif is derived from Vollkorn by Friedrich Althausen under the same license.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## Constitution font: it’s handwriting, not type — Vigil
 
@@ -2721,7 +2824,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## A vigil is what you keep when you refuse to go to sleep on something — Vigil
 
@@ -2797,7 +2900,7 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
 
 ## The worst fonts, by someone who makes fonts — Vigil
 
@@ -2909,4 +3012,4 @@ Type your own words in it →
 
 Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
 
-All notesBack to Vigilthinkkeno.com/#contact
+All notesBack to VigilPrivacythinkkeno.com/#contact
