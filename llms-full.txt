@@ -357,6 +357,8 @@ Get all 111 ↗ (opens in a new tab)
 ## Notes
 All notes
 
+- 2026-11-18There is no typewriter font, only typewritersThe typeface was molded into the typebars. Monospace was the escapement, and American Typewriter isn’t monospaced at all.
+
 - 2026-11-18The meme font is Impact — Internet Explorer’s faultDrawn in 1965 for Sheffield metal type. It reached everyone in March 1996, in a package called Core fonts for the Web.
 
 - 2026-09-21The airport font is Frutiger — and Heathrow ran a serifDrawn for Charles de Gaulle, released in 1976. Heathrow used a custom serif for a decade, and the testing backed it.
@@ -2480,6 +2482,105 @@ Set in Vigil
 ## It’s free. It stays free.
 
 One typeface, eighteen styles, two variable files. SIL Open Font License — commercial use, embedding and logos all permitted, with no cost, no account and no attribution required.
+
+Download Vigil
+Type your own words in it →
+
+Vigil is designed by Keno Vigil (thinkkeno.com) in Cary, North Carolina. Derived from Figtree by Erik Kennedy under the SIL Open Font License.
+
+All notesBack to VigilPrivacythinkkeno.com/#contact
+
+## There is no typewriter font, only typewriters — Vigil
+
+https://www.vigilfont.com/notes/typewriter-font
+
+Vigil
+Try itWeightsNotesUse itDownload
+
+2026-11-18 — Keno Vigil
+
+# There is no typewriter font, only typewriters
+
+Monospace was a mechanism, not a style. The most-installed typewriter face is free because IBM forgot to trademark it, and the most typewriter-looking one is not monospaced at all.
+
+iMl
+
+There is no typewriter font. A typewriter's typeface was a property of the machine — the letters were molded into the striking head of each typebar, so the design arrived with the hardware and differed by manufacturer and model. You did not pick a font. You bought one, once, and then you owned it until the machine died.
+
+Search the phrase and none of that is on offer. The first page is a marketplace: a font store's login page listed at $45, a Pinterest board, MyFonts at $6 to $50, two listicles about free downloads hosted on a Stanford University subdomain, and a catalogue page crediting the design to "Unknown Designer." The related searches are people shopping for typewriter keyboard, typewriter machine, typewriter paper, typewriter for sale — half this query is not about type at all. It is about wanting the object.
+
+## Monospace was the escapement, not a style
+
+The single most repeated fact about typewriter type is that it is monospaced. True, and almost always explained backwards, as though uniform width were an aesthetic decision somebody made.
+
+It was the mechanism. Each keystroke advanced the platen by the width of one character — one fixed distance, every time, regardless of which key you hit. The letterforms had no choice but to fit that width. An i got the same room as an M, so the i grew serifs wide enough to fill the space and the M was squeezed until it did. Every oddity people now find charming about typewriter type is a letter being argued into a box it did not want.
+
+Ordinary machines came in two pitches: pica at ten characters per inch and elite at twelve, printing six lines to the vertical inch. That is the whole specification. Not a typeface — a grid.
+
+> And it was never universal. IBM's typebar-based Executive offered five levels of proportional spacing. A proportional typewriter existed; it simply lost.
+
+## The typeface came with the hardware
+
+If the typeface is molded into the typebars, changing it means changing metal. For most of the machine's life that is exactly what it meant, which is why "what font did typewriters use" has no answer — it is like asking what font cars use.
+
+The interesting machines are the ones that fought this. The Mignon had interchangeable type. The Varityper had a replaceable typeface cylinder. And IBM's Selectric replaced the whole typebar basket with a swappable typeball, which meant multiple typefaces inside a single document — a genuinely radical feature in 1961 and a completely unremarkable one now.
+
+All Selectrics were monospaced: every character and letterspace got the same width on the page. So even the machine that freed the typeface from the hardware kept the grid. The grid was the harder thing to leave.
+
+## Courier, and the trademark IBM did not file
+
+The closest thing to an answer is Courier, and the reason it is the answer has nothing to do with it being the best.
+
+Howard "Bud" Kettler designed Courier for IBM in the mid-1950s — sources differ on whether it was published in 1955 or 1956. Then IBM did not trademark the name. The consequence is that the name and the design passed into the public domain, and Courier became the typeface everyone could ship, which is why a version of it is installed on the machine you are reading this on.
+
+That accident gave it a second career as officialdom's typeface. Courier New at 12 point was the United States State Department's standard until January 2004, when it was replaced with 14-point Times New Roman. It remains the screenplay convention, where the monospace is load-bearing: a page of correctly set Courier is roughly a minute of screen time, and that arithmetic only works because every character is the same width.
+
+This is the same mechanism as Impact and the memes. A typeface becomes universal because of how it was distributed, not because a committee judged it best. Kettler drew a good face. IBM's lawyers made it immortal by doing nothing.
+
+## The most typewriter-looking typeface is not a typewriter typeface
+
+Here is the joke at the centre of the category. American Typewriter — created in 1974 by Joel Kaden and Tony Stan for the International Typeface Corporation — is the face most people picture when they picture typewriting. It is proportionally spaced. The characters do not all have the same width. It is a slab serif doing an impression.
+
+It is also, in a slightly modified form, the I ♥ NY logo, which makes it one of the most reproduced pieces of lettering in the world — a typewriter pastiche that no typewriter could have produced.
+
+iMl
+In a real monospace these are three identical widths. Shown in Vigil, where they are not.
+
+Which tells you what people actually want from a typewriter font, and it is not the grid. It is the slabs, the visible ink, the sense that a machine pressed this into paper. The monospace is the part they will quietly drop the moment it makes a headline look bad.
+
+## What a type designer takes from this
+
+That a constraint, survived long enough, turns into a style — and then gets sold back as one.
+
+Every characteristic the market now charges for was, at the time, a defect somebody was working around. The uneven baseline was a worn typebar. The ink bleed was a tired ribbon. The uniform width was the escapement doing the only thing it could. Nobody designed those qualities; they were the cost of the technology. Digital typewriter faces now add them back deliberately, with wear and inking drawn in, because the absence of mechanical failure reads as cold.
+
+The second thing is narrower and more useful. The typeface/font distinction genuinely bites here, because with a typewriter the font was a physical object — a basket of typebars, a ball, a cylinder. When people ask what font a typewriter used, the honest answer is a part number, not a name. That is also true of letters shaped by a stamping die: when the machine makes the letterform, the machine is the designer, and the credit line goes missing. "Unknown Designer," as the catalogue page has it.
+
+## What you can actually use
+
+Courier or Courier New is already on your machine and is the real article — public domain in name and design, correct for screenplays, and still the most honest answer to the question.
+
+Special Elite on Google Fonts is the one to reach for when you want the wear rather than the grid; it mimics the Smith Corona Special Elite and the Remington Noiseless, inking and all. IBM Plex Mono is the clean modern monospace with the right ancestry. American Typewriter gives you the look with proportional spacing, which is usually what a designer actually wants and rarely what they ask for.
+
+What to avoid is the first page of results. A free download from a listicle is frequently an unlicensed copy, often has no diacritics and no real italic, and the one ranking page could not even name its designer.
+
+Vigil is not a typewriter font and cannot be made into one. It is a proportional geometric sans with open counters and a large lowercase — no slabs, no monospace, no mechanical wear, and none of it is a setting you can switch on. If you want typed-looking text, use Courier and pay nothing, or Special Elite and pay nothing.
+
+Where Vigil is the better tool is the other half of that layout: the interface, the captions and the body copy around a typewritten display line, where a monospace grid would cost you both space and reading speed. It is free under the SIL Open Font License, and drawn for paragraphs rather than for atmosphere.
+
+## Keep reading
+
+- 2026-11-18The meme font is Impact — Internet Explorer’s faultDrawn in 1965 for Sheffield metal type. It reached everyone in March 1996, in a package called Core fonts for the Web.
+
+- 2026-09-14There is no VHS fontThe logo is Lee, 1976. The on-screen text was a chip, not a typeface. The look is mostly signal damage.
+
+- 2026-09-04License plate fonts: shaped by a die, aimed at a forgerDrawn for a stamping die, a camera, and someone with a roll of black tape.
+
+Set in Vigil
+
+## It’s free. It stays free.
+
+A geometric sans with open counters, a large lowercase, and a stylistic set that keeps 1, l and I apart. Eight weights with matching italics, an outline style, and one variable file across the whole 200–900 axis. SIL Open Font License — no email, no account.
 
 Download Vigil
 Type your own words in it →
